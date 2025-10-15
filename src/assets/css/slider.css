@@ -1,0 +1,55 @@
+.hexagon-btn {
+  clip-path: polygon(
+    50% 0%,
+    93.3% 25%,
+    93.3% 75%,
+    50% 100%,
+    6.7% 75%,
+    6.7% 25%
+  );
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+/* Custom Pagination Dots */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d1d5db;
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1568ce;
+  transform: scale(1.2);
+}
+
+/* Hover effect for pagination dots */
+.swiper-pagination-bullet:hover {
+  background-color: #1568ce;
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .swiper-button-prev-custom {
+    left: 1rem;
+  }
+
+  .swiper-button-next-custom {
+    right: 1rem;
+  }
+}

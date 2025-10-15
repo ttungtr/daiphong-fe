@@ -1,0 +1,240 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-nunito: var(--font-nunito);
+
+  /* Navbar Colors */
+  --color-navbar-bg: #01274e;
+  --color-navbar-dropdown-bg: #01274e;
+  --color-navbar-dropdown-hover-bg: #ffffff21;
+  --color-navbar-text: #fff;
+  --color-navbar-active: #12f78d;
+  --color-navbar-dropdown-border: #cccccc26;
+
+  /* Primary Brand Colors */
+  --color-primary-blue-1: #00689d;
+  --color-primary-blue-2: #3096be;
+
+  /* Green Colors (existing) */
+  --color-primary-green-1: #009345;
+  --color-primary-green-2: #12f78d;
+  --color-primary-green-3: #1af8904d;
+
+  /* Yellow Colors */
+  --color-primary-yellow-1: #dfbf2f; /* Deep yellow */
+  --color-primary-yellow-2: #dfbf31; /* Light yellow */
+
+  /* Background Variants */
+  --color-bg-primary: #ffffff; /* Main background */
+  --color-bg-secondary: #f8fafc; /* Secondary background */
+  --color-bg-tertiary: #f1f5f9; /* Card background */
+  --color-bg-accent: #b8e6ff; /* Accent background (light blue) */
+
+  /* Border Colors */
+
+  /* Text Colors */
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+  --color-text-inverse: #ffffff;
+  --color-text-accent: #1568ce;
+
+  /* Shadow Colors */
+  --color-shadow-sm: rgba(0, 0, 0, 0.05);
+  --color-shadow-md: rgba(0, 0, 0, 0.1);
+  --color-shadow-lg: rgba(0, 0, 0, 0.15);
+  --color-shadow-xl: rgba(0, 0, 0, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+
+    /* Dark mode overrides */
+    --color-bg-primary: #0f172a;
+    --color-bg-secondary: #1e293b;
+    --color-bg-tertiary: #334155;
+    --color-text-primary: #f1f5f9;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #94a3b8;
+  }
+}
+
+body {
+  font-family: var(--font-nunito);
+}
+
+.dropdown-menu {
+  transform: translateY(-10px);
+  transition: all 0.2s ease-in-out;
+}
+
+.group:hover .dropdown-menu {
+  transform: translateY(0);
+}
+
+@media (max-width: 1023px) {
+  .mobile-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .mobile-menu-toggle:checked ~ .mobile-nav {
+    max-height: 100vh;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Introduce Section Styles */
+.introduce-section {
+  position: relative;
+}
+
+.introduce-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/global.pngx');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+/* Utility Classes for New Colors */
+.bg-primary-gradient {
+  background: var(--gradient-primary);
+}
+
+.bg-warm-gradient {
+  background: var(--gradient-warm);
+}
+
+.bg-cool-gradient {
+  background: var(--gradient-cool);
+}
+
+.text-accent {
+  color: var(--color-text-accent);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 6px var(--color-shadow-md);
+}
+
+.shadow-elevated {
+  box-shadow: 0 8px 25px var(--color-shadow-lg);
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Additional Animation Classes for Pagination */
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    transform: translate3d(0, -8px, 0);
+  }
+  70% {
+    transform: translate3d(0, -4px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInFromBottom 0.5s ease-out forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Hover animations for pagination buttons */
+.pagination-button-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination-button-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Loading animation for project cards */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
