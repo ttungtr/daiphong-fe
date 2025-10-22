@@ -14,36 +14,49 @@ export default function ProductDetail({ product }: { product: Product }) {
       : 'Liên hệ';
 
   return (
-    <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
-      <div className='relative aspect-square w-full overflow-hidden bg-slate-50'>
-        <ImageWithFallback
-          src={product.image}
-          alt={product.name}
-          fill
-          className='object-contain p-6'
-        />
-      </div>
-      <div className='flex flex-col gap-4'>
-        <h1 className='text-2xl font-bold text-slate-900'>{product.name}</h1>
-        <div className='text-sm text-slate-500'>
-          Mã sản phẩm: {product.code ?? 'N/A'}
+    <div>
+      <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
+        <div className='relative aspect-square w-full overflow-hidden bg-slate-50'>
+          <ImageWithFallback
+            src={product.image}
+            alt={product.name}
+            fill
+            className='object-contain p-6'
+          />
         </div>
-        <div className='text-xl font-semibold text-primary-blue-1'>
-          {formattedPrice}
-        </div>
-        <p className='text-slate-700 leading-relaxed'>{product.description}</p>
+        <div className='flex flex-col gap-4'>
+          <h1 className='text-2xl font-bold text-slate-900'>{product.name}</h1>
+          <div className='text-sm text-slate-500'>
+            Mã sản phẩm: {product.code ?? 'N/A'}
+          </div>
+          <div className='text-xl font-semibold text-primary-blue-1'>
+            {formattedPrice}
+          </div>
+          <p className='text-slate-700 leading-relaxed'>
+            {product.description}
+          </p>
 
-        <div className='pt-2'>
-          <a
-            href='https://zalo.me/luis-truong'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='Zalo'
-          >
-            <button className='bg-primary-blue-1 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-primary-blue-1/90 transition-all shadow-sm'>
-              Liên hệ ngay
-            </button>
-          </a>
+          <div className='pt-2'>
+            <a
+              href='https://zalo.me/luis-truong'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Zalo'
+            >
+              <button className='bg-primary-blue-1 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-primary-blue-1/90 transition-all shadow-sm'>
+                Liên hệ ngay
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      {/* Product Details Section - Below the main content */}
+      <div className='mt-8 pt-6 border-t border-slate-200'>
+        <h3 className='text-xl font-semibold text-slate-900 mb-4'>
+          Thông tin chi tiết
+        </h3>
+        <div className='prose prose-sm max-w-none text-slate-700'>
+          <div dangerouslySetInnerHTML={{ __html: product.details || '' }} />
         </div>
       </div>
     </div>

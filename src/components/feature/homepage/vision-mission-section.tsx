@@ -13,7 +13,7 @@ export const VisionMissionSection: FunctionComponent = () => {
             <div className='space-y-6'>
               <div className='space-y-4'>
                 <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900'>
-                  <span className='text-gray-500'>01</span> TẦM NHÌN |{' '}
+                  <span className='text-gray-500'>01</span> TẦM NHÌN
                 </h2>
 
                 <div className='space-y-4'>
@@ -32,7 +32,7 @@ export const VisionMissionSection: FunctionComponent = () => {
             <div className='space-y-6'>
               <div className='space-y-4'>
                 <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900'>
-                  <span className='text-gray-500'>02</span> SỨ MỆNH |{' '}
+                  <span className='text-gray-500'>02</span> SỨ MỆNH
                 </h2>
 
                 <div className='space-y-4'>
@@ -91,6 +91,25 @@ export const VisionMissionSection: FunctionComponent = () => {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            {/* Mission Section */}
+            <div className='space-y-6'>
+              <div className='space-y-4'>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900'>
+                  <span className='text-gray-500'>02</span> SỨ MỆNH
+                </h2>
+
+                <div className='space-y-4'>
+                  <p className='text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed'>
+                    “Ống gió chất lượng – Khởi nguồn không khí sạch” - Chất
+                    lượng ống gió là nền tảng của không khí sạch.{' '}
+                    <strong className='text-black'>Đại Phong</strong> sản xuất
+                    từng sản phẩm với độ bền, độ kín và độ chính xác cao, đảm
+                    bảo hệ thống thông gió vận hành an toàn và hiệu quả cho mọi
+                    công trình.
+                  </p>
                 </div>
               </div>
             </div>

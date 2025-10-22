@@ -1,16 +1,18 @@
 'use client';
 
-import type { Product } from '@/data/products';
+import { CATEGORY_SLUG_MAP, type Product } from '@/data/products';
 import Link from 'next/link';
 import ImageWithFallback from '../common/ImageWithFallback';
 
 export default function ProductGrid({ products }: { products: Product[] }) {
+  console.log(products.map((p) => CATEGORY_SLUG_MAP[p.category]));
+
   return (
     <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
       {products.map((p) => (
         <Link
           key={p.id}
-          href={`/products/item/${p.slug}`}
+          href={`/san-pham/${CATEGORY_SLUG_MAP[p.category]}/${p.slug}`}
           className='group border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md'
         >
           <div className='relative aspect-square w-full overflow-hidden bg-slate-50'>

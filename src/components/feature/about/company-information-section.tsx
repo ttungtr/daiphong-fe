@@ -5,8 +5,7 @@ export const CompanyInformationSection: FunctionComponent = () => {
   const companyInformation = [
     {
       label: 'Tên công ty',
-      value:
-        'Công Ty Cổ Phần Công Nghiệp Đại Phong\nĐại Phong BUILDING SHIPPING.,JSC',
+      value: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
     },
     {
       label: 'Địa chỉ',
@@ -14,7 +13,7 @@ export const CompanyInformationSection: FunctionComponent = () => {
     },
     {
       label: 'Liên hệ',
-      value: '0xxx xxx xxx',
+      value: '(+84) xxx xxx xxx',
     },
     {
       label: 'Email',
@@ -22,7 +21,7 @@ export const CompanyInformationSection: FunctionComponent = () => {
     },
     {
       label: 'Website',
-      value: 'philongcorp.vn',
+      value: 'daiphong.vn',
     },
     {
       label: 'Giám đốc',
@@ -34,11 +33,11 @@ export const CompanyInformationSection: FunctionComponent = () => {
     },
     {
       label: 'Ngày thành lập',
-      value: '27/01/2015',
+      value: '2003',
     },
     {
       label: 'Ngành nghề chính',
-      value: 'Cung cấp và thi công các hệ thống MEP.',
+      value: 'Sản xuất và gia công các sản phẩm cơ điện (MEP)',
     },
   ];
 

@@ -7,7 +7,7 @@ import {
   PRODUCT_CATEGORIES,
   PRODUCTS,
 } from '@/data/products';
-import { Pagination, ProductTab } from '@/components/common';
+import { Pagination, ProductTab, CustomSelect } from '@/components/common';
 
 type SortOrder = 'default' | 'priceAsc' | 'priceDesc';
 
@@ -75,20 +75,20 @@ export default function ProductsPage() {
 
         {/* Sort Header */}
         <div className='mb-6 flex items-center justify-end'>
-          <div className='flex items-center gap-2'>
-            <label htmlFor='sort' className='text-sm font-medium text-gray-700'>
+          <div className='flex items-center gap-3'>
+            <label className='text-sm font-medium text-gray-700'>
               Sắp xếp theo:
             </label>
-            <select
-              id='sort'
+            <CustomSelect
+              options={[
+                { value: 'default', label: 'Mặc định' },
+                { value: 'priceAsc', label: 'Giá tăng dần' },
+                { value: 'priceDesc', label: 'Giá giảm dần' },
+              ]}
               value={sortOrder}
-              onChange={(e) => setSortOrder(e.target.value as SortOrder)}
-              className='border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-blue-1 focus:border-primary-blue-1'
-            >
-              <option value='default'>Mặc định</option>
-              <option value='priceAsc'>Giá tăng dần</option>
-              <option value='priceDesc'>Giá giảm dần</option>
-            </select>
+              onChange={(value) => setSortOrder(value as SortOrder)}
+              className='w-36'
+            />
           </div>
         </div>
 
@@ -101,6 +101,7 @@ export default function ProductsPage() {
               name={p.name}
               price={p.price}
               slug={p.slug}
+              category={p.category}
             />
           ))}
         </div>

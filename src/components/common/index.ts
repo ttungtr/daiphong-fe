@@ -8,3 +8,4 @@ export { default as NivoLikeSlider } from './NivoLikeSlider';
 export { OnlineTrackingProvider } from './online-tracking-provider';
 export { default as Pagination } from './pagination';
 export { default as ProductTab } from './ProductTab';
+export { default as CustomSelect } from './CustomSelect';

@@ -1,5 +1,65 @@
 @import 'tailwindcss';
 
+/* Custom animations for floating contact buttons */
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  27% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+.animate-blink {
+  animation: blink 2s infinite;
+}
+
+.animate-rotate {
+  animation: rotate 0.5s ease-in-out infinite;
+}
+
+@keyframes radar {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.animate-radar {
+  animation: radar 1s ease-out infinite;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

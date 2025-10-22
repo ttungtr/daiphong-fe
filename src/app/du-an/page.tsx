@@ -75,7 +75,7 @@ export default function ProjectPage() {
               id='services-heading'
               className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center'
             >
-              CÔNG TRÌNH
+              DỰ ÁN
             </h1>
             {/* <ImageWithFallback
               src='/images/titlebg.pngx'

@@ -27,7 +27,7 @@ export interface TabItem {
 export const tabData: TabItem[] = [
   { label: 'Tổng quan công ty', href: '/gioi-thieu' },
   // { label: "Giấy phép", href: "/gioi-thieu/giay-phep" },
-  { label: 'Báo cáo tài chính', href: '/gioi-thieu/bao-cao-tai-chinh' },
+  // { label: 'Báo cáo tài chính', href: '/gioi-thieu/bao-cao-tai-chinh' },
 ];
 
 interface IBusinessField {

@@ -102,22 +102,22 @@ export default function About() {
   return (
     <>
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       <div
-        className='w-full'
+        className="w-full"
         itemScope
-        itemType='https://schema.org/Organization'
+        itemType="https://schema.org/Organization"
       >
         <HeroSection />
 
-        <Tab currentPath='/gioi-thieu' />
+        <Tab currentPath="/gioi-thieu" />
 
         <LetterSection />
 
@@ -125,20 +125,18 @@ export default function About() {
 
         <VisionMissionSection />
 
-        <PartnerSection />
-
         <CompanyInformationSection />
 
         <section
-          className='py-5 bg-white'
-          aria-labelledby='organizational-structure-heading'
+          className="py-5 bg-white"
+          aria-labelledby="organizational-structure-heading"
         >
-          <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='max-w-7xl mx-auto space-y-4 flex flex-col items-center justify-center'>
-              <header className='w-full flex flex-col items-center justify-center'>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto space-y-4 flex flex-col items-center justify-center">
+              <header className="w-full flex flex-col items-center justify-center">
                 <h2
-                  id='organizational-structure-heading'
-                  className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center'
+                  id="organizational-structure-heading"
+                  className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center"
                 >
                   GIẤY PHÉP
                 </h2>
@@ -149,20 +147,22 @@ export default function About() {
                   height={100}
                   className='w-56 h-auto'
                 /> */}
-                <div className='w-16 h-1 bg-primary-yellow-1 mx-auto mb-10'></div>
+                <div className="w-16 h-1 bg-primary-yellow-1 mx-auto mb-10"></div>
               </header>
 
               <ImageWithFallback
-                src='/images/about/giay-phep.pngx'
-                alt='Cơ cấu tổ chức và bộ máy quản lý của Công Ty Cổ Phần Công Nghiệp Đại Phong - Sơ đồ tổ chức từ Hội đồng quản trị đến các phòng ban chuyên môn'
+                src="/images/about/giay-phep.pngx"
+                alt="Cơ cấu tổ chức và bộ máy quản lý của Công Ty Cổ Phần Công Nghiệp Đại Phong - Sơ đồ tổ chức từ Hội đồng quản trị đến các phòng ban chuyên môn"
                 width={400}
                 height={600}
-                className='w-1/2 h-auto mt-10'
+                className="w-1/2 h-auto mt-10"
                 // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
             </div>
           </div>
         </section>
+
+        <PartnerSection />
 
         {/* <CTASection /> */}
         <MapSection />

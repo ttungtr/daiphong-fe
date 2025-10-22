@@ -12,7 +12,7 @@ export const NewsSection: FunctionComponent = () => {
     <div className='w-full py-4 md:py-4 lg:py-8 bg-white'>
       <div className='max-w-7xl flex flex-col items-center justify-center mx-auto px-4 sm:px-6 lg:px-8'>
         <h3 className='text-xl sm:text-2xl font-bold uppercase text-center mb-2'>
-          Công trình nổi bật
+          Dự án tiêu biểu
         </h3>
 
         <div className='w-16 h-1 bg-primary-yellow-1 mx-auto mb-10'></div>

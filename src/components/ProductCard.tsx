@@ -2,15 +2,23 @@
 
 import Link from 'next/link';
 import ImageWithFallback from './common/ImageWithFallback';
+import { CATEGORY_SLUG_MAP } from '@/data/products';
 
 export interface ProductCardProps {
   imageSrc: string;
   name: string;
   price?: number | string;
   slug: string;
+  category: string;
 }
 
-export function ProductCard({ imageSrc, name, price, slug }: ProductCardProps) {
+export function ProductCard({
+  imageSrc,
+  name,
+  price,
+  slug,
+  category,
+}: ProductCardProps) {
   const formattedPrice =
     typeof price === 'number'
       ? new Intl.NumberFormat('vi-VN', {
@@ -22,7 +30,7 @@ export function ProductCard({ imageSrc, name, price, slug }: ProductCardProps) {
 
   return (
     <Link
-      href={`/san-pham/${slug}`}
+      href={`/san-pham/${CATEGORY_SLUG_MAP[category]}/${slug}`}
       className='group border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md'
     >
       <div className='relative aspect-square w-full overflow-hidden bg-slate-50'>
