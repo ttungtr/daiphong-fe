@@ -1,3 +1,4 @@
+import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { HeroSection } from '@/components/feature/cooperation';
 import { MapSection, PartnerSection } from '@/components/feature/homepage';
 import { Metadata } from 'next';
@@ -120,34 +121,33 @@ export default function CooperationPage() {
     <>
       {/* JSON-LD Structured Data */}
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData),
         }}
       />
 
-      <div className='w-full'>
+      <div className="w-full">
         <HeroSection />
 
-        <header className='w-full flex flex-col items-center justify-center my-10'>
+        <header className="w-full flex flex-col items-center justify-center my-10">
           <h1
-            id='services-heading'
-            className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center'
+            id="services-heading"
+            className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center"
           >
             HỢP TÁC
           </h1>
-          {/* <ImageWithFallback
-            src='/images/titlebg.pngx'
-            alt='Đường viền trang trí tiêu đề hợp tác'
+          <ImageWithFallback
+            src="/images/titlebg.jpg"
+            alt="Đường viền trang trí tiêu đề hợp tác"
             width={300}
             height={100}
-            className='w-56 h-auto'
+            className="w-56 h-auto"
             priority
-          /> */}
-          <div className='w-16 h-1 bg-primary-yellow-1 mx-auto mb-10'></div>
+          />
         </header>
 
-        <main role='main' aria-labelledby='services-heading'>
+        <main role="main" aria-labelledby="services-heading">
           <PartnerSection />
         </main>
         <MapSection />

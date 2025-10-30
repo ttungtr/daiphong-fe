@@ -17,7 +17,7 @@ export default function ProductsPage() {
   const [sortOrder, setSortOrder] = useState<SortOrder>('default');
   const [productList] = useState<ProductData[]>(PRODUCTS);
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 9;
+  const itemsPerPage = 8;
 
   const handleSearchSubmit = () => {
     // No-op for now; keyword state already updates
@@ -61,8 +61,8 @@ export default function ProductsPage() {
   }, [filteredProducts, currentPage]);
 
   return (
-    <div className='min-h-screen bg-slate-50'>
-      <div className='mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8'>
+    <div className="min-h-screen bg-slate-50">
+      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         {/* Product Tab */}
         <ProductTab
           categories={[...PRODUCT_CATEGORIES]}
@@ -74,9 +74,9 @@ export default function ProductsPage() {
         />
 
         {/* Sort Header */}
-        <div className='mb-6 flex items-center justify-end'>
-          <div className='flex items-center gap-3'>
-            <label className='text-sm font-medium text-gray-700'>
+        <div className="mb-6 flex items-center justify-end">
+          <div className="flex items-center gap-3">
+            <label className="text-sm font-medium text-gray-700">
               Sắp xếp theo:
             </label>
             <CustomSelect
@@ -87,13 +87,13 @@ export default function ProductsPage() {
               ]}
               value={sortOrder}
               onChange={(value) => setSortOrder(value as SortOrder)}
-              className='w-36'
+              className="w-36"
             />
           </div>
         </div>
 
         {/* Products Grid */}
-        <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {paginatedProducts.map((p) => (
             <ProductCard
               key={p.id}
@@ -107,7 +107,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Pagination */}
-        <div className='mt-8'>
+        <div className="mt-8">
           <Pagination
             totalItems={filteredProducts.length}
             itemsPerPage={itemsPerPage}

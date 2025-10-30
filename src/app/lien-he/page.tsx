@@ -1,3 +1,4 @@
+import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { HeroSection } from '@/components/feature/contact';
 import { MapSection } from '@/components/feature/homepage';
 import { Metadata } from 'next';
@@ -89,150 +90,149 @@ export default function ContactPage() {
     <>
       {/* Structured Data */}
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema),
         }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationSchema),
         }}
       />
 
-      <div className='w-full'>
+      <div className="w-full">
         <HeroSection />
 
-        <main className='max-w-7xl mx-auto space-y-8 py-10 px-4 sm:px-6 lg:px-8'>
-          <header className='w-full flex flex-col items-center justify-center gap-2'>
+        <main className="max-w-7xl mx-auto space-y-8 py-10 px-4 sm:px-6 lg:px-8">
+          <header className="w-full flex flex-col items-center justify-center gap-2">
             <h1
-              id='contact-heading'
-              className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase'
+              id="contact-heading"
+              className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase"
             >
               Liên hệ
             </h1>
-            {/* <ImageWithFallback
-              src='/images/titlebg.pngx'
-              alt='Đường viền trang trí cho tiêu đề Liên hệ'
+            <ImageWithFallback
+              src="/images/titlebg.jpg"
+              alt="Đường viền trang trí cho tiêu đề Liên hệ"
               width={300}
               height={100}
-              className='w-56 h-auto'
+              className="w-56 h-auto"
               priority
-            /> */}
-            <div className='w-16 h-1 bg-primary-yellow-1 mx-auto mb-10'></div>
+            />
           </header>
 
           {/* Contact Form */}
-          <section aria-labelledby='contact-form' className='max-w-4xl mx-auto'>
-            <div className='bg-white  shadow-sm border-2 border-[#0F4C8C]  p-6 md:p-8'>
+          <section aria-labelledby="contact-form" className="max-w-4xl mx-auto">
+            <div className="bg-white  shadow-sm border-2 border-[#0F4C8C]  p-6 md:p-8">
               <form
-                className='space-y-6'
-                method='POST'
-                action='https://formspree.io/f/mrbkdvvy'
+                className="space-y-6"
+                method="POST"
+                action="https://formspree.io/f/mrbkdvvy"
               >
                 {/* Honeypot chống spam */}
-                <input type='text' name='_honey' style={{ display: 'none' }} />
+                <input type="text" name="_honey" style={{ display: 'none' }} />
                 {/* Redirect về trang liên hệ sau khi gửi */}
                 <input
-                  type='hidden'
-                  name='_next'
-                  value='https://philongcorp.vn/lien-he?success=1'
+                  type="hidden"
+                  name="_next"
+                  value="https://philongcorp.vn/lien-he?success=1"
                 />
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label
-                      htmlFor='fullName'
-                      className='block text-sm font-medium text-gray-700 mb-2'
+                      htmlFor="fullName"
+                      className="block text-sm font-medium text-gray-700 mb-2"
                     >
-                      Họ và tên <span className='text-red-500'>*</span>
+                      Họ và tên <span className="text-red-500">*</span>
                     </label>
                     <input
-                      type='text'
-                      id='fullName'
-                      name='fullName'
+                      type="text"
+                      id="fullName"
+                      name="fullName"
                       required
-                      className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300'
-                      placeholder='Nhập họ và tên của bạn'
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300"
+                      placeholder="Nhập họ và tên của bạn"
                     />
                   </div>
 
                   <div>
                     <label
-                      htmlFor='phone'
-                      className='block text-sm font-medium text-gray-700 mb-2'
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-700 mb-2"
                     >
-                      Số điện thoại <span className='text-red-500'>*</span>
+                      Số điện thoại <span className="text-red-500">*</span>
                     </label>
                     <input
-                      type='tel'
-                      id='phone'
-                      name='phone'
+                      type="tel"
+                      id="phone"
+                      name="phone"
                       required
-                      pattern='[0-9]{10,11}'
-                      className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300'
-                      placeholder='Nhập số điện thoại'
+                      pattern="[0-9]{10,11}"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300"
+                      placeholder="Nhập số điện thoại"
                     />
                   </div>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label
-                      htmlFor='email'
-                      className='block text-sm font-medium text-gray-700 mb-2'
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 mb-2"
                     >
-                      Email <span className='text-red-500'>*</span>
+                      Email <span className="text-red-500">*</span>
                     </label>
                     <input
-                      type='email'
-                      id='email'
-                      name='email'
+                      type="email"
+                      id="email"
+                      name="email"
                       required
-                      className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300'
-                      placeholder='Nhập địa chỉ email'
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300"
+                      placeholder="Nhập địa chỉ email"
                     />
                   </div>
 
                   <div>
                     <label
-                      htmlFor='subject'
-                      className='block text-sm font-medium text-gray-700 mb-2'
+                      htmlFor="subject"
+                      className="block text-sm font-medium text-gray-700 mb-2"
                     >
-                      Tiêu đề <span className='text-red-500'>*</span>
+                      Tiêu đề <span className="text-red-500">*</span>
                     </label>
                     <input
-                      type='text'
-                      id='subject'
-                      name='subject'
+                      type="text"
+                      id="subject"
+                      name="subject"
                       required
-                      className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300'
-                      placeholder='Nhập tiêu đề yêu cầu'
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300"
+                      placeholder="Nhập tiêu đề yêu cầu"
                     />
                   </div>
                 </div>
 
                 <div>
                   <label
-                    htmlFor='content'
-                    className='block text-sm font-medium text-gray-700 mb-2'
+                    htmlFor="content"
+                    className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    Nội dung <span className='text-red-500'>*</span>
+                    Nội dung <span className="text-red-500">*</span>
                   </label>
                   <textarea
-                    id='content'
-                    name='content'
+                    id="content"
+                    name="content"
                     required
                     rows={6}
-                    className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300 resize-vertical'
-                    placeholder='Mô tả chi tiết yêu cầu của bạn...'
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-black outline-none transition-colors duration-300 resize-vertical"
+                    placeholder="Mô tả chi tiết yêu cầu của bạn..."
                   ></textarea>
                 </div>
 
-                <div className='text-center'>
+                <div className="text-center">
                   <button
-                    type='submit'
-                    className='inline-flex items-center px-8 py-3 bg-primary-blue-1 text-white font-medium rounded-lg hover:bg-primary-blue-1/80 transition-all duration-300'
+                    type="submit"
+                    className="inline-flex items-center px-8 py-3 bg-primary-blue-1 text-white font-medium rounded-lg hover:bg-primary-blue-1/80 transition-all duration-300"
                   >
                     Gửi yêu cầu
                   </button>

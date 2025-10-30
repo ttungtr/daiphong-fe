@@ -169,19 +169,19 @@ export default async function ProjectDetailPage({
     <>
       {/* Structured Data */}
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(projectSchema),
         }}
       />
 
-      <div className='w-full'>
+      <div className="w-full">
         <HeroSection
           breadcrumbs={[
             { label: 'Trang chủ', href: '/', isActive: false },
@@ -198,78 +198,78 @@ export default async function ProjectDetailPage({
           ]}
         />
 
-        <main className='max-w-7xl mx-auto space-y-8 py-10 px-4 sm:px-6 lg:px-8'>
-          <header className='w-full flex flex-col items-center justify-center gap-2'>
+        <main className="max-w-7xl mx-auto space-y-8 py-10 px-4 sm:px-6 lg:px-8">
+          <header className="w-full flex flex-col items-center justify-center gap-2">
             <h1
-              id='project-heading'
-              className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase'
+              id="project-heading"
+              className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase"
             >
               {project.title}
             </h1>
-            {/* <ImageWithFallback
-              src='/images/titlebg.pngx'
+            <ImageWithFallback
+              src="/images/titlebg.jpg"
               alt={`Đường viền trang trí cho tiêu đề ${project.title}`}
               width={300}
               height={100}
-              className='w-56 h-auto'
+              className="w-56 h-auto"
               priority
-            /> */}
-            <div className='w-16 h-1 bg-primary-yellow-1 mx-auto mb-10'></div>
-            <p className='text-gray-600 text-center text-sm md:text-base lg:text-lg max-w-3xl'>
+            />
+
+            <p className="text-gray-600 text-center text-sm md:text-base lg:text-lg max-w-3xl">
               {project.subtitle}
             </p>
           </header>
 
           {/* Project Details */}
           <section
-            aria-labelledby='project-details'
-            className='bg-white shadow-sm border border-gray-200 p-6 md:p-8'
+            aria-labelledby="project-details"
+            className="bg-white shadow-sm border border-gray-200 p-6 md:p-8"
           >
             <h2
-              id='project-details'
-              className='text-xl md:text-2xl font-bold text-gray-900 mb-6'
+              id="project-details"
+              className="text-xl md:text-2xl font-bold text-gray-900 mb-6"
             >
               Thông tin chi tiết dự án
             </h2>
 
-            <div className='space-y-2'>
-              <div className='border-b border-gray-200 pb-2'>
-                <dt className='font-semibold text-gray-700 mb-1'>Địa điểm</dt>
-                <dd className='text-gray-600'>{project.location}</dd>
+            <div className="space-y-2">
+              <div className="border-b border-gray-200 pb-2">
+                <dt className="font-semibold text-gray-700 mb-1">Địa điểm</dt>
+                <dd className="text-gray-600">{project.location}</dd>
               </div>
 
-              <div className='border-b border-gray-200 pb-2'>
-                <dt className='font-semibold text-gray-700 mb-1'>Quy mô</dt>
-                <dd className='text-gray-600'>{project.scale}</dd>
+              <div className="border-b border-gray-200 pb-2">
+                <dt className="font-semibold text-gray-700 mb-1">Quy mô</dt>
+                <dd className="text-gray-600">{project.scale}</dd>
               </div>
 
-              <div className='border-b border-gray-200 pb-2'>
-                <dt className='font-semibold text-gray-700 mb-1'>
+              <div className="border-b border-gray-200 pb-2">
+                <dt className="font-semibold text-gray-700 mb-1">
                   Giá trị hợp đồng
                 </dt>
-                <dd className='text-gray-600'>{project.contractValue}</dd>
+                <dd className="text-gray-600">{project.contractValue}</dd>
               </div>
 
-              <div className='border-b border-gray-200 pb-2'>
-                <dt className='font-semibold text-gray-700 mb-1'>
+              <div className="border-b border-gray-200 pb-2">
+                <dt className="font-semibold text-gray-700 mb-1">
                   Thời gian thực hiện
                 </dt>
-                <dd className='text-gray-600'>{project.duration}</dd>
+                <dd className="text-gray-600">{project.duration}</dd>
               </div>
 
-              <div className='border-b border-gray-200 pb-2'>
-                <dt className='font-semibold text-gray-700 mb-1'>
+              <div className="border-b border-gray-200 pb-2">
+                <dt className="font-semibold text-gray-700 mb-1">
                   Hạng mục thi công
                 </dt>
-                <dd className='text-gray-600'>{project.workScope}</dd>
+                <dd className="text-gray-600">{project.workScope}</dd>
               </div>
 
               <div>
-                <dt className='font-semibold text-gray-700 mb-1'>Danh mục</dt>
+                <dt className="font-semibold text-gray-700 mb-1">Danh mục</dt>
                 <dd>
                   <Link
                     href={`/du-an/${category.id}`}
-                    className='text-blue-600 hover:text-blue-800 hover:underline'
+                    className="text-blue-600 hover:text-blue-800 hover:underline"
                   >
                     {category.name}
                   </Link>
@@ -279,19 +279,19 @@ export default async function ProjectDetailPage({
           </section>
 
           {/* Project Images Gallery */}
-          <section aria-labelledby='project-gallery' className='mb-8'>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <section aria-labelledby="project-gallery" className="mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {project.images.map((image, index) => (
                 <div
                   key={index}
-                  className='relative aspect-[4/3] overflow-hidden shadow-sm'
+                  className="relative aspect-[4/3] overflow-hidden shadow-sm"
                 >
                   <ImageWithFallback
                     src={image}
                     alt={`Hình ảnh ${index + 1} của dự án ${project.title}`}
                     fill
-                    className='object-cover hover:scale-105 transition-transform duration-300'
-                    sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     priority={index < 2}
                   />
                 </div>
@@ -301,37 +301,37 @@ export default async function ProjectDetailPage({
 
           {/* Related Projects */}
           {relatedProjects.length > 0 && (
-            <section aria-labelledby='related-projects' className='mt-12'>
+            <section aria-labelledby="related-projects" className="mt-12">
               <h2
-                id='related-projects'
-                className='text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center'
+                id="related-projects"
+                className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center"
               >
                 Công trình liên quan
               </h2>
 
-              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {relatedProjects.map((relatedProject) => (
                   <Link
                     key={relatedProject.id}
                     href={`/du-an/${relatedProject.category}/${relatedProject.slug}`}
-                    className='group block bg-white border border-gray-200 overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300'
+                    className="group block bg-white border border-gray-200 overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300"
                   >
-                    <div className='aspect-video'>
+                    <div className="aspect-video">
                       <ImageWithFallback
                         src={relatedProject.images[0]}
                         alt={`${relatedProject.title} - ${relatedProject.location}`}
                         width={300}
                         height={200}
                         fill
-                        className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-300'
-                        sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                     </div>
-                    <div className='p-4'>
-                      <h3 className='text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary-blue-1 transition-colors duration-300 line-clamp-2'>
+                    <div className="p-4">
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary-blue-1 transition-colors duration-300 line-clamp-2">
                         {relatedProject.title}
                       </h3>
-                      <p className='text-gray-600 text-sm mt-1 line-clamp-2'>
+                      <p className="text-gray-600 text-sm mt-1 line-clamp-2">
                         {relatedProject.subtitle}
                       </p>
                     </div>
@@ -339,10 +339,10 @@ export default async function ProjectDetailPage({
                 ))}
               </div>
 
-              <div className='text-center mt-8'>
+              <div className="text-center mt-8">
                 <Link
                   href={`/du-an/${category.id}`}
-                  className='inline-flex items-center px-6 py-3 bg-primary-blue-1 text-white font-medium hover:bg-blue-700 transition-colors duration-300'
+                  className="inline-flex items-center px-6 py-3 bg-primary-blue-1 text-white font-medium hover:bg-blue-700 transition-colors duration-300"
                 >
                   Xem tất cả dự án {category.name}
                 </Link>

@@ -1,12 +1,13 @@
-"use client";
+'use client';
 
-import React, { useCallback } from "react";
+import React, { useCallback } from 'react';
 
 export interface SearchBarProps {
   value: string;
   onChange: (value: string) => void;
   onSubmit: () => void;
   placeholder?: string;
+  className?: string;
 }
 
 export function SearchBar({
@@ -14,10 +15,11 @@ export function SearchBar({
   onChange,
   onSubmit,
   placeholder,
+  className,
 }: SearchBarProps) {
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLInputElement>) => {
-      if (e.key === "Enter") {
+      if (e.key === 'Enter') {
         e.preventDefault();
         onSubmit();
       }
@@ -26,7 +28,9 @@ export function SearchBar({
   );
 
   return (
-    <div className="flex items-center gap-2 border border-slate-200 bg-white p-2 shadow-sm focus-within:ring-2 focus-within:ring-primary-blue-1">
+    <div
+      className={`flex items-center gap-2 border border-slate-200 bg-white p-2 shadow-sm focus-within:ring-2 focus-within:ring-primary-blue-1 ${className}`}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -47,7 +51,7 @@ export function SearchBar({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={handleKeyDown}
-        placeholder={placeholder ?? "Tìm sản phẩm..."}
+        placeholder={placeholder ?? 'Tìm sản phẩm...'}
         aria-label="Tìm kiếm sản phẩm"
       />
     </div>

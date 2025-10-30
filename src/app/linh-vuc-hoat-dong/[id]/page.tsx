@@ -128,17 +128,17 @@ export default async function ServiceDetailPage({
   return (
     <>
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbStructuredData),
         }}
       />
 
-      <div className='w-full'>
+      <div className="w-full">
         <HeroSection
           breadcrumbs={[
             { label: 'Trang chủ', href: '/', isActive: false },
@@ -155,8 +155,8 @@ export default async function ServiceDetailPage({
           ]}
         />
 
-        <div className='max-w-7xl mx-auto space-y-4 py-10 px-4 sm:px-6 lg:px-8'>
-          <header className='w-full flex flex-col items-center justify-center '>
+        <div className="max-w-7xl mx-auto space-y-4 py-10 px-4 sm:px-6 lg:px-8">
+          <header className="w-full flex flex-col items-center justify-center ">
             {/* <h1
               id="services-heading"
               className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-primary-blue-1 text-center leading-tight"
@@ -164,80 +164,79 @@ export default async function ServiceDetailPage({
               {service.title.toUpperCase()}
             </h1> */}
             <h1
-              id='services-heading'
-              className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase'
+              id="services-heading"
+              className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase"
             >
               {service.title.toUpperCase()}
             </h1>
-            {/* <ImageWithFallback
-              src='/images/titlebg.pngx'
-              alt='Đường viền trang trí tiêu đề'
+            <ImageWithFallback
+              src="/images/titlebg.jpg"
+              alt="Đường viền trang trí tiêu đề"
               width={300}
               height={100}
-              className='w-56 h-auto'
+              className="w-56 h-auto"
               priority
-            /> */}
-            <div className='w-16 h-1 bg-primary-yellow-1 mx-auto mb-10'></div>
+            />
           </header>
         </div>
 
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16'>
-          <div className='bg-gray-50 rounded-lg p-6 md:p-8 mb-12'>
-            <p className='text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center max-w-4xl mx-auto'>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+          <div className="bg-gray-50 rounded-lg p-6 md:p-8 mb-12">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center max-w-4xl mx-auto">
               {service.detailedDescription || service.description}
             </p>
           </div>
 
-          <div className='mb-16'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-              <div className='relative'>
-                <div className='aspect-w-16 aspect-h-10 rounded-lg overflow-hidden shadow-lg'>
+          <div className="mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="relative">
+                <div className="aspect-w-16 aspect-h-10 rounded-lg overflow-hidden shadow-lg">
                   <ImageWithFallback
                     src={service.images[1].url}
                     alt={service.images[1].alt}
                     width={600}
                     height={400}
-                    className='w-full h-[300px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-300'
+                    className="w-full h-[300px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>
 
-              <div className='relative'>
-                <div className='aspect-w-16 aspect-h-10 rounded-lg overflow-hidden shadow-lg'>
+              <div className="relative">
+                <div className="aspect-w-16 aspect-h-10 rounded-lg overflow-hidden shadow-lg">
                   <ImageWithFallback
                     src={service.images[2].url}
                     alt={service.images[2].alt}
                     width={600}
                     height={400}
-                    className='w-full h-[300px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-300'
+                    className="w-full h-[300px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>
             </div>
           </div>
 
-          <div className='mb-16'>
-            <div className='text-center mb-8'>
-              <h3 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4'>
+          <div className="mb-16">
+            <div className="text-center mb-8">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
                 Các Dịch Vụ Cung Cấp
               </h3>
-              <div className='w-16 h-1 bg-primary-blue-1 mx-auto rounded-full'></div>
+              <div className="w-16 h-1 bg-primary-blue-1 mx-auto rounded-full"></div>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {service.features.map((feature, index) => (
                 <div
                   key={index}
-                  className='bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300 group'
+                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300 group"
                 >
-                  <div className='flex items-start space-x-3'>
-                    <div className='flex-shrink-0'>
-                      <div className='w-6 h-6 bg-primary-blue-1 rounded-full flex items-center justify-center group-hover:bg-[#0f4c8c] transition-colors duration-300'>
-                        <div className='w-2 h-2 bg-white rounded-full'></div>
+                  <div className="flex items-start space-x-3">
+                    <div className="flex-shrink-0">
+                      <div className="w-6 h-6 bg-primary-blue-1 rounded-full flex items-center justify-center group-hover:bg-[#0f4c8c] transition-colors duration-300">
+                        <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
-                    <div className='flex-1'>
-                      <p className='text-gray-800 font-medium leading-relaxed text-sm sm:text-base md:text-lg'>
+                    <div className="flex-1">
+                      <p className="text-gray-800 font-medium leading-relaxed text-sm sm:text-base md:text-lg">
                         {feature}
                       </p>
                     </div>
@@ -247,15 +246,15 @@ export default async function ServiceDetailPage({
             </div>
           </div>
 
-          <div className='mt-16'>
-            <div className='text-center mb-8'>
-              <h3 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4'>
+          <div className="mt-16">
+            <div className="text-center mb-8">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
                 Dịch Vụ Khác
               </h3>
-              <div className='w-16 h-1 bg-primary-blue-1 mx-auto rounded-full'></div>
+              <div className="w-16 h-1 bg-primary-blue-1 mx-auto rounded-full"></div>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {servicesData
                 .filter((s) => s.id !== service.id)
                 .slice(0, 4)
@@ -263,22 +262,22 @@ export default async function ServiceDetailPage({
                   <Link
                     key={relatedService.id}
                     href={relatedService.link}
-                    className='group block bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300'
+                    className="group block bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300"
                   >
-                    <div className='aspect-w-16 aspect-h-10'>
+                    <div className="aspect-w-16 aspect-h-10">
                       <ImageWithFallback
                         src={relatedService.images[0].url}
                         alt={relatedService.images[0].alt}
                         width={300}
                         height={200}
-                        className='w-full h-[180px] object-cover group-hover:scale-105 transition-transform duration-300'
+                        className="w-full h-[180px] object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    <div className='p-4'>
-                      <h4 className='text-base sm:text-lg md:text-xl font-semibold text-gray-900 group-hover:text-primary-blue-1 transition-colors duration-300 mb-2'>
+                    <div className="p-4">
+                      <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 group-hover:text-primary-blue-1 transition-colors duration-300 mb-2">
                         {relatedService.title}
                       </h4>
-                      <p className='text-gray-600 text-xs sm:text-sm md:text-base line-clamp-2'>
+                      <p className="text-gray-600 text-xs sm:text-sm md:text-base line-clamp-2">
                         {relatedService.description}
                       </p>
                     </div>

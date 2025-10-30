@@ -140,13 +140,13 @@ export default function About() {
                 >
                   GIẤY PHÉP
                 </h2>
-                {/* <ImageWithFallback
-                  src='/images/titlebg.pngx'
-                  alt='Đường viền trang trí tiêu đề cơ cấu tổ chức'
+                <ImageWithFallback
+                  src="/images/titlebg.jpg"
+                  alt="Đường viền trang trí tiêu đề cơ cấu tổ chức"
                   width={300}
                   height={100}
-                  className='w-56 h-auto'
-                /> */}
+                  className="w-56 h-auto"
+                />
                 <div className="w-16 h-1 bg-primary-yellow-1 mx-auto mb-10"></div>
               </header>
 

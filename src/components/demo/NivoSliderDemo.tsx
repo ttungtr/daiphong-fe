@@ -5,15 +5,16 @@ import { NivoLikeSlider } from '@/components/common';
 
 // Demo images - replace with your actual images
 const demoImages = [
-  '/images/about/hero-section.png',
-  '/images/contact/hero-section.png',
+  '/images/banners/banner-1-vi.jpg',
+  '/images/banners/banner-2-vi.jpg',
+  '/images/banners/banner-3-vi.jpg',
 ];
 
 export default function NivoSliderDemo() {
   return (
-    <div className=' bg-gray-50 '>
-      <div className=' mx-auto '>
-        <div className='flex justify-center'>
+    <div className=" bg-gray-50 ">
+      <div className=" mx-auto ">
+        <div className="flex justify-center">
           <NivoLikeSlider
             images={demoImages}
             autoPlayInterval={3000}

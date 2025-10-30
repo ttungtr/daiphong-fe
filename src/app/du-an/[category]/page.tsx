@@ -87,9 +87,9 @@ export default function ProjectsPage({
   // Loading state
   if (isLoading || !category) {
     return (
-      <div className='w-full min-h-screen flex items-center justify-center'>
-        <div className='animate-pulse text-center'>
-          <div className='text-lg text-gray-600'>Đang tải...</div>
+      <div className="w-full min-h-screen flex items-center justify-center">
+        <div className="animate-pulse text-center">
+          <div className="text-lg text-gray-600">Đang tải...</div>
         </div>
       </div>
     );
@@ -163,47 +163,46 @@ export default function ProjectsPage({
   return (
     <>
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationSchema),
         }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(projectsSchema),
         }}
       />
 
-      <div className='w-full'>
+      <div className="w-full">
         <HeroSection />
 
-        <div className='max-w-7xl mx-auto space-y-4 py-10 px-4 sm:px-6 lg:px-8'>
-          <header className='w-full flex flex-col items-center justify-center gap-2'>
+        <div className="max-w-7xl mx-auto space-y-4 py-10 px-4 sm:px-6 lg:px-8">
+          <header className="w-full flex flex-col items-center justify-center gap-2">
             <h1
-              id='services-heading'
-              className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase'
+              id="services-heading"
+              className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase"
             >
               {category.name}
             </h1>
-            {/* <ImageWithFallback
-              src='/images/titlebg.pngx'
+            <ImageWithFallback
+              src="/images/titlebg.jpg"
               alt={`Đường viền trang trí cho tiêu đề ${category.name}`}
               width={300}
               height={100}
-              className='w-56 h-auto'
+              className="w-56 h-auto"
               priority
-            /> */}
-            <div className='w-16 h-1 bg-primary-yellow-1 mx-auto mb-10'></div>
+            />
           </header>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8'>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             {paginatedProjects.map((project, index) => {
               // Kiểm tra và lấy image hợp lệ
               const projectImage =
@@ -215,31 +214,31 @@ export default function ProjectsPage({
                 <Link
                   key={project.id}
                   href={`/du-an/${category.id}/${project.slug}`}
-                  className='group block bg-white border border-gray-200  overflow-hidden hover:shadow-xl hover:border-primary-blue-1 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in'
+                  className="group block bg-white border border-gray-200  overflow-hidden hover:shadow-xl hover:border-primary-blue-1 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in"
                   style={{
                     animationDelay: `${index * 100}ms`,
                   }}
                 >
-                  <div className='aspect-w-16 aspect-h-10'>
+                  <div className="aspect-w-16 aspect-h-10">
                     <ImageWithFallback
                       src={projectImage}
                       alt={`Hình ảnh dự án ${project.title} tại ${project.location} - Đại Phong Corp`}
                       width={300}
                       height={200}
                       fill
-                      className='w-full h-[180px] object-cover group-hover:scale-105 transition-transform duration-300'
-                      sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                      className="w-full h-[180px] object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
-                  <div className='p-4'>
-                    <h4 className='text-base sm:text-base md:text-base font-semibold text-gray-900 group-hover:text-primary-blue-1 transition-colors duration-300 mb-2'>
+                  <div className="p-4">
+                    <h4 className="text-base sm:text-base md:text-base font-semibold text-gray-900 group-hover:text-primary-blue-1 transition-colors duration-300 mb-2">
                       {project.title}
                     </h4>
-                    <p className='text-gray-600 text-xs sm:text-sm md:text-sm line-clamp-2'>
+                    <p className="text-gray-600 text-xs sm:text-sm md:text-sm line-clamp-2">
                       {project.subtitle}
                     </p>
-                    <div className='mt-3 pt-3 border-t border-gray-100'>
-                      <span className='text-xs text-primary-blue-1 font-medium'>
+                    <div className="mt-3 pt-3 border-t border-gray-100">
+                      <span className="text-xs text-primary-blue-1 font-medium">
                         {project.location}
                       </span>
                     </div>
@@ -251,13 +250,13 @@ export default function ProjectsPage({
 
           {/* Pagination */}
           {filteredProjects.length > itemsPerPage && (
-            <div className='mt-12'>
+            <div className="mt-12">
               <Pagination
                 totalItems={filteredProjects.length}
                 itemsPerPage={itemsPerPage}
                 currentPage={currentPage}
                 onPageChange={handlePageChange}
-                className='mt-8'
+                className="mt-8"
               />
             </div>
           )}

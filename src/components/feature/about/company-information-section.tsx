@@ -43,40 +43,40 @@ export const CompanyInformationSection: FunctionComponent = () => {
 
   return (
     <section
-      className='py-5 bg-white'
-      aria-labelledby='organizational-structure-heading'
+      className="py-5 bg-white"
+      aria-labelledby="organizational-structure-heading"
     >
-      <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10'>
-          <div className='w-full col-span-1'>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="w-full col-span-1">
             <ImageWithFallback
-              src='/images/about/thong-tin-cong-ty.pngx'
-              alt='Cơ cấu tổ chức'
+              src="/images/about/thong-tin-cong-ty.jpg"
+              alt="Cơ cấu tổ chức"
               width={500}
               height={500}
-              className='w-full h-auto'
+              className="w-full h-auto"
             />
           </div>
 
-          <div className='w-full col-span-1 content-center'>
-            <h2 className='uppercase text-lg md:text-xl lg:text-2xl font-bold text-primary-blue-1 mb-6'>
+          <div className="w-full col-span-1 content-center">
+            <h2 className="uppercase text-lg md:text-xl lg:text-2xl font-bold text-primary-blue-1 mb-6">
               Thông tin công ty
             </h2>
 
-            <table className='w-full overflow-hidden '>
-              <tbody className='w-full'>
+            <table className="w-full overflow-hidden ">
+              <tbody className="w-full">
                 {companyInformation.map((item, index) => (
                   <tr
-                    className='border-t border-gray-300 last:border-b'
+                    className="border-t border-gray-300 last:border-b"
                     key={`company-information-row-${index}`}
                   >
-                    <td className='w-1/3 align-top'>
-                      <p className='py-3 font-bold h-fit text-sm md:text-base lg:text-sm xl:text-base'>
+                    <td className="w-1/3 align-top">
+                      <p className="py-3 font-bold h-fit text-sm md:text-base lg:text-sm xl:text-base">
                         {item.label}
                       </p>
                     </td>
                     <td>
-                      <p className='text-wrap whitespace-pre-line py-2 text-sm md:text-base lg:text-sm xl:text-base'>
+                      <p className="text-wrap whitespace-pre-line py-2 text-sm md:text-base lg:text-sm xl:text-base">
                         {item.value}
                       </p>
                     </td>

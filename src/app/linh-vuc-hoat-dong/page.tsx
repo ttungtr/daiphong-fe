@@ -76,53 +76,52 @@ export default function ServicesPage() {
     <>
       {/* Structured Data for SEO */}
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      <div className='w-full'>
+      <div className="w-full">
         <HeroSection />
 
-        <div className='max-w-7xl mx-auto space-y-4 py-10 px-4 sm:px-6 lg:px-8'>
-          <header className='w-full flex flex-col items-center justify-center'>
+        <div className="max-w-7xl mx-auto space-y-4 py-10 px-4 sm:px-6 lg:px-8">
+          <header className="w-full flex flex-col items-center justify-center">
             <h1
-              id='services-heading'
-              className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center'
+              id="services-heading"
+              className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center"
             >
               LĨNH VỰC HOẠT ĐỘNG
             </h1>
-            {/* <ImageWithFallback
-              src='/images/titlebg.pngx'
-              alt='Đường viền trang trí tiêu đề'
+            <ImageWithFallback
+              src="/images/titlebg.jpg"
+              alt="Đường viền trang trí tiêu đề"
               width={300}
               height={100}
-              className='w-56 h-auto'
+              className="w-56 h-auto"
               priority
-            /> */}
-            <div className='w-16 h-1 bg-primary-yellow-1 mx-auto mb-10'></div>
+            />
           </header>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8'>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             {servicesData.map((relatedService) => (
               <Link
                 key={relatedService.id}
                 href={relatedService.link}
-                className='group block bg-white border border-gray-200  overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in'
+                className="group block bg-white border border-gray-200  overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in"
               >
-                <div className='aspect-w-16 aspect-h-10'>
+                <div className="aspect-w-16 aspect-h-10">
                   <ImageWithFallback
                     src={relatedService.images[0].url}
                     alt={relatedService.images[0].alt}
                     width={300}
                     height={200}
-                    className='w-full h-[180px] object-cover group-hover:scale-105 transition-transform duration-300'
+                    className="w-full h-[180px] object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className='p-4'>
-                  <h4 className='text-base sm:text-lg md:text-xl font-bold text-gray-900 group-hover:text-primary-blue-1 transition-colors duration-300 mb-2'>
+                <div className="p-4">
+                  <h4 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 group-hover:text-primary-blue-1 transition-colors duration-300 mb-2">
                     {relatedService.title.toUpperCase()}
                   </h4>
-                  <p className='text-gray-600 text-xs sm:text-sm md:text-base line-clamp-2'>
+                  <p className="text-gray-600 text-xs sm:text-sm md:text-base line-clamp-2">
                     {relatedService.description}
                   </p>
                 </div>

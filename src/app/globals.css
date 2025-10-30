@@ -298,3 +298,58 @@ html {
   background-size: 200px 100%;
   animation: shimmer 1.5s infinite;
 }
+
+.details {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+  margin-top: 1rem;
+}
+
+.details p {
+  margin-bottom: 1rem;
+}
+
+.details ul {
+  margin: 0 0 1rem 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+.details ul ul {
+  margin-top: 0.5rem;
+  list-style-type: circle;
+}
+
+.details li {
+  margin-bottom: 0.4rem;
+}
+
+.details strong {
+  font-weight: 600;
+  color: #111;
+}
+
+.details h1,
+.details h2,
+.details h3 {
+  font-weight: 700;
+  margin: 1.2rem 0 0.8rem;
+  color: #111827;
+}
+
+.details a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.details a:hover {
+  color: #004499;
+}
+
+.details img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+}

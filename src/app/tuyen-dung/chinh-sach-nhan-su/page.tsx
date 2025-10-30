@@ -1,3 +1,4 @@
+import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/hr-policy';
 import { Metadata } from 'next';
@@ -132,35 +133,34 @@ export default function HRPolicyPage() {
     <>
       {/* JSON-LD Structured Data */}
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData),
         }}
       />
 
-      <div className='w-full'>
+      <div className="w-full">
         <HeroSection />
 
-        <header className='w-full flex flex-col items-center justify-center my-10'>
+        <header className="w-full flex flex-col items-center justify-center my-10">
           <h1
-            id='services-heading'
-            className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center'
+            id="services-heading"
+            className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center"
           >
             CHÍNH SÁCH NHÂN SỰ
           </h1>
-          {/* <ImageWithFallback
-            src='/images/titlebg.pngx'
-            alt='Đường viền trang trí tiêu đề chính sách nhân sự'
+          <ImageWithFallback
+            src="/images/titlebg.jpg"
+            alt="Đường viền trang trí tiêu đề chính sách nhân sự"
             width={300}
             height={100}
-            className='w-56 h-auto'
+            className="w-56 h-auto"
             priority
-          /> */}
-          <div className='w-16 h-1 bg-primary-yellow-1 mx-auto mb-10'></div>
+          />
         </header>
 
-        <main role='main' aria-labelledby='services-heading'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <main role="main" aria-labelledby="services-heading">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* <ImageWithFallback
               src="/images/hr-policy/chinh-sach-nhan-su-1.pngx"
               alt="Chính sách nhân sự - Quy định về chế độ đãi ngộ và quyền lợi nhân viên"
