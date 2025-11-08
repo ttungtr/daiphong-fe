@@ -1,4 +1,5 @@
 import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/services';
 import { servicesData } from '@/data/services';
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
       'Công Ty Cổ Phần Công Nghiệp Đại Phong chuyên cung cấp dịch vụ hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy. Giải pháp cơ điện toàn diện cho công trình.',
     type: 'website',
     locale: 'vi_VN',
-    url: 'https://www.philongcorp.vn/services',
+    url: 'https://www.onggiodaiphong.com/services',
     siteName: 'Đại Phong',
     images: [
       {
@@ -48,7 +49,7 @@ const structuredData = {
   '@type': 'Organization',
   name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
   alternateName: 'Đại Phong',
-  url: 'https://www.philongcorp.vn',
+  url: 'https://www.onggiodaiphong.com',
   description:
     'Công Ty Cổ Phần Công Nghiệp Đại Phong chuyên cung cấp dịch vụ hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy',
   address: {
@@ -65,7 +66,7 @@ const structuredData = {
         name: service.title,
         description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp`,
         image: service.images[0].url,
-        url: `https://www.philongcorp.vn${service.link}`,
+        url: `https://www.onggiodaiphong.com${service.link}`,
       },
     })),
   },
@@ -91,14 +92,7 @@ export default function ServicesPage() {
             >
               LĨNH VỰC HOẠT ĐỘNG
             </h1>
-            <ImageWithFallback
-              src="/images/titlebg.jpg"
-              alt="Đường viền trang trí tiêu đề"
-              width={300}
-              height={100}
-              className="w-56 h-auto"
-              priority
-            />
+            <LineTitle alt="Đường viền trang trí tiêu đề Lĩnh vực hoạt động" />
           </header>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">

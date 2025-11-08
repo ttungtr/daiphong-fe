@@ -1,4 +1,5 @@
 import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import { projectsData } from '@/data/projects';
 import { MoveRightIcon } from 'lucide-react';
 import Link from 'next/link';
@@ -11,9 +12,16 @@ export const NewsSection: FunctionComponent = () => {
   return (
     <div className="w-full py-4 md:py-4 lg:py-8 bg-white">
       <div className="max-w-7xl flex flex-col items-center justify-center mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-xl sm:text-2xl font-bold uppercase text-center mb-2">
+        <h3 className="text-xl sm:text-2xl font-bold uppercase text-center">
           Dự án tiêu biểu
         </h3>
+
+        <LineTitle alt="Đường viền trang trí tiêu đề dự án tiêu biểu" />
+
+        <p className="text-center max-w-[90%] sm:max-w-[80%] text-black/80 text-sm sm:text-base mb-6 md:mb-8">
+          Các dự án tiêu biểu của chúng tôi được lựa chọn từ nhiều lĩnh vực khác
+          nhau.
+        </p>
 
         {/* Grid of project images */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">

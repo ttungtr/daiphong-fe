@@ -5,6 +5,7 @@ import { projectsData } from '@/data/projects';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import NotFound from './not-found';
+import LineTitle from '@/components/common/line-title';
 
 // Generate metadata for each project detail page
 export async function generateMetadata({
@@ -23,12 +24,12 @@ export async function generateMetadata({
 
   if (!project || !category) {
     return {
-      title: 'Công trình không tồn tại - Đại Phong Corp',
+      title: 'Công trình không tồn tại - Đại Phong',
       description: 'Công trình bạn đang tìm kiếm không tồn tại.',
     };
   }
 
-  const title = `${project.title} | ${category.name} - Đại Phong Corp`;
+  const title = `${project.title} | ${category.name} - Đại Phong`;
   const description = `${project.subtitle}. ${project.workScope}. Công trình tại ${project.location} với giá trị ${project.contractValue}.`;
 
   return {
@@ -37,7 +38,7 @@ export async function generateMetadata({
     keywords: [
       project.title,
       category.name.toLowerCase(),
-      'Đại Phong Corp',
+      'Đại Phong',
       'thi công MEP',
       'hệ thống điều hòa',
       'cơ điện',
@@ -49,7 +50,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       locale: 'vi_VN',
-      siteName: 'Đại Phong Corp',
+      siteName: 'Đại Phong',
       images: [
         {
           url: `/images/projects/${project.images[0]}`,
@@ -122,19 +123,19 @@ export default async function ProjectDetailPage({
         '@type': 'ListItem',
         position: 1,
         name: 'Trang chủ',
-        item: 'https://philongcorp.vn',
+        item: 'https://onggiodaiphong.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: category.name,
-        item: `https://philongcorp.vn/du-an/${category.id}`,
+        item: `https://onggiodaiphong.com/du-an/${category.id}`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: project.title,
-        item: `https://philongcorp.vn/du-an/${project.category}/${project.slug}`,
+        item: `https://onggiodaiphong.com/du-an/${project.category}/${project.slug}`,
       },
     ],
   };
@@ -145,9 +146,9 @@ export default async function ProjectDetailPage({
     '@type': 'Project',
     name: project.title,
     description: project.subtitle,
-    url: `https://philongcorp.vn/du-an/${project.category}/${project.slug}`,
+    url: `https://onggiodaiphong.com/du-an/${project.category}/${project.slug}`,
     image: project.images.map(
-      (img) => `https://philongcorp.vn/images/projects/${img}`
+      (img) => `https://onggiodaiphong.com/images/projects/${img}`
     ),
     location: {
       '@type': 'Place',
@@ -155,8 +156,8 @@ export default async function ProjectDetailPage({
     },
     organizer: {
       '@type': 'Organization',
-      name: 'Đại Phong Corp',
-      url: 'https://philongcorp.vn',
+      name: 'Đại Phong',
+      url: 'https://onggiodaiphong.com',
     },
     workPerformed: project.workScope,
     startDate: project.duration.split(' ~ ')[0],
@@ -206,13 +207,8 @@ export default async function ProjectDetailPage({
             >
               {project.title}
             </h1>
-            <ImageWithFallback
-              src="/images/titlebg.jpg"
+            <LineTitle
               alt={`Đường viền trang trí cho tiêu đề ${project.title}`}
-              width={300}
-              height={100}
-              className="w-56 h-auto"
-              priority
             />
 
             <p className="text-gray-600 text-center text-sm md:text-base lg:text-lg max-w-3xl">

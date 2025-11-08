@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Đại Phong Corp - Công Ty Cổ Phần Công Nghiệp',
-    short_name: 'Đại Phong Corp',
+    name: 'Đại Phong - Công Ty Cổ Phần Công Nghiệp',
+    short_name: 'Đại Phong',
     description:
       'Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy)',
     start_url: '/',

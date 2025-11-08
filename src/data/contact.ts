@@ -6,5 +6,5 @@ export const heroSectionData: HeroSectionProps = {
     { label: 'Liên hệ', href: '/lien-he', isActive: true },
   ],
   imageUrl: '/images/contact/hero-section.pngx',
-  imageAlt: 'Liên hệ - Đại Phong Corp',
+  imageAlt: 'Liên hệ - Đại Phong',
 };

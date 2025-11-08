@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import Image from "next/image";
-import ImagePlaceholder from "./ImagePlaceholder";
+import React, { useState } from 'react';
+import Image from 'next/image';
+import ImagePlaceholder from './ImagePlaceholder';
 
 interface ImageWithFallbackProps {
   src?: string;
@@ -14,7 +14,7 @@ interface ImageWithFallbackProps {
   sizes?: string;
   priority?: boolean;
   quality?: number;
-  placeholder?: "blur" | "empty";
+  placeholder?: 'blur' | 'empty';
   blurDataURL?: string;
   style?: React.CSSProperties;
   onClick?: () => void;
@@ -25,12 +25,12 @@ export default function ImageWithFallback({
   alt,
   width,
   height,
-  className = "",
+  className = '',
   fill = false,
   sizes,
   priority = false,
   quality = 100,
-  placeholder = "empty",
+  placeholder = 'empty',
   blurDataURL,
   onClick,
 }: ImageWithFallbackProps) {
@@ -60,11 +60,12 @@ export default function ImageWithFallback({
       }}
       onLoad={() => setIsLoading(false)}
       className={`
-          transition-opacity duration-300 
-          ${isLoading ? "opacity-0" : "opacity-100"}
-          ${onClick ? "cursor-pointer" : ""}
+          transition-opacity duration-500 ease-in-out
+          ${isLoading ? 'opacity-0' : 'opacity-100'}
+          ${onClick ? 'cursor-pointer' : ''}
           ${className}
         `}
+      style={{ willChange: isLoading ? 'opacity' : 'auto' }}
     />
   );
 }

@@ -1,4 +1,5 @@
 import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/services/hero-section';
 import { servicesData } from '@/data/services';
@@ -39,7 +40,7 @@ export async function generateMetadata({
       description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp từ Công Ty Cổ Phần Công Nghiệp Đại Phong.`,
       type: 'website',
       locale: 'vi_VN',
-      url: `https://www.philongcorp.vn/linh-vuc-hoat-dong/${service.id}`,
+      url: `https://www.onggiodaiphong.com/linh-vuc-hoat-dong/${service.id}`,
       siteName: 'Đại Phong',
       images: [
         {
@@ -86,7 +87,7 @@ export default async function ServiceDetailPage({
       '@type': 'Organization',
       name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
       alternateName: 'Đại Phong',
-      url: 'https://www.philongcorp.vn',
+      url: 'https://www.onggiodaiphong.com',
       address: {
         '@type': 'PostalAddress',
         addressCountry: 'VN',
@@ -97,7 +98,7 @@ export default async function ServiceDetailPage({
       name: 'Vietnam',
     },
     serviceType: service.title,
-    url: `https://www.philongcorp.vn/linh-vuc-hoat-dong/${service.id}`,
+    url: `https://www.onggiodaiphong.com/linh-vuc-hoat-dong/${service.id}`,
   };
 
   const breadcrumbStructuredData = {
@@ -108,19 +109,19 @@ export default async function ServiceDetailPage({
         '@type': 'ListItem',
         position: 1,
         name: 'Trang chủ',
-        item: 'https://www.philongcorp.vn',
+        item: 'https://www.onggiodaiphong.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Lĩnh vực hoạt động',
-        item: 'https://www.philongcorp.vn/linh-vuc-hoat-dong',
+        item: 'https://www.onggiodaiphong.com/linh-vuc-hoat-dong',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: service.title,
-        item: `https://www.philongcorp.vn/linh-vuc-hoat-dong/${service.id}`,
+        item: `https://www.onggiodaiphong.com/linh-vuc-hoat-dong/${service.id}`,
       },
     ],
   };
@@ -169,14 +170,7 @@ export default async function ServiceDetailPage({
             >
               {service.title.toUpperCase()}
             </h1>
-            <ImageWithFallback
-              src="/images/titlebg.jpg"
-              alt="Đường viền trang trí tiêu đề"
-              width={300}
-              height={100}
-              className="w-56 h-auto"
-              priority
-            />
+            <LineTitle alt={`Đường viền trang trí tiêu đề ${service.title}`} />
           </header>
         </div>
 

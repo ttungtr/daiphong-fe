@@ -6,8 +6,8 @@ import { JobPositionsSlider } from './job-positions-slider';
 export async function generateMetadata(): Promise<Metadata> {
   const jobCount = jobPositions.length;
 
-  const title = `Vị Trí Tuyển Dụng - ${jobCount} Cơ Hội Việc Làm | Đại Phong Corp`;
-  const description = `Khám phá ${jobCount} vị trí tuyển dụng hấp dẫn tại Đại Phong Corp. Tham gia đội ngũ chuyên nghiệp trong lĩnh vực thi công hệ thống MEP và phát triển sự nghiệp của bạn.`;
+  const title = `Vị Trí Tuyển Dụng - ${jobCount} Cơ Hội Việc Làm | Đại Phong`;
+  const description = `Khám phá ${jobCount} vị trí tuyển dụng hấp dẫn tại Đại Phong. Tham gia đội ngũ chuyên nghiệp trong lĩnh vực thi công hệ thống MEP và phát triển sự nghiệp của bạn.`;
 
   return {
     title,
@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
     keywords: [
       'tuyển dụng',
       'việc làm',
-      'Đại Phong Corp',
+      'Đại Phong',
       'career',
       'job opportunities',
       'MEP engineer',
@@ -28,13 +28,13 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       type: 'website',
       locale: 'vi_VN',
-      siteName: 'Đại Phong Corp',
+      siteName: 'Đại Phong',
       images: [
         {
           url: '/images/hr-policy/hero-section.pngx',
           width: 1200,
           height: 630,
-          alt: 'Tuyển dụng tại Đại Phong Corp',
+          alt: 'Tuyển dụng tại Đại Phong',
         },
       ],
     },
@@ -70,19 +70,19 @@ export default function JobPositionsPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Trang chủ',
-        item: 'https://philongcorp.vn',
+        item: 'https://onggiodaiphong.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Tuyển dụng',
-        item: 'https://philongcorp.vn/tuyen-dung',
+        item: 'https://onggiodaiphong.com/tuyen-dung',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Vị trí tuyển dụng',
-        item: 'https://philongcorp.vn/tuyen-dung/vi-tri-tuyen-dung',
+        item: 'https://onggiodaiphong.com/tuyen-dung/vi-tri-tuyen-dung',
       },
     ],
   };
@@ -90,9 +90,9 @@ export default function JobPositionsPage() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Đại Phong Corp',
-    url: 'https://philongcorp.vn',
-    logo: 'https://philongcorp.vn/logo.pngx',
+    name: 'Đại Phong',
+    url: 'https://onggiodaiphong.com',
+    logo: 'https://onggiodaiphong.com/logo.pngx',
     description: 'Công ty chuyên thi công hệ thống MEP (cơ điện) chuyên nghiệp',
     address: {
       '@type': 'PostalAddress',
@@ -103,8 +103,8 @@ export default function JobPositionsPage() {
   const jobPostingsSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Vị trí tuyển dụng - Đại Phong Corp',
-    description: 'Danh sách các vị trí tuyển dụng tại Đại Phong Corp',
+    name: 'Vị trí tuyển dụng - Đại Phong',
+    description: 'Danh sách các vị trí tuyển dụng tại Đại Phong',
     numberOfItems: jobPositions.length,
     itemListElement: jobPositions.map((job, index) => ({
       '@type': 'ListItem',
@@ -115,8 +115,8 @@ export default function JobPositionsPage() {
         description: job.title,
         hiringOrganization: {
           '@type': 'Organization',
-          name: 'Đại Phong Corp',
-          sameAs: 'https://philongcorp.vn',
+          name: 'Đại Phong',
+          sameAs: 'https://onggiodaiphong.com',
         },
         jobLocation: {
           '@type': 'Place',
@@ -125,7 +125,7 @@ export default function JobPositionsPage() {
             addressCountry: 'VN',
           },
         },
-        url: `https://philongcorp.vn/tuyen-dung/vi-tri-tuyen-dung/${job.id}`,
+        url: `https://onggiodaiphong.com/tuyen-dung/vi-tri-tuyen-dung/${job.id}`,
         datePosted: new Date().toISOString(),
         validThrough: new Date(
           Date.now() + 90 * 24 * 60 * 60 * 1000
@@ -138,28 +138,28 @@ export default function JobPositionsPage() {
   return (
     <>
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationSchema),
         }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jobPostingsSchema),
         }}
       />
 
-      <div className='w-full'>
+      <div className="w-full">
         <HeroSection
-          imageUrl='/images/hr-policy/hr-policy-banner.pngx'
-          imageAlt='Chính sách nhân sự - Đại Phong Corp'
+          imageUrl="/images/hr-policy/hr-policy-banner.pngx"
+          imageAlt="Chính sách nhân sự - Đại Phong"
           breadcrumbs={[
             { label: 'Trang chủ', href: '/', isActive: false },
             {
@@ -175,8 +175,8 @@ export default function JobPositionsPage() {
           ]}
         />
 
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-6'>
-          <h1 className='text-xl md:text-2xl lg:text-3xl font-bold text-center'>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-6">
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
             Vị trí tuyển dụng
           </h1>
 

@@ -1,3 +1,4 @@
+import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { heroSectionData } from '@/data/about';
 import { BreadcrumbItem } from '@/data/services';
 import { ChevronRight } from 'lucide-react';
@@ -11,7 +12,7 @@ interface HeroSectionProps {
 export const HeroSection: FunctionComponent<HeroSectionProps> = ({
   breadcrumbs: breadcrumbsProps,
 }) => {
-  // const { imageUrl, imageAlt } = heroSectionData;
+  const { imageUrl, imageAlt } = heroSectionData;
   const breadcrumbs = breadcrumbsProps || heroSectionData.breadcrumbs;
 
   const breadcrumbStructuredData = {
@@ -29,15 +30,15 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = ({
     <>
       {/* Structured Data for SEO */}
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbStructuredData),
         }}
       />
 
-      <section className='relative' role='banner'>
+      <section className="relative" role="banner">
         {/* Hero Image with SEO optimizations */}
-        {/* <ImageWithFallback
+        <ImageWithFallback
           src={imageUrl}
           alt={imageAlt}
           width={1000}
@@ -45,23 +46,23 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = ({
           className="w-full h-52 object-center object-cover lg:h-auto"
           priority
           quality={85}
-        /> */}
+        />
 
         {/* Breadcrumb Navigation - positioned at bottom */}
         <nav
-          aria-label='Breadcrumb'
-          className='absolute bottom-0 left-0 right-0 h-14 bg-black/70'
-          role='navigation'
+          aria-label="Breadcrumb"
+          className="absolute bottom-0 left-0 right-0 h-14 bg-black/70"
+          role="navigation"
         >
-          <div className='container mx-auto px-4 sm:px-6 lg:px-8 h-full'>
-            <div className='max-w-7xl mx-auto h-full flex items-center'>
-              <ol className='flex items-center space-x-1 sm:space-x-2 text-white text-xs sm:text-sm md:text-lg'>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full">
+            <div className="max-w-7xl mx-auto h-full flex items-center">
+              <ol className="flex items-center space-x-1 sm:space-x-2 text-white text-xs sm:text-sm md:text-lg">
                 {breadcrumbs.map((item, index) => (
-                  <li key={item.href} className='flex items-center'>
+                  <li key={item.href} className="flex items-center">
                     {item.isActive ? (
                       <span
-                        className='text-white font-bold truncate max-w-[120px] sm:max-w-none'
-                        aria-current='page'
+                        className="text-white font-bold truncate max-w-[120px] sm:max-w-none"
+                        aria-current="page"
                         title={item.label}
                       >
                         {item.label}
@@ -69,7 +70,7 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = ({
                     ) : (
                       <Link
                         href={item.href}
-                        className='text-white hover:text-gray-200 transition-colors truncate max-w-[100px] sm:max-w-none'
+                        className="text-white hover:text-gray-200 transition-colors truncate max-w-[100px] sm:max-w-none"
                         title={`Đi tới ${item.label}`}
                       >
                         {item.label}
@@ -78,8 +79,8 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = ({
 
                     {index < breadcrumbs.length - 1 && (
                       <ChevronRight
-                        className='w-3 h-3 sm:w-4 sm:h-4 mx-1 sm:mx-2 text-white/60 flex-shrink-0'
-                        aria-hidden='true'
+                        className="w-3 h-3 sm:w-4 sm:h-4 mx-1 sm:mx-2 text-white/60 flex-shrink-0"
+                        aria-hidden="true"
                       />
                     )}
                   </li>

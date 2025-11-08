@@ -1,4 +1,5 @@
 import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import { FunctionComponent } from 'react';
 
 export const LetterSection: FunctionComponent = () => {
@@ -47,22 +48,15 @@ export const LetterSection: FunctionComponent = () => {
               >
                 GIỚI THIỆU CÔNG TY
               </h2>
-              {/* <ImageWithFallback
-                src="/images/titlebg.pngx"
-                alt="Đường viền trang trí tiêu đề thư ngỏ Công Ty Cổ Phần Công Nghiệp Đại Phong"
-                width={300}
-                height={100}
-                className="w-56 h-auto "
-                priority
-              /> */}
+              <LineTitle alt="Đường viền trang trí tiêu đề giới thiệu công ty" />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-12 items-start">
               <div className="space-y-4 md:space-y-6 lg:col-span-7 order-1 lg:order-1">
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
-                  <strong className="text-black">Đại Phong Corp</strong> là đơn
-                  vị tiên phong trong lĩnh vực sản xuất và gia công các sản phẩm
-                  cơ điện chuyên nghiệp. Chúng tôi chuyên cung cấp các giải pháp
+                  <strong className="text-black">Đại Phong</strong> là đơn vị
+                  tiên phong trong lĩnh vực sản xuất và gia công các sản phẩm cơ
+                  điện chuyên nghiệp. Chúng tôi chuyên cung cấp các giải pháp
                   toàn diện về ống gió, miệng gió, van gió, thang – máng cáp và
                   các phụ kiện liên quan cho hệ thống HVAC.
                 </p>

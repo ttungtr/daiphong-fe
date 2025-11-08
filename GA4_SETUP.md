@@ -1,9 +1,9 @@
-# Hướng dẫn cấu hình Google Analytics 4 cho Đại Phong Corp
+# Hướng dẫn cấu hình Google Analytics 4 cho Đại Phong
 
 ## 1. Thông tin hiện tại
 
 - **Measurement ID**: `G-3XXG55DLFC` ✅ (đã có)
-- **Domain**: philongcorp.vn (deploy trên Vercel)
+- **Domain**: onggiodaiphong.com (deploy trên Vercel)
 
 ## 2. Cấu hình Google Analytics 4
 

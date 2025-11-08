@@ -44,7 +44,7 @@ export const newsData: INew[] = [
     category: ENewCategory.NEWS,
     tags: ['AEON', 'THƯƠNG MẠI', 'BÌNH TÂN'],
     paragraphs: [
-      'Đại Phong Corp chính thức khởi công dự án Trung tâm thương mại AEON Mall Bình Tân - một trong những trung tâm thương mại quy mô lớn nhất tại TP. Hồ Chí Minh với diện tích 180,000 m2.',
+      'Đại Phong chính thức khởi công dự án Trung tâm thương mại AEON Mall Bình Tân - một trong những trung tâm thương mại quy mô lớn nhất tại TP. Hồ Chí Minh với diện tích 180,000 m2.',
       'Dự án được đầu tư bởi tập đoàn AEON Nhật Bản, nằm tại vị trí đắc địa Quận Bình Tân với 3 tầng hầm và 4 tầng nổi. Đại Phong được lựa chọn thi công toàn bộ hệ thống HVAC và cơ điện cho công trình này.',
       '🏬 Chi tiết dự án:\n🔻 Địa điểm: 1 Đường số 17A, Bình Trị Đông B, Bình Tân\n🔻 Quy mô: 3 tầng hầm, 4 tầng nổi, 180,000 m2\n🔻 Giá trị: ~4.2 tỷ VNĐ\n🔻 Thời gian: 01/2024 - 09/2024',
       'Đây là dự án thương mại lớn thứ 3 mà Đại Phong thực hiện cho tập đoàn AEON tại Việt Nam, khẳng định mối quan hệ hợp tác bền vững và niềm tin từ phía chủ đầu tư Nhật Bản.',

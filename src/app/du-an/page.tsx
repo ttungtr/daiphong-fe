@@ -2,6 +2,7 @@
 
 import { Pagination } from '@/components/common';
 import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/projects';
 import { projectsData } from '@/data/projects';
@@ -15,7 +16,7 @@ const structuredData = {
   '@type': 'Organization',
   name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
   alternateName: 'Đại Phong',
-  url: 'https://www.philongcorp.vn',
+  url: 'https://www.onggiodaiphong.com',
   description:
     'Công Ty Cổ Phần Công Nghiệp Đại Phong chuyên cung cấp dịch vụ hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy',
   address: {
@@ -32,7 +33,7 @@ const structuredData = {
         name: service.title,
         description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp`,
         image: service.images[0].url,
-        url: `https://www.philongcorp.vn${service.link}`,
+        url: `https://www.onggiodaiphong.com${service.link}`,
       },
     })),
   },
@@ -77,20 +78,12 @@ export default function ProjectPage() {
             >
               DỰ ÁN
             </h1>
-            <ImageWithFallback
-              src="/images/titlebg.jpg"
-              alt="Đường viền trang trí tiêu đề"
-              width={300}
-              height={100}
-              className="w-56 h-auto"
-              priority
-            />
+            <LineTitle alt="Đường viền trang trí tiêu đề dự án" />
 
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 text-center max-w-4xl">
-              Trong thời gian qua, Đại Phong Corp tự hào được nhiều đối tác tin
-              tưởng và lựa chọn thông qua các dự án mà chúng tôi đã triển khai
-              thành công. Khách hàng của chúng tôi thuộc nhiều lĩnh vực khác
-              nhau.
+              Trong thời gian qua, Đại Phong tự hào được nhiều đối tác tin tưởng
+              và lựa chọn thông qua các dự án mà chúng tôi đã triển khai thành
+              công. Khách hàng của chúng tôi thuộc nhiều lĩnh vực khác nhau.
             </p>
           </header>
 
@@ -107,7 +100,7 @@ export default function ProjectPage() {
                 <div className="aspect-w-16 aspect-h-10">
                   <ImageWithFallback
                     src={project.images[0]}
-                    alt={`Hình ảnh dự án ${project.title} tại ${project.location} - Đại Phong Corp`}
+                    alt={`Hình ảnh dự án ${project.title} tại ${project.location} - Đại Phong`}
                     width={300}
                     height={200}
                     fill

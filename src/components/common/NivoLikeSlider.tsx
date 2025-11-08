@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useCallback, useEffect, useState } from 'react';
 
 interface NivoLikeSliderProps {
   images: string[];
@@ -23,7 +24,6 @@ export default function NivoLikeSlider({
   height,
 }: NivoLikeSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [dimensions, setDimensions] = useState({ width: 1366, height: 550 });
 
@@ -68,14 +68,14 @@ export default function NivoLikeSlider({
 
   // Auto play logic
   useEffect(() => {
-    if (images.length <= 1 || isHovered || isTransitioning) return;
+    if (images.length <= 1 || isTransitioning) return;
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     }, autoPlayInterval);
 
     return () => clearInterval(interval);
-  }, [images.length, autoPlayInterval, isHovered, isTransitioning]);
+  }, [images.length, autoPlayInterval, isTransitioning]);
 
   const handleImageChange = useCallback(() => {
     if (images.length <= 1) return;
@@ -157,15 +157,15 @@ export default function NivoLikeSlider({
   const boxPositions = createBoxPositions();
 
   // Navigation handlers
-  // const goToNext = useCallback(() => {
-  //   if (images.length <= 1 || isTransitioning) return;
-  //   setCurrentIndex((prev) => (prev + 1) % images.length);
-  // }, [images.length, isTransitioning]);
+  const goToNext = useCallback(() => {
+    if (images.length <= 1 || isTransitioning) return;
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  }, [images.length, isTransitioning]);
 
-  // const goToPrevious = useCallback(() => {
-  //   if (images.length <= 1 || isTransitioning) return;
-  //   setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  // }, [images.length, isTransitioning]);
+  const goToPrevious = useCallback(() => {
+    if (images.length <= 1 || isTransitioning) return;
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  }, [images.length, isTransitioning]);
 
   if (images.length === 0) {
     return (
@@ -176,7 +176,7 @@ export default function NivoLikeSlider({
           height: `${actualHeight}px`,
         }}
       >
-        <p className='text-gray-500'>No images provided</p>
+        <p className="text-gray-500">No images provided</p>
       </div>
     );
   }
@@ -190,25 +190,21 @@ export default function NivoLikeSlider({
       }}
     >
       {/* Image Container */}
-      <div
-        className='relative w-full h-full'
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <AnimatePresence mode='wait'>
+      <div className="relative w-full h-full">
+        <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
-            className='absolute inset-0'
+            className="absolute inset-0"
             variants={containerVariants}
-            initial='hidden'
-            animate='visible'
-            exit='exit'
+            initial="hidden"
+            animate="visible"
+            exit="exit"
           >
             {/* Animated boxes - each showing a piece of the image */}
             {boxPositions.map((position, index) => (
               <motion.div
                 key={`${currentIndex}-${index}`}
-                className='absolute bg-no-repeat'
+                className="absolute bg-no-repeat"
                 style={{
                   left: position.x,
                   top: position.y,
@@ -225,49 +221,25 @@ export default function NivoLikeSlider({
         </AnimatePresence>
 
         {/* Navigation Arrows */}
-        {/* {images.length > 1 && (
+        {images.length > 1 && (
           <>
             <button
               onClick={goToPrevious}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 text-white  flex items-center justify-center transition-colors duration-200 z-10"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 text-white  flex items-center justify-center transition-colors duration-200 z-10 cursor-pointer"
               aria-label="Previous image"
             >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
+              <ChevronLeft />
             </button>
 
             <button
               onClick={goToNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 text-white  flex items-center justify-center transition-colors duration-200 z-10"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 text-white  flex items-center justify-center transition-colors duration-200 z-10 cursor-pointer"
               aria-label="Next image"
             >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <ChevronRight />
             </button>
           </>
-        )} */}
+        )}
       </div>
     </div>
   );

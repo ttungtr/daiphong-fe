@@ -1,8 +1,10 @@
 import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import {
   CompanyInformationSection,
   HeroSection,
   LetterSection,
+  OrganizationalStructureSection,
   Tab,
 } from '@/components/feature/about';
 import {
@@ -88,13 +90,13 @@ export default function About() {
         '@type': 'ListItem',
         position: 1,
         name: 'Trang chủ',
-        item: 'https://www.philongcorp.vn',
+        item: 'https://www.onggiodaiphong.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Về chúng tôi',
-        item: 'https://www.philongcorp.vn/about',
+        item: 'https://www.onggiodaiphong.com/about',
       },
     ],
   };
@@ -121,42 +123,31 @@ export default function About() {
 
         <LetterSection />
 
-        {/* <CoreValuesSection /> */}
-
         <VisionMissionSection />
+
+        <OrganizationalStructureSection />
 
         <CompanyInformationSection />
 
-        <section
-          className="py-5 bg-white"
-          aria-labelledby="organizational-structure-heading"
-        >
+        <section className="py-5 bg-white" aria-labelledby="license-heading">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto space-y-4 flex flex-col items-center justify-center">
               <header className="w-full flex flex-col items-center justify-center">
                 <h2
-                  id="organizational-structure-heading"
+                  id="license-heading"
                   className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center"
                 >
                   GIẤY PHÉP
                 </h2>
-                <ImageWithFallback
-                  src="/images/titlebg.jpg"
-                  alt="Đường viền trang trí tiêu đề cơ cấu tổ chức"
-                  width={300}
-                  height={100}
-                  className="w-56 h-auto"
-                />
-                <div className="w-16 h-1 bg-primary-yellow-1 mx-auto mb-10"></div>
+                <LineTitle alt="Đường viền trang trí tiêu đề giấy phép" />
               </header>
 
               <ImageWithFallback
                 src="/images/about/giay-phep.pngx"
-                alt="Cơ cấu tổ chức và bộ máy quản lý của Công Ty Cổ Phần Công Nghiệp Đại Phong - Sơ đồ tổ chức từ Hội đồng quản trị đến các phòng ban chuyên môn"
+                alt="Giấy phép sản xuất ống thông gió chất lượng cao"
                 width={400}
                 height={600}
                 className="w-1/2 h-auto mt-10"
-                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
             </div>
           </div>
@@ -164,7 +155,6 @@ export default function About() {
 
         <PartnerSection />
 
-        {/* <CTASection /> */}
         <MapSection />
       </div>
     </>

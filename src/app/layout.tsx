@@ -13,13 +13,13 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: {
     default:
-      'Đại Phong Corp - Công Ty Cổ Phần Công Nghiệp | Thi công hệ thống MEP chuyên nghiệp',
-    template: '%s | Đại Phong Corp',
+      'Đại Phong - Công Ty Cổ Phần Công Nghiệp | Thi công hệ thống MEP chuyên nghiệp',
+    template: '%s | Đại Phong',
   },
   description:
-    'Đại Phong Corp - Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy). Tư vấn, thiết kế và thi công chuyên nghiệp với đội ngũ kỹ sư giàu kinh nghiệm.',
+    'Đại Phong - Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy). Tư vấn, thiết kế và thi công chuyên nghiệp với đội ngũ kỹ sư giàu kinh nghiệm.',
   keywords: [
-    'Đại Phong Corp',
+    'Đại Phong',
     'thi công hệ thống MEP',
     'hệ thống điện',
     'hệ thống nước',
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     'cấp thoát nước',
     'HVAC',
   ],
-  authors: [{ name: 'Đại Phong Corp' }],
-  creator: 'Đại Phong Corp',
-  publisher: 'Đại Phong Corp',
+  authors: [{ name: 'Đại Phong' }],
+  creator: 'Đại Phong',
+  publisher: 'Đại Phong',
   robots: {
     index: true,
     follow: true,
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'vi_VN',
-    url: 'https://www.philongcorp.vn',
-    title: 'Đại Phong Corp - Công Ty Cổ Phần Công Nghiệp',
+    url: 'https://www.onggiodaiphong.com',
+    title: 'Đại Phong - Công Ty Cổ Phần Công Nghiệp',
     description:
       'Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy)',
-    siteName: 'Đại Phong Corp',
+    siteName: 'Đại Phong',
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@philongcorp',
-    creator: '@philongcorp',
+    site: '@onggiodaiphong',
+    creator: '@onggiodaiphong',
   },
   alternates: {
     canonical: '/',
@@ -75,15 +75,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='vi'>
+    <html lang="vi" className="scroll-smooth">
       <body
-        className={`${nunito.variable} font-sans antialiased`}
+        className={`${nunito.variable} font-sans antialiased bg-white`}
         suppressHydrationWarning={true}
       >
         <GoogleAnalytics />
         <OnlineTrackingProvider>
           <Header />
-          <main>{children}</main>
+          <main className="bg-white min-h-screen">{children}</main>
           <Footer />
           <FloatingContactButtons />
         </OnlineTrackingProvider>

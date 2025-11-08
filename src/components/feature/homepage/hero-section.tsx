@@ -28,10 +28,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
   const organizationStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Đại Phong Corp',
+    name: 'Đại Phong',
     alternateName: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
-    url: 'https://www.philongcorp.vn',
-    logo: 'https://www.philongcorp.vn/images/logo.pngx',
+    url: 'https://www.onggiodaiphong.com',
+    logo: 'https://www.onggiodaiphong.com/images/logo.pngx',
     description:
       'Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy)',
     address: {
@@ -47,35 +47,35 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
       availableLanguage: 'Vietnamese',
     },
     sameAs: [
-      'https://www.facebook.com/philongcorp',
-      'https://www.linkedin.com/company/philongcorp',
+      'https://www.facebook.com/onggiodaiphong',
+      'https://www.linkedin.com/company/onggiodaiphong',
     ],
   };
 
   // Alt text descriptions for slides
   const slideAltTexts = [
-    'Đại Phong Corp - Thi công hệ thống MEP chuyên nghiệp, dự án tiêu biểu',
-    'Đại Phong Corp - Hệ thống điện, nước, điều hòa thông gió chất lượng cao',
-    'Đại Phong Corp - Phòng cháy chữa cháy và hệ thống điện nhẹ',
-    'Đại Phong Corp - Đội ngũ kỹ sư giàu kinh nghiệm, công nghệ hiện đại',
+    'Đại Phong - Thi công hệ thống MEP chuyên nghiệp, dự án tiêu biểu',
+    'Đại Phong - Hệ thống điện, nước, điều hòa thông gió chất lượng cao',
+    'Đại Phong - Phòng cháy chữa cháy và hệ thống điện nhẹ',
+    'Đại Phong - Đội ngũ kỹ sư giàu kinh nghiệm, công nghệ hiện đại',
   ];
 
   return (
     <>
       {/* Organization Structured Data for SEO */}
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationStructuredData),
         }}
       />
 
-      <div className='group relative w-full h-auto overflow-hidden'>
+      <div className="group relative w-full h-auto overflow-hidden">
         <Swiper
           modules={[Navigation, EffectFade, Autoplay]}
           spaceBetween={0}
           slidesPerView={1}
-          effect='fade'
+          effect="fade"
           fadeEffect={{
             crossFade: true,
           }}
@@ -89,7 +89,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
             nextEl: '.swiper-button-next-custom',
             prevEl: '.swiper-button-prev-custom',
           }}
-          className='w-full h-full'
+          className="w-full h-full"
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -101,9 +101,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
                 src={slide.image}
                 alt={
                   slideAltTexts[index] ||
-                  `Đại Phong Corp - Slide ${slide.id} - Thi công hệ thống MEP`
+                  `Đại Phong - Slide ${slide.id} - Thi công hệ thống MEP`
                 }
-                className='w-full'
+                className="w-full"
                 width={1366}
                 height={550}
                 priority={index === 0}
@@ -113,11 +113,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
           ))}
         </Swiper>
 
-        <button className='swiper-button-prev-custom hexagon-btn absolute left-3 top-1/2 -translate-y-1/2 z-20 w-13 h-13 bg-white/50 cursor-pointer backdrop-blur-sm text-black flex items-center justify-center text-lg font-bold transition-all duration-300 opacity-0 group-hover:opacity-100'>
-          <MingcuteRightFill className='rotate-180' />
+        <button className="swiper-button-prev-custom hexagon-btn absolute left-3 top-1/2 -translate-y-1/2 z-20 w-13 h-13 bg-white/50 cursor-pointer backdrop-blur-sm text-black flex items-center justify-center text-lg font-bold transition-all duration-300 opacity-0 group-hover:opacity-100">
+          <MingcuteRightFill className="rotate-180" />
         </button>
 
-        <button className='swiper-button-next-custom hexagon-btn absolute right-3 top-1/2 -translate-y-1/2 z-20 w-13 h-13 bg-white/50 cursor-pointer backdrop-blur-sm text-black flex items-center justify-center text-lg font-bold transition-all duration-300 opacity-0 group-hover:opacity-100'>
+        <button className="swiper-button-next-custom hexagon-btn absolute right-3 top-1/2 -translate-y-1/2 z-20 w-13 h-13 bg-white/50 cursor-pointer backdrop-blur-sm text-black flex items-center justify-center text-lg font-bold transition-all duration-300 opacity-0 group-hover:opacity-100">
           <MingcuteRightFill />
         </button>
       </div>

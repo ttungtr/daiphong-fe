@@ -1,4 +1,4 @@
-# 🚀 Hướng dẫn nhanh - Google Analytics 4 cho Đại Phong Corp
+# 🚀 Hướng dẫn nhanh - Google Analytics 4 cho Đại Phong
 
 ## ✅ Đã hoàn thành
 

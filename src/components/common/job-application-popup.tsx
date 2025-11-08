@@ -139,7 +139,7 @@ export default function JobApplicationPopup({
 
   return (
     <div
-      className='fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4'
+      className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
       onClick={handleOverlayClick}
     >
       <div
@@ -156,169 +156,169 @@ export default function JobApplicationPopup({
         }}
       >
         {/* Header */}
-        <div className='bg-primary-blue-1 text-white p-6 relative'>
-          <h2 className='text-2xl font-bold text-center'>ĐĂNG KÝ ỨNG TUYỂN</h2>
-          <p className='text-center text-sm mt-2 opacity-90'>{jobTitle}</p>
+        <div className="bg-primary-blue-1 text-white p-6 relative">
+          <h2 className="text-2xl font-bold text-center">ĐĂNG KÝ ỨNG TUYỂN</h2>
+          <p className="text-center text-sm mt-2 opacity-90">{jobTitle}</p>
           <button
             onClick={onClose}
-            className='absolute top-4 right-4 text-white hover:text-gray-200 transition-colors duration-200 cursor-pointer'
+            className="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors duration-200 cursor-pointer"
           >
             <X size={24} />
           </button>
         </div>
 
         {/* Content */}
-        <div className='p-6'>
-          <form onSubmit={handleSubmit} className='space-y-6'>
+        <div className="p-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             {/* Honeypot chống spam */}
-            <input type='text' name='_honey' style={{ display: 'none' }} />
+            <input type="text" name="_honey" style={{ display: 'none' }} />
 
             {/* Redirect về trang liên hệ sau khi gửi */}
             <input
-              type='hidden'
-              name='_next'
-              value='https://philongcorp.vn/lien-he?success=1'
+              type="hidden"
+              name="_next"
+              value="https://onggiodaiphong.com/lien-he?success=1"
             />
 
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Section - Form Fields */}
-              <div className='space-y-6'>
+              <div className="space-y-6">
                 <div>
                   <label
-                    htmlFor='fullName'
-                    className='block text-sm font-medium text-gray-700 mb-2'
+                    htmlFor="fullName"
+                    className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    Họ và tên <span className='text-red-500'>*</span>
+                    Họ và tên <span className="text-red-500">*</span>
                   </label>
                   <input
-                    type='text'
-                    id='fullName'
-                    name='fullName'
+                    type="text"
+                    id="fullName"
+                    name="fullName"
                     required
-                    className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary-blue-1 outline-none transition-colors duration-300'
-                    placeholder='Nhập họ và tên của bạn'
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary-blue-1 outline-none transition-colors duration-300"
+                    placeholder="Nhập họ và tên của bạn"
                   />
                 </div>
 
                 <div>
                   <label
-                    htmlFor='phone'
-                    className='block text-sm font-medium text-gray-700 mb-2'
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    Số điện thoại <span className='text-red-500'>*</span>
+                    Số điện thoại <span className="text-red-500">*</span>
                   </label>
                   <input
-                    type='tel'
-                    id='phone'
-                    name='phone'
+                    type="tel"
+                    id="phone"
+                    name="phone"
                     required
-                    pattern='[0-9]{10,11}'
-                    className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary-blue-1 outline-none transition-colors duration-300'
-                    placeholder='Nhập số điện thoại'
+                    pattern="[0-9]{10,11}"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary-blue-1 outline-none transition-colors duration-300"
+                    placeholder="Nhập số điện thoại"
                   />
                 </div>
 
                 <div>
                   <label
-                    htmlFor='email'
-                    className='block text-sm font-medium text-gray-700 mb-2'
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-2"
                   >
-                    Email <span className='text-red-500'>*</span>
+                    Email <span className="text-red-500">*</span>
                   </label>
                   <input
-                    type='email'
-                    id='email'
-                    name='email'
+                    type="email"
+                    id="email"
+                    name="email"
                     required
-                    className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary-blue-1 outline-none transition-colors duration-300'
-                    placeholder='Nhập địa chỉ email'
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary-blue-1 outline-none transition-colors duration-300"
+                    placeholder="Nhập địa chỉ email"
                   />
                 </div>
 
                 <div>
                   <label
-                    htmlFor='message'
-                    className='block text-sm font-medium text-gray-700 mb-2'
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-2"
                   >
                     Lời nhắn cho nhà tuyển dụng
                   </label>
                   <textarea
-                    id='message'
-                    name='message'
+                    id="message"
+                    name="message"
                     value={message}
                     onChange={handleMessageChange}
                     rows={4}
-                    className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary-blue-1 outline-none transition-colors duration-300 resize-vertical'
-                    placeholder='Nhập lời nhắn cho nhà tuyển dụng...'
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary-blue-1 outline-none transition-colors duration-300 resize-vertical"
+                    placeholder="Nhập lời nhắn cho nhà tuyển dụng..."
                   ></textarea>
-                  <div className='text-xs text-gray-500 mt-1'>
+                  <div className="text-xs text-gray-500 mt-1">
                     {message.length} of 500 max characters
                   </div>
                 </div>
               </div>
 
               {/* Right Section - File Upload */}
-              <div className='border-2 border-dashed border-primary-blue-1 p-6'>
-                <div className='space-y-4'>
+              <div className="border-2 border-dashed border-primary-blue-1 p-6">
+                <div className="space-y-4">
                   <div>
                     <input
                       ref={fileInputRef}
-                      type='file'
+                      type="file"
                       onChange={handleFileSelect}
-                      className='hidden'
-                      accept='.pdf,.doc,.docx,.pngx,.jpeg,.pngx'
+                      className="hidden"
+                      accept=".pdf,.doc,.docx,.pngx,.jpeg,.pngx"
                     />
                     <button
-                      type='button'
+                      type="button"
                       onClick={() => fileInputRef.current?.click()}
-                      className='bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400 transition-colors duration-200'
+                      className="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400 transition-colors duration-200"
                     >
                       Choose File
                     </button>
-                    <span className='ml-2 text-sm text-gray-500'>
+                    <span className="ml-2 text-sm text-gray-500">
                       {selectedFile ? 'File selected' : 'No file chosen'}
                     </span>
                   </div>
 
-                  <div className='flex items-center text-primary-blue-1'>
-                    <span className='text-2xl mr-2'>+</span>
-                    <span className='text-sm font-medium'>Thêm CV</span>
+                  <div className="flex items-center text-primary-blue-1">
+                    <span className="text-2xl mr-2">+</span>
+                    <span className="text-sm font-medium">Thêm CV</span>
                   </div>
 
                   <div
-                    className='border-2 border-dashed border-gray-300 p-6 text-center hover:border-primary-blue-1 transition-colors duration-200 cursor-pointer'
+                    className="border-2 border-dashed border-gray-300 p-6 text-center hover:border-primary-blue-1 transition-colors duration-200 cursor-pointer"
                     onDrop={handleFileDrop}
                     onDragOver={handleDragOver}
                     onClick={() => fileInputRef.current?.click()}
                   >
-                    <div className='text-gray-600 mb-2'>
+                    <div className="text-gray-600 mb-2">
                       Chọn hoặc kéo thả CV của bạn vào đây
                     </div>
-                    <div className='text-xs text-gray-500'>
+                    <div className="text-xs text-gray-500">
                       Đặt tên theo đúng cú pháp:
                     </div>
-                    <div className='text-xs text-gray-700 font-mono bg-gray-100 px-2 py-1 mt-1'>
+                    <div className="text-xs text-gray-700 font-mono bg-gray-100 px-2 py-1 mt-1">
                       CV_nganhngheungtuyen_hovaten
                     </div>
-                    <div className='text-xs text-blue-600 mt-2'>
+                    <div className="text-xs text-blue-600 mt-2">
                       ⓘ Chỉ hỗ trợ 1 file CV (PDF, DOC, DOCX, JPG, PNG)
                     </div>
                   </div>
 
                   {/* Selected File */}
                   {selectedFile && (
-                    <div className='space-y-2'>
-                      <div className='text-sm font-medium text-gray-700'>
+                    <div className="space-y-2">
+                      <div className="text-sm font-medium text-gray-700">
                         File đã chọn:
                       </div>
-                      <div className='flex items-center justify-between bg-gray-50 p-2'>
-                        <span className='text-sm text-gray-600 truncate'>
+                      <div className="flex items-center justify-between bg-gray-50 p-2">
+                        <span className="text-sm text-gray-600 truncate">
                           {selectedFile.name}
                         </span>
                         <button
-                          type='button'
+                          type="button"
                           onClick={removeFile}
-                          className='text-red-500 hover:text-red-700 text-sm transition-colors duration-200'
+                          className="text-red-500 hover:text-red-700 text-sm transition-colors duration-200"
                         >
                           ×
                         </button>
@@ -330,9 +330,9 @@ export default function JobApplicationPopup({
             </div>
 
             {/* Submit Button */}
-            <div className='text-center pt-6'>
+            <div className="text-center pt-6">
               <button
-                type='submit'
+                type="submit"
                 disabled={isSubmitting}
                 className={`bg-primary-blue-1 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 ${
                   isSubmitting

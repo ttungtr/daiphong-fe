@@ -14,23 +14,23 @@ interface ISectionProps {
 const Section: FunctionComponent<ISectionProps> = ({ data, index }) => {
   const { title, subTitle, items } = data;
   return (
-    <div className='w-full space-y-1 md:space-y-2'>
-      <h3 className='text-lg md:text-xl font-bold uppercase text-gray-900'>
+    <div className="w-full space-y-1 md:space-y-2">
+      <h3 className="text-lg md:text-xl font-bold uppercase text-gray-900">
         {title}
       </h3>
       {subTitle && (
-        <p className='text-sm md:text-base text-gray-700 leading-relaxed'>
+        <p className="text-sm md:text-base text-gray-700 leading-relaxed">
           {subTitle}
         </p>
       )}
-      <ul className='list-disc list-inside space-y-2 text-sm md:text-base text-gray-600 ml-4 md:ml-6'>
+      <ul className="list-disc list-inside space-y-2 text-sm md:text-base text-gray-600 ml-4 md:ml-6">
         {items.map((item, index) => (
-          <li key={index} className='leading-relaxed'>
+          <li key={index} className="leading-relaxed">
             {item}
           </li>
         ))}
       </ul>
-      {[1, 4].includes(index) && <div className='h-5'></div>}
+      {[1, 4].includes(index) && <div className="h-5"></div>}
     </div>
   );
 };
@@ -45,13 +45,13 @@ export async function generateMetadata({
 
   if (!jobPosition) {
     return {
-      title: 'Trang không tồn tại - Đại Phong Corp',
+      title: 'Trang không tồn tại - Đại Phong',
       description: 'Trang bạn đang tìm kiếm không tồn tại.',
     };
   }
 
-  const title = `${jobPosition.title} | Đại Phong Corp`;
-  const description = `Cơ hội nghề nghiệp hấp dẫn tại Đại Phong Corp: ${jobPosition.title}. Tham gia đội ngũ chuyên nghiệp trong lĩnh vực thi công hệ thống MEP với mức lương cạnh tranh và môi trường làm việc năng động.`;
+  const title = `${jobPosition.title} | Đại Phong`;
+  const description = `Cơ hội nghề nghiệp hấp dẫn tại Đại Phong: ${jobPosition.title}. Tham gia đội ngũ chuyên nghiệp trong lĩnh vực thi công hệ thống MEP với mức lương cạnh tranh và môi trường làm việc năng động.`;
 
   return {
     title,
@@ -60,7 +60,7 @@ export async function generateMetadata({
       jobPosition.title.toLowerCase(),
       'tuyển dụng',
       'việc làm',
-      'Đại Phong Corp',
+      'Đại Phong',
       'MEP engineer',
       'kỹ sư cơ điện',
       'career opportunity',
@@ -71,7 +71,7 @@ export async function generateMetadata({
       description,
       type: 'website',
       locale: 'vi_VN',
-      siteName: 'Đại Phong Corp',
+      siteName: 'Đại Phong',
       images: [
         {
           url:
@@ -133,25 +133,25 @@ export default async function JobPositionDetailPage({
         '@type': 'ListItem',
         position: 1,
         name: 'Trang chủ',
-        item: 'https://philongcorp.vn',
+        item: 'https://onggiodaiphong.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Tuyển dụng',
-        item: 'https://philongcorp.vn/tuyen-dung',
+        item: 'https://onggiodaiphong.com/tuyen-dung',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Vị trí tuyển dụng',
-        item: 'https://philongcorp.vn/tuyen-dung/vi-tri-tuyen-dung',
+        item: 'https://onggiodaiphong.com/tuyen-dung/vi-tri-tuyen-dung',
       },
       {
         '@type': 'ListItem',
         position: 4,
         name: jobPosition.title,
-        item: `https://philongcorp.vn/tuyen-dung/vi-tri-tuyen-dung/${jobPosition.id}`,
+        item: `https://onggiodaiphong.com/tuyen-dung/vi-tri-tuyen-dung/${jobPosition.id}`,
       },
     ],
   };
@@ -165,9 +165,9 @@ export default async function JobPositionDetailPage({
         ?.subTitle || jobPosition.title,
     hiringOrganization: {
       '@type': 'Organization',
-      name: 'Đại Phong Corp',
-      sameAs: 'https://philongcorp.vn',
-      logo: 'https://philongcorp.vn/logo.pngx',
+      name: 'Đại Phong',
+      sameAs: 'https://onggiodaiphong.com',
+      logo: 'https://onggiodaiphong.com/logo.pngx',
     },
     jobLocation: {
       '@type': 'Place',
@@ -202,9 +202,9 @@ export default async function JobPositionDetailPage({
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Đại Phong Corp',
-    url: 'https://philongcorp.vn',
-    logo: 'https://philongcorp.vn/logo.pngx',
+    name: 'Đại Phong',
+    url: 'https://onggiodaiphong.com',
+    logo: 'https://onggiodaiphong.com/logo.pngx',
     description: 'Công ty chuyên thi công hệ thống MEP (cơ điện) chuyên nghiệp',
     address: {
       '@type': 'PostalAddress',
@@ -215,28 +215,28 @@ export default async function JobPositionDetailPage({
   return (
     <>
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jobPostingSchema),
         }}
       />
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationSchema),
         }}
       />
 
-      <div className='w-full'>
+      <div className="w-full">
         <HeroSection
-          imageUrl='/images/hr-policy/hr-policy-banner.pngx'
-          imageAlt='Chính sách nhân sự - Đại Phong Corp'
+          imageUrl="/images/hr-policy/hr-policy-banner.pngx"
+          imageAlt="Chính sách nhân sự - Đại Phong"
           breadcrumbs={[
             { label: 'Trang chủ', href: '/', isActive: false },
             {
@@ -257,14 +257,14 @@ export default async function JobPositionDetailPage({
           ]}
         />
 
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12'>
-          <header className='mb-8 md:mb-12'>
-            <h1 className='text-xl md:text-2xl lg:text-3xl font-bold uppercase text-gray-900 text-center md:text-left'>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+          <header className="mb-8 md:mb-12">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase text-gray-900 text-center md:text-left">
               {jobPosition.title}
             </h1>
           </header>
 
-          <div className='space-y-3 md:space-y-4'>
+          <div className="space-y-3 md:space-y-4">
             {jobPosition.sections.map((section, index) => (
               <Section
                 index={index}
@@ -274,23 +274,23 @@ export default async function JobPositionDetailPage({
             ))}
 
             {jobPosition.images.length > 0 && (
-              <div className='space-y-2 md:space-y-3'>
-                <div className='grid grid-cols-1 gap-4 md:gap-6'>
+              <div className="space-y-2 md:space-y-3">
+                <div className="grid grid-cols-1 gap-4 md:gap-6">
                   {jobPosition.images.map((image) => (
-                    <div key={image.url} className='relative'>
+                    <div key={image.url} className="relative">
                       <ImageWithFallback
                         src={image.url}
                         alt={image.alt}
                         width={600}
                         height={400}
-                        className='object-center object-cover w-[100%] max-w-[500px] mx-auto h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300'
+                        className="object-center object-cover w-[100%] max-w-[500px] mx-auto h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                       />
                     </div>
                   ))}
                 </div>
               </div>
             )}
-            <div className='flex justify-center'>
+            <div className="flex justify-center">
               <ApplyJobButton jobTitle={jobPosition.title}>
                 Ứng tuyển ngay
               </ApplyJobButton>

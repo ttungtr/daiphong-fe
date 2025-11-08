@@ -21,7 +21,7 @@ export default function ProductDetail({ product }: { product: Product }) {
   return (
     <div>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-        <div className="relative aspect-square w-full overflow-hidden bg-slate-50">
+        <div className="relative aspect-square w-full overflow-hidden border border-slate-200">
           <ImageWithFallback
             src={product.image}
             alt={product.name}

@@ -2,6 +2,7 @@
 
 import { Pagination } from '@/components/common';
 import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/projects';
 import { projectsData } from '@/data/projects';
@@ -103,19 +104,19 @@ export default function ProjectsPage({
         '@type': 'ListItem',
         position: 1,
         name: 'Trang chủ',
-        item: 'https://philongcorp.vn',
+        item: 'https://onggiodaiphong.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Công trình',
-        item: 'https://philongcorp.vn/du-an',
+        item: 'https://onggiodaiphong.com/du-an',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: category.name,
-        item: `https://philongcorp.vn/du-an/${category.id}`,
+        item: `https://onggiodaiphong.com/du-an/${category.id}`,
       },
     ],
   };
@@ -123,9 +124,9 @@ export default function ProjectsPage({
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Đại Phong Corp',
-    url: 'https://philongcorp.vn',
-    logo: 'https://philongcorp.vn/logo.pngx',
+    name: 'Đại Phong',
+    url: 'https://onggiodaiphong.com',
+    logo: 'https://onggiodaiphong.com/logo.pngx',
     description: 'Công ty chuyên thi công hệ thống MEP (cơ điện) chuyên nghiệp',
     address: {
       '@type': 'PostalAddress',
@@ -136,8 +137,8 @@ export default function ProjectsPage({
   const projectsSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: `Công trình ${category.name} - Đại Phong Corp`,
-    description: `Danh sách dự án ${category.name.toLowerCase()} của Đại Phong Corp`,
+    name: `Công trình ${category.name} - Đại Phong`,
+    description: `Danh sách dự án ${category.name.toLowerCase()} của Đại Phong`,
     numberOfItems: filteredProjects.length,
     itemListElement: filteredProjects.map((project, index) => ({
       '@type': 'ListItem',
@@ -146,15 +147,15 @@ export default function ProjectsPage({
         '@type': 'Project',
         name: project.title,
         description: project.subtitle,
-        url: `https://philongcorp.vn/du-an/${category.id}/${project.slug}`,
-        image: `https://philongcorp.vn/images/projects/${project.images[0]}`,
+        url: `https://onggiodaiphong.com/du-an/${category.id}/${project.slug}`,
+        image: `https://onggiodaiphong.com/images/projects/${project.images[0]}`,
         location: {
           '@type': 'Place',
           name: project.location,
         },
         organizer: {
           '@type': 'Organization',
-          name: 'Đại Phong Corp',
+          name: 'Đại Phong',
         },
       },
     })),
@@ -192,13 +193,9 @@ export default function ProjectsPage({
             >
               {category.name}
             </h1>
-            <ImageWithFallback
-              src="/images/titlebg.jpg"
+
+            <LineTitle
               alt={`Đường viền trang trí cho tiêu đề ${category.name}`}
-              width={300}
-              height={100}
-              className="w-56 h-auto"
-              priority
             />
           </header>
 
@@ -222,7 +219,7 @@ export default function ProjectsPage({
                   <div className="aspect-w-16 aspect-h-10">
                     <ImageWithFallback
                       src={projectImage}
-                      alt={`Hình ảnh dự án ${project.title} tại ${project.location} - Đại Phong Corp`}
+                      alt={`Hình ảnh dự án ${project.title} tại ${project.location} - Đại Phong`}
                       width={300}
                       height={200}
                       fill

@@ -1,4 +1,4 @@
-import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/hr-policy';
 import { Metadata } from 'next';
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'vi_VN',
-    url: 'https://philongcorp.vn/hr-policy',
+    url: 'https://onggiodaiphong.com/hr-policy',
     title: 'Chính Sách Nhân Sự - Quy Định Lao Động',
     description:
       'Tìm hiểu về chính sách nhân sự, quy định lao động, chế độ đãi ngộ và môi trường làm việc chuyên nghiệp tại công ty chúng tôi.',
@@ -51,10 +51,10 @@ export const metadata: Metadata = {
     images: ['/images/hr-policy-twitter-image.pngx'],
   },
   alternates: {
-    canonical: 'https://philongcorp.vn/hr-policy',
+    canonical: 'https://onggiodaiphong.com/hr-policy',
     languages: {
-      'vi-VN': 'https://philongcorp.vn/hr-policy',
-      'en-US': 'https://philongcorp.vn/en/hr-policy',
+      'vi-VN': 'https://onggiodaiphong.com/hr-policy',
+      'en-US': 'https://onggiodaiphong.com/en/hr-policy',
     },
   },
   verification: {
@@ -73,12 +73,12 @@ const structuredData = {
   name: 'Chính Sách Nhân Sự',
   description:
     'Tìm hiểu về chính sách nhân sự, quy định lao động, chế độ đãi ngộ và môi trường làm việc chuyên nghiệp tại công ty chúng tôi. Gia nhập đội ngũ với những chính sách minh bạch và công bằng.',
-  url: 'https://philongcorp.vn/hr-policy',
+  url: 'https://onggiodaiphong.com/hr-policy',
   mainEntity: {
     '@type': 'Organization',
     name: 'Tên Công Ty',
-    url: 'https://philongcorp.vn',
-    logo: 'https://philongcorp.vn/logo.pngx',
+    url: 'https://onggiodaiphong.com',
+    logo: 'https://onggiodaiphong.com/logo.pngx',
     description:
       'Công ty với chính sách nhân sự minh bạch và môi trường làm việc chuyên nghiệp',
     contactPoint: {
@@ -105,13 +105,13 @@ const structuredData = {
         '@type': 'ListItem',
         position: 1,
         name: 'Trang Chủ',
-        item: 'https://philongcorp.vn',
+        item: 'https://onggiodaiphong.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Chính Sách Nhân Sự',
-        item: 'https://philongcorp.vn/hr-policy',
+        item: 'https://onggiodaiphong.com/hr-policy',
       },
     ],
   },
@@ -123,7 +123,7 @@ const structuredData = {
   },
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://philongcorp.vn/search?q={search_term_string}',
+    target: 'https://onggiodaiphong.com/search?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 };
@@ -149,14 +149,7 @@ export default function HRPolicyPage() {
           >
             CHÍNH SÁCH NHÂN SỰ
           </h1>
-          <ImageWithFallback
-            src="/images/titlebg.jpg"
-            alt="Đường viền trang trí tiêu đề chính sách nhân sự"
-            width={300}
-            height={100}
-            className="w-56 h-auto"
-            priority
-          />
+          <LineTitle alt="Đường viền trang trí tiêu đề chính sách nhân sự" />
         </header>
 
         <main role="main" aria-labelledby="services-heading">

@@ -173,7 +173,12 @@ export const Header: FunctionComponent = () => {
                     aria-pressed={lang === 'vi'}
                     aria-label="Chuyển tiếng Việt"
                   >
-                    🇻🇳
+                    <ImageWithFallback
+                      src="/images/flag-vn.png"
+                      alt="Flag of Vietnam"
+                      width={20}
+                      height={20}
+                    />
                   </button>
                   <button
                     type="button"
@@ -186,7 +191,12 @@ export const Header: FunctionComponent = () => {
                     aria-pressed={lang === 'en'}
                     aria-label="Switch to English"
                   >
-                    🇺🇸
+                    <ImageWithFallback
+                      src="/images/flag-us.png"
+                      alt="Flag of Vietnam"
+                      width={20}
+                      height={20}
+                    />
                   </button>
                 </div>
 

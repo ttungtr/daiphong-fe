@@ -11,7 +11,7 @@ export async function generateMetadata({
 
   if (!category) {
     return {
-      title: 'Trang không tồn tại - Đại Phong Corp',
+      title: 'Trang không tồn tại - Đại Phong',
       description: 'Trang bạn đang tìm kiếm không tồn tại.',
     };
   }
@@ -20,15 +20,15 @@ export async function generateMetadata({
     (project) => project.category === category.id
   ).length;
 
-  const title = `${category.name} - ${projectCount} Dự Án | Đại Phong Corp`;
-  const description = `Khám phá ${projectCount} dự án ${category.name.toLowerCase()} của Đại Phong Corp. Chuyên thi công hệ thống MEP với chất lượng cao và tiến độ đảm bảo.`;
+  const title = `${category.name} - ${projectCount} Dự Án | Đại Phong`;
+  const description = `Khám phá ${projectCount} dự án ${category.name.toLowerCase()} của Đại Phong. Chuyên thi công hệ thống MEP với chất lượng cao và tiến độ đảm bảo.`;
 
   return {
     title,
     description,
     keywords: [
       `dự án ${category.name.toLowerCase()}`,
-      'Đại Phong Corp',
+      'Đại Phong',
       'thi công MEP',
       'hệ thống điều hòa',
       'cơ điện',
@@ -40,13 +40,13 @@ export async function generateMetadata({
       description,
       type: 'website',
       locale: 'vi_VN',
-      siteName: 'Đại Phong Corp',
+      siteName: 'Đại Phong',
       images: [
         {
           url: '/images/projects/hero-section.pngx',
           width: 1200,
           height: 630,
-          alt: `Công trình ${category.name} - Đại Phong Corp`,
+          alt: `Công trình ${category.name} - Đại Phong`,
         },
       ],
     },

@@ -1,37 +1,37 @@
-import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import { HeroSection } from '@/components/feature/contact';
 import { MapSection } from '@/components/feature/homepage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Liên hệ - Đại Phong Corp | Tư vấn thi công hệ thống MEP',
+  title: 'Liên hệ - Đại Phong | Tư vấn thi công hệ thống MEP',
   description:
-    'Liên hệ với Đại Phong Corp để được tư vấn miễn phí về thi công hệ thống MEP (điện, nước, điều hòa). Hotline: 0123456789. Email: daiphong@daiphong.com',
+    'Liên hệ với Đại Phong để được tư vấn miễn phí về thi công hệ thống MEP (điện, nước, điều hòa). Hotline: 0123456789. Email: daiphong@daiphong.com',
   keywords: [
-    'liên hệ Đại Phong Corp',
+    'liên hệ Đại Phong',
     'tư vấn thi công MEP',
     'báo giá hệ thống điều hòa',
     'tư vấn hệ thống điện',
     'liên hệ công ty cơ điện',
     'hotline Đại Phong',
-    'email Đại Phong Corp',
+    'email Đại Phong',
     'tư vấn miễn phí MEP',
     'liên hệ thi công điều hòa',
     'tư vấn cấp thoát nước',
   ],
   openGraph: {
-    title: 'Liên hệ - Đại Phong Corp',
+    title: 'Liên hệ - Đại Phong',
     description:
-      'Liên hệ với Đại Phong Corp để được tư vấn miễn phí về thi công hệ thống MEP chuyên nghiệp',
+      'Liên hệ với Đại Phong để được tư vấn miễn phí về thi công hệ thống MEP chuyên nghiệp',
     type: 'website',
     locale: 'vi_VN',
-    siteName: 'Đại Phong Corp',
+    siteName: 'Đại Phong',
   },
   twitter: {
     card: 'summary',
-    title: 'Liên hệ - Đại Phong Corp',
+    title: 'Liên hệ - Đại Phong',
     description:
-      'Liên hệ với Đại Phong Corp để được tư vấn miễn phí về thi công hệ thống MEP chuyên nghiệp',
+      'Liên hệ với Đại Phong để được tư vấn miễn phí về thi công hệ thống MEP chuyên nghiệp',
   },
   alternates: {
     canonical: '/lien-he',
@@ -51,14 +51,14 @@ export default function ContactPage() {
   const contactSchema = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Liên hệ - Đại Phong Corp',
+    name: 'Liên hệ - Đại Phong',
     description:
-      'Trang liên hệ của Đại Phong Corp - Công ty thi công hệ thống MEP chuyên nghiệp',
-    url: 'https://philongcorp.vn/lien-he',
+      'Trang liên hệ của Đại Phong - Công ty thi công hệ thống MEP chuyên nghiệp',
+    url: 'https://onggiodaiphong.com/lien-he',
     mainEntity: {
       '@type': 'Organization',
-      name: 'Đại Phong Corp',
-      url: 'https://philongcorp.vn',
+      name: 'Đại Phong',
+      url: 'https://onggiodaiphong.com',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+84123456789',
@@ -71,8 +71,8 @@ export default function ContactPage() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Đại Phong Corp',
-    url: 'https://philongcorp.vn',
+    name: 'Đại Phong',
+    url: 'https://onggiodaiphong.com',
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+84123456789',
@@ -113,14 +113,7 @@ export default function ContactPage() {
             >
               Liên hệ
             </h1>
-            <ImageWithFallback
-              src="/images/titlebg.jpg"
-              alt="Đường viền trang trí cho tiêu đề Liên hệ"
-              width={300}
-              height={100}
-              className="w-56 h-auto"
-              priority
-            />
+            <LineTitle alt="Đường viền trang trí tiêu đề Liên hệ" />
           </header>
 
           {/* Contact Form */}
@@ -137,7 +130,7 @@ export default function ContactPage() {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://philongcorp.vn/lien-he?success=1"
+                  value="https://onggiodaiphong.com/lien-he?success=1"
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>

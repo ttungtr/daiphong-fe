@@ -42,7 +42,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
           <header>
             <h3
               id="contact-heading"
-              className="text-xl sm:text-2xl font-bold uppercase text-center mb-2 text-white"
+              className="text-xl sm:text-2xl font-bold uppercase text-center mb-8 text-white"
             >
               LIÊN HỆ TƯ VẤN
             </h3>
@@ -175,7 +175,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
                 <div className="flex justify-end">
                   <button
                     type="submit"
-                    className="px-6 py-3 bg-white text-primary-yellow-1 text-sm font-semibold  transition-colors duration-300 hover:opacity-80"
+                    className="px-6 py-3 bg-white text-primary-yellow-1 text-sm font-semibold  transition-colors duration-300 hover:opacity-80 rounded-sm"
                   >
                     Gửi
                   </button>

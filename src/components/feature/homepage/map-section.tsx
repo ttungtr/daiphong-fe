@@ -1,22 +1,15 @@
 // import { MapPin, Phone } from "lucide-react";
-import ImageWithFallback from '@/components/common/ImageWithFallback';
+import LineTitle from '@/components/common/line-title';
 import React from 'react';
 
 export const MapSection: React.FunctionComponent = () => (
   <div className="w-full py-4 md:py-4 lg:py-8 bg-white">
     <div className="max-w-7xl flex flex-col items-center justify-center mx-auto px-4 sm:px-6 lg:px-8">
-      <h3 className="text-xl sm:text-2xl font-bold uppercase text-center mb-2">
+      <h3 className="text-xl sm:text-2xl font-bold uppercase text-center">
         Văn phòng đại diện
       </h3>
 
-      <ImageWithFallback
-        src="/images/titlebg.jpg"
-        alt="Đường viền trang trí tiêu đề văn phòng đại diện"
-        width={300}
-        height={100}
-        className="w-56 h-auto"
-        priority
-      />
+      <LineTitle alt="Đường viền trang trí tiêu đề văn phòng đại diện" />
 
       <div className="w-full grid grid-cols-1 lg:grid-cols-2">
         <div className="lg:col-span-2 order-1 lg:order-2">

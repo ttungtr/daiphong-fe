@@ -13,11 +13,11 @@ import { Metadata } from 'next';
 // SEO Metadata for homepage
 export const metadata: Metadata = {
   title:
-    'Đại Phong Corp - Công Ty Cổ Phần Công Nghiệp | Thi công hệ thống MEP chuyên nghiệp',
+    'Đại Phong - Công Ty Cổ Phần Công Nghiệp | Thi công hệ thống MEP chuyên nghiệp',
   description:
-    'Đại Phong Corp - Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy). Tư vấn, thiết kế và thi công chuyên nghiệp với đội ngũ kỹ sư giàu kinh nghiệm.',
+    'Đại Phong - Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy). Tư vấn, thiết kế và thi công chuyên nghiệp với đội ngũ kỹ sư giàu kinh nghiệm.',
   keywords: [
-    'Đại Phong Corp',
+    'Đại Phong',
     'thi công hệ thống MEP',
     'hệ thống điện',
     'hệ thống nước',
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     'cấp thoát nước',
     'HVAC',
   ],
-  authors: [{ name: 'Đại Phong Corp' }],
-  creator: 'Đại Phong Corp',
-  publisher: 'Đại Phong Corp',
+  authors: [{ name: 'Đại Phong' }],
+  creator: 'Đại Phong',
+  publisher: 'Đại Phong',
   robots: {
     index: true,
     follow: true,
@@ -50,26 +50,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'vi_VN',
-    url: 'https://www.philongcorp.vn',
+    url: 'https://www.onggiodaiphong.com',
     title:
-      'Đại Phong Corp - Công Ty Cổ Phần Công Nghiệp | Thi công hệ thống MEP chuyên nghiệp',
+      'Đại Phong - Công Ty Cổ Phần Công Nghiệp | Thi công hệ thống MEP chuyên nghiệp',
     description:
-      'Đại Phong Corp - Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy). Tư vấn, thiết kế và thi công chuyên nghiệp.',
+      'Đại Phong - Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy). Tư vấn, thiết kế và thi công chuyên nghiệp.',
     images: [
       {
         url: '/images/banners/banner-1.pngx',
         width: 1200,
         height: 630,
-        alt: 'Đại Phong Corp - Thi công hệ thống MEP chuyên nghiệp',
+        alt: 'Đại Phong - Thi công hệ thống MEP chuyên nghiệp',
       },
     ],
-    siteName: 'Đại Phong Corp',
+    siteName: 'Đại Phong',
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@philongcorp',
-    creator: '@philongcorp',
-    title: 'Đại Phong Corp - Công Ty Cổ Phần Công Nghiệp',
+    site: '@onggiodaiphong',
+    creator: '@onggiodaiphong',
+    title: 'Đại Phong - Công Ty Cổ Phần Công Nghiệp',
     description:
       'Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy)',
     images: ['/images/banners/banner-1.pngx'],
@@ -81,14 +81,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className='w-full'>
+    <div className="w-full bg-white">
       {/* <HeroSection slides={slides} /> */}
       <NivoSliderDemo />
       {/* <ImagePlaceholderDemo /> */}
       {/* <IntroduceSection /> */}
       <LetterSection />
       <TeamSection />
-      {/* <FieldsSection /> */}
       <ProductSection />
       <NewsSection />
       {/* <CTASection /> */}

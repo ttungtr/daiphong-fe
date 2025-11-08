@@ -12,8 +12,8 @@ const demoImages = [
 
 export default function NivoSliderDemo() {
   return (
-    <div className=" bg-gray-50 ">
-      <div className=" mx-auto ">
+    <div className="bg-white">
+      <div className="mx-auto">
         <div className="flex justify-center">
           <NivoLikeSlider
             images={demoImages}

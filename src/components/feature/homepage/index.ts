@@ -1,7 +1,6 @@
 export * from './letter-section';
 export * from './partner-section';
 export * from './news-section';
-export * from './fields-section';
 export * from './introduce-section';
 export * from './hero-section';
 export * from './map-section';

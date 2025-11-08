@@ -8,7 +8,7 @@ interface TabProps {
 
 export const Tab: FunctionComponent<TabProps> = ({ currentPath }) => {
   return (
-    <div className='w-full flex items-center justify-center py-8'>
+    <div className="w-full flex items-center justify-center py-8 bg-white">
       {tabData.map((item, index) => {
         const isActive = currentPath === item.href;
 

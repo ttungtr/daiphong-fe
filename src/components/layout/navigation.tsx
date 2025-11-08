@@ -18,7 +18,7 @@ export const Navigation: FunctionComponent = () => {
 
   return (
     <nav
-      className="hidden xl:flex items-center px-6 py-2 w-[60%] justify-between"
+      className="hidden xl:flex items-center px-6 py-2 w-[50%] justify-between"
       role="navigation"
       aria-label="Main navigation"
     >

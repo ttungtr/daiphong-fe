@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       'Khám phá các dự án tiêu biểu của Công Ty Cổ Phần Công Nghiệp Đại Phong. Chúng tôi tự hào với các dự án hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy.',
     type: 'website',
     locale: 'vi_VN',
-    url: 'https://www.philongcorp.vn/du-an',
+    url: 'https://www.onggiodaiphong.com/du-an',
     siteName: 'Đại Phong',
     images: [
       {

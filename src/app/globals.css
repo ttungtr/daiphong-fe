@@ -155,6 +155,52 @@ body {
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  overscroll-behavior-y: none;
+}
+
+/* Performance optimization for smooth scrolling */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* GPU acceleration for transform elements */
+.transform-gpu {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Prevent white flash during scroll */
+html,
+body {
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Optimize rendering performance */
+section,
+main,
+div[class*='container'] {
+  contain: layout style;
+}
+
+/* Prevent layout shift */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth transitions */
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Introduce Section Styles */

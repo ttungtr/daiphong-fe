@@ -370,8 +370,8 @@ export const projectsData: IProjectsPageData = {
 export const heroSectionData: HeroSectionProps = {
   breadcrumbs: [
     { label: 'Trang chủ', href: '/' },
-    { label: 'Công trình', href: '/du-an', isActive: true },
+    { label: 'Dự án', href: '/du-an', isActive: true },
   ],
   imageUrl: '/images/projects/hero-section.pngx',
-  imageAlt: 'Công trình nổi bật - Đại Phong Corp',
+  imageAlt: 'Dự án nổi bật - Đại Phong',
 };
