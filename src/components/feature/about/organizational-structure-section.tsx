@@ -14,7 +14,7 @@ export const OrganizationalStructureSection = () => {
               // id="organizational-structure-heading"
               className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center"
             >
-              CƠ CẤU TỔ CHỨC
+              NĂNG LỰC NHÂN SỰ
             </h2>
             <LineTitle alt="Đường viền trang trí tiêu đề cơ cấu tổ chức" />
           </header>
