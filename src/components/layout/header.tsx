@@ -9,8 +9,11 @@ import SearchBar from '../common/SearchBar';
 import { useRouter } from 'next/navigation';
 import { Phone, Search } from 'lucide-react';
 import { CATEGORY_SLUG_MAP, PRODUCTS, Product } from '@/data/products';
+import i18n from '@/i18n';
+import { useTranslation } from 'react-i18next';
 
 export const Header: FunctionComponent = () => {
+  const { t } = useTranslation('common');
   const [lang, setLang] = useState<'vi' | 'en'>('vi');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [keyword, setKeyword] = useState('');
@@ -18,7 +21,7 @@ export const Header: FunctionComponent = () => {
   const searchWrapperRef = useRef<HTMLDivElement | null>(null);
   const filteredResults = keyword
     ? PRODUCTS.filter((p) =>
-        p.name.toLowerCase().includes(keyword.trim().toLowerCase())
+        p.name.toLowerCase().includes(keyword.trim().toLowerCase()),
       ).slice(0, 8)
     : [];
 
@@ -35,6 +38,16 @@ export const Header: FunctionComponent = () => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isSearchOpen]);
+
+  // Sync header language state with i18next and <html lang="">
+  useEffect(() => {
+    i18n.changeLanguage(lang).catch(() => {
+      // ignore changeLanguage errors in UI
+    });
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = lang;
+    }
+  }, [lang]);
 
   const handleSearchSubmit = () => {
     setIsSearchOpen(false);
@@ -77,7 +90,7 @@ export const Header: FunctionComponent = () => {
               <div className="relative">
                 <ImageWithFallback
                   src="/images/logo/horizontal-logo.png"
-                  alt="Nhà sản xuất ống thông gió Logo"
+                  alt={t('header.logoAlt')}
                   width={220}
                   height={100}
                   className="max-w-48 h-auto transition-all duration-300 group-hover:scale-105"
@@ -93,7 +106,7 @@ export const Header: FunctionComponent = () => {
                 <div className="relative" ref={searchWrapperRef}>
                   <button
                     type="button"
-                    aria-label="Tìm kiếm sản phẩm"
+                    aria-label={t('header.searchAriaLabel')}
                     onClick={() => setIsSearchOpen((v) => !v)}
                     className="flex items-center justify-center rounded-md bg-white/90 text-slate-700 hover:bg-white transition-colors shadow-sm h-10 w-10"
                   >
@@ -108,7 +121,7 @@ export const Header: FunctionComponent = () => {
                             value={keyword}
                             onChange={setKeyword}
                             onSubmit={handleSearchSubmit}
-                            placeholder="Tìm kiếm..."
+                            placeholder={t('header.searchPlaceholder')}
                             className="focus-within:ring-none focus-within:ring-0"
                           />
                         </div>
@@ -116,7 +129,7 @@ export const Header: FunctionComponent = () => {
                           type="button"
                           onClick={handleSearchSubmit}
                           className="flex items-center justify-center bg-primary-blue-1 px-4 text-white hover:bg-primary-blue-1/90"
-                          aria-label="Thực hiện tìm kiếm"
+                          aria-label={t('header.searchSubmitAriaLabel')}
                         >
                           <Search />
                         </button>
@@ -126,7 +139,7 @@ export const Header: FunctionComponent = () => {
                         <div className="mt-3 max-h-[60vh] overflow-auto divide-y divide-slate-100">
                           {filteredResults.length === 0 ? (
                             <div className="py-6 text-center text-slate-500 text-sm">
-                              Không tìm thấy sản phẩm phù hợp
+                              {t('header.noResults')}
                             </div>
                           ) : (
                             filteredResults.map((p) => (
@@ -171,7 +184,7 @@ export const Header: FunctionComponent = () => {
                         : 'bg-transparent text-white/90 hover:bg-white/10'
                     }`}
                     aria-pressed={lang === 'vi'}
-                    aria-label="Chuyển tiếng Việt"
+                    aria-label={t('header.switchToVietnamese')}
                   >
                     <ImageWithFallback
                       src="/images/flag-vn.png"
@@ -189,7 +202,7 @@ export const Header: FunctionComponent = () => {
                         : 'bg-transparent text-white/90 hover:bg-white/10'
                     }`}
                     aria-pressed={lang === 'en'}
-                    aria-label="Switch to English"
+                    aria-label={t('header.switchToEnglish')}
                   >
                     <ImageWithFallback
                       src="/images/flag-us.png"
@@ -205,7 +218,7 @@ export const Header: FunctionComponent = () => {
                   className="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-primary-blue-1 font-medium shadow-sm hover:bg-white/70 transition-colors"
                 >
                   <Phone />
-                  Gọi ngay
+                  {t('header.callNow')}
                 </a>
               </div>
 

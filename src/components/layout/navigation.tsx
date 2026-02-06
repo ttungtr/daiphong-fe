@@ -3,9 +3,11 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { FunctionComponent } from 'react';
 import { navigationItems, type DropdownItem } from '@/data/navigation';
+import { useTranslation } from 'react-i18next';
 
 export const Navigation: FunctionComponent = () => {
   const pathname = usePathname();
+  const { t } = useTranslation('common');
 
   const isActive = (href: string): boolean => {
     return pathname === href;
@@ -23,7 +25,7 @@ export const Navigation: FunctionComponent = () => {
       aria-label="Main navigation"
     >
       {navigationItems.map((item) => (
-        <div key={item.title} className="relative group">
+        <div key={item.href} className="relative group">
           <Link
             href={item.href}
             className={`text-xs xl:text-sm font-bold px-0 py-2 transition-colors ${
@@ -32,22 +34,22 @@ export const Navigation: FunctionComponent = () => {
                 : 'text-white hover:text-white/70'
             }`}
           >
-            {item.title}
+            {t(item.titleKey)}
           </Link>
 
           {item.dropdown && (
-            <div className="absolute top-full left-0 mt-2 w-max glass-dark  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 dropdown-menu shadow-electric border border-electric/20 overflow-hidden">
+            <div className="absolute top-full left-0 mt-2 w-max opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-primary-blue-2  overflow-hidden">
               {item.dropdown.map((dropdownItem) => (
                 <Link
                   key={dropdownItem.href}
                   href={dropdownItem.href}
-                  className={`block px-4 py-3 text-sm font-medium transition-all duration-200 border-b border-electric/10 last:border-b-0 whitespace-nowrap ${
+                  className={`block px-4 py-3 text-sm font-medium transition-all duration-200 border-b border-primary-blue-2 last:border-b-0 whitespace-nowrap ${
                     isActive(dropdownItem.href)
                       ? 'text-white bg-primary-blue-1'
                       : 'text-white bg-primary-blue-1 hover:text-white/70 hover:bg-primary-blue-2'
                   }`}
                 >
-                  {dropdownItem.title}
+                  {t(dropdownItem.titleKey)}
                 </Link>
               ))}
             </div>

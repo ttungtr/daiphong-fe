@@ -2,10 +2,10 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Đại Phong - Công Ty Cổ Phần Công Nghiệp',
+    name: 'Đại Phong - Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC',
     short_name: 'Đại Phong',
     description:
-      'Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy)',
+      'Đơn vị sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao. Ống gió chất lượng – Khởi nguồn không khí sạch.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
@@ -27,7 +27,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/pngx',
       },
     ],
-    categories: ['business', 'construction', 'engineering'],
+    categories: ['business', 'manufacturing', 'hvac', 'ventilation'],
     lang: 'vi',
     dir: 'ltr',
     orientation: 'portrait',

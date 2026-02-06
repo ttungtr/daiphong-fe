@@ -1,36 +1,36 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Dự Án | Hệ Thống Điện & Cơ Điện | Đại Phong',
+  title: 'Dự Án Ống Gió & Hệ Thống Thông Gió | Đại Phong',
   description:
-    'Khám phá các dự án tiêu biểu của Công Ty Cổ Phần Công Nghiệp Đại Phong. Chúng tôi tự hào với các dự án hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy.',
+    'Khám phá các dự án ống gió và hệ thống thông gió tiêu biểu của Đại Phong. Chúng tôi tự hào cung cấp ống gió, miệng gió, phụ kiện HVAC chất lượng cao cho các công trình lớn nhỏ trên toàn quốc.',
   keywords:
-    'dự án, hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước, phòng cháy chữa cháy, cơ điện, xây dựng, Đại Phong',
-  authors: [{ name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong' }],
+    'dự án ống gió, dự án HVAC, hệ thống thông gió, công trình ống gió, lắp đặt ống gió, dự án thông gió, ống gió công nghiệp, ống gió thương mại, Đại Phong',
+  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
   robots: 'index, follow',
   openGraph: {
-    title: 'Dự Án | Hệ Thống Điện & Cơ Điện | Đại Phong',
+    title: 'Dự Án Ống Gió & Hệ Thống Thông Gió | Đại Phong',
     description:
-      'Khám phá các dự án tiêu biểu của Công Ty Cổ Phần Công Nghiệp Đại Phong. Chúng tôi tự hào với các dự án hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy.',
+      'Khám phá các dự án ống gió và hệ thống thông gió tiêu biểu của Đại Phong. Cung cấp ống gió, miệng gió, phụ kiện HVAC chất lượng cao.',
     type: 'website',
     locale: 'vi_VN',
     url: 'https://www.onggiodaiphong.com/du-an',
     siteName: 'Đại Phong',
     images: [
       {
-        url: '/images/projects/hero-section.pngx',
+        url: 'https://www.onggiodaiphong.com/images/banners/banner-2.jpg',
         width: 1200,
         height: 630,
-        alt: 'Công trình - Đại Phong',
+        alt: 'Dự án ống gió - Đại Phong',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dự Án | Hệ Thống Điện & Cơ Điện | Đại Phong',
+    title: 'Dự Án Ống Gió & Hệ Thống Thông Gió | Đại Phong',
     description:
-      'Khám phá các dự án tiêu biểu của Công Ty Cổ Phần Công Nghiệp Đại Phong.',
-    images: ['/images/projects/hero-section.pngx'],
+      'Khám phá các dự án ống gió và hệ thống thông gió tiêu biểu của Đại Phong.',
+    images: ['https://www.onggiodaiphong.com/images/banners/banner-2.jpg'],
   },
   alternates: {
     canonical: '/du-an',

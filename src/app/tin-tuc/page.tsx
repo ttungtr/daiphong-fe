@@ -5,31 +5,31 @@ import { ENewCategory } from '@/enum/new';
 
 export const metadata: Metadata = {
   title:
-    'Tin tức - Công Ty Cổ Phần Công Nghiệp Đại Phong | Cập nhật thông tin mới nhất',
+    'Tin Tức Đại Phong | Ống Gió, Miệng Gió, Phụ Kiện HVAC - Cập Nhật Mới Nhất',
   description:
-    'Tin tức mới nhất về hoạt động của Công Ty Cổ Phần Công Nghiệp Đại Phong, các dự án tiêu biểu và thành tựu trong lĩnh vực xây dựng cơ điện.',
+    'Tin tức mới nhất về sản xuất ống gió, miệng gió, phụ kiện HVAC tại Đại Phong. Cập nhật các dự án thông gió, công nghệ sản xuất hiện đại và thành tựu trong ngành HVAC Việt Nam.',
   keywords:
-    'tin tức Đại Phong, hoạt động công ty, dự án xây dựng, nhà thầu cơ điện',
+    'tin tức Đại Phong, tin tức ống gió, dự án HVAC, sản xuất ống gió, công nghệ thông gió, miệng gió, phụ kiện HVAC, ống gió Việt Nam, không khí sạch',
   openGraph: {
-    title: 'Tin tức - Công Ty Cổ Phần Công Nghiệp Đại Phong',
+    title: 'Tin Tức Đại Phong - Sản Xuất Ống Gió & Phụ Kiện HVAC',
     description:
-      'Tin tức mới nhất về hoạt động của Công Ty Cổ Phần Công Nghiệp Đại Phong, các dự án tiêu biểu và thành tựu trong lĩnh vực xây dựng cơ điện.',
+      'Tin tức mới nhất về sản xuất ống gió, miệng gió, phụ kiện HVAC tại Đại Phong. Cập nhật dự án thông gió và công nghệ hiện đại.',
     type: 'website',
     url: 'https://www.onggiodaiphong.com/tin-tuc',
     images: [
       {
-        url: 'https://www.onggiodaiphong.com/images/news/news-3.pngx',
+        url: 'https://www.onggiodaiphong.com/images/news/news-1.jpg',
         width: 1200,
         height: 630,
-        alt: 'Tin tức Công Ty Cổ Phần Công Nghiệp Đại Phong',
+        alt: 'Tin tức Đại Phong - Sản xuất ống gió',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tin tức - Công Ty Cổ Phần Công Nghiệp Đại Phong',
+    title: 'Tin Tức Đại Phong - Sản Xuất Ống Gió & Phụ Kiện HVAC',
     description:
-      'Tin tức mới nhất về hoạt động của Công Ty Cổ Phần Công Nghiệp Đại Phong, các dự án tiêu biểu và thành tựu trong lĩnh vực xây dựng cơ điện.',
+      'Tin tức mới nhất về sản xuất ống gió, miệng gió, phụ kiện HVAC tại Đại Phong.',
   },
   alternates: {
     canonical: 'https://www.onggiodaiphong.com/tin-tuc',
@@ -44,9 +44,9 @@ export default function NewsPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Tin tức - Công Ty Cổ Phần Công Nghiệp Đại Phong',
+    name: 'Tin tức - Đại Phong - Sản xuất ống gió & phụ kiện HVAC',
     description:
-      'Tin tức mới nhất về hoạt động của Công Ty Cổ Phần Công Nghiệp Đại Phong',
+      'Tin tức mới nhất về sản xuất ống gió, miệng gió, phụ kiện HVAC và các dự án thông gió tại Đại Phong',
     url: 'https://www.onggiodaiphong.com/tin-tuc',
     mainEntity: {
       '@type': 'ItemList',
@@ -61,7 +61,15 @@ export default function NewsPage() {
         image: `https://www.onggiodaiphong.com${item.images[0]}`,
         author: {
           '@type': 'Organization',
-          name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+          name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Đại Phong',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://www.onggiodaiphong.com/images/logo/logo.png',
+          },
         },
       })),
     },
@@ -83,9 +91,9 @@ export default function NewsPage() {
               Tin tức mới nhất
             </h1>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600">
-              Cập nhật những thông tin mới nhất về hoạt động của Công ty Cổ phần
-              kỹ thuật cơ điện Đại Phong , các dự án tiêu biểu và thành tựu
-              trong lĩnh vực xây dựng cơ điện.
+              Cập nhật những thông tin mới nhất về sản xuất ống gió, miệng gió,
+              phụ kiện HVAC tại Đại Phong, các dự án thông gió tiêu biểu và
+              thành tựu trong ngành HVAC Việt Nam.
             </p>
           </header>
 

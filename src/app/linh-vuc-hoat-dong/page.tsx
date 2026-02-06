@@ -7,39 +7,39 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Lĩnh Vực Hoạt Động | Hệ Thống Điện & Cơ Điện | Đại Phong',
+  title: 'Lĩnh Vực Hoạt Động | Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC | Đại Phong',
   description:
-    'Công Ty Cổ Phần Công Nghiệp Đại Phong chuyên cung cấp dịch vụ hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy. Giải pháp cơ điện toàn diện cho công trình.',
+    'Đại Phong chuyên sản xuất và gia công ống gió tròn, ống gió vuông, ống gió spiral, miệng gió, van gió, damper, diffuser, grille và các phụ kiện HVAC. Sản phẩm chất lượng cao, đạt chuẩn, độ chính xác cao cho hệ thống thông gió.',
   keywords:
-    'hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước, phòng cháy chữa cháy, cơ điện, xây dựng, Đại Phong',
-  authors: [{ name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong' }],
+    'ống gió tròn, ống gió vuông, ống gió spiral, miệng gió, van gió, damper, diffuser, grille, phụ kiện HVAC, ống gió mềm, ống gió cách nhiệt, sản xuất ống gió, gia công ống gió, Đại Phong',
+  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
   robots: 'index, follow',
   openGraph: {
-    title: 'Lĩnh Vực Hoạt Động | Hệ Thống Điện & Cơ Điện | Đại Phong',
+    title: 'Lĩnh Vực Hoạt Động | Sản Xuất Ống Gió & Phụ Kiện HVAC | Đại Phong',
     description:
-      'Công Ty Cổ Phần Công Nghiệp Đại Phong chuyên cung cấp dịch vụ hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy. Giải pháp cơ điện toàn diện cho công trình.',
+      'Đại Phong chuyên sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao. Ống gió tròn, vuông, spiral, van gió, damper, diffuser và các sản phẩm thông gió chuyên nghiệp.',
     type: 'website',
     locale: 'vi_VN',
-    url: 'https://www.onggiodaiphong.com/services',
+    url: 'https://www.onggiodaiphong.com/linh-vuc-hoat-dong',
     siteName: 'Đại Phong',
     images: [
       {
-        url: '/images/services/hero-section.pngx',
+        url: 'https://www.onggiodaiphong.com/images/services/hero-section.jpg',
         width: 1200,
         height: 630,
-        alt: 'Lĩnh vực hoạt động - Đại Phong',
+        alt: 'Lĩnh vực hoạt động - Sản xuất ống gió Đại Phong',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lĩnh Vực Hoạt Động | Hệ Thống Điện & Cơ Điện | Đại Phong',
+    title: 'Lĩnh Vực Hoạt Động | Sản Xuất Ống Gió & Phụ Kiện HVAC | Đại Phong',
     description:
-      'Công Ty Cổ Phần Công Nghiệp Đại Phong chuyên cung cấp dịch vụ hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy.',
-    images: ['/images/services/hero-section.pngx'],
+      'Đại Phong chuyên sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao.',
+    images: ['https://www.onggiodaiphong.com/images/services/hero-section.jpg'],
   },
   alternates: {
-    canonical: '/services',
+    canonical: '/linh-vuc-hoat-dong',
   },
 };
 
@@ -47,24 +47,29 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+  name: 'Công ty Cổ phần Công nghiệp Đại Phong',
   alternateName: 'Đại Phong',
   url: 'https://www.onggiodaiphong.com',
+  logo: 'https://www.onggiodaiphong.com/images/logo/logo.png',
   description:
-    'Công Ty Cổ Phần Công Nghiệp Đại Phong chuyên cung cấp dịch vụ hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy',
+    'Đại Phong chuyên sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao',
+  telephone: '+84888885964',
+  email: 'ongiodaiphong@gmail.com',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: 'Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An',
+    addressLocality: 'Thành phố Hồ Chí Minh',
     addressCountry: 'VN',
   },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Dịch vụ cơ điện',
+    name: 'Sản phẩm ống gió và phụ kiện HVAC',
     itemListElement: servicesData.map((service) => ({
       '@type': 'Offer',
       itemOffered: {
-        '@type': 'Service',
+        '@type': 'Product',
         name: service.title,
-        description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp`,
+        description: `Sản xuất và gia công ${service.title.toLowerCase()} chất lượng cao`,
         image: service.images[0].url,
         url: `https://www.onggiodaiphong.com${service.link}`,
       },

@@ -15,23 +15,23 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import LineTitle from '@/components/common/line-title';
+import { useTranslation } from 'react-i18next';
 
 export const ProductSection: FunctionComponent = () => {
   const swiperRef = useRef<SwiperType | null>(null);
+  const { t } = useTranslation('common');
 
   return (
     <div className="w-full py-4 md:py-4 lg:py-8 bg-white">
       <div className="max-w-7xl flex flex-col items-center justify-center mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="text-xl sm:text-2xl font-bold uppercase text-center">
-          Sản phẩm nổi bật
+          {t('productsSection.heading')}
         </h3>
 
-        <LineTitle alt="Đường viền trang trí tiêu đề sản phẩm nổi bật" />
+        <LineTitle alt={t('productsSection.heading')} />
 
         <p className="text-center max-w-[90%] sm:max-w-[80%] text-black/80 text-sm sm:text-base mb-6 md:mb-8">
-          Chúng tôi cung cấp đa dạng các sản phẩm chất lượng cao trong lĩnh vực
-          cơ điện, từ ống gió, van gió đến thiết bị tiêu âm và hệ thống thông
-          gió.
+          {t('productsSection.subtitle')}
         </p>
 
         {/* Slider Container */}
@@ -133,7 +133,7 @@ export const ProductSection: FunctionComponent = () => {
             href="/san-pham"
             className="bg-primary-blue-1 hover:opacity-70 text-white duration-300 w-32 sm:w-40 text-center py-2 rounded-md text-sm font-semibold flex gap-1 justify-center items-center"
           >
-            Xem thêm <MoveRightIcon />
+            {t('productsSection.viewAll')} <MoveRightIcon />
           </Link>
         </div>
       </div>

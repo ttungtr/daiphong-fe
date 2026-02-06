@@ -13,7 +13,7 @@ export const CompanyInformationSection: FunctionComponent = () => {
     },
     {
       label: 'Liên hệ',
-      value: '(+84) xxx xxx xxx',
+      value: '(+84) 888 885 964',
     },
     {
       label: 'Email',

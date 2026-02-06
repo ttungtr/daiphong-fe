@@ -1,5 +1,7 @@
+'use client';
 import { FunctionComponent } from 'react';
 import ImageWithFallback from '@/components/common/ImageWithFallback';
+import { useTranslation } from 'react-i18next';
 
 interface TeamMember {
   id: string;
@@ -21,20 +23,26 @@ const teamMembers: TeamMember[] = [
   {
     id: 'tm-002',
     name: 'Nguyễn Văn A',
-    position: 'Giám đốc Dự án',
+    position: 'Phó Giám đốc',
     image: '/images/giam-doc.pngx',
-    imageAlt: 'Nguyễn Văn A - Giám đốc Dự án',
+    imageAlt:
+      'Nguyễn Văn A - Phó Giám đốc Công Ty Cổ Phần Công Nghiệp Đại Phong',
   },
   {
     id: 'tm-003',
-    name: 'Trần Thị B',
-    position: 'Giám đốc Sản xuất',
+    name: 'Nguyễn Thị B',
+    position: 'Kế toán trưởng',
     image: '/images/giam-doc.pngx',
-    imageAlt: 'Trần Thị B - Giám đốc Sản xuất',
+    imageAlt:
+      'Nguyễn Thị B - Kế toán trưởng Công Ty Cổ Phần Công Nghiệp Đại Phong',
   },
+  // Các thành viên demo còn lại có thể được cấu hình sau khi có dữ liệu thật
+  // hoặc được ẩn nếu không cần thiết cho bản production.
 ];
 
 export const TeamSection: FunctionComponent = () => {
+  const { t } = useTranslation('common');
+
   return (
     <section
       className="w-full py-4 md:py-4 lg:py-8 bg-primary-blue-1"
@@ -45,7 +53,7 @@ export const TeamSection: FunctionComponent = () => {
           id="team-heading"
           className="text-xl sm:text-2xl font-bold uppercase text-center mb-2"
         >
-          ĐỘI NGŨ CỦA CHÚNG TÔI
+          {t('team.heading')}
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-24 w-full">

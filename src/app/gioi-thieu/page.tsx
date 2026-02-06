@@ -16,20 +16,29 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title:
-    'Về Chúng Tôi - Nhà Sản Xuất Ống Thông Gió Chất Lượng Cao | Uy Tín Hàng Đầu Việt Nam',
+    'Giới Thiệu Đại Phong - Nhà Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC Uy Tín Hàng Đầu',
   description:
-    'Tìm hiểu về công ty sản xuất ống thông gió hàng đầu Việt Nam. Xem lịch sử hình thành, năng lực sản xuất, máy móc hiện đại, chứng chỉ chất lượng và tầm nhìn sứ mệnh của chúng tôi.',
+    'Đại Phong - Đơn vị sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao tại Việt Nam. Tầm nhìn: Trở thành đơn vị uy tín hàng đầu. Sứ mệnh: Cung cấp sản phẩm đạt chuẩn, độ chính xác cao. Giá trị cốt lõi: "Ống gió chất lượng – Khởi nguồn không khí sạch"',
   keywords:
-    'về chúng tôi, nhà sản xuất ống thông gió, ống gió chất lượng cao, cửa gió, van gió, phụ kiện ống gió, HVAC, hệ thống thông gió, lịch sử hình thành, năng lực sản xuất',
+    'giới thiệu Đại Phong, nhà sản xuất ống gió, ống gió chất lượng cao, miệng gió, phụ kiện HVAC, van gió, damper, công ty ống gió, sản xuất HVAC, ống gió Việt Nam, nhà máy ống gió, tầm nhìn sứ mệnh',
   openGraph: {
-    title: 'Về Chúng Tôi - Nhà Sản Xuất Ống Thông Gió Chất Lượng Cao',
+    title: 'Giới Thiệu Đại Phong - Sản Xuất Ống Gió Chất Lượng Cao',
     description:
-      'Nhà sản xuất ống thông gió uy tín hàng đầu Việt Nam với hơn 10 năm kinh nghiệm',
+      'Đơn vị sản xuất ống gió, miệng gió, phụ kiện HVAC uy tín hàng đầu Việt Nam. Ống gió chất lượng – Khởi nguồn không khí sạch.',
     type: 'website',
     locale: 'vi_VN',
+    url: 'https://www.onggiodaiphong.com/gioi-thieu',
+    images: [
+      {
+        url: 'https://www.onggiodaiphong.com/images/about/hero-section.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Giới thiệu Đại Phong - Nhà sản xuất ống gió',
+      },
+    ],
   },
   alternates: {
-    canonical: '/about',
+    canonical: '/gioi-thieu',
   },
 };
 
@@ -38,47 +47,49 @@ export default function About() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Công ty Sản xuất Ống Thông Gió Chất Lượng Cao',
-    alternateName: 'Nhà sản xuất ống gió uy tín',
+    name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+    alternateName: 'Đại Phong',
+    legalName: 'Công ty Cổ phần Công nghiệp Đại Phong',
     description:
-      'Nhà sản xuất ống thông gió chất lượng cao, chuyên nghiệp tại Việt Nam',
-    url: 'https://www.ongthonggio.vn/about',
-    foundingDate: '2014',
-    founder: {
-      '@type': 'Person',
-      name: 'Nguyễn Văn Minh',
-      jobTitle: 'Giám đốc điều hành',
+      'Đơn vị sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao tại Việt Nam',
+    url: 'https://www.onggiodaiphong.com',
+    logo: 'https://www.onggiodaiphong.com/images/logo/logo.png',
+    image: 'https://www.onggiodaiphong.com/images/about/hero-section.jpg',
+    telephone: '+84888885964',
+    email: 'ongiodaiphong@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An',
+      addressLocality: 'Thành phố Hồ Chí Minh',
+      addressCountry: 'VN',
+      postalCode: '700000',
     },
-    areaServed: 'Vietnam',
+    areaServed: {
+      '@type': 'Country',
+      name: 'Vietnam',
+    },
     serviceType: [
-      'Ống gió tròn',
-      'Ống gió vuông',
-      'Cửa gió các loại',
-      'Phụ kiện ống gió',
-      'Van gió',
-      'Sản xuất theo yêu cầu',
-      'Dịch vụ tư vấn thiết kế',
+      'Sản xuất ống gió tròn',
+      'Sản xuất ống gió vuông',
+      'Sản xuất miệng gió',
+      'Sản xuất phụ kiện HVAC',
+      'Gia công ống gió theo yêu cầu',
+      'Van gió, damper',
+      'Diffuser, grille',
+      'Ống gió spiral',
+      'Ống gió mềm',
+      'Ống gió cách nhiệt',
     ],
     knowsAbout: [
-      'Sản xuất ống thông gió',
-      'Hệ thống HVAC',
-      'Công nghệ sản xuất',
-      'Kiểm soát chất lượng',
-      'Tư vấn thiết kế hệ thống thông gió',
+      'Sản xuất ống gió',
+      'Gia công HVAC',
+      'Hệ thống thông gió',
+      'Công nghệ sản xuất tự động',
+      'Kiểm soát chất lượng ống gió',
     ],
-    hasCredential: [
-      {
-        '@type': 'EducationalOccupationalCredential',
-        name: 'ISO 9001:2015',
-        description: 'Chứng nhận hệ thống quản lý chất lượng quốc tế',
-      },
-      {
-        '@type': 'EducationalOccupationalCredential',
-        name: 'Chứng nhận CE',
-        description: 'Chứng nhận sản phẩm đạt tiêu chuẩn Châu Âu',
-      },
-    ],
-    slogan: 'CHẤT LƯỢNG VƯỢT TRỘI - DỊCH VỤ HOÀN HẢO - PHÁT TRIỂN BỀN VỮNG',
+    slogan: 'Ống gió chất lượng – Khởi nguồn không khí sạch',
+    keywords:
+      'ống gió, miệng gió, phụ kiện HVAC, ống gió chất lượng, sản xuất ống gió, không khí sạch',
   };
 
   // Breadcrumb structured data

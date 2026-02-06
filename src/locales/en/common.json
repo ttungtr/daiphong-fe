@@ -1,0 +1,89 @@
+{
+  "home": {
+    "ariaRoot": "Daiphong homepage"
+  },
+  "letter": {
+    "heading": "OPEN LETTER",
+    "p1": "Daiphong Industrial Joint Stock Company respectfully sends greetings and best wishes for health and success to your organization.",
+    "p2": "With experience in manufacturing and processing MEP products, Daiphong is a trusted partner in supplying ducts, grilles, dampers, cable trays, ladders and accessories.",
+    "p3": "Our products are widely applied in projects such as high-rise buildings, shopping centers, hospitals, schools, factories, workshops, industrial zones and many other civil and industrial projects nationwide.",
+    "p4": "With flexible production capacity, standard equipment and a professional technical team, Daiphong is committed to meeting requirements for quality, schedule and cost, bringing sustainable value to every project.",
+    "p5": "We look forward to becoming a reliable partner and accompanying our customers in current and future projects.",
+    "closing": "Sincerely thank you and wish your organization sustainable prosperity.",
+    "directorTitle": "General Director",
+    "directorName": "Le Thanh Tung"
+  },
+  "team": {
+    "heading": "OUR TEAM"
+  },
+  "productsSection": {
+    "heading": "Featured products",
+    "subtitle": "We provide a wide range of high-quality MEP products, from air ducts and dampers to silencers and ventilation systems.",
+    "viewAll": "View more"
+  },
+  "newsSection": {
+    "heading": "Featured projects",
+    "subtitle": "Our featured projects are selected from many different sectors.",
+    "viewAll": "View more",
+    "lineTitleAlt": "Decorative underline for featured projects heading"
+  },
+  "contactSection": {
+    "heading": "CONTACT FOR CONSULTATION",
+    "intro": "Contact us for the most specific and detailed consultation. Enter your email here.",
+    "address": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
+    "email": "daiphong@daiphong.com",
+    "phone": "(+84) 888 885 964",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "Your email address",
+    "phonePlaceholder": "Your phone number",
+    "contentPlaceholder": "Message",
+    "submit": "Send"
+  },
+  "mapSection": {
+    "heading": "Representative office",
+    "lineTitleAlt": "Decorative underline for representative office heading"
+  },
+  "header": {
+    "logoAlt": "Ventilation Duct Manufacturer Logo",
+    "searchAriaLabel": "Search products",
+    "searchPlaceholder": "Search...",
+    "searchSubmitAriaLabel": "Perform search",
+    "noResults": "No matching products found",
+    "switchToVietnamese": "Switch to Vietnamese",
+    "switchToEnglish": "Switch to English",
+    "callNow": "Call now"
+  },
+  "footer": {
+    "logoAlt": "Daiphong Logo",
+    "heading": "HIGH QUALITY VENTILATION DUCT MANUFACTURER",
+    "addressLabel": "Address:",
+    "vplvLabel": "Regional Office:",
+    "phoneLabel": "Phone:",
+    "emailLabel": "Email:",
+    "copyright": "© 2025 Daiphong. All rights reserved.",
+    "contactHeading": "Contact us",
+    "contactIntro": "Please leave your email address, we will update important news to you.",
+    "emailPlaceholder": "Enter your email",
+    "submit": "Send"
+  },
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "products": "PRODUCTS",
+    "productsAll": "All products",
+    "ducts": "Ducts",
+    "airOutlets": "Air outlets",
+    "dampers": "Dampers",
+    "ductAccessories": "Duct accessories",
+    "fireResistantDucts": "Fire-resistant EI ducts",
+    "cableTrays": "Cable trays",
+    "customFabrication": "Custom fabrication",
+    "projects": "PROJECTS",
+    "news": "NEWS",
+    "newsMain": "News",
+    "companyActivities": "Company activities",
+    "contact": "CONTACT"
+  }
+}
+
+

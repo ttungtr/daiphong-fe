@@ -1,0 +1,89 @@
+{
+  "home": {
+    "ariaRoot": "Trang chủ Đại Phong"
+  },
+  "letter": {
+    "heading": "THƯ NGỎ",
+    "p1": "Công ty Cổ phần Công Nghiệp Đại Phong trân trọng gửi lời chào và lời chúc sức khỏe, thành công đến Quý Đơn vị!",
+    "p2": "Với kinh nghiệm trong lĩnh vực sản xuất và gia công các sản phẩm cơ điện (MEP), Đại Phong hiện là đối tác uy tín trong cung cấp: Ống gió, miệng gió, van gió, thang – máng cáp và phụ kiện,..",
+    "p3": "Sản phẩm của chúng tôi được ứng dụng rộng rãi tại các công trình như: Tòa nhà cao tầng, trung tâm thương mại, bệnh viện, trường học, nhà máy, nhà xưởng, khu công nghiệp và các dự án dân dụng và công nghiệp trên toàn quốc,..",
+    "p4": "Với năng lực sản xuất linh hoạt, thiết bị tiêu chuẩn, và đội ngũ kỹ thuật chuyên môn, Đại Phong cam kết đáp ứng yêu cầu về chất lượng – tiến độ – giá thành, mang đến giá trị bền vững cho mọi dự án.",
+    "p5": "Chúng tôi mong muốn trở thành đối tác tin cậy và đồng hành cùng Quý Khách hàng trong các công trình hiện tại và tương lai.",
+    "closing": "Trân trọng cảm ơn và kính chúc Quý Đơn vị phát triển thịnh vượng!",
+    "directorTitle": "Tổng giám đốc",
+    "directorName": "Lê Thanh Tùng"
+  },
+  "team": {
+    "heading": "ĐỘI NGŨ CỦA CHÚNG TÔI"
+  },
+  "productsSection": {
+    "heading": "Sản phẩm nổi bật",
+    "subtitle": "Chúng tôi cung cấp đa dạng các sản phẩm chất lượng cao trong lĩnh vực cơ điện, từ ống gió, van gió đến thiết bị tiêu âm và hệ thống thông gió.",
+    "viewAll": "Xem thêm"
+  },
+  "newsSection": {
+    "heading": "Dự án tiêu biểu",
+    "subtitle": "Các dự án tiêu biểu của chúng tôi được lựa chọn từ nhiều lĩnh vực khác nhau.",
+    "viewAll": "Xem thêm",
+    "lineTitleAlt": "Đường viền trang trí tiêu đề dự án tiêu biểu"
+  },
+  "contactSection": {
+    "heading": "LIÊN HỆ TƯ VẤN",
+    "intro": "Liên hệ với chúng tôi để được tư vấn cụ thể và chi tiết nhất. Nhập email tại đây",
+    "address": "Lô 3.2, Đường số 2, Khu công nghiệp Tân Đông Hiệp A, Phường Dĩ An, TPHCM",
+    "email": "daiphong@daiphong.com",
+    "phone": "(+84) 888 885 964",
+    "namePlaceholder": "Họ tên của bạn",
+    "emailPlaceholder": "Địa chỉ email của bạn",
+    "phonePlaceholder": "Số điện thoại của bạn",
+    "contentPlaceholder": "Nội dung",
+    "submit": "Gửi"
+  },
+  "mapSection": {
+    "heading": "Văn phòng đại diện",
+    "lineTitleAlt": "Đường viền trang trí tiêu đề văn phòng đại diện"
+  },
+  "header": {
+    "logoAlt": "Nhà sản xuất ống thông gió Logo",
+    "searchAriaLabel": "Tìm kiếm sản phẩm",
+    "searchPlaceholder": "Tìm kiếm...",
+    "searchSubmitAriaLabel": "Thực hiện tìm kiếm",
+    "noResults": "Không tìm thấy sản phẩm phù hợp",
+    "switchToVietnamese": "Chuyển tiếng Việt",
+    "switchToEnglish": "Chuyển sang tiếng Anh",
+    "callNow": "Gọi ngay"
+  },
+  "footer": {
+    "logoAlt": "Đại Phong Logo",
+    "heading": "NHÀ SẢN XUẤT ỐNG THÔNG GIÓ CHẤT LƯỢNG CAO",
+    "addressLabel": "Địa chỉ:",
+    "vplvLabel": "VPLV:",
+    "phoneLabel": "Điện thoại:",
+    "emailLabel": "Email:",
+    "copyright": "© 2025 Đại Phong. All rights reserved.",
+    "contactHeading": "Liên hệ với chúng tôi",
+    "contactIntro": "Xin vui lòng để lại địa chỉ email, chúng tôi sẽ cập nhật tin tức quan trọng tới quý khách.",
+    "emailPlaceholder": "Nhập email của bạn",
+    "submit": "Gửi"
+  },
+  "nav": {
+    "home": "TRANG CHỦ",
+    "about": "VỀ CHÚNG TÔI",
+    "products": "SẢN PHẨM",
+    "productsAll": "Tất cả",
+    "ducts": "Ống gió",
+    "airOutlets": "Cửa gió",
+    "dampers": "Van gió",
+    "ductAccessories": "Phụ kiện ống gió",
+    "fireResistantDucts": "Ống gió chống cháy EI",
+    "cableTrays": "Máng cáp điện",
+    "customFabrication": "Gia công theo yêu cầu",
+    "projects": "DỰ ÁN",
+    "news": "TIN TỨC",
+    "newsMain": "Tin tức",
+    "companyActivities": "Hoạt động công ty",
+    "contact": "LIÊN HỆ"
+  }
+}
+
+

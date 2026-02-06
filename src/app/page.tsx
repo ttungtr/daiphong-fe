@@ -1,39 +1,36 @@
-import NivoSliderDemo from '@/components/demo/NivoSliderDemo';
-import {
-  ContactConsultationSection,
-  LetterSection,
-  MapSection,
-  NewsSection,
-  TeamSection,
-} from '@/components/feature/homepage';
-import { ProductSection } from '@/components/feature/homepage/product-section';
-// import { PageViewsDemo } from "@/components/common";
+import HomePageClient from '@/components/feature/homepage/HomePageClient';
 import { Metadata } from 'next';
 
 // SEO Metadata for homepage
 export const metadata: Metadata = {
   title:
-    'Đại Phong - Công Ty Cổ Phần Công Nghiệp | Thi công hệ thống MEP chuyên nghiệp',
+    'Đại Phong - Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC Chất Lượng Hàng Đầu Việt Nam',
   description:
-    'Đại Phong - Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy). Tư vấn, thiết kế và thi công chuyên nghiệp với đội ngũ kỹ sư giàu kinh nghiệm.',
+    'Đại Phong - Đơn vị sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao với công nghệ hiện đại. "Ống gió chất lượng – Khởi nguồn không khí sạch". Sản phẩm đạt chuẩn, độ chính xác cao, đảm bảo tiến độ. Tư vấn miễn phí: 0888885964',
   keywords: [
     'Đại Phong',
-    'thi công hệ thống MEP',
-    'hệ thống điện',
-    'hệ thống nước',
-    'điều hòa thông gió',
-    'phòng cháy chữa cháy',
-    'cơ điện',
-    'kỹ thuật cơ điện',
-    'thiết kế MEP',
-    'tư vấn cơ điện',
-    'công ty cơ điện',
-    'dự án MEP',
-    'hệ thống điện nhẹ',
-    'cấp thoát nước',
-    'HVAC',
+    'sản xuất ống gió',
+    'ống gió chất lượng',
+    'miệng gió',
+    'phụ kiện HVAC',
+    'ống gió tròn',
+    'ống gió vuông',
+    'ống gió spiral',
+    'van gió',
+    'damper',
+    'diffuser',
+    'grille',
+    'thiết bị thông gió',
+    'hệ thống thông gió',
+    'ống gió mềm',
+    'ống gió cách nhiệt',
+    'gia công ống gió',
+    'nhà máy ống gió',
+    'ống gió Việt Nam',
+    'không khí sạch',
+    'HVAC Vietnam',
   ],
-  authors: [{ name: 'Đại Phong' }],
+  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
   creator: 'Đại Phong',
   publisher: 'Đại Phong',
   robots: {
@@ -52,15 +49,15 @@ export const metadata: Metadata = {
     locale: 'vi_VN',
     url: 'https://www.onggiodaiphong.com',
     title:
-      'Đại Phong - Công Ty Cổ Phần Công Nghiệp | Thi công hệ thống MEP chuyên nghiệp',
+      'Đại Phong - Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC Chất Lượng Cao',
     description:
-      'Đại Phong - Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy). Tư vấn, thiết kế và thi công chuyên nghiệp.',
+      'Đơn vị sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC uy tín hàng đầu Việt Nam. Công nghệ hiện đại, chất lượng đảm bảo, độ chính xác cao. "Ống gió chất lượng – Khởi nguồn không khí sạch".',
     images: [
       {
-        url: '/images/banners/banner-1.pngx',
+        url: 'https://www.onggiodaiphong.com/images/banners/banner-1.jpg',
         width: 1200,
         height: 630,
-        alt: 'Đại Phong - Thi công hệ thống MEP chuyên nghiệp',
+        alt: 'Đại Phong - Sản xuất ống gió chất lượng cao',
       },
     ],
     siteName: 'Đại Phong',
@@ -69,10 +66,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@onggiodaiphong',
     creator: '@onggiodaiphong',
-    title: 'Đại Phong - Công Ty Cổ Phần Công Nghiệp',
+    title: 'Đại Phong - Sản Xuất Ống Gió Chất Lượng',
     description:
-      'Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy)',
-    images: ['/images/banners/banner-1.pngx'],
+      'Đơn vị sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC uy tín hàng đầu Việt Nam',
+    images: ['https://www.onggiodaiphong.com/images/banners/banner-1.jpg'],
   },
   alternates: {
     canonical: '/',
@@ -80,22 +77,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return (
-    <div className="w-full bg-white">
-      {/* <HeroSection slides={slides} /> */}
-      <NivoSliderDemo />
-      {/* <ImagePlaceholderDemo /> */}
-      {/* <IntroduceSection /> */}
-      <LetterSection />
-      <TeamSection />
-      <ProductSection />
-      <NewsSection />
-      {/* <CTASection /> */}
-      <ContactConsultationSection />
-
-      <MapSection />
-      {/* <PartnerSection /> */}
-      {/* <PageViewsDemo /> */}
-    </div>
-  );
+  return <HomePageClient />;
 }

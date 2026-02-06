@@ -1,84 +1,90 @@
 export interface DropdownItem {
-  title: string;
+  /**
+   * i18n translation key, e.g. "nav.productsAll"
+   */
+  titleKey: string;
   href: string;
 }
 
 export interface NavItem {
-  title: string;
+  /**
+   * i18n translation key, e.g. "nav.home"
+   */
+  titleKey: string;
   href: string;
   dropdown?: DropdownItem[];
 }
 
 export const navigationItems: NavItem[] = [
   {
-    title: 'TRANG CHỦ',
+    titleKey: 'nav.home',
     href: '/',
   },
   {
-    title: 'VỀ CHÚNG TÔI',
+    titleKey: 'nav.about',
     href: '/gioi-thieu',
   },
   {
-    title: 'SẢN PHẨM',
+    titleKey: 'nav.products',
     href: '/san-pham',
     dropdown: [
       {
-        title: 'Tất cả',
+        titleKey: 'nav.productsAll',
         href: '/san-pham',
       },
       {
-        title: 'Ống gió',
+        titleKey: 'nav.ducts',
         href: '/san-pham/ong-gio',
       },
       {
-        title: 'Cửa gió',
+        titleKey: 'nav.airOutlets',
         href: '/san-pham/cua-gio',
       },
       {
-        title: 'Van gió',
+        titleKey: 'nav.dampers',
         href: '/san-pham/van-gio',
       },
       {
-        title: 'Phụ kiện ống gió',
+        titleKey: 'nav.ductAccessories',
         href: '/san-pham/phu-kien-ong-gio',
       },
       {
-        title: 'Ống gió chống cháy EI',
+        titleKey: 'nav.fireResistantDucts',
         href: '/san-pham/ong-gio-chong-chay-ei',
       },
       {
-        title: 'Máng cáp điện',
+        titleKey: 'nav.cableTrays',
         href: '/san-pham/mang-cap-dien',
       },
       {
-        title: 'Gia công theo yêu cầu',
+        titleKey: 'nav.customFabrication',
         href: '/san-pham/gia-cong-theo-yeu-cau',
       },
     ],
   },
 
   {
-    title: 'DỰ ÁN',
+    titleKey: 'nav.projects',
     href: '/du-an',
   },
 
   {
-    title: 'TIN TỨC',
+    titleKey: 'nav.news',
     href: '/tin-tuc',
     dropdown: [
       {
-        title: 'Tin tức',
+        titleKey: 'nav.newsMain',
         href: '/tin-tuc',
       },
       {
-        title: 'Hoạt động công ty',
+        titleKey: 'nav.companyActivities',
         href: '/hoat-dong-cong-ty',
       },
     ],
   },
 
   {
-    title: 'LIÊN HỆ',
+    titleKey: 'nav.contact',
     href: '/lien-he',
   },
 ];

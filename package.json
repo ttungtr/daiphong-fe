@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google-analytics/data": "^5.0.5",
     "framer-motion": "^12.23.10",
+    "i18next": "^25.8.4",
     "lucide-react": "^0.522.0",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@google-analytics/data": "^5.0.5",
+    "react-i18next": "^16.5.4",
     "swiper": "^11.2.8"
   },
   "devDependencies": {

@@ -5,14 +5,14 @@ import { Metadata } from 'next';
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: 'Chính Sách Nhân Sự - Quy Định Lao Động | Tên Công Ty',
+  title: 'Chính Sách Nhân Sự Đại Phong | Tuyển Dụng Ngành Sản Xuất Ống Gió',
   description:
-    'Tìm hiểu về chính sách nhân sự, quy định lao động, chế độ đãi ngộ và môi trường làm việc chuyên nghiệp tại công ty chúng tôi. Gia nhập đội ngũ với những chính sách minh bạch và công bằng.',
+    'Tìm hiểu về chính sách nhân sự, quy định lao động, chế độ đãi ngộ và môi trường làm việc chuyên nghiệp tại Đại Phong - Nhà sản xuất ống gió hàng đầu. Gia nhập đội ngũ với những chính sách minh bạch, công bằng và cơ hội phát triển trong ngành HVAC.',
   keywords:
-    'chính sách nhân sự, quy định lao động, tuyển dụng, đãi ngộ nhân viên, môi trường làm việc, HR policy, human resources',
-  authors: [{ name: 'Tên Công Ty' }],
-  creator: 'Tên Công Ty',
-  publisher: 'Tên Công Ty',
+    'chính sách nhân sự Đại Phong, tuyển dụng ống gió, tuyển dụng HVAC, quy định lao động, đãi ngộ nhân viên, môi trường làm việc, tuyển dụng sản xuất, công nhân ống gió, kỹ sư HVAC',
+  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
+  creator: 'Đại Phong',
+  publisher: 'Đại Phong',
   robots: {
     index: true,
     follow: true,
@@ -27,42 +27,33 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'vi_VN',
-    url: 'https://onggiodaiphong.com/hr-policy',
-    title: 'Chính Sách Nhân Sự - Quy Định Lao Động',
+    url: 'https://www.onggiodaiphong.com/tuyen-dung/chinh-sach-nhan-su',
+    title: 'Chính Sách Nhân Sự Đại Phong - Tuyển Dụng Ngành Sản Xuất Ống Gió',
     description:
-      'Tìm hiểu về chính sách nhân sự, quy định lao động, chế độ đãi ngộ và môi trường làm việc chuyên nghiệp tại công ty chúng tôi.',
+      'Tìm hiểu về chính sách nhân sự, quy định lao động, chế độ đãi ngộ và môi trường làm việc chuyên nghiệp tại Đại Phong.',
     images: [
       {
-        url: '/images/hr-policy-og-image.pngx',
+        url: 'https://www.onggiodaiphong.com/images/hr-policy/hero-section.jpg',
         width: 1200,
         height: 630,
-        alt: 'Chính sách nhân sự công ty',
+        alt: 'Chính sách nhân sự Đại Phong',
       },
     ],
-    siteName: 'Tên Công Ty',
+    siteName: 'Đại Phong',
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@yourcompany',
-    creator: '@yourcompany',
-    title: 'Chính Sách Nhân Sự - Quy Định Lao Động',
+    site: '@onggiodaiphong',
+    creator: '@onggiodaiphong',
+    title: 'Chính Sách Nhân Sự Đại Phong',
     description:
-      'Tìm hiểu về chính sách nhân sự, quy định lao động và chế độ đãi ngộ tại công ty chúng tôi.',
-    images: ['/images/hr-policy-twitter-image.pngx'],
+      'Tìm hiểu về chính sách nhân sự, quy định lao động và chế độ đãi ngộ tại Đại Phong.',
+    images: [
+      'https://www.onggiodaiphong.com/images/hr-policy/hero-section.jpg',
+    ],
   },
   alternates: {
-    canonical: 'https://onggiodaiphong.com/hr-policy',
-    languages: {
-      'vi-VN': 'https://onggiodaiphong.com/hr-policy',
-      'en-US': 'https://onggiodaiphong.com/en/hr-policy',
-    },
-  },
-  verification: {
-    google: 'your-google-site-verification-code',
-    yandex: 'your-yandex-verification-code',
-    other: {
-      me: ['daiphong@daiphong.com'],
-    },
+    canonical: 'https://www.onggiodaiphong.com/tuyen-dung/chinh-sach-nhan-su',
   },
 };
 
@@ -70,33 +61,32 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Chính Sách Nhân Sự',
+  name: 'Chính Sách Nhân Sự - Đại Phong',
   description:
-    'Tìm hiểu về chính sách nhân sự, quy định lao động, chế độ đãi ngộ và môi trường làm việc chuyên nghiệp tại công ty chúng tôi. Gia nhập đội ngũ với những chính sách minh bạch và công bằng.',
-  url: 'https://onggiodaiphong.com/hr-policy',
+    'Chính sách nhân sự, quy định lao động, chế độ đãi ngộ tại Đại Phong - Nhà sản xuất ống gió, miệng gió, phụ kiện HVAC hàng đầu.',
+  url: 'https://www.onggiodaiphong.com/tuyen-dung/chinh-sach-nhan-su',
   mainEntity: {
     '@type': 'Organization',
-    name: 'Tên Công Ty',
-    url: 'https://onggiodaiphong.com',
-    logo: 'https://onggiodaiphong.com/logo.pngx',
+    name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+    alternateName: 'Đại Phong',
+    url: 'https://www.onggiodaiphong.com',
+    logo: 'https://www.onggiodaiphong.com/images/logo/logo.png',
     description:
-      'Công ty với chính sách nhân sự minh bạch và môi trường làm việc chuyên nghiệp',
+      'Nhà sản xuất ống gió, miệng gió, phụ kiện HVAC với chính sách nhân sự minh bạch và môi trường làm việc chuyên nghiệp',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+84-xxx-xxx-xxx',
+      telephone: '+84888885964',
       contactType: 'human resources',
+      email: 'ongiodaiphong@gmail.com',
       areaServed: 'VN',
-      availableLanguage: ['Vietnamese', 'English'],
+      availableLanguage: 'Vietnamese',
     },
-    employee: {
-      '@type': 'EmployeeRole',
-      roleName: 'Human Resources',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An',
+      addressLocality: 'Thành phố Hồ Chí Minh',
+      addressCountry: 'VN',
     },
-    sameAs: [
-      'https://facebook.com/people/Phi-Long-Corp/61577256883038/',
-      'https://linkedin.com/company/yourcompany',
-      'https://twitter.com/yourcompany',
-    ],
   },
   breadcrumb: {
     '@type': 'BreadcrumbList',
@@ -105,26 +95,21 @@ const structuredData = {
         '@type': 'ListItem',
         position: 1,
         name: 'Trang Chủ',
-        item: 'https://onggiodaiphong.com',
+        item: 'https://www.onggiodaiphong.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
+        name: 'Tuyển Dụng',
+        item: 'https://www.onggiodaiphong.com/tuyen-dung',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
         name: 'Chính Sách Nhân Sự',
-        item: 'https://onggiodaiphong.com/hr-policy',
+        item: 'https://www.onggiodaiphong.com/tuyen-dung/chinh-sach-nhan-su',
       },
     ],
-  },
-  about: {
-    '@type': 'Thing',
-    name: 'Chính sách nhân sự',
-    description:
-      'Quy định và chính sách về quản lý nhân sự, chế độ đãi ngộ và môi trường làm việc',
-  },
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: 'https://onggiodaiphong.com/search?q={search_term_string}',
-    'query-input': 'required name=search_term_string',
   },
 };
 

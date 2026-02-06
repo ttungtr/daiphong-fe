@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FunctionComponent, useState } from "react";
 import { navigationItems, type DropdownItem } from "@/data/navigation";
+import { useTranslation } from "react-i18next";
 
 interface MobileNavigationProps {
   isOpen: boolean;
@@ -16,6 +17,7 @@ export const MobileNavigation: FunctionComponent<MobileNavigationProps> = ({
 }) => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const pathname = usePathname();
+  const { t } = useTranslation("common");
 
   const isActive = (href: string): boolean => {
     return pathname === href;
@@ -26,8 +28,8 @@ export const MobileNavigation: FunctionComponent<MobileNavigationProps> = ({
     return dropdown.some((item) => isActive(item.href));
   };
 
-  const toggleDropdown = (title: string) => {
-    setOpenDropdown(openDropdown === title ? null : title);
+  const toggleDropdown = (href: string) => {
+    setOpenDropdown(openDropdown === href ? null : href);
   };
 
   const handleLinkClick = () => {
@@ -44,7 +46,7 @@ export const MobileNavigation: FunctionComponent<MobileNavigationProps> = ({
       <nav className="px-4 py-2">
         {navigationItems.map((item) => (
           <div
-            key={item.title}
+            key={item.href}
             className="border-b border-primary-blue-1 last:border-b-0"
           >
             <div className="flex items-center justify-between">
@@ -57,17 +59,17 @@ export const MobileNavigation: FunctionComponent<MobileNavigationProps> = ({
                     : "text-slate-700 hover:text-[#00689d]"
                 }`}
               >
-                {item.title}
+                {t(item.titleKey)}
               </Link>
               {item.dropdown && (
                 <button
-                  onClick={() => toggleDropdown(item.title)}
+                  onClick={() => toggleDropdown(item.href)}
                   className="p-2 text-slate-600 hover:text-[#00689d]"
-                  aria-label={`Toggle ${item.title} dropdown`}
+                  aria-label={`Toggle ${t(item.titleKey)} dropdown`}
                 >
                   <svg
                     className={`w-4 h-4 transition-transform duration-200 ${
-                      openDropdown === item.title ? "rotate-180" : ""
+                      openDropdown === item.href ? "rotate-180" : ""
                     }`}
                     fill="none"
                     stroke="currentColor"
@@ -87,7 +89,7 @@ export const MobileNavigation: FunctionComponent<MobileNavigationProps> = ({
             {item.dropdown && (
               <div
                 className={`transition-all duration-300  ease-in-out overflow-hidden ${
-                  openDropdown === item.title
+                  openDropdown === item.href
                     ? "max-h-96 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
@@ -104,7 +106,7 @@ export const MobileNavigation: FunctionComponent<MobileNavigationProps> = ({
                           : "text-slate-700 hover:text-[#00689d]"
                       }`}
                     >
-                      {dropdownItem.title}
+                      {t(dropdownItem.titleKey)}
                     </Link>
                   ))}
                 </div>

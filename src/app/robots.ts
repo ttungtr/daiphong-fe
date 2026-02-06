@@ -13,8 +13,13 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/admin/', '/api/', '/private/', '/_next/', '/dashboard/'],
       },
+      {
+        userAgent: 'Bingbot',
+        allow: '/',
+        disallow: ['/admin/', '/api/', '/private/', '/_next/', '/dashboard/'],
+      },
     ],
-    sitemap: 'https://onggiodaiphong.com/sitemap.xml',
-    host: 'https://onggiodaiphong.com',
+    sitemap: 'https://www.onggiodaiphong.com/sitemap.xml',
+    host: 'https://www.onggiodaiphong.com',
   };
 }

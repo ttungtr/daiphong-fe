@@ -1,5 +1,5 @@
-"use client";
-import Link from "next/link";
+'use client';
+import Link from 'next/link';
 
 export const CTASection = () => (
   <div className="w-full bg-primary-blue-1">
@@ -14,7 +14,7 @@ export const CTASection = () => (
           </p>
 
           <p className="text-center mt-2 md:mt-2 lg:mt-2 text-lg sm:text-lg md:text-lg font-semibold">
-            <strong>HOTLINE: 0xxx xxx xxx</strong>
+            <strong>HOTLINE: 0888 885 964</strong>
           </p>
         </div>
 

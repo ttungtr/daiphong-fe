@@ -1098,6 +1098,734 @@ Kết nối với thiết bị: Đôi khi, vị trí của quạt, miệng gió,
 Giảm thiểu số lượng phụ kiện: Thay vì sử dụng nhiều cút (elbow) và đoạn thẳng để tạo ra một sự dịch chuyển, một chuyển lệch tâm được thiết kế riêng có thể hiệu quả hơn và giảm tổn thất áp suất.</p>
 `,
   },
+  {
+    id: 'p-047',
+    name: 'Chạc ba ống gió',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/chac-ba-ong-gio.png',
+    slug: 'chac-ba-ong-gio',
+    description:
+      'Chạc ba ống gió dùng để chia hoặc gộp luồng không khí giữa các nhánh ống, tối ưu hóa không gian và lưu lượng gió trong hệ thống.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến nhất do tính kinh tế và khả năng chống ăn mòn tốt trong môi trường thông thường. Độ dày vật liệu thường từ 0.48mm đến 1.15mm, tùy thuộc vào kích thước ống và yêu cầu hệ thống.<br>
+Inox (SUS 201, 304): Được sử dụng trong các môi trường đặc biệt yêu cầu vệ sinh cao, chống ăn mòn hoặc có hóa chất (ví dụ: phòng sạch, nhà máy thực phẩm, y tế).<br>
+Tôn đen sơn tĩnh điện: Dùng cho các hệ thống hút khói, hút bụi công nghiệp.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Phân chia luồng không khí: Chức năng chính là chia một đường ống gió lớn thành hai hoặc nhiều nhánh nhỏ hơn, dẫn không khí đến các khu vực khác nhau.<br>
+Gộp luồng không khí: Chạc 3 cũng có thể dùng để gộp hai luồng gió từ các nhánh nhỏ thành một luồng lớn hơn vào đường ống chính.<br>
+Điều chỉnh hướng gió: Giúp thay đổi hướng di chuyển của không khí trong hệ thống.<br>
+Tối ưu hóa hệ thống: Giảm thiểu số lượng ống gió cần thiết, tiết kiệm không gian lắp đặt và chi phí vật liệu.<br>
+Đảm bảo lưu lượng và áp suất: Các đầu nhánh của chạc 3 thường được thiết kế có thành lượn hình tròn (bán kính R) hoặc các góc vát phù hợp để đảm bảo luồng gió đi qua không bị tổn thất nhiều về lưu lượng và áp suất, duy trì vận tốc ổn định.</span></p>
+  </div>
+</div>
+`,
+
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Chạc 3 ống gió vuông thường được phân loại dựa trên góc rẽ nhánh và kiểu kết nối:</span></p>
+    <p style="text-align: left;">Theo góc rẽ nhánh:<br>
+Chạc 3 rẽ 45 độ: Phổ biến, giúp luồng gió chuyển hướng mượt mà, ít gây tổn thất.<br>
+Chạc 3 rẽ 90 độ: Dùng trong những trường hợp cần thay đổi hướng gấp.<br>
+Theo kiểu kết nối:<br>
+TDC (Transverse Duct Connector): Kiểu kết nối bằng bích liền ống, phổ biến và dễ lắp đặt.<br>
+Nẹp C: Kiểu kết nối bằng nẹp C, thường dùng cho ống gió nhỏ hoặc các hệ thống yêu cầu độ kín cao.<br>
+Bích V: Kết nối bằng bích chữ V, đảm bảo độ chắc chắn và kín khít.</p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-048',
+    name: 'Chuyển vuông tròn đồng tâm',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/chuyen-vuong-tron-dong-tam.png',
+    slug: 'chuyen-vuong-tron-dong-tam',
+    description:
+      'Chuyển vuông tròn đồng tâm dùng để kết nối ống gió vuông/chữ nhật với ống tròn theo trục tâm, giúp chuyển tiếp mượt và giảm tổn thất áp suất.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Vật liệu phổ biến nhất do chi phí hợp lý và khả năng gia công dễ dàng. Được sử dụng rộng rãi trong các hệ thống thông gió và điều hòa không khí dân dụng, thương mại.<br>
+Inox (201, 304): Dùng cho các ứng dụng đặc biệt yêu cầu khả năng chống ăn mòn cao, chống gỉ sét, hoặc đáp ứng các tiêu chuẩn vệ sinh nghiêm ngặt (ví dụ: hệ thống hút khói bếp công nghiệp, nhà máy chế biến thực phẩm, hóa chất).</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Kết nối ống gió vuông với quạt: Rất phổ biến khi quạt có miệng hút hoặc miệng thổi dạng tròn, trong khi đường ống chính là ống vuông.<br>
+Kết nối ống gió vuông với ống gió tròn: Khi cần chuyển đổi từ hệ thống ống vuông sang ống tròn vì lý do không gian, thẩm mỹ, hoặc hiệu suất.<br>
+Kết nối ống gió vuông với miệng gió tròn: Gắn các miệng gió tròn vào hệ thống ống gió vuông.<br>
+Kết nối với các thiết bị khác: Các thiết bị công nghiệp có cổng kết nối tròn, trong khi hệ thống ống dẫn là vuông.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Hình dạng:</span></p>
+    <p style="text-align: left;">Có hình dạng như một cái phễu hoặc chóp cụt, với một đầu là hình vuông (hoặc chữ nhật) và đầu còn lại là hình tròn.<br>
+Đặc điểm "đồng tâm" được thể hiện qua việc tâm của hình vuông/chữ nhật và tâm của hình tròn đều nằm trên một đường thẳng tưởng tượng chạy dọc theo trục của phụ kiện. Điều này tạo ra sự đối xứng xung quanh trục đó.<br>
+Các mặt bên thường là các mặt phẳng được gia công tinh xảo để tạo ra sự chuyển tiếp mượt mà nhất có thể giữa hai hình dạng.<br>
+Độ dày vật liệu:</p>
+    <p style="text-align: left;">Phụ thuộc vào kích thước của phụ kiện và áp suất làm việc của hệ thống.<br>
+Tuân theo các tiêu chuẩn về độ dày vật liệu tương tự như ống gió.<br>
+Chiều dài (Length):</p>
+    <p style="text-align: left;">Chiều dài của chuyển vuông - tròn đồng tâm cũng ảnh hưởng đến hiệu suất khí động học. Chiều dài càng lớn, độ dốc của sự chuyển đổi càng nhỏ, giúp:<br>
+Giảm tổn thất áp suất: Dòng khí ít bị hỗn loạn hơn khi chuyển từ tiết diện này sang tiết diện khác.<br>
+Giảm tiếng ồn: Giúp hệ thống hoạt động êm ái hơn.<br>
+Ngược lại, côn quá ngắn có thể gây ra tổn thất áp suất đáng kể và tiếng ồn.<br>
+Mối nối:</p>
+    <p style="text-align: left;">Đầu vuông/chữ nhật: Thường được trang bị bích (như bích TDC/TDF hoặc bích thép góc) để kết nối với ống gió vuông.<br>
+Đầu tròn: Có thể có bích tròn, mối nối nhanh (snap-lock), hoặc được thiết kế để lồng vào hoặc lồng ra khỏi ống tròn và được cố định bằng đinh rút, vít tự khoan và keo làm kín.</p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hiệu suất khí động học tốt: Do thiết kế đồng tâm và chuyển tiếp mượt mà, giúp giảm thiểu tổn thất áp suất và tiếng ồn.<br>
+Dễ dàng tính toán và lắp đặt: Thiết kế đối xứng giúp việc căn chỉnh và lắp đặt tương đối đơn giản.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-049',
+    name: 'Chuyển vuông tròn lệch tâm',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/chuyen-vuong-tron-lech-tam.png',
+    slug: 'chuyen-vuong-tron-lech-tam',
+    description:
+      'Chuyển vuông tròn lệch tâm dùng để kết nối ống gió vuông/chữ nhật với ống tròn khi hai trục lệch nhau, tối ưu không gian lắp đặt và dòng khí.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến và kinh tế, có khả năng chống rỉ sét và oxy hóa tốt. Độ dày phổ biến từ 0.48mm đến 1.15mm, và độ mạ kẽm từ Z8 đến Z18.<br>
+Inox (201, 304): Chống ăn mòn vượt trội, phù hợp cho môi trường yêu cầu vệ sinh cao hoặc có tính ăn mòn. Độ dày phổ biến từ 0.6mm đến 0.8mm.<br>
+Ngoài ra còn có thể làm từ nhôm hoặc các vật liệu khác tùy theo yêu cầu cụ thể của công trình.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hệ thống HVAC (Heating, Ventilation, and Air Conditioning): Dùng để kết nối và chuyển hướng các đường ống gió vuông và tròn trong các tòa nhà thương mại, chung cư, nhà xưởng, trung tâm thương mại, bệnh viện, phòng sạch, v.v.<br>
+Hệ thống thông gió công nghiệp: Trong các nhà máy, xưởng sản xuất, hầm mỏ để đảm bảo luân chuyển không khí, hút khí thải, bụi bẩn và cung cấp khí tươi.<br>
+Kết nối với thiết bị: Dùng để kết nối ống gió vuông với đầu vào hoặc đầu ra của quạt gió, hoặc để kết nối với ống gió mềm dẫn xuống miệng gió.<br>
+Tối ưu hóa không gian: Nhờ khả năng lệch tâm, nó giúp linh hoạt thay đổi đường ống để phù hợp với không gian lắp đặt bị hạn chế hoặc có chướng ngại vật, đảm bảo dòng khí lưu thông mượt mà và giảm thiểu tổn thất áp suất.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Độ dày: Phụ thuộc vào kích thước của côn chuyển và chức năng sử dụng trong hệ thống, tuân theo tiêu chuẩn thiết kế và yêu cầu khách hàng<br>
+Kích thước và góc lệch: Được thiết kế và sản xuất theo yêu cầu cụ thể của từng công trình để phù hợp với vị trí lắp đặt.<br>
+Kiểu mối nối: Mối nối các đoạn ống gió phải dùng kiểu tháo rời được. Các mối ghép và mối nối phải đảm bảo kín khí.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Linh hoạt trong thiết kế và lắp đặt: Giúp đơn giản hóa quá trình thi công, dễ dàng kết nối các loại ống gió khác nhau trong không gian phức tạp.<br>
+Giảm tổn thất áp suất: Thiết kế lượn tròn và chuyển đổi mượt mà giúp luồng khí lưu thông ổn định, giảm ma sát và tổn thất năng lượng.<br>
+Tối ưu hiệu suất hệ thống HVAC: Góp phần duy trì chất lượng không khí, giảm tiếng ồn và tăng hiệu quả vận hành của toàn bộ hệ thống.<br>
+Độ bền cao: Được làm từ vật liệu chống rỉ sét, oxy hóa, chịu lực tốt, đảm bảo tuổi thọ cho hệ thống.<br>
+Dễ dàng bảo trì và thay thế: Có thể tháo rời giúp việc bảo dưỡng hệ thống thuận tiện hơn.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-050',
+    name: 'Côn thu đồng tâm vuông',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/con-thu-dong-tam-vuong.png',
+    slug: 'con-thu-dong-tam-vuong',
+    description:
+      'Côn thu đồng tâm vuông dùng để thu nhỏ tiết diện ống gió vuông/chữ nhật một cách đồng tâm, giúp điều chỉnh vận tốc và áp suất gió hiệu quả.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến nhất, được sử dụng rộng rãi trong các hệ thống thông gió, điều hòa không khí.<br>
+Inox (201, 304): Dùng trong môi trường yêu cầu chống ăn mòn cao, vệ sinh (ví dụ: hệ thống hút khói bếp công nghiệp, nhà máy chế biến thực phẩm).</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Điều chỉnh vận tốc và áp suất gió: Khi tiết diện thu hẹp, vận tốc gió tăng lên và áp suất tĩnh có thể giảm. Điều này được sử dụng để điều khiển lưu lượng khí hoặc để tạo ra một điểm áp suất nhất định.<br>
+Kết nối các đoạn ống có kích thước khác nhau: Đảm bảo sự chuyển tiếp trơn tru giữa các đoạn ống có đường kính khác nhau.<br>
+Kết nối ống gió với thiết bị: Ví dụ, kết nối ống gió chính với các miệng gió, van điều chỉnh lưu lượng (VCD), hộp gió (plenum box) hoặc các thiết bị khác có kích thước đầu vào nhỏ hơn.<br>
+Phân phối hoặc tập trung dòng khí: Trong một số trường hợp, côn thu được sử dụng như một phần của mạng lưới phân phối hoặc hội tụ dòng khí.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Hình dạng:</span></p>
+    <p style="text-align: left;">Có hình chóp cụt, với hai đầu là hai hình chữ nhật (hoặc vuông) có kích thước khác nhau.<br>
+Kích thước đầu vào (cạnh lớn hơn) và kích thước đầu ra (cạnh nhỏ hơn).<br>
+Bốn mặt bên của côn là các hình thang cân, đối xứng qua trục tâm của côn. Điều này tạo nên đặc điểm "đồng tâm" của nó.<br>
+Độ dày vật liệu:</p>
+    <p style="text-align: left;">Phụ thuộc vào kích thước của côn và áp suất làm việc của hệ thống.<br>
+Thường tuân theo các tiêu chuẩn về độ dày tương tự như ống gió vuông.<br>
+Chiều dài côn (Length of Reducer):</p>
+    <p style="text-align: left;">Chiều dài của côn ảnh hưởng trực tiếp đến hiệu suất của nó. Côn càng dài, độ dốc của các mặt bên càng nhỏ, giúp luồng khí chuyển đổi tiết diện mượt mà hơn, từ đó:<br>
+Giảm tổn thất áp suất: Khí di chuyển êm ái, ít va đập và hỗn loạn.<br>
+Giảm tiếng ồn: Giúp hệ thống hoạt động yên tĩnh hơn.</p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-051',
+    name: 'Côn thu đồng tâm',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/con-thu-dong-tam.png',
+    slug: 'con-thu-dong-tam',
+    description:
+      'Côn thu đồng tâm dùng để chuyển đổi tiết diện ống gió một cách mượt mà, giúp điều chỉnh lưu lượng và áp suất gió, tối ưu dòng chảy trong hệ thống.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến nhất, có độ bền và khả năng chống gỉ sét tốt, giá thành hợp lý.<br>
+Inox (thép không gỉ): Bao gồm Inox 201, 304, 316. Được sử dụng trong các môi trường yêu cầu độ bền cao, chống ăn mòn tuyệt đối, hoặc môi trường có yêu cầu vệ sinh nghiêm ngặt (như nhà máy thực phẩm, dược phẩm, phòng sạch).<br>
+Nhôm hoặc thép sơn tĩnh điện: Ít phổ biến hơn nhưng cũng có thể được sử dụng trong một số ứng dụng đặc biệt.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Thay đổi kích thước ống: Đây là công dụng cơ bản nhất. Côn thu đồng tâm cho phép chuyển đổi lưu lượng không khí hoặc chất lỏng một cách mượt mà từ một ống có tiết diện lớn sang một ống có tiết diện nhỏ hơn, hoặc ngược lại (khi đó gọi là côn phóng).<br>
+Điều chỉnh lưu lượng và áp suất: Khi giảm tiết diện ống, tốc độ dòng khí thường tăng lên, và áp suất tĩnh có thể thay đổi. Côn thu đồng tâm giúp điều chỉnh những yếu tố này một cách có kiểm soát.<br>
+Kết nối thiết bị: Thường được sử dụng để kết nối đường ống gió với các thiết bị có kích thước cửa vào/ra khác nhau, ví dụ như đầu quạt, miệng gió, bộ lọc, v.v.<br>
+Tối ưu hóa dòng chảy: Thiết kế đồng tâm và chuyển tiếp trơn tru giúp giảm thiểu sự nhiễu loạn của dòng khí/chất lỏng, từ đó hạn chế tổn thất áp suất và giảm tiếng ồn.<br>
+Tiết kiệm không gian: Cho phép linh hoạt hơn trong thiết kế và lắp đặt hệ thống ống dẫn, đặc biệt trong các không gian có hạn.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Hình dạng: Côn thu đồng tâm có hình dạng giống như một hình nón cụt hoặc hình chóp cụt, thu nhỏ dần từ đầu lớn sang đầu nhỏ. Đặc điểm quan trọng nhất là trục tâm của đầu lớn và đầu nhỏ nằm trên cùng một đường thẳng.<br>
+Kích thước: Đa dạng, được sản xuất theo đường kính (đối với ống tròn) hoặc kích thước cạnh (đối với ống vuông/chữ nhật) của hai đoạn ống cần kết nối.<br>
+Độ dày vật liệu: Thường dao động từ 0.5mm đến 1.2mm hoặc hơn, tùy thuộc vào kích thước côn và áp suất của hệ thống.<br>
+Kiểu dáng: Côn thu đồng tâm có thể có dạng tròn (để nối ống tròn), vuông (để nối ống vuông), hoặc chuyển tiếp từ vuông sang tròn.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Duy trì dòng chảy ổn định: Thiết kế đồng tâm giúp dòng khí chuyển đổi kích thước một cách mượt mà, ít gây xoáy hoặc hỗn loạn, giảm thiểu tổn thất áp suất và tiếng ồn.<br>
+Dễ dàng thiết kế và lắp đặt: So với côn thu lệch tâm, côn thu đồng tâm có cấu tạo đơn giản hơn, dễ tính toán và thi công.<br>
+Phù hợp với hệ thống thẳng đứng: Đặc biệt hiệu quả khi côn thu được lắp đặt theo chiều thẳng đứng, vì nó không gây đọng nước hoặc bụi bẩn ở một phía.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-052',
+    name: 'Côn thu lệch tâm vuông',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/con-thu-lech-tam-vuong.png',
+    slug: 'con-thu-lech-tam-vuong',
+    description:
+      'Côn thu lệch tâm vuông dùng để thu nhỏ tiết diện ống gió vuông/chữ nhật đồng thời dịch chuyển trục, giúp tối ưu không gian lắp đặt và tránh chướng ngại vật.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến cho hầu hết các hệ thống thông gió và điều hòa không khí.<br>
+Inox (201, 304): Được sử dụng cho các ứng dụng đặc biệt yêu cầu khả năng chống ăn mòn cao (ví dụ: hút khói bếp công nghiệp, hệ thống xử lý khí thải có hóa chất ăn mòn).</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Tối ưu hóa không gian lắp đặt:<br>
+Giữ một mặt phẳng cố định: Khi cần giữ mặt trên hoặc mặt dưới của ống gió thẳng hàng với trần giả hoặc sàn, côn lệch tâm giúp thu nhỏ ống mà vẫn đảm bảo yếu tố kiến trúc và thẩm mỹ.<br>
+Tránh chướng ngại vật: Cho phép đường ống thu nhỏ kích thước đồng thời dịch chuyển để tránh dầm, cột, đường ống cấp thoát nước, hoặc các hệ thống M&amp;E khác.<br>
+Kết nối linh hoạt: Kết nối một đoạn ống lớn với một thiết bị hoặc miệng gió có kích thước nhỏ hơn, nhưng vị trí của chúng không đồng trục.<br>
+Điều chỉnh luồng khí và áp suất: Tương tự như côn thu đồng tâm, nó cũng giúp điều chỉnh vận tốc và áp suất của dòng khí, nhưng có thêm khả năng dịch chuyển vị trí.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Hình dạng:</span></p>
+    <p style="text-align: left;">Hai đầu là hình chữ nhật (hoặc vuông) với kích thước khác nhau.<br>
+Điểm khác biệt chính là các mặt bên: Một hoặc hai mặt bên của côn thường được giữ thẳng hoặc gần thẳng, trong khi các mặt còn lại sẽ nghiêng để tạo ra sự thu hẹp và độ lệch. Ví dụ:<br>
+Nếu bạn muốn giữ mặt dưới của ống thẳng hàng với trần hoặc sàn, côn sẽ thu nhỏ về phía trên và các mặt bên sẽ nghiêng vào.<br>
+Nếu bạn muốn giữ một mặt bên thẳng hàng với tường, côn sẽ thu nhỏ về phía bên kia và các mặt còn lại sẽ nghiêng vào.<br>
+Độ dày vật liệu:</p>
+    <p style="text-align: left;">Tương tự như các phụ kiện ống gió khác, độ dày của tôn/inox sẽ phụ thuộc vào kích thước của côn và áp suất làm việc của hệ thống, tuân theo các tiêu chuẩn kỹ thuật.<br>
+Chiều dài côn:</p>
+    <p style="text-align: left;">Chiều dài của côn thu lệch tâm cũng rất quan trọng. Chiều dài càng lớn thì độ dốc của các mặt nghiêng càng nhỏ, giúp luồng khí chuyển động mượt mà hơn, giảm tổn thất áp suất và tiếng ồn. Côn quá ngắn sẽ tạo ra sự thay đổi đột ngột, gây hỗn loạn dòng khí và tổn thất năng lượng.<br>
+Mối nối:</p>
+    <p style="text-align: left;">Hai đầu của côn thu lệch tâm vuông có các mặt bích tiêu chuẩn (bích TDC/TDF, bích thép góc) để kết nối với các đoạn ống gió khác hoặc thiết bị, đảm bảo độ kín khít cho hệ thống.</p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-053',
+    name: 'Côn thu lệch tâm',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/con-thu-lech-tam.png',
+    slug: 'con-thu-lech-tam',
+    description:
+      'Côn thu lệch tâm dùng để thu nhỏ tiết diện đường ống đồng thời giữ một mặt phẳng cố định, tối ưu dòng chảy và không gian lắp đặt trong hệ thống ống gió và đường ống công nghiệp.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến, bền, chống gỉ sét tốt.<br>
+Inox (thép không gỉ): Bao gồm Inox 201, 304, 316. Được sử dụng cho các môi trường đòi hỏi chống ăn mòn cao, vệ sinh nghiêm ngặt (thực phẩm, dược phẩm, y tế, phòng sạch) hoặc môi trường khắc nghiệt.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hệ thống thông gió, điều hòa không khí: Khi cần thay đổi kích thước ống mà vẫn giữ một mặt phẳng cho đường ống (ví dụ: sát trần, sát tường).<br>
+Hệ thống dẫn chất lỏng (nước, hóa chất, dầu): Đặc biệt quan trọng ở đầu hút của máy bơm để tránh kẹt khí.<br>
+Hệ thống xử lý nước thải, nước sạch công nghiệp: Giúp dòng chảy không bị tắc nghẽn hoặc đọng cặn.<br>
+Ngành công nghiệp dầu khí, khoáng sản, hóa chất: Nơi yêu cầu kiểm soát dòng chảy chặt chẽ và chống ăn mòn.<br>
+Các hệ thống đường ống công nghiệp khác nơi có yêu cầu đặc biệt về không gian hoặc dòng chảy.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Côn thu lệch tâm là phụ kiện hình nón cụt (hoặc chóp cụt đối với ống vuông) mà một mặt của nó thẳng hoặc gần như thẳng, trong khi mặt đối diện nghiêng dần để thu nhỏ đường kính/kích thước. Kết quả là tâm của hai đầu ống (lớn và nhỏ) sẽ bị lệch nhau.<br>
+Kích thước và Độ dày: Đa dạng, được sản xuất theo đường kính hoặc kích thước cạnh của hai đoạn ống cần kết nối, và độ dày vật liệu phù hợp với áp suất và yêu cầu kỹ thuật.<br>
+</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Kiểm soát dòng chảy tối ưu: Đặc biệt hiệu quả trong việc ngăn ngừa tích tụ khí hoặc chất lỏng trong đường ống nằm ngang, giúp bảo vệ thiết bị (như máy bơm) và duy trì hiệu suất hệ thống.<br>
+Tối ưu hóa không gian lắp đặt: Cho phép lắp đặt ống sát bề mặt, tận dụng không gian hiệu quả hơn, đặc biệt trong các khu vực chật hẹp.<br>
+Thuận tiện cho bảo trì: Việc có một mặt phẳng giúp dễ dàng gia cố, chống đỡ đường ống và cũng thuận tiện hơn cho việc kiểm tra, vệ sinh.<br>
+Độ bền cao: Nếu được làm từ vật liệu chất lượng cao (như inox), có khả năng chống ăn mòn và chịu được môi trường khắc nghiệt.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-054',
+    name: 'Măng xông ống gió',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/mang-xong.png',
+    slug: 'mang-xong',
+    description:
+      'Măng xông ống gió là phụ kiện nối ống tròn, giúp liên kết chắc chắn các đoạn ống gió với nhau, đảm bảo độ kín khít và thẩm mỹ cho hệ thống.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến nhất, có độ bền và khả năng chống ăn mòn tốt, giá thành hợp lý.<br>
+Inox (thép không gỉ): Bao gồm Inox 201, 304, 316. Được sử dụng cho các môi trường đặc biệt yêu cầu vệ sinh cao, chống ăn mòn tuyệt đối (như nhà máy thực phẩm, dược phẩm, y tế, phòng sạch) hoặc môi trường khắc nghiệt.<br>
+Nhôm: Ít phổ biến hơn trong ứng dụng ống gió công nghiệp, thường dùng cho ống nhỏ.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hệ thống thông gió và điều hòa không khí (HVAC): Nối các đoạn ống gió tròn trong các tòa nhà văn phòng, trung tâm thương mại, chung cư, nhà xưởng.<br>
+Hệ thống hút bụi, hút khói: Nối các đường ống thu gom bụi, khói từ máy móc hoặc khu vực sản xuất.<br>
+Hệ thống thông gió dân dụng và công nghiệp nhẹ: Nơi có yêu cầu về tốc độ thi công và chi phí.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Hình dạng: Là một đoạn ống kim loại hình tròn, ngắn, rỗng ruột.<br>
+Kích thước:<br>
+Được sản xuất theo đường kính của ống gió tròn mà nó sẽ kết nối (ví dụ: D100mm, D200mm, D300mm, v.v.).<br>
+Chiều dài của măng nối thường ngắn, đủ để tạo độ bám chắc cho mối nối.<br>
+Độ dày vật liệu: Tùy thuộc vào đường kính ống và áp suất trong hệ thống, thường tương đương hoặc dày hơn một chút so với ống gió để đảm bảo độ cứng vững cho mối nối.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Lắp đặt nhanh chóng và dễ dàng: Quá trình nối ống đơn giản, không yêu cầu nhiều công cụ phức tạp.<br>
+Chi phí hợp lý: Giá thành của măng nối thường thấp hơn so với việc sử dụng hệ thống mặt bích.<br>
+Độ kín khít tốt: Khi được làm kín đúng cách, mối nối có độ kín cao, giảm thiểu thất thoát khí.<br>
+Thẩm mỹ: Mối nối khá gọn gàng, ít lộ ra bên ngoài.<br>
+Độ bền cao: Nếu được sản xuất từ vật liệu chất lượng tốt, mối nối có thể bền bỉ như chính đường ống.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-055',
+    name: 'Ống gió tròn trơn',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/ong-gio-tron-tron.png',
+    slug: 'ong-gio-tron-tron',
+    description:
+      'Ống gió tròn trơn có bề mặt nhẵn, giúp luồng khí lưu thông mượt mà, giảm tổn thất áp suất, tiếng ồn và tăng tính thẩm mỹ cho hệ thống thông gió.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <h1 style="text-align: left;">Ống gió tròn trơn</h1>
+    <h3 style="text-align: left;">Ống gió trơn thường được làm từ các vật liệu:</h3>
+    <p style="text-align: left;">- Tôn mạ kẽm: Là loại phổ biến nhất, có bề mặt ngoài được phủ lớp mạ kẽm để bảo vệ khỏi ăn mòn và oxy hóa<br>
+- Inox (thép không gỉ): Bao gồm các loại như Inox 201, 304, 316. Loại này có chất lượng cao, khả năng chống ăn mòn và vệ sinh tốt, thường được sử dụng trong môi trường có độ ẩm cao, yêu cầu vệ sinh nghiêm ngặt như nhà hàng, bệnh viện, phòng thí nghiệm, nhà máy thực phẩm.</p>
+    <h2 style="text-align: left;">Ưu điểm nổi bật Ống gió tròn trơn</h2>
+    <p style="text-align: left;">Hiệu suất thông gió tốt: Tiết diện tròn giúp luồng khí lưu thông mượt mà, giảm thiểu trở lực và tổn thất áp suất, từ đó giảm tiêu thụ năng lượng của quạt.<br>
+Giảm thiểu tiếng ồn: Bề mặt trơn mịn và hình dạng tròn giúp giảm sự va đập của dòng khí, hạn chế tối đa độ ồn phát sinh trong hệ thống.<br>
+Tính thẩm mỹ cao: Bề mặt trơn bóng, sáng mịn giúp nâng cao tính thẩm mỹ cho công trình, đặc biệt khi lắp đặt lộ thiên. Có thể sơn màu để tạo điểm nhấn trang trí.<br>
+Dễ dàng lắp đặt và linh hoạt: Ống gió tròn có thể uốn cong dễ dàng, lắp đặt được trong nhiều vị trí địa hình khác nhau, kể cả không gian hạn chế. Trọng lượng nhẹ, dễ vận chuyển và thao tác.<br>
+Giảm rò rỉ khí: Ít mối nối hơn so với ống gió vuông, đặc biệt là các mối ghép dọc hoặc mối ghép 4 chiều, tăng độ kín và giảm thất thoát khí.<br>
+Ít bám bụi bẩn: Bề mặt trơn mịn hạn chế tối đa sự tích tụ bụi bẩn và mảnh vụn, giúp duy trì chất lượng không khí tốt hơn và giảm tần suất vệ sinh, bảo trì.<br>
+Tiết kiệm chi phí: Chi phí lắp đặt thấp hơn so với ống gió chữ nhật do ít phụ kiện và dễ dàng thi công hơn.</p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;">Chiều dài ống: Dao động từ 3.5 đến 4m (tiêu chuẩn), hoặc dài hơn (3m, 6m, 12m đối với ống xoắn tròn) để giảm số lượng mối nối.<br>
+Độ dày ống: Từ 0.5mm đến 1.2mm (tùy thuộc vào đường kính và yêu cầu kỹ thuật).<br>
+Đường kính ống: Đa dạng, phụ thuộc vào khổ tôn và nhu cầu sử dụng (ví dụ: D80 – D120 là phổ biến, có thể lên đến D3000mm).<br>
+Độ dày mạ kẽm: Từ Z8 (80g kẽm/m2) đến Z18 (180g/m2).<br>
+Tiêu chuẩn sản xuất: ISO 90001:2025</p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-056',
+    name: 'Ống gió tròn xoắn',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/ong-gio-tron-xoan.png',
+    slug: 'ong-gio-tron-xoan',
+    description:
+      'Ống gió tròn xoắn có kết cấu xoắn ốc tăng độ cứng, giảm rò rỉ khí, phù hợp cho các hệ thống thông gió hiện đại lắp đặt lộ thiên hoặc âm trần.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;">- Tôn mạ kẽm: Đây là vật liệu phổ biến nhất nhờ độ bền cao, khả năng chống gỉ sét tốt và giá thành hợp lý. Lớp mạ kẽm giúp bảo vệ ống khỏi các tác nhân gây ăn mòn từ môi trường.<br>
+- Inox (thép không gỉ): Bao gồm các loại như Inox 201, 304, 316. Inox mang lại khả năng chống ăn mòn tuyệt vời, chịu nhiệt độ cao và dễ dàng vệ sinh, phù hợp cho các môi trường đòi hỏi tiêu chuẩn vệ sinh nghiêm ngặt như y tế, thực phẩm, hoặc các khu vực có độ ẩm cao.</p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Đường kính: Đa dạng, từ D100mm đến D1500mm hoặc lớn hơn tùy theo yêu cầu của dự án.<br>
+Chiều dài: Thường dao động từ 3m đến 6m, giúp giảm thiểu số lượng mối nối trên toàn hệ thống.<br>
+Độ dày vật liệu: Khoảng 0.48mm, 0.58mm, 0.75mm, 0.95mm, 1.15mm, tùy thuộc vào đường kính ống và áp suất làm việc.<br>
+Độ mạ kẽm (đối với tôn mạ kẽm): Thường từ Z8 (80g kẽm/m2) đến Z18 (180g/m2).<br>
+</span></p>
+    <p style="text-align: left;">Độ bền cao và chắc chắn: Kết cấu xoắn ốc giúp tăng cường độ cứng cáp và khả năng chịu lực của ống, giảm thiểu biến dạng dưới tác động của áp suất và va đập.<br>
+Hiệu suất lưu thông khí vượt trội: Tiết diện tròn giúp luồng không khí di chuyển mượt mà, giảm ma sát và tổn thất áp suất, từ đó tối ưu hóa hiệu suất thông gió và tiết kiệm năng lượng cho quạt.<br>
+Giảm tiếng ồn: Thiết kế tròn và các đường xoắn giúp hạn chế sự va đập của dòng khí vào thành ống, giảm đáng kể tiếng ồn phát sinh trong quá trình vận hành hệ thống.<br>
+Tính thẩm mỹ cao: Với hình dạng tròn và các đường gân xoắn đều đặn, ống gió tròn xoắn có tính thẩm mỹ cao, phù hợp để lắp đặt lộ thiên trong các không gian công cộng, nhà hàng, quán cà phê, hoặc các công trình yêu cầu kiến trúc đẹp mắt. Có thể sơn màu để phù hợp với không gian nội thất.<br>
+Lắp đặt dễ dàng và linh hoạt: Trọng lượng nhẹ, dễ vận chuyển và thi công. Đặc biệt, ống có thể xuyên qua các cấu trúc công trình một cách thuận lợi, giảm thiểu chi phí nhân công và phụ kiện. Chiều dài ống lớn giúp giảm số lượng mối nối, tăng độ kín khít.<br>
+Giảm rò rỉ khí: Ít mối nối hơn so với ống gió vuông, kết hợp với các mối nối chắc chắn, giúp hạn chế tối đa sự rò rỉ khí, đảm bảo hiệu quả vận hành của hệ thống.<br>
+Dễ dàng vệ sinh và bảo trì: Bề mặt trơn và hình dạng tròn giúp giảm sự tích tụ bụi bẩn, dễ dàng vệ sinh định kỳ.</p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-057',
+    name: 'Ống gió vuông',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/ong-gio-vuong.png',
+    slug: 'ong-gio-vuong',
+    description:
+      'Ống gió vuông được chế tạo từ tôn mạ kẽm hoặc inox, tối ưu không gian lắp đặt và lưu lượng gió trong các hệ thống HVAC và hút khói.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <h3 style="text-align: left;"><span data-sheets-root="1">Ống gió vuông thường được chế tạo từ các tấm kim loại như tôn mạ kẽm hoặc inox.<br>
+</span></h3>
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến với các độ dày khác nhau (ví dụ: 0.48mm, 0.58mm, 0.75mm, 0.95mm, 1.15mm) và độ mạ kẽm khác nhau (Z8, Z10, Z12, Z18...). Thích hợp cho môi trường thông thường, không có hóa chất ăn mòn.<br>
+Inox (thường là Inox 201, 304): Có độ bền cao, chống gỉ sét, mài mòn tốt. Thường được sử dụng trong các công trình đòi hỏi yêu cầu kỹ thuật cao hoặc môi trường dễ bị oxy hóa, ví dụ như ống gió hút khói bếp.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <h2 style="text-align: left;">Ưu điểm nổi bật ống gió vuông</h2>
+    <p style="text-align: left;"><span data-sheets-root="1">Tiết kiệm không gian: Thiết kế hình vuông hoặc chữ nhật giúp tối ưu không gian lắp đặt, đặc biệt ở các vị trí góc cạnh.<br>
+Lưu lượng gió tốt: Thiết diện lớn giúp không khí lưu thông hiệu quả, tránh thất thoát khí.<br>
+Dễ lắp đặt và vận chuyển: Trọng lượng nhẹ, dễ dàng kết nối các đoạn ống bằng nẹp C, bích TDC, kẹp bích, bu lông.<br>
+Giá thành hợp lý: Thường có giá thành cạnh tranh hơn so với một số loại ống gió khác.<br>
+Linh hoạt trong thiết kế: Có thể tùy chỉnh kích thước để phù hợp với yêu cầu của từng dự án.</span></p>
+    <h2 style="text-align: left;">Ứng dụng</h2>
+    <p style="text-align: left;"><span data-sheets-root="1">Hệ thống điều hòa không khí và thông gió: Dẫn truyền và phân phối không khí trong các tòa nhà, văn phòng, chung cư, khách sạn, trung tâm thương mại.<br>
+Hệ thống hút khói: Sử dụng trong nhà hàng, bếp ăn công nghiệp.<br>
+Xử lý mùi công nghiệp: Hút không khí độc hại, cấp không khí sạch trong các phân xưởng sản xuất, nhà máy.<br>
+Hệ thống hút bụi: Trong các nhà xưởng, khu công nghiệp.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-058',
+    name: 'Chạc Y 4 nhánh',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/phu-kien-ong-gio-chac-y-4.png',
+    slug: 'phu-kien-ong-gio-chac-y-4',
+    description:
+      'Chạc Y 4 nhánh là phụ kiện chia/gom luồng khí dạng ống tròn, giúp phân phối hoặc thu gom không khí hiệu quả trong hệ thống ống gió.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến nhất, có độ bền và khả năng chống ăn mòn tốt, giá thành hợp lý.<br>
+Inox (thép không gỉ): Bao gồm Inox 201, 304, 316. Được sử dụng cho các môi trường yêu cầu vệ sinh cao, chống ăn mòn tuyệt đối (như nhà máy thực phẩm, dược phẩm, y tế, phòng sạch) hoặc môi trường khắc nghiệt.<br>
+</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hệ thống thông gió và điều hòa không khí (HVAC): Cấp khí tươi, hồi khí cho các tòa nhà văn phòng, trung tâm thương mại, chung cư, nhà hàng, khách sạn.<br>
+Hệ thống hút bụi: Trong các nhà xưởng, nhà máy sản xuất, xưởng gỗ, xưởng cơ khí để thu gom bụi bẩn từ nhiều vị trí về hệ thống lọc.<br>
+Hệ thống hút khói, hút mùi: Nhà bếp công nghiệp, nhà hàng, quán ăn, nơi cần hút khói từ nhiều bếp về một đường ống chính.<br>
+Các công trình yêu cầu tính thẩm mỹ: Khi hệ thống ống gió được lắp đặt lộ thiên và cần hòa hợp với kiến trúc nội thất.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Hình dạng: Có hình dạng chữ "Y" với một đầu vào (ống chính) và hai đầu ra (ống nhánh), hoặc ngược lại. Tất cả ba đầu đều có tiết diện hình tròn.<br>
+Góc rẽ nhánh: Hai nhánh rẽ ra từ ống chính tạo một góc 45 độ so với trục của ống chính. Góc 45 độ này là một thiết kế tối ưu cho dòng chảy.<br>
+Kích thước:<br>
+Đường kính ống chính và đường kính các ống nhánh có thể bằng nhau (tê Y đều) hoặc khác nhau (tê Y giảm), tùy thuộc vào nhu cầu phân chia hoặc gom lưu lượng khí.<br>
+Được sản xuất theo nhiều đường kính tiêu chuẩn và phi tiêu chuẩn theo yêu cầu của dự án.<br>
+Độ dày vật liệu: Tùy thuộc vào đường kính ống và áp suất trong hệ thống, thường dao động từ 0.5mm đến 1.2mm hoặc dày hơn.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hiệu suất cao: Đảm bảo luồng khí được phân chia hoặc gom một cách hiệu quả, ít cản trở.<br>
+Tiết kiệm năng lượng: Giảm tổn thất áp suất, giúp quạt hoạt động ổn định và tiết kiệm điện năng.<br>
+Giảm tiếng ồn: Góp phần tạo môi trường yên tĩnh hơn cho không gian sử dụng.<br>
+Tính thẩm mỹ: Thiết kế tròn và đường nét mềm mại phù hợp với các hệ thống ống gió tròn, đặc biệt khi lắp đặt lộ thiên trong các không gian hiện đại.<br>
+Độ bền và tuổi thọ: Làm từ vật liệu chất lượng cao, có khả năng chống ăn mòn tốt.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-059',
+    name: 'Cút tròn',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/phu-kien-ong-gio-cut-tron.png',
+    slug: 'phu-kien-ong-gio-cut-tron',
+    description:
+      'Cút tròn là phụ kiện dùng để đổi hướng ống gió tròn, đảm bảo dòng khí lưu thông mượt mà và giảm tổn thất áp suất trong hệ thống.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Đây là vật liệu phổ biến nhất nhờ độ bền cao, khả năng chống ăn mòn và chi phí hợp lý. Thích hợp cho hầu hết các ứng dụng thông gió dân dụng và công nghiệp.<br>
+Inox (thép không gỉ): Bao gồm các loại Inox 201, 304, 316. Được sử dụng trong các môi trường đặc biệt yêu cầu độ bền cao, chống ăn mòn tuyệt đối, khả năng chịu nhiệt và vệ sinh nghiêm ngặt (ví dụ: nhà máy thực phẩm, dược phẩm, y tế, phòng sạch).</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hệ thống điều hòa không khí và thông gió (HVAC): Trong các tòa nhà văn phòng, trung tâm thương mại, khách sạn, chung cư, rạp chiếu phim, nhà hàng.<br>
+Hệ thống hút khói, hút mùi: Bếp công nghiệp, nhà hàng, quán ăn.<br>
+Hệ thống hút bụi và vận chuyển vật liệu: Các nhà máy sản xuất, xưởng gỗ, xưởng cơ khí.<br>
+Hệ thống thông gió công nghiệp: Trong các khu công nghiệp, nhà xưởng, nơi cần xử lý lưu lượng khí lớn.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Kích thước: Đa dạng, được sản xuất theo đường kính của ống gió mà nó sẽ kết nối (ví dụ: D100mm, D200mm, D300mm, v.v.) và theo yêu cầu thiết kế của từng dự án.<br>
+Độ dày vật liệu: Thường dao động từ 0.5 mm đến 1.2 mm hoặc dày hơn, tùy thuộc vào đường kính ống, áp suất hoạt động của hệ thống và yêu cầu kỹ thuật cụ thể.<br>
+Kết nối: Các đầu của cút thường được thiết kế để kết nối với ống gió tròn bằng các phương pháp như ghép mí, dùng gioăng cao su, hoặc bắt vít, đảm bảo độ kín khít và chắc chắn cho hệ thống.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hiệu suất lưu thông khí cao: Dòng khí ít bị cản trở, giúp hệ thống hoạt động hiệu quả.<br>
+Tiết kiệm năng lượng: Giảm tổn thất áp suất giúp giảm tải cho quạt.<br>
+Giảm tiếng ồn: Tạo môi trường làm việc và sinh hoạt yên tĩnh hơn.<br>
+Tính thẩm mỹ: Kết hợp với ống gió tròn, cút tròn mang lại vẻ đẹp hiện đại, tinh tế khi lắp đặt lộ thiên.<br>
+Độ bền cao: Chống ăn mòn tốt, đặc biệt là loại inox, đảm bảo tuổi thọ lâu dài cho hệ thống.<br>
+Dễ dàng vệ sinh: Bề mặt trơn nhẵn giúp hạn chế bám bụi và dễ dàng làm sạch.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-060',
+    name: 'Cút vuông',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/phu-kien-ong-gio-cut-vuong.png',
+    slug: 'phu-kien-ong-gio-cut-vuong',
+    description:
+      'Cút vuông là phụ kiện dùng để đổi hướng ống gió vuông/chữ nhật, giúp hệ thống ống gió linh hoạt và phù hợp với cấu trúc công trình.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến nhất, giá thành hợp lý.<br>
+Inox (201, 304): Dùng cho môi trường đặc biệt yêu cầu chống ăn mòn hoặc vệ sinh cao (ví dụ: hút khói bếp, hóa chất).</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Thay đổi hướng đường ống: Dẫn đường ống đi vòng qua các góc tường, dầm, cột, hoặc bất kỳ chướng ngại vật nào khác trong không gian lắp đặt.<br>
+Phân nhánh hệ thống: Kết hợp với các phụ kiện khác như côn hoặc chạc để tạo ra các nhánh ống dẫn khí đến các khu vực khác nhau.<br>
+Tối ưu hóa không gian: Giúp thiết kế hệ thống ống gió linh hoạt, phù hợp với mọi cấu trúc công trình.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Phụ thuộc vào kích thước của cút và áp suất làm việc của hệ thống. Tuân theo các tiêu chuẩn về độ dày tương tự như ống gió vuông.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-061',
+    name: 'Chạc Y tròn',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/phu-kien-ong-gio-tron-chac-y.png',
+    slug: 'phu-kien-ong-gio-tron-chac-y',
+    description:
+      'Chạc Y tròn dùng để chia hoặc gom luồng khí trong hệ ống gió tròn, tối ưu phân phối gió và thẩm mỹ khi lắp đặt lộ thiên.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Tôn mạ kẽm: Phổ biến nhất, có độ bền và khả năng chống ăn mòn tốt, giá thành hợp lý.<br>
+Inox (thép không gỉ): Bao gồm Inox 201, 304, 316. Được sử dụng cho các môi trường yêu cầu vệ sinh cao, chống ăn mòn tuyệt đối (như nhà máy thực phẩm, dược phẩm, y tế, phòng sạch) hoặc môi trường khắc nghiệt.<br>
+</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hệ thống thông gió và điều hòa không khí (HVAC): Cấp khí tươi, hồi khí cho các tòa nhà văn phòng, trung tâm thương mại, chung cư, nhà hàng, khách sạn.<br>
+Hệ thống hút bụi: Trong các nhà xưởng, nhà máy sản xuất, xưởng gỗ, xưởng cơ khí để thu gom bụi bẩn từ nhiều vị trí về hệ thống lọc.<br>
+Hệ thống hút khói, hút mùi: Nhà bếp công nghiệp, nhà hàng, quán ăn, nơi cần hút khói từ nhiều bếp về một đường ống chính.<br>
+Các công trình yêu cầu tính thẩm mỹ: Khi hệ thống ống gió được lắp đặt lộ thiên và cần hòa hợp với kiến trúc nội thất.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Hình dạng: Có hình dạng chữ "Y", với một đầu vào (ống chính) và hai đầu ra (ống nhánh), hoặc ngược lại. Tất cả ba đầu đều có tiết diện hình tròn.<br>
+Góc rẽ nhánh: Các nhánh thường rẽ ra với một góc chếch so với ống chính, phổ biến nhất là 45 độ (như trong hình ảnh), giúp tối ưu hóa dòng chảy. Một số thiết kế có thể có góc khác tùy theo yêu cầu.<br>
+Kích thước:<br>
+Đường kính ống chính và đường kính các ống nhánh có thể bằng nhau (tê Y đều) hoặc khác nhau (tê Y giảm), tùy thuộc vào nhu cầu phân chia hoặc gom lưu lượng khí.<br>
+Được sản xuất theo nhiều đường kính tiêu chuẩn và phi tiêu chuẩn theo yêu cầu của dự án.<br>
+Độ dày vật liệu: Tùy thuộc vào đường kính ống và áp suất trong hệ thống, thường dao động từ 0.5mm đến 1.2mm hoặc dày hơn.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hiệu suất cao: Đảm bảo luồng khí được phân chia hoặc gom một cách hiệu quả, ít cản trở.<br>
+Tiết kiệm năng lượng: Giảm tổn thất áp suất, giúp quạt hoạt động ổn định và tiết kiệm điện năng.<br>
+Giảm tiếng ồn: Góp phần tạo môi trường yên tĩnh hơn cho không gian sử dụng.<br>
+Tính thẩm mỹ: Thiết kế tròn và đường nét mềm mại phù hợp với các hệ thống ống gió tròn, đặc biệt khi lắp đặt lộ thiên trong các không gian hiện đại.<br>
+Độ bền và tuổi thọ: Làm từ vật liệu chất lượng cao, có khả năng chống ăn mòn tốt.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-062',
+    name: 'Chếch 45° ống tròn',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/phu-kien-ong-gio-tron-t45.png',
+    slug: 'phu-kien-ong-gio-tron-t45',
+    description:
+      'Chếch 45° ống tròn dùng để chuyển hướng dòng khí một góc 45 độ, giúp tối ưu lưu thông khí và giảm tổn thất áp suất trong hệ thống ống gió tròn.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Chất liệu:<br>
+Tôn mạ kẽm: Phổ biến nhất nhờ độ bền cao, khả năng chống ăn mòn và chi phí hợp lý. Thích hợp cho hầu hết các ứng dụng thông gió dân dụng và công nghiệp.<br>
+Inox (thép không gỉ): Gồm các loại Inox 201, 304, 316. Được sử dụng trong các môi trường đặc biệt yêu cầu độ bền cao, chống ăn mòn tuyệt đối, khả năng chịu nhiệt và vệ sinh nghiêm ngặt (ví dụ: nhà máy thực phẩm, dược phẩm, y tế, phòng sạch).</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Chuyển hướng dòng khí: Đây là công dụng cơ bản nhất, giúp điều chỉnh hướng di chuyển của luồng không khí trong hệ thống ống gió một góc 45 độ. Điều này rất cần thiết khi đường ống cần vòng qua các vật cản, góc tường hoặc điều chỉnh hướng phân phối/thu hồi khí.<br>
+Giảm tổn thất áp suất: So với việc sử dụng chếch 90 độ, chếch 45 độ giúp luồng khí chuyển hướng một cách mềm mại và từ từ hơn. Điều này giảm đáng kể sự hỗn loạn của dòng chảy, từ đó giảm thiểu tổn thất áp suất và giúp quạt hoạt động hiệu quả hơn, tiết kiệm năng lượng.<br>
+Hạn chế tiếng ồn: Nhờ việc dòng khí ít bị va đập và hỗn loạn, chếch 45 độ cũng góp phần giảm tiếng ồn phát sinh trong quá trình vận hành hệ thống thông gió.<br>
+Linh hoạt trong thiết kế và lắp đặt: Cho phép các kỹ sư và thợ thi công dễ dàng bố trí đường ống phù hợp với mọi không gian, đặc biệt là những nơi có nhiều chướng ngại vật hoặc khi cần đường đi uyển chuyển.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Hình dạng: Là một đoạn ống cong một góc 45 độ. Có thể là cút/chếch tròn (cho ống gió tròn) hoặc cút/chếch vuông (cho ống gió vuông/chữ nhật).<br>
+Kích thước: Đa dạng, phụ thuộc vào đường kính ống gió mà nó kết nối. Các kích thước thông thường được sản xuất theo yêu cầu của từng dự án.<br>
+Kết nối: Các đầu của chếch thường được thiết kế để kết nối với ống gió tròn bằng các phương pháp như ghép mí, dùng gioăng cao su, hoặc bắt vít, đảm bảo độ kín khít và chắc chắn cho hệ thống.<br>
+Độ dày vật liệu: Thường dao động từ 0.5 mm đến 1.2 mm hoặc hơn, tùy thuộc vào đường kính ống, áp suất hệ thống và yêu cầu kỹ thuật cụ thể.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Hiệu quả lưu thông khí cao: Giảm thiểu ma sát và trở lực, đảm bảo luồng khí được phân phối đều và hiệu quả.<br>
+Tiết kiệm năng lượng: Giảm tổn thất áp suất giúp quạt không phải làm việc quá tải, tiết kiệm điện năng.<br>
+Giảm tiếng ồn: Tạo ra môi trường làm việc và sinh hoạt yên tĩnh hơn.<br>
+Tính thẩm mỹ: Khi lắp đặt lộ thiên, chếch 45 độ ống gió tròn kết hợp với ống gió tròn mang lại vẻ đẹp hiện đại, tinh tế cho công trình.<br>
+Độ bền cao: Được làm từ vật liệu chất lượng cao, có khả năng chống ăn mòn và chịu được điều kiện môi trường khắc nghiệt.</span></p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-063',
+    name: 'Tê tròn 90°',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/phu-kien-ong-gio-tron-t90.png',
+    slug: 'phu-kien-ong-gio-tron-t90',
+    description:
+      'Tê tròn 90° dùng để phân nhánh hoặc gom khí theo góc vuông trong hệ thống ống gió tròn, phù hợp cho các không gian hẹp và bố trí phức tạp.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;">Tôn mạ kẽm: Phổ biến nhất do độ bền, khả năng chống gỉ sét và giá thành hợp lý.<br>
+Inox (thép không gỉ): Bao gồm Inox 201, 304, 316. Được sử dụng cho các môi trường đòi hỏi vệ sinh cao, chống ăn mòn tuyệt đối như nhà máy thực phẩm, dược phẩm, y tế, phòng sạch.</p>
+    <p style="text-align: left;">Phân phối khí trong không gian hẹp: Khi đường ống cần rẽ nhánh vuông góc với đường chính để đưa không khí đến các khu vực cụ thể.<br>
+Hệ thống hút cục bộ: Dùng để gom khí từ các vị trí hút cụ thể (ví dụ: hút khói bếp, hút bụi máy móc) về đường ống chính.<br>
+Các công trình dân dụng và công nghiệp: Được sử dụng rộng rãi từ các công trình nhỏ đến các nhà máy, nhà xưởng có yêu cầu phân phối khí theo nhiều hướng khác nhau.</p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;">Hình dạng: Có ba đầu nối đều có tiết diện hình tròn. Một đầu là đường ống chính, và hai đầu còn lại là các nhánh rẽ tạo góc vuông (90 độ) so với đường ống chính.<br>
+Kích thước: Đa dạng, phụ thuộc vào đường kính của ống gió chính và các nhánh. Các kích thước được sản xuất theo yêu cầu thiết kế của hệ thống.<br>
+Kết nối: Các đầu của Tê 90 độ tròn thường được kết nối với ống gió bằng các phương pháp như hàn, bích, hoặc dùng các khớp nối chuyên dụng và được làm kín bằng keo silicone hoặc gioăng cao su để tránh rò rỉ khí.<br>
+Độ dày vật liệu: Thường từ 0.5 mm đến 1.2 mm hoặc hơn, tùy thuộc vào đường kính ống và áp suất trong hệ thống</p>
+    <p style="text-align: left;">Tiết kiệm không gian: Phù hợp khi cần rẽ nhánh trong không gian hạn chế hoặc khi đường ống cần bám sát các bức tường, trần nhà.<br>
+Linh hoạt trong bố trí: Cho phép hệ thống ống gió có thể thay đổi hướng đột ngột để tránh các cấu trúc hoặc thiết bị khác trong công trình.</p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-064',
+    name: 'Tiêu âm ống gió',
+    category: 'Ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/tieu-am-ong-gio.png',
+    slug: 'tieu-am-ong-gio',
+    description:
+      'Bộ tiêu âm ống gió giúp giảm tiếng ồn trong hệ thống HVAC bằng cách hấp thụ và tán xạ sóng âm, cải thiện chất lượng âm thanh trong không gian sử dụng.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p>Bộ tiêu âm ống gió hoạt động dựa trên nguyên lý hấp thụ và phản xạ âm thanh. Khi sóng âm đi vào bộ tiêu âm, năng lượng âm thanh sẽ được hấp thụ bởi các vật liệu xốp, sợi khoáng, hoặc các tấm tiêu âm bên trong, đồng thời một phần sóng âm bị phản xạ và tán xạ, làm giảm cường độ âm thanh truyền ra ngoài.</p>
+    <p>Thông tiêu âm ống gió thường có hình dạng hộp chữ nhật hoặc hình tròn, được cấu tạo bởi:</p>
+    <ul>
+      <li><b>Vỏ ngoài:</b> Làm bằng kim loại (tôn mạ kẽm, nhôm, thép không gỉ) để tạo độ cứng vững và bảo vệ vật liệu tiêu âm bên trong.</li>
+      <li><b>Lõi tiêu âm (Baffles/Splitters):</b> Là các tấm hoặc khối vật liệu tiêu âm được sắp xếp song song hoặc theo hình zigzag bên trong vỏ. Các lõi này có thể có các khe hở hoặc lỗ để không khí đi qua.</li>
+      <li><b>Vật liệu tiêu âm:</b> Được đặt bên trong các lõi tiêu âm, có khả năng hấp thụ năng lượng âm thanh.</li>
+      <li><b>Lưới bảo vệ (Perforated Liner):</b> Một lớp lưới kim loại đục lỗ thường được sử dụng để bọc vật liệu tiêu âm, giúp bảo vệ vật liệu và ngăn chặn sự phát tán của sợi vật liệu vào luồng không khí.</li>
+    </ul>
+    <p>Thông tiêu âm ống gió được ứng dụng rộng rãi trong các hệ thống HVAC của:</p>
+    <ul>
+      <li><b>Tòa nhà văn phòng, chung cư:</b> Giảm tiếng ồn từ quạt, máy lạnh, và luồng gió.</li>
+      <li><b>Bệnh viện, phòng sạch:</b> Đảm bảo môi trường yên tĩnh, đáp ứng các tiêu chuẩn về tiếng ồn nghiêm ngặt.</li>
+      <li><b>Trung tâm thương mại, rạp chiếu phim:</b> Nâng cao trải nghiệm của khách hàng.</li>
+      <li><b>Nhà máy, khu công nghiệp:</b> Giảm tiếng ồn từ các thiết bị công nghiệp truyền vào hệ thống thông gió.</li>
+      <li><b>Phòng thu âm, phòng hội nghị:</b> Kiểm soát âm thanh, tránh tiếng ồn nhiễu.</li>
+    </ul>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p>Các thông số cơ bản khi lựa chọn thông tiêu âm bao gồm:</p>
+    <ul>
+      <li><b>Kích thước ống gió:</b> Để chọn bộ tiêu âm có kích thước phù hợp.</li>
+      <li><b>Mức độ giảm tiếng ồn yêu cầu:</b> Dựa trên tiêu chuẩn tiếng ồn của dự án hoặc yêu cầu cụ thể.</li>
+      <li><b>Lưu lượng gió của hệ thống:</b> Đảm bảo bộ tiêu âm có thể xử lý lưu lượng gió mà không gây tắc nghẽn.</li>
+      <li><b>Ngân sách và vật liệu:</b> Lựa chọn vật liệu phù hợp với môi trường lắp đặt và chi phí.</li>
+    </ul>
+    <h2>Ưu điểm</h2>
+    <ul>
+      <li><b>Giảm tiếng ồn hiệu quả:</b> Cải thiện chất lượng môi trường âm thanh trong các không gian sử dụng.</li>
+      <li><b>Cải thiện chất lượng không khí:</b> Nhiều loại tiêu âm được thiết kế để không làm cản trở đáng kể lưu lượng không khí.</li>
+      <li><b>Đa dạng về kích thước và hình dạng:</b> Phù hợp với nhiều loại ống gió và không gian lắp đặt khác nhau.</li>
+      <li><b>Độ bền cao:</b> Thường được làm từ vật liệu kim loại và vật liệu tiêu âm chất lượng cao, có tuổi thọ dài.</li>
+      <li><b>Dễ dàng lắp đặt và bảo trì:</b> Không yêu cầu quá nhiều công cụ hay kỹ năng đặc biệt.</li>
+    </ul>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'p-065',
+    name: 'Van OBD',
+    category: 'Phụ kiện ống gió',
+    price: 'Liên hệ',
+    image: '/images/products/van-obd.png',
+    slug: 'van-obd',
+    description:
+      'Van OBD là van điều chỉnh lưu lượng gió gắn sau cửa gió hoặc trong ống, giúp cân bằng và kiểm soát chính xác lưu lượng trong hệ HVAC.',
+    details: `
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <p style="text-align: left;"><span data-sheets-root="1">Vật liệu: Thường được làm từ nhôm định hình hoặc tôn mạ kẽm (GI).</span></p>
+    <ul style="text-align: left;">
+      <li><span data-sheets-root="1">Nhôm: Nhẹ, chống ăn mòn tốt, thường dùng cho các van lắp trực tiếp vào cửa gió.</span></li>
+      <li><span data-sheets-root="1">Tôn mạ kẽm: Bền chắc, kinh tế, thường dùng cho các van lắp trong đường ống lớn.</span></li>
+    </ul>
+    <p style="text-align: left;"><span data-sheets-root="1">Kiểm soát lưu lượng gió cấp/hồi: Điều chỉnh lượng gió thổi vào phòng hoặc hút ra khỏi phòng để đạt được điều kiện nhiệt độ và thông thoáng mong muốn.<br>
+Cân bằng hệ thống gió: Phân bổ lưu lượng gió đồng đều đến các khu vực khác nhau trong một tòa nhà, đảm bảo không có khu vực nào quá nóng hoặc quá lạnh.<br>
+Điều áp: Duy trì áp suất không khí ổn định trong các khu vực cụ thể (ví dụ: phòng sạch).<br>
+Ngắt/mở hoàn toàn luồng gió: Có thể đóng hoàn toàn để ngăn không khí đi qua hoặc mở hoàn toàn để cho phép lưu lượng tối đa.</span></p>
+  </div>
+</div>
+`,
+    specifications: `
+<div class="tab-content">
+  <div id="tab2" class="tab-pane">
+    <p style="text-align: left;"><span data-sheets-root="1">Kích thước: Đa dạng, được sản xuất theo kích thước của cửa gió hoặc đường ống gió.</span></p>
+    <p style="text-align: left;"><span data-sheets-root="1">Kiểm soát chính xác: Cho phép điều chỉnh lưu lượng gió một cách chính xác, giúp tối ưu hóa hiệu suất của hệ thống HVAC.<br>
+Tiết kiệm năng lượng: Bằng cách kiểm soát lượng gió cung cấp, van OBD giúp tránh lãng phí năng lượng cho việc làm mát hoặc sưởi ấm không cần thiết.<br>
+Tạo sự thoải mái: Đảm bảo nhiệt độ và luồng không khí đồng đều trong không gian, mang lại sự thoải mái cho người sử dụng.<br>
+Giảm tiếng ồn: Thiết kế cánh đối xứng giúp giảm thiểu tiếng ồn và nhiễu loạn luồng khí so với các loại van khác.</span></p>
+  </div>
+</div>
+`,
+  },
 ];
 
 export function getProductBySlug(slug: string): Product | undefined {

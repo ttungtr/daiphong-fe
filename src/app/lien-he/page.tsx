@@ -4,34 +4,45 @@ import { MapSection } from '@/components/feature/homepage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Liên hệ - Đại Phong | Tư vấn thi công hệ thống MEP',
+  title: 'Liên Hệ Đại Phong | Tư Vấn Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC',
   description:
-    'Liên hệ với Đại Phong để được tư vấn miễn phí về thi công hệ thống MEP (điện, nước, điều hòa). Hotline: 0123456789. Email: daiphong@daiphong.com',
+    'Liên hệ với Đại Phong để được tư vấn miễn phí về sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC. Hotline: 0888885964. Email: ongiodaiphong@gmail.com. Địa chỉ: Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Dĩ An, TP.HCM',
   keywords: [
     'liên hệ Đại Phong',
-    'tư vấn thi công MEP',
-    'báo giá hệ thống điều hòa',
-    'tư vấn hệ thống điện',
-    'liên hệ công ty cơ điện',
-    'hotline Đại Phong',
-    'email Đại Phong',
-    'tư vấn miễn phí MEP',
-    'liên hệ thi công điều hòa',
-    'tư vấn cấp thoát nước',
+    'tư vấn ống gió',
+    'báo giá ống gió',
+    'sản xuất ống gió',
+    'gia công miệng gió',
+    'phụ kiện HVAC',
+    'hotline ống gió',
+    'đặt hàng ống gió',
+    'tư vấn miễn phí',
+    'sản xuất theo yêu cầu',
+    'ống gió tròn',
+    'ống gió vuông',
   ],
   openGraph: {
-    title: 'Liên hệ - Đại Phong',
+    title: 'Liên Hệ Đại Phong - Sản Xuất Ống Gió Chất Lượng',
     description:
-      'Liên hệ với Đại Phong để được tư vấn miễn phí về thi công hệ thống MEP chuyên nghiệp',
+      'Liên hệ với Đại Phong để được tư vấn miễn phí về sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao',
     type: 'website',
     locale: 'vi_VN',
+    url: 'https://www.onggiodaiphong.com/lien-he',
     siteName: 'Đại Phong',
+    images: [
+      {
+        url: 'https://www.onggiodaiphong.com/images/contact/hero-section.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Liên hệ Đại Phong',
+      },
+    ],
   },
   twitter: {
     card: 'summary',
-    title: 'Liên hệ - Đại Phong',
+    title: 'Liên Hệ Đại Phong',
     description:
-      'Liên hệ với Đại Phong để được tư vấn miễn phí về thi công hệ thống MEP chuyên nghiệp',
+      'Liên hệ với Đại Phong để được tư vấn miễn phí về sản xuất ống gió, miệng gió, phụ kiện HVAC',
   },
   alternates: {
     canonical: '/lien-he',
@@ -53,17 +64,19 @@ export default function ContactPage() {
     '@type': 'ContactPage',
     name: 'Liên hệ - Đại Phong',
     description:
-      'Trang liên hệ của Đại Phong - Công ty thi công hệ thống MEP chuyên nghiệp',
-    url: 'https://onggiodaiphong.com/lien-he',
+      'Trang liên hệ của Đại Phong - Đơn vị sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao',
+    url: 'https://www.onggiodaiphong.com/lien-he',
     mainEntity: {
       '@type': 'Organization',
-      name: 'Đại Phong',
-      url: 'https://onggiodaiphong.com',
+      name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+      url: 'https://www.onggiodaiphong.com',
+      logo: 'https://www.onggiodaiphong.com/images/logo/logo.png',
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+84123456789',
-        contactType: 'customer service',
+        telephone: '+84888885964',
+        contactType: 'sales',
         availableLanguage: 'Vietnamese',
+        areaServed: 'VN',
       },
     },
   };
@@ -71,18 +84,24 @@ export default function ContactPage() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Đại Phong',
-    url: 'https://onggiodaiphong.com',
+    name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+    alternateName: 'Đại Phong',
+    url: 'https://www.onggiodaiphong.com',
+    logo: 'https://www.onggiodaiphong.com/images/logo/logo.png',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+84123456789',
-      contactType: 'customer service',
-      email: 'daiphong@daiphong.com',
+      telephone: '+84888885964',
+      contactType: 'sales',
+      email: 'ongiodaiphong@gmail.com',
       availableLanguage: 'Vietnamese',
+      areaServed: 'VN',
     },
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An',
+      addressLocality: 'Thành phố Hồ Chí Minh',
       addressCountry: 'VN',
+      postalCode: '700000',
     },
   };
 

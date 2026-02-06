@@ -1,5 +1,6 @@
 'use client';
 import { FunctionComponent, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const ContactConsultationSection: FunctionComponent = () => {
   const [formData, setFormData] = useState({
@@ -8,9 +9,10 @@ export const ContactConsultationSection: FunctionComponent = () => {
     phone: '',
     content: '',
   });
+  const { t } = useTranslation('common');
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -44,15 +46,14 @@ export const ContactConsultationSection: FunctionComponent = () => {
               id="contact-heading"
               className="text-xl sm:text-2xl font-bold uppercase text-center mb-8 text-white"
             >
-              LIÊN HỆ TƯ VẤN
+              {t('contactSection.heading')}
             </h3>
           </header>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-12 items-start">
             {/* Left Section - Contact Information */}
             <div className="lg:col-span-5 space-y-6">
               <p className="text-sm sm:text-base text-white leading-relaxed">
-                Liên hệ với chúng tôi để được tư vấn cụ thể và chi tiết nhất.
-                Nhập email tại đây
+                {t('contactSection.intro')}
               </p>
 
               {/* Contact Details */}
@@ -74,8 +75,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
                     </svg>
                   </div>
                   <p className="text-sm sm:text-base text-white">
-                    Lô 3.2, Đường số 2, Khu công nghiệp Tân Đông Hiệp A, Phường
-                    Dĩ An, TPHCM
+                    {t('contactSection.address')}
                   </p>
                 </div>
 
@@ -93,7 +93,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
                     </svg>
                   </div>
                   <p className="text-sm sm:text-base text-white">
-                    daiphong@daiphong.com
+                    {t('contactSection.email')}
                   </p>
                 </div>
 
@@ -110,7 +110,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
                     </svg>
                   </div>
                   <p className="text-sm sm:text-base text-white">
-                    (+84) xxx xxx xxx
+                    {t('contactSection.phone')}
                   </p>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    placeholder="Họ tên của bạn"
+                    placeholder={t('contactSection.namePlaceholder')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-md text-sm sm:text-base bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-blue-1 focus:border-transparent"
                     required
                   />
@@ -139,7 +139,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="Địa chỉ email của bạn"
+                    placeholder={t('contactSection.emailPlaceholder')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-md text-sm sm:text-base bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-blue-1 focus:border-transparent"
                     required
                   />
@@ -152,7 +152,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    placeholder="Số điện thoại của bạn"
+                    placeholder={t('contactSection.phonePlaceholder')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-md text-sm sm:text-base bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-blue-1 focus:border-transparent"
                     required
                   />
@@ -164,7 +164,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
                     name="content"
                     value={formData.content}
                     onChange={handleInputChange}
-                    placeholder="Nội dung"
+                    placeholder={t('contactSection.contentPlaceholder')}
                     rows={6}
                     className="w-full px-4 py-3 border border-gray-300 rounded-md text-sm sm:text-base bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-blue-1 focus:border-transparent resize-none"
                     required
@@ -177,7 +177,7 @@ export const ContactConsultationSection: FunctionComponent = () => {
                     type="submit"
                     className="px-6 py-3 bg-white text-primary-yellow-1 text-sm font-semibold  transition-colors duration-300 hover:opacity-80 rounded-sm"
                   >
-                    Gửi
+                    {t('contactSection.submit')}
                   </button>
                 </div>
               </form>

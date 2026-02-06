@@ -8,7 +8,7 @@ interface ILineTitleProps {
 const LineTitle: React.FunctionComponent<ILineTitleProps> = ({ alt }) => {
   return (
     <ImageWithFallback
-      src="/images/titlebg.jpg"
+      src="/images/titlebg.png"
       alt={alt}
       width={300}
       height={50}

@@ -1,8 +1,11 @@
+'use client';
 import { FunctionComponent } from 'react';
 import ImageWithFallback from '../common/ImageWithFallback';
 import { FacebookIcon, MailIcon, ZaloIcon } from '../icons';
+import { useTranslation } from 'react-i18next';
 
 export const Footer: FunctionComponent = () => {
+  const { t } = useTranslation('common');
   return (
     <footer
       className="py-12 md:py-16 bg-hero-gradient relative overflow-hidden bg-primary-blue-1 px-4"
@@ -17,19 +20,19 @@ export const Footer: FunctionComponent = () => {
             <div>
               <ImageWithFallback
                 src="/images/logo/horizontal-logo.png"
-                alt="Đại Phong Logo"
+                alt={t('footer.logoAlt')}
                 width={200}
                 height={64}
                 className="w-52 h-auto"
               />
               <h3 className="mt-4 text-xl font-semibold text-white">
-                NHÀ SẢN XUẤT ỐNG THÔNG GIÓ CHẤT LƯỢNG CAO
+                {t('footer.heading')}
               </h3>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6 text-sm">
               <div>
-                <h4 className="font-semibold mb-1 text-white">Địa chỉ:</h4>
+                <h4 className="font-semibold mb-1 text-white">{t('footer.addressLabel')}</h4>
                 <a
                   href="https://goo.gl/maps/j15G3vj7UpgWByjF9"
                   target="_blank"
@@ -41,7 +44,7 @@ export const Footer: FunctionComponent = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold mb-1 text-white">VPLV:</h4>
+                <h4 className="font-semibold mb-1 text-white">{t('footer.vplvLabel')}</h4>
                 <a
                   href="https://goo.gl/maps/j15G3vj7UpgWByjF9"
                   target="_blank"
@@ -55,16 +58,16 @@ export const Footer: FunctionComponent = () => {
 
             <div className="grid sm:grid-cols-2 gap-6 text-sm">
               <div>
-                <h4 className="font-semibold mb-1 text-white">Điện thoại:</h4>
+                <h4 className="font-semibold mb-1 text-white">{t('footer.phoneLabel')}</h4>
                 <a
                   href="tel:+84982400400"
                   className="text-white hover:text-white/70 transition-colors"
                 >
-                  (+84) xxx xxx xxx
+                  (+84) 888 885 964
                 </a>
               </div>
               <div>
-                <h4 className="font-semibold mb-1 text-white">Email:</h4>
+                <h4 className="font-semibold mb-1 text-white">{t('footer.emailLabel')}</h4>
                 <a
                   href="mailto:daiphong@daiphong.com"
                   className="text-white hover:text-white/70 transition-colors"
@@ -81,27 +84,26 @@ export const Footer: FunctionComponent = () => {
             </div>
 
             <p className="text-xs text-white/70">
-              © 2025 Đại Phong. All rights reserved.
+              {t('footer.copyright')}
             </p>
           </div>
 
           {/* Right Section */}
           <div className="bg-white/60 p-8 shadow-sm backdrop-blur-md">
             <h3 className="text-lg font-semibold text-[#00689d] mb-3">
-              Liên hệ với chúng tôi
+              {t('footer.contactHeading')}
             </h3>
             <p className="text-sm text-gray-700 mb-4">
-              Xin vui lòng để lại địa chỉ email, chúng tôi sẽ cập nhật tin tức
-              quan trọng tới quý khách.
+              {t('footer.contactIntro')}
             </p>
             <form className="flex gap-2">
               <input
                 type="email"
-                placeholder="Nhập email của bạn"
+                placeholder={t('footer.emailPlaceholder')}
                 className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#00689d] outline-none"
               />
               <button className="px-5 py-2 bg-[#00689d] text-white rounded-lg hover:bg-[#3096be] transition">
-                Gửi
+                {t('footer.submit')}
               </button>
             </form>
           </div>
