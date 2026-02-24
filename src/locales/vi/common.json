@@ -83,6 +83,201 @@
     "newsMain": "Tin tức",
     "companyActivities": "Hoạt động công ty",
     "contact": "LIÊN HỆ"
+  },
+  "about": {
+    "hero": {
+      "breadcrumbHome": "Trang chủ",
+      "breadcrumbAbout": "Về chúng tôi",
+      "imageAlt": "Về chúng tôi - Hình ảnh đại diện cho công ty"
+    },
+    "tab": {
+      "overview": "Tổng quan công ty"
+    },
+    "letter": {
+      "heading": "GIỚI THIỆU CÔNG TY",
+      "lineTitleAlt": "Đường viền trang trí tiêu đề giới thiệu công ty",
+      "p1": "Đại Phong là đơn vị tiên phong trong lĩnh vực sản xuất và gia công các sản phẩm cơ điện chuyên nghiệp. Chúng tôi chuyên cung cấp các giải pháp toàn diện về ống gió, miệng gió, van gió, thang – máng cáp và các phụ kiện liên quan cho hệ thống HVAC.",
+      "p2": "Với năng lực sản xuất hiện đại và đội ngũ kỹ thuật chuyên nghiệp, chúng tôi cam kết mang đến những sản phẩm đạt tiêu chuẩn kỹ thuật cao nhất. Tất cả các sản phẩm của Đại Phong đều được kiểm định chất lượng nghiêm ngặt, đảm bảo độ bền, độ chính xác và hiệu suất tối ưu.",
+      "p3": "Chúng tôi tự hào là đối tác tin cậy của nhiều dự án lớn trên toàn quốc, từ các tòa nhà cao tầng, trung tâm thương mại, bệnh viện, trường học đến các nhà máy, nhà xưởng và khu công nghiệp. Mỗi dự án là một cơ hội để chúng tôi thể hiện năng lực và cam kết chất lượng.",
+      "p4": "Đại Phong không ngừng đầu tư vào máy móc thiết bị hiện đại và ứng dụng công nghệ tiên tiến. Chúng tôi hướng tới việc tự động hóa và tiêu chuẩn hóa quy trình sản xuất để đảm bảo tính nhất quán và chất lượng cao trong mọi sản phẩm.",
+      "viewProfile": "Xem Đại Phong Profile",
+      "viewProfileAria": "Xem profile công ty",
+      "ceoImageAlt": "Ông Lê Thanh Tùng - Chủ tịch HĐQT kiêm Tổng Giám đốc Công Ty Cổ Phần Công Nghiệp Đại Phong"
+    },
+    "visionMission": {
+      "heading": "TẦM NHÌN - SỨ MỆNH",
+      "vision": {
+        "title": "TẦM NHÌN",
+        "description": "Đại Phong định hướng trở thành đơn vị sản xuất và gia công ống gió, miệng gió và phụ kiện HVAC chất lượng – uy tín hàng đầu Việt Nam, mang đến những giải pháp thông gió an toàn, hiệu quả và bền vững cho mọi công trình cơ điện."
+      },
+      "mission": {
+        "title": "SỨ MỆNH",
+        "features": [
+          "Đại Phong mang trong mình sứ mệnh kiến tạo không gian sống và làm việc trong lành bằng việc cung cấp giải pháp thông gió chất lượng cao, thông qua các sản phẩm ống gió, miệng gió và phụ kiện HVAC đạt chuẩn kỹ thuật – thẩm mỹ – độ bền vượt trội.",
+          "Chúng tôi không ngừng đổi mới công nghệ, nâng cao năng lực sản xuất và hoàn thiện dịch vụ, nhằm mang đến cho nhà thầu và chủ đầu tư những sản phẩm chính xác, an toàn, hiệu quả và đúng tiến độ trong mọi dự án cơ điện."
+        ]
+      },
+      "coreValues": {
+        "title": "GIÁ TRỊ CỐT LÕI",
+        "features": [
+          "\"Ống gió chất lượng – Khởi nguồn không khí sạch\"",
+          "Tại Đại Phong, chúng tôi tin rằng chất lượng ống gió chính là nền tảng của không khí sạch và môi trường sống bền vững.",
+          "Mỗi sản phẩm được chế tạo với độ bền cao, độ kín tuyệt đối và độ chính xác vượt trội, đảm bảo hệ thống thông gió vận hành an toàn, ổn định và hiệu quả năng lượng trong mọi công trình.",
+          "Không chỉ tạo ra sản phẩm, Đại Phong còn kiến tạo giải pháp thông gió toàn diện, góp phần nâng tầm chất lượng công trình – giá trị thương hiệu – và trải nghiệm sống của con người Việt Nam."
+        ]
+      },
+      "philosophy": {
+        "title": "TRIẾT LÝ KINH DOANH",
+        "features": [
+          "Chất lượng là nền tảng – Mỗi sản phẩm được tạo ra đều phản ánh cam kết của Đại Phong về độ bền, độ kín và độ chính xác cao nhất.",
+          "Tiến độ là cam kết – Đồng hành cùng tiến độ dự án, đảm bảo uy tín với khách hàng và đối tác.",
+          "Uy tín là kim chỉ nam – Giữ vững niềm tin và trách nhiệm trong từng hợp tác.",
+          "Đổi mới không ngừng – Ứng dụng công nghệ hiện đại, tối ưu quy trình để nâng cao hiệu quả sản xuất.",
+          "Phát triển bền vững – Hướng tới sự hài hòa giữa lợi ích doanh nghiệp, khách hàng, nhân viên và xã hội."
+        ]
+      },
+      "imageAlt": "{{title}} - Đại Phong"
+    },
+    "organizational": {
+      "heading": "NĂNG LỰC NHÂN SỰ",
+      "lineTitleAlt": "Đường viền trang trí tiêu đề cơ cấu tổ chức",
+      "imageAlt": "Cơ cấu tổ chức công ty"
+    },
+    "companyInfo": {
+      "heading": "Thông tin công ty",
+      "labels": {
+        "companyName": "Tên công ty",
+        "address": "Địa chỉ",
+        "contact": "Liên hệ",
+        "email": "Email",
+        "website": "Website",
+        "director": "Giám đốc",
+        "taxCode": "Mã số thuế",
+        "foundedDate": "Ngày thành lập",
+        "mainBusiness": "Ngành nghề chính"
+      },
+      "values": {
+        "companyName": "Công Ty Cổ Phần Công Nghiệp Đại Phong",
+        "address": "Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TPHCM",
+        "contact": "(+84) 888 885 964",
+        "email": "daiphong@daiphong.com",
+        "website": "daiphong.vn",
+        "director": "Ông: Lê Thanh Tùng",
+        "taxCode": "xxxxxxxxxxxx",
+        "foundedDate": "2003",
+        "mainBusiness": "Sản xuất và gia công các sản phẩm cơ điện (MEP)"
+      },
+      "imageAlt": "Cơ cấu tổ chức"
+    },
+    "license": {
+      "heading": "GIẤY PHÉP",
+      "lineTitleAlt": "Đường viền trang trí tiêu đề giấy phép",
+      "imageAlt": "Giấy phép sản xuất ống thông gió chất lượng cao"
+    },
+    "partner": {
+      "heading": "Dự án tiêu biểu",
+      "lineTitleAlt": "Đường viền trang trí tiêu đề dự án tiêu biểu",
+      "networkTitle": "MẠNG LƯỚI ĐỐI TÁC CHIẾN LƯỢC CỦA ĐẠI PHONG",
+      "p1": "Đại Phong tự hào là thành viên của một mạng lưới đối tác chiến lược rộng lớn, bao gồm các tập đoàn, doanh nghiệp hàng đầu trong nhiều lĩnh vực. Sự hợp tác bền vững với hơn 50 đối tác uy tín đã giúp chúng tôi mở rộng phạm vi hoạt động và nâng cao năng lực cung cấp dịch vụ.",
+      "p2": "Chúng tôi đặc biệt chú trọng đến việc xây dựng mối quan hệ đối tác lâu dài, dựa trên những nguyên tắc cốt lõi:",
+      "principles": [
+        "Tin cậy và minh bạch trong giao dịch",
+        "Hỗ trợ kỹ thuật chuyên sâu",
+        "Giải pháp tùy chỉnh theo nhu cầu"
+      ],
+      "p3": "Thông qua mạng lưới đối tác đa dạng, từ các ngân hàng, tập đoàn bất động sản, đến các công ty công nghệ và sản xuất, chúng tôi có thể cung cấp giải pháp tích hợp toàn diện cho mọi dự án từ quy mô nhỏ đến lớn.",
+      "p4": "Đại Phong cam kết duy trì và phát triển mối quan hệ hợp tác với tất cả đối tác hiện tại, đồng thời luôn sẵn sàng chào đón những đối tác mới để cùng nhau tạo ra giá trị bền vững và đóng góp tích cực cho sự phát triển của ngành cơ điện Việt Nam."
+    }
+  },
+  "newsPage": {
+    "heading": "Tin tức mới nhất",
+    "description": "Cập nhật những thông tin mới nhất về sản xuất ống gió, miệng gió, phụ kiện HVAC tại Đại Phong, các dự án thông gió tiêu biểu và thành tựu trong ngành HVAC Việt Nam.",
+    "emptyState": "Hiện tại chưa có tin tức nào.",
+    "tabNews": "Tin tức",
+    "tabActivities": "Hoạt động công ty",
+    "newsItemImageAlt": "{{title}} - Tin tức Công Ty Cổ Phần Công Nghiệp Đại Phong"
+  },
+  "productsPage": {
+    "sortLabel": "Sắp xếp theo:",
+    "sortDefault": "Mặc định",
+    "sortPriceAsc": "Giá tăng dần",
+    "sortPriceDesc": "Giá giảm dần",
+    "searchPlaceholder": "Tìm kiếm sản phẩm...",
+    "searchButton": "Tìm kiếm"
+  },
+  "servicesPage": {
+    "heading": "LĨNH VỰC HOẠT ĐỘNG",
+    "lineTitleAlt": "Đường viền trang trí tiêu đề Lĩnh vực hoạt động",
+    "heroBreadcrumbHome": "Trang chủ",
+    "heroBreadcrumbServices": "Lĩnh vực hoạt động",
+    "ongGioTron": {
+      "title": "Ống gió tròn",
+      "description": "Ống gió tròn được sản xuất từ tấm kim loại chất lượng cao, có độ bền và khả năng chống ăn mòn tốt. Sản phẩm đạt tiêu chuẩn quốc tế, phù hợp cho mọi hệ thống thông gió."
+    },
+    "ongGioVuong": {
+      "title": "Ống gió vuông",
+      "description": "Ống gió vuông được sản xuất với độ chính xác cao, phù hợp cho các hệ thống thông gió trong không gian hạn chế. Sản phẩm có tính thẩm mỹ cao và dễ dàng tích hợp vào kiến trúc."
+    },
+    "cuaGioCacLoai": {
+      "title": "Cửa gió các loại",
+      "description": "Cửa gió được sản xuất với nhiều mẫu mã đa dạng, phù hợp cho mọi hệ thống thông gió. Sản phẩm có tính thẩm mỹ cao, dễ dàng điều chỉnh lưu lượng gió và đảm bảo hiệu quả thông gió tối ưu."
+    },
+    "phuKienOngGio": {
+      "title": "Phụ kiện ống gió",
+      "description": "Phụ kiện ống gió được sản xuất với độ chính xác cao, đảm bảo kết nối chặt chẽ và hiệu quả thông gió tối ưu. Sản phẩm bao gồm các loại co, tê, giảm, nối và các phụ kiện khác."
+    },
+    "vanGio": {
+      "title": "Van gió",
+      "description": "Van gió được sản xuất với độ chính xác cao, đảm bảo điều chỉnh lưu lượng gió chính xác và hiệu quả. Sản phẩm bao gồm van gió tròn, vuông, van xả áp, van chặn lửa và các loại van khác."
+    }
+  },
+  "projectsPage": {
+    "heading": "DỰ ÁN",
+    "lineTitleAlt": "Đường viền trang trí tiêu đề dự án",
+    "description": "Trong thời gian qua, Đại Phong tự hào được nhiều đối tác tin tưởng và lựa chọn thông qua các dự án mà chúng tôi đã triển khai thành công. Khách hàng của chúng tôi thuộc nhiều lĩnh vực khác nhau.",
+    "projectImageAlt": "Hình ảnh dự án {{title}} tại {{location}} - Đại Phong",
+    "heroBreadcrumbHome": "Trang chủ",
+    "heroBreadcrumbProjects": "Dự án",
+    "heroImageAlt": "Dự án nổi bật - Đại Phong"
+  },
+  "contactPage": {
+    "heading": "Liên hệ",
+    "lineTitleAlt": "Đường viền trang trí tiêu đề Liên hệ",
+    "heroBreadcrumbHome": "Trang chủ",
+    "heroBreadcrumbContact": "Liên hệ",
+    "heroImageAlt": "Liên hệ - Đại Phong",
+    "labels": {
+      "fullName": "Họ và tên",
+      "phone": "Số điện thoại",
+      "email": "Email",
+      "subject": "Tiêu đề",
+      "content": "Nội dung"
+    },
+    "placeholders": {
+      "fullName": "Nhập họ và tên của bạn",
+      "phone": "Nhập số điện thoại",
+      "email": "Nhập địa chỉ email",
+      "subject": "Nhập tiêu đề yêu cầu",
+      "content": "Mô tả chi tiết yêu cầu của bạn..."
+    },
+    "submit": "Gửi yêu cầu"
+  },
+  "productsCategory": {
+    "notFoundTitle": "Danh mục không tồn tại",
+    "notFoundDescription": "Danh mục \"{{category}}\" không được tìm thấy.",
+    "count": "{{count}} sản phẩm",
+    "countInCategory": "{{count}} sản phẩm trong danh mục {{category}}",
+    "empty": "Không có sản phẩm nào trong danh mục này."
+  },
+  "productsDetail": {
+    "categoryNotFoundTitle": "Danh mục không tồn tại",
+    "categoryNotFoundDescription": "Danh mục \"{{category}}\" không được tìm thấy.",
+    "productNotFoundTitle": "Sản phẩm không tồn tại",
+    "productNotFoundDescription": "Sản phẩm \"{{slug}}\" không được tìm thấy.",
+    "wrongCategoryTitle": "Sản phẩm không thuộc danh mục",
+    "wrongCategoryDescription": "Sản phẩm \"{{productName}}\" không thuộc danh mục \"{{category}}\".",
+    "relatedHeading": "Sản phẩm liên quan",
+    "relatedDescription": "Các sản phẩm khác trong danh mục {{category}}"
   }
 }
 

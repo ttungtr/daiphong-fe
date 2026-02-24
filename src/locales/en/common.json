@@ -83,6 +83,201 @@
     "newsMain": "News",
     "companyActivities": "Company activities",
     "contact": "CONTACT"
+  },
+  "about": {
+    "hero": {
+      "breadcrumbHome": "Home",
+      "breadcrumbAbout": "About Us",
+      "imageAlt": "About us - Company representative image"
+    },
+    "tab": {
+      "overview": "Company Overview"
+    },
+    "letter": {
+      "heading": "COMPANY INTRODUCTION",
+      "lineTitleAlt": "Decorative underline for company introduction heading",
+      "p1": "Daiphong is a pioneering unit in the field of manufacturing and processing professional MEP products. We specialize in providing comprehensive solutions for ducts, grilles, dampers, cable trays and related accessories for HVAC systems.",
+      "p2": "With modern production capacity and a professional technical team, we are committed to delivering products that meet the highest technical standards. All Daiphong products undergo strict quality inspection, ensuring durability, accuracy and optimal performance.",
+      "p3": "We are proud to be a trusted partner for many major projects nationwide, from high-rise buildings, shopping centers, hospitals, schools to factories, workshops and industrial parks. Each project is an opportunity for us to demonstrate our capabilities and quality commitment.",
+      "p4": "Daiphong continuously invests in modern machinery and equipment and applies advanced technology. We aim to automate and standardize the production process to ensure consistency and high quality in every product.",
+      "viewProfile": "View Daiphong Profile",
+      "viewProfileAria": "View company profile",
+      "ceoImageAlt": "Mr. Le Thanh Tung - Chairman and CEO of Daiphong Industrial Joint Stock Company"
+    },
+    "visionMission": {
+      "heading": "VISION - MISSION",
+      "vision": {
+        "title": "VISION",
+        "description": "Daiphong aims to become Vietnam's leading quality and trusted manufacturer and processor of ducts, grilles and HVAC accessories, providing safe, efficient and sustainable ventilation solutions for all MEP projects."
+      },
+      "mission": {
+        "title": "MISSION",
+        "features": [
+          "Daiphong carries the mission of creating a healthy living and working environment by providing high-quality ventilation solutions through ducts, grilles and HVAC accessories that meet technical standards – aesthetics – outstanding durability.",
+          "We continuously innovate technology, improve production capacity and perfect our services, to deliver accurate, safe, efficient and on-schedule products to contractors and investors in every MEP project."
+        ]
+      },
+      "coreValues": {
+        "title": "CORE VALUES",
+        "features": [
+          "\"Quality ducts – Source of clean air\"",
+          "At Daiphong, we believe that duct quality is the foundation of clean air and sustainable living environment.",
+          "Each product is manufactured with high durability, absolute sealing and superior accuracy, ensuring the ventilation system operates safely, stably and energy efficiently in every project.",
+          "Not only creating products, Daiphong also creates comprehensive ventilation solutions, contributing to improving project quality – brand value – and the living experience of Vietnamese people."
+        ]
+      },
+      "philosophy": {
+        "title": "BUSINESS PHILOSOPHY",
+        "features": [
+          "Quality is the foundation – Every product reflects Daiphong's commitment to the highest durability, sealing and accuracy.",
+          "Schedule is commitment – Accompanying project progress, ensuring credibility with customers and partners.",
+          "Integrity is the guiding principle – Maintaining trust and responsibility in every cooperation.",
+          "Continuous innovation – Applying modern technology, optimizing processes to improve production efficiency.",
+          "Sustainable development – Towards harmony between business, customer, employee and societal interests."
+        ]
+      },
+      "imageAlt": "{{title}} - Daiphong"
+    },
+    "organizational": {
+      "heading": "HUMAN RESOURCES CAPACITY",
+      "lineTitleAlt": "Decorative underline for organizational structure heading",
+      "imageAlt": "Company organizational structure"
+    },
+    "companyInfo": {
+      "heading": "Company Information",
+      "labels": {
+        "companyName": "Company Name",
+        "address": "Address",
+        "contact": "Contact",
+        "email": "Email",
+        "website": "Website",
+        "director": "Director",
+        "taxCode": "Tax Code",
+        "foundedDate": "Founded Date",
+        "mainBusiness": "Main Business"
+      },
+      "values": {
+        "companyName": "Daiphong Industrial Joint Stock Company",
+        "address": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
+        "contact": "(+84) 888 885 964",
+        "email": "daiphong@daiphong.com",
+        "website": "daiphong.vn",
+        "director": "Mr. Le Thanh Tung",
+        "taxCode": "xxxxxxxxxxxx",
+        "foundedDate": "2003",
+        "mainBusiness": "Manufacturing and processing MEP products"
+      },
+      "imageAlt": "Organizational structure"
+    },
+    "license": {
+      "heading": "LICENSE",
+      "lineTitleAlt": "Decorative underline for license heading",
+      "imageAlt": "High-quality ventilation duct production license"
+    },
+    "partner": {
+      "heading": "Featured Projects",
+      "lineTitleAlt": "Decorative underline for featured projects heading",
+      "networkTitle": "DAIPHONG'S STRATEGIC PARTNER NETWORK",
+      "p1": "Daiphong is proud to be a member of a vast strategic partner network, including leading corporations and enterprises in many fields. Sustainable cooperation with over 50 trusted partners has helped us expand our scope and improve our service delivery capabilities.",
+      "p2": "We particularly focus on building long-term partnership relationships based on core principles:",
+      "principles": [
+        "Trust and transparency in transactions",
+        "In-depth technical support",
+        "Customized solutions to meet needs"
+      ],
+      "p3": "Through our diverse partner network, from banks, real estate corporations to technology and manufacturing companies, we can provide comprehensive integrated solutions for projects of all sizes.",
+      "p4": "Daiphong is committed to maintaining and developing partnerships with all current partners, while always welcoming new partners to create sustainable value and contribute positively to the development of Vietnam's MEP industry."
+    }
+  },
+  "newsPage": {
+    "heading": "Latest news",
+    "description": "Get the latest updates on duct manufacturing, grilles, HVAC accessories at Daiphong, featured ventilation projects and achievements in Vietnam's HVAC industry.",
+    "emptyState": "No news available at the moment.",
+    "tabNews": "News",
+    "tabActivities": "Company activities",
+    "newsItemImageAlt": "{{title}} - Daiphong Industrial Joint Stock Company news"
+  },
+  "productsPage": {
+    "sortLabel": "Sort by:",
+    "sortDefault": "Default",
+    "sortPriceAsc": "Price: low to high",
+    "sortPriceDesc": "Price: high to low",
+    "searchPlaceholder": "Search products...",
+    "searchButton": "Search"
+  },
+  "servicesPage": {
+    "heading": "BUSINESS FIELDS",
+    "lineTitleAlt": "Decorative underline for business fields heading",
+    "heroBreadcrumbHome": "Home",
+    "heroBreadcrumbServices": "Business fields",
+    "ongGioTron": {
+      "title": "Round ducts",
+      "description": "Round ducts are manufactured from high-quality metal sheets with good durability and corrosion resistance. Products meet international standards, suitable for all ventilation systems."
+    },
+    "ongGioVuong": {
+      "title": "Rectangular ducts",
+      "description": "Rectangular ducts are manufactured with high precision, suitable for ventilation systems in confined spaces. Products have high aesthetics and are easy to integrate into architecture."
+    },
+    "cuaGioCacLoai": {
+      "title": "Air outlets",
+      "description": "Air outlets are manufactured in a variety of designs, suitable for all ventilation systems. Products have high aesthetics, easy to adjust airflow and ensure optimal ventilation efficiency."
+    },
+    "phuKienOngGio": {
+      "title": "Duct accessories",
+      "description": "Duct accessories are manufactured with high precision, ensuring tight connections and optimal ventilation efficiency. Products include elbows, tees, reducers, couplings and other accessories."
+    },
+    "vanGio": {
+      "title": "Dampers",
+      "description": "Dampers are manufactured with high precision, ensuring accurate and efficient airflow control. Products include round and rectangular dampers, pressure relief dampers, fire dampers and other types."
+    }
+  },
+  "projectsPage": {
+    "heading": "PROJECTS",
+    "lineTitleAlt": "Decorative underline for projects heading",
+    "description": "Over the years, Daiphong is proud to have been trusted and chosen by many partners through the projects we have successfully implemented. Our customers span various industries.",
+    "projectImageAlt": "Project image {{title}} at {{location}} - Daiphong",
+    "heroBreadcrumbHome": "Home",
+    "heroBreadcrumbProjects": "Projects",
+    "heroImageAlt": "Featured projects - Daiphong"
+  },
+  "contactPage": {
+    "heading": "Contact",
+    "lineTitleAlt": "Decorative underline for contact heading",
+    "heroBreadcrumbHome": "Home",
+    "heroBreadcrumbContact": "Contact",
+    "heroImageAlt": "Contact - Daiphong",
+    "labels": {
+      "fullName": "Full name",
+      "phone": "Phone number",
+      "email": "Email",
+      "subject": "Subject",
+      "content": "Message"
+    },
+    "placeholders": {
+      "fullName": "Enter your full name",
+      "phone": "Enter your phone number",
+      "email": "Enter your email address",
+      "subject": "Enter request subject",
+      "content": "Describe your request in detail..."
+    },
+    "submit": "Submit request"
+  },
+  "productsCategory": {
+    "notFoundTitle": "Category not found",
+    "notFoundDescription": "Category \"{{category}}\" was not found.",
+    "count": "{{count}} products",
+    "countInCategory": "{{count}} products in category {{category}}",
+    "empty": "There are no products in this category."
+  },
+  "productsDetail": {
+    "categoryNotFoundTitle": "Category not found",
+    "categoryNotFoundDescription": "Category \"{{category}}\" was not found.",
+    "productNotFoundTitle": "Product not found",
+    "productNotFoundDescription": "Product \"{{slug}}\" was not found.",
+    "wrongCategoryTitle": "Product does not belong to category",
+    "wrongCategoryDescription": "Product \"{{productName}}\" does not belong to category \"{{category}}\".",
+    "relatedHeading": "Related products",
+    "relatedDescription": "Other products in category {{category}}"
   }
 }
 

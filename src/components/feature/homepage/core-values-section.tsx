@@ -6,14 +6,14 @@ export const CoreValuesSection: FunctionComponent = () => {
     {
       title: 'Phát triển bền vững',
       icon: TrendingUp,
-      background: '/images/phat-trien-ben-vung.pngx',
+      background: '/images/phat-trien-ben-vung.png',
       description:
         'Đại Phong cam kết không ngừng nâng cao chất lượng dịch vụ và giải pháp thi công cơ điện, hướng đến sự tối ưu trong hiệu quả – an toàn – bền vững. Mục tiêu trở thành một trong những nhà thầu cơ điện uy tín hàng đầu tại Việt Nam, đóng góp tích cực vào sự phát triển của ngành xây dựng hiện đại.',
     },
     {
       title: 'Mở rộng thị trường',
       icon: Globe,
-      background: '/images/mo-rong-thi-truong.pngx',
+      background: '/images/mo-rong-thi-truong.png',
 
       description:
         'Tăng cường triển khai các dự án cơ điện cả nước. Đại Phong định hướng phát triển quy mô và năng lực thi công để đáp ứng các dự án công nghiệp, dịch vụ, nghỉ dưỡng và hạ tầng quy mô lớn.',
@@ -21,7 +21,7 @@ export const CoreValuesSection: FunctionComponent = () => {
     {
       title: 'Xây dựng đội ngũ chuyên gia',
       icon: Users,
-      background: '/images/xay-dung-doi-ngu.pngx',
+      background: '/images/xay-dung-doi-ngu.png',
 
       description:
         'Đại Phong chú trọng đầu tư đào tạo đội ngũ kỹ sư cơ điện chất lượng cao, đồng thời xây dựng môi trường làm việc chuyên nghiệp, năng động. Chúng tôi tạo điều kiện để nhân sự phát huy tối đa năng lực, qua đó nâng cao sức cạnh tranh và hướng đến phát triển bền vững.',
@@ -41,7 +41,7 @@ export const CoreValuesSection: FunctionComponent = () => {
         {/* <ImageWithFallback
           width={247}
           height={26}
-          src="/images/titlebg.pngx"
+          src="/images/titlebg.png"
           alt="titlebg"
           className="mx-auto mb-6 w-auto h-auto max-w-[200px] sm:max-w-[247px]"
         /> */}

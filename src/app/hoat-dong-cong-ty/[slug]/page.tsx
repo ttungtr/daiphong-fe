@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const activity = newsData.find(
     (item) =>
-      item.slug === slug && item.category === ENewCategory.COMPANY_ACTIVITY
+      item.slug === slug && item.category === ENewCategory.COMPANY_ACTIVITY,
   );
 
   if (!activity) {
@@ -28,7 +28,7 @@ export async function generateMetadata({
   }
 
   const formattedDate = new Date(
-    activity.createdAt.split('/').reverse().join('-')
+    activity.createdAt.split('/').reverse().join('-'),
   );
 
   return {
@@ -85,7 +85,7 @@ export default async function CompanyActivityDetailPage({
   const { slug } = await params;
   const activity = newsData.find(
     (item) =>
-      item.slug === slug && item.category === ENewCategory.COMPANY_ACTIVITY
+      item.slug === slug && item.category === ENewCategory.COMPANY_ACTIVITY,
   );
 
   if (!activity) {
@@ -93,7 +93,7 @@ export default async function CompanyActivityDetailPage({
   }
 
   const formattedDate = new Date(
-    activity.createdAt.split('/').reverse().join('-')
+    activity.createdAt.split('/').reverse().join('-'),
   );
   const dateString = formattedDate.toLocaleDateString('vi-VN', {
     year: 'numeric',
@@ -106,7 +106,7 @@ export default async function CompanyActivityDetailPage({
       (item) =>
         item.category === ENewCategory.COMPANY_ACTIVITY &&
         item.id !== activity.id &&
-        item.tags.some((tag) => activity.tags.includes(tag))
+        item.tags.some((tag) => activity.tags.includes(tag)),
     )
     .slice(0, 3);
 
@@ -128,7 +128,7 @@ export default async function CompanyActivityDetailPage({
       name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.onggiodaiphong.com/logo.pngx',
+        url: 'https://www.onggiodaiphong.com/logo.png',
       },
     },
     mainEntityOfPage: {
@@ -245,7 +245,7 @@ export default async function CompanyActivityDetailPage({
                       </h3>
                       <time className="text-xs text-gray-500 mt-2 block">
                         {new Date(
-                          relatedItem.createdAt.split('/').reverse().join('-')
+                          relatedItem.createdAt.split('/').reverse().join('-'),
                         ).toLocaleDateString('vi-VN')}
                       </time>
                     </div>

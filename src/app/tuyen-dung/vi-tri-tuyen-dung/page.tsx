@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: 'Đại Phong',
       images: [
         {
-          url: '/images/hr-policy/hero-section.pngx',
+          url: '/images/hr-policy/hero-section.png',
           width: 1200,
           height: 630,
           alt: 'Tuyển dụng tại Đại Phong',
@@ -42,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title,
       description,
-      images: ['/images/hr-policy/hero-section.pngx'],
+      images: ['/images/hr-policy/hero-section.png'],
     },
     alternates: {
       canonical: `/tuyen-dung/vi-tri-tuyen-dung`,
@@ -92,7 +92,7 @@ export default function JobPositionsPage() {
     '@type': 'Organization',
     name: 'Đại Phong',
     url: 'https://onggiodaiphong.com',
-    logo: 'https://onggiodaiphong.com/logo.pngx',
+    logo: 'https://onggiodaiphong.com/logo.png',
     description: 'Công ty chuyên thi công hệ thống MEP (cơ điện) chuyên nghiệp',
     address: {
       '@type': 'PostalAddress',
@@ -128,7 +128,7 @@ export default function JobPositionsPage() {
         url: `https://onggiodaiphong.com/tuyen-dung/vi-tri-tuyen-dung/${job.id}`,
         datePosted: new Date().toISOString(),
         validThrough: new Date(
-          Date.now() + 90 * 24 * 60 * 60 * 1000
+          Date.now() + 90 * 24 * 60 * 60 * 1000,
         ).toISOString(),
         employmentType: 'FULL_TIME',
       },
@@ -158,7 +158,7 @@ export default function JobPositionsPage() {
 
       <div className="w-full">
         <HeroSection
-          imageUrl="/images/hr-policy/hr-policy-banner.pngx"
+          imageUrl="/images/hr-policy/hr-policy-banner.png"
           imageAlt="Chính sách nhân sự - Đại Phong"
           breadcrumbs={[
             { label: 'Trang chủ', href: '/', isActive: false },

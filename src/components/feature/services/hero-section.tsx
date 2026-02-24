@@ -1,3 +1,5 @@
+'use client';
+
 import { BreadcrumbItem, heroSectionData } from '@/data/services';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
@@ -10,8 +12,12 @@ interface HeroSectionProps {
 export const HeroSection: FunctionComponent<HeroSectionProps> = ({
   breadcrumbs: breadcrumbsProps,
 }) => {
-  // const { imageUrl, imageAlt } = heroSectionData;
-  const breadcrumbs = breadcrumbsProps || heroSectionData.breadcrumbs;
+  const breadcrumbs =
+    breadcrumbsProps ||
+    heroSectionData.breadcrumbs.map((item) => ({
+      ...item,
+      isActive: item.isActive ?? false,
+    }));
 
   const breadcrumbStructuredData = {
     '@context': 'https://schema.org',

@@ -1,64 +1,48 @@
+'use client';
+
 import { FunctionComponent } from 'react';
 import { TrendingUp, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import ImageWithFallback from '@/components/common/ImageWithFallback';
 
 export const VisionMissionSection: FunctionComponent = () => {
+  const { t } = useTranslation('common');
   const visionMissionData = [
     {
       number: '1',
-      title: 'TẦM NHÌN',
+      titleKey: 'about.visionMission.vision.title' as const,
       icon: TrendingUp,
       background: '/images/about/tam-nhin.jpg',
-      description:
-        'Đại Phong định hướng trở thành đơn vị sản xuất và gia công ống gió, miệng gió và phụ kiện HVAC chất lượng – uy tín hàng đầu Việt Nam, mang đến những giải pháp thông gió an toàn, hiệu quả và bền vững cho mọi công trình cơ điện.',
       features: [
-        'Đại Phong định hướng trở thành đơn vị sản xuất và gia công ống gió, miệng gió và phụ kiện HVAC chất lượng – uy tín hàng đầu Việt Nam, mang đến những giải pháp thông gió an toàn, hiệu quả và bền vững cho mọi công trình cơ điện.',
-        // 'Trở thành nhà sản xuất ống gió và phụ kiện HVAC hàng đầu Việt Nam, được công nhận về chất lượng và uy tín.',
-        // 'Là đối tác tin cậy của các nhà thầu lớn và chủ đầu tư trong các dự án cơ điện quy mô quốc gia.',
-        // 'Xây dựng thương hiệu Đại Phong trở thành chuẩn mực chất lượng trong ngành sản xuất thiết bị HVAC.',
-        // 'Mở rộng quy mô sản xuất, nâng cao công suất để đáp ứng nhu cầu thị trường trong nước và khu vực.',
+        t('about.visionMission.vision.description'),
       ],
     },
     {
       number: '2',
-      title: 'SỨ MỆNH',
+      titleKey: 'about.visionMission.mission.title' as const,
       icon: Globe,
       background: '/images/about/su-menh.jpg',
-      description:
-        'Ống gió chất lượng – Khởi nguồn không khí sạch" - Chất lượng ống gió là nền tảng của không khí sạch. Đại Phong sản xuất từng sản phẩm với độ bền, độ kín và độ chính xác cao, đảm bảo hệ thống thông gió vận hành an toàn và hiệu quả cho mọi công trình.',
-      features: [
-        'Đại Phong mang trong mình sứ mệnh kiến tạo không gian sống và làm việc trong lành bằng việc cung cấp giải pháp thông gió chất lượng cao, thông qua các sản phẩm ống gió, miệng gió và phụ kiện HVAC đạt chuẩn kỹ thuật – thẩm mỹ – độ bền vượt trội.',
-        'Chúng tôi không ngừng đổi mới công nghệ, nâng cao năng lực sản xuất và hoàn thiện dịch vụ, nhằm mang đến cho nhà thầu và chủ đầu tư những sản phẩm chính xác, an toàn, hiệu quả và đúng tiến độ trong mọi dự án cơ điện.',
-      ],
+      features: t('about.visionMission.mission.features', {
+        returnObjects: true,
+      }) as string[],
     },
     {
       number: '3',
-      title: 'GIÁ TRỊ CỐT LÕI',
+      titleKey: 'about.visionMission.coreValues.title' as const,
       icon: TrendingUp,
       background: '/images/about/gia-tri-cot-loi.jpg',
-      description:
-        '"Ống gió chất lượng – Khởi nguồn không khí sạch" - Tại Đại Phong, chúng tôi tin rằng chất lượng ống gió chính là nền tảng của không khí sạch và môi trường sống bền vững.',
-      features: [
-        '"Ống gió chất lượng – Khởi nguồn không khí sạch"',
-        'Tại Đại Phong, chúng tôi tin rằng chất lượng ống gió chính là nền tảng của không khí sạch và môi trường sống bền vững.',
-        'Mỗi sản phẩm được chế tạo với độ bền cao, độ kín tuyệt đối và độ chính xác vượt trội, đảm bảo hệ thống thông gió vận hành an toàn, ổn định và hiệu quả năng lượng trong mọi công trình.',
-        'Không chỉ tạo ra sản phẩm, Đại Phong còn kiến tạo giải pháp thông gió toàn diện, góp phần nâng tầm chất lượng công trình – giá trị thương hiệu – và trải nghiệm sống của con người Việt Nam.',
-      ],
+      features: t('about.visionMission.coreValues.features', {
+        returnObjects: true,
+      }) as string[],
     },
     {
       number: '4',
-      title: 'TRIẾT LÝ KINH DOANH',
+      titleKey: 'about.visionMission.philosophy.title' as const,
       icon: TrendingUp,
       background: '/images/about/triet-li-kinh-doanh.jpg',
-      description:
-        '"Ống gió chất lượng – Khởi nguồn không khí sạch" - Chất lượng ống gió là nền tảng của không khí sạch. Đại Phong sản xuất từng sản phẩm với độ bền, độ kín và độ chính xác cao, đảm bảo hệ thống thông gió vận hành an toàn và hiệu quả cho mọi công trình.',
-      features: [
-        'Chất lượng là nền tảng – Mỗi sản phẩm được tạo ra đều phản ánh cam kết của Đại Phong về độ bền, độ kín và độ chính xác cao nhất.',
-        'Tiến độ là cam kết – Đồng hành cùng tiến độ dự án, đảm bảo uy tín với khách hàng và đối tác.',
-        'Uy tín là kim chỉ nam – Giữ vững niềm tin và trách nhiệm trong từng hợp tác.',
-        'Đổi mới không ngừng – Ứng dụng công nghệ hiện đại, tối ưu quy trình để nâng cao hiệu quả sản xuất.',
-        'Phát triển bền vững – Hướng tới sự hài hòa giữa lợi ích doanh nghiệp, khách hàng, nhân viên và xã hội.',
-      ],
+      features: t('about.visionMission.philosophy.features', {
+        returnObjects: true,
+      }) as string[],
     },
   ];
 
@@ -69,7 +53,7 @@ export const VisionMissionSection: FunctionComponent = () => {
           id="team-heading"
           className="text-xl sm:text-2xl font-bold uppercase text-center mb-2 text-white"
         >
-          TẦM NHÌN - SỨ MỆNH
+          {t('about.visionMission.heading')}
         </h3>
       </div>
 
@@ -96,7 +80,7 @@ export const VisionMissionSection: FunctionComponent = () => {
                   </div>
                   {/* Title */}
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-white">
-                    {goal.title}
+                    {t(goal.titleKey)}
                   </h2>
                 </div>
 
@@ -132,7 +116,9 @@ export const VisionMissionSection: FunctionComponent = () => {
               >
                 <ImageWithFallback
                   src={goal.background}
-                  alt={`${goal.title} - Đại Phong`}
+                  alt={t('about.visionMission.imageAlt', {
+                    title: t(goal.titleKey),
+                  })}
                   width={800}
                   height={600}
                   className="w-full h-full object-cover"

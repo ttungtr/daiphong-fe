@@ -1,10 +1,15 @@
+'use client';
+
 import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { INew } from '@/types/news';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 export const NewsItem = ({ news }: { news: INew }) => {
+  const { t, i18n } = useTranslation('common');
   const formattedDate = new Date(news.createdAt.split('/').reverse().join('-'));
-  const dateString = formattedDate.toLocaleDateString('vi-VN', {
+  const locale = i18n.language === 'en' ? 'en-US' : 'vi-VN';
+  const dateString = formattedDate.toLocaleDateString(locale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -16,7 +21,7 @@ export const NewsItem = ({ news }: { news: INew }) => {
         <div className='aspect-w-16 aspect-h-10 relative'>
           <ImageWithFallback
             src={news.images[0]}
-            alt={`${news.title} - Tin tức Công Ty Cổ Phần Công Nghiệp Đại Phong`}
+            alt={t('newsPage.newsItemImageAlt', { title: news.title })}
             width={400}
             height={250}
             className='w-full h-48 sm:h-52 lg:h-56 object-cover group-hover:scale-105 transition-transform duration-300'

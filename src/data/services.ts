@@ -23,7 +23,7 @@ export const heroSectionData: HeroSectionProps = {
     { label: 'Trang chủ', href: '/' },
     { label: 'Sản phẩm', href: '/services', isActive: true },
   ],
-  imageUrl: '/images/services/hero-section.pngx',
+  imageUrl: '/images/services/hero-section.png',
   imageAlt:
     'Sản phẩm ống thông gió chất lượng cao - Nhà sản xuất ống gió chuyên nghiệp',
 };
@@ -55,15 +55,15 @@ export const servicesData: IService[] = [
     ],
     images: [
       {
-        url: '/images/services/he-thong-dien/1.pngx',
+        url: '/images/services/he-thong-dien/1.png',
         alt: 'Ống gió tròn chất lượng cao',
       },
       {
-        url: '/images/services/he-thong-dien/3.pngx',
+        url: '/images/services/he-thong-dien/3.png',
         alt: 'Ống gió tròn sản xuất chuyên nghiệp',
       },
       {
-        url: '/images/services/he-thong-dien/2.pngx',
+        url: '/images/services/he-thong-dien/2.png',
         alt: 'Ống gió tròn đa dạng kích thước',
       },
     ],
@@ -73,15 +73,15 @@ export const servicesData: IService[] = [
     title: 'Ống gió vuông',
     images: [
       {
-        url: '/images/services/he-thong-dien-nhe/1.pngx',
+        url: '/images/services/he-thong-dien-nhe/1.png',
         alt: 'Ống gió vuông chất lượng cao',
       },
       {
-        url: '/images/services/he-thong-dien-nhe/2.pngx',
+        url: '/images/services/he-thong-dien-nhe/2.png',
         alt: 'Ống gió vuông đa dạng kích thước',
       },
       {
-        url: '/images/services/he-thong-dien-nhe/3.pngx',
+        url: '/images/services/he-thong-dien-nhe/3.png',
         alt: 'Ống gió vuông sản xuất chuyên nghiệp',
       },
     ],
@@ -112,15 +112,15 @@ export const servicesData: IService[] = [
     title: 'Cửa gió các loại',
     images: [
       {
-        url: '/images/services/he-thong-dieu-hoa-thong-gio/1.pngx',
+        url: '/images/services/he-thong-dieu-hoa-thong-gio/1.png',
         alt: 'Cửa gió chất lượng cao',
       },
       {
-        url: '/images/services/he-thong-dieu-hoa-thong-gio/2.pngx',
+        url: '/images/services/he-thong-dieu-hoa-thong-gio/2.png',
         alt: 'Cửa gió đa dạng mẫu mã',
       },
       {
-        url: '/images/services/he-thong-dieu-hoa-thong-gio/3.pngx',
+        url: '/images/services/he-thong-dieu-hoa-thong-gio/3.png',
         alt: 'Cửa gió sản xuất chuyên nghiệp',
       },
     ],
@@ -145,15 +145,15 @@ export const servicesData: IService[] = [
     title: 'Phụ kiện ống gió',
     images: [
       {
-        url: '/images/services/he-thong-cap-thoat-nuoc/1.pngx',
+        url: '/images/services/he-thong-cap-thoat-nuoc/1.png',
         alt: 'Phụ kiện ống gió chất lượng cao',
       },
       {
-        url: '/images/services/he-thong-cap-thoat-nuoc/2.pngx',
+        url: '/images/services/he-thong-cap-thoat-nuoc/2.png',
         alt: 'Phụ kiện ống gió đa dạng',
       },
       {
-        url: '/images/services/he-thong-cap-thoat-nuoc/1.pngx',
+        url: '/images/services/he-thong-cap-thoat-nuoc/1.png',
         alt: 'Phụ kiện ống gió chuyên nghiệp',
       },
     ],
@@ -184,15 +184,15 @@ export const servicesData: IService[] = [
     title: 'Van gió',
     images: [
       {
-        url: '/images/services/he-thong-phong-chay-chua-chay/2.pngx',
+        url: '/images/services/he-thong-phong-chay-chua-chay/2.png',
         alt: 'Van gió chất lượng cao',
       },
       {
-        url: '/images/services/he-thong-phong-chay-chua-chay/3.pngx',
+        url: '/images/services/he-thong-phong-chay-chua-chay/3.png',
         alt: 'Van gió đa dạng mẫu mã',
       },
       {
-        url: '/images/services/he-thong-phong-chay-chua-chay/2.pngx',
+        url: '/images/services/he-thong-phong-chay-chua-chay/2.png',
         alt: 'Van gió sản xuất chuyên nghiệp',
       },
     ],

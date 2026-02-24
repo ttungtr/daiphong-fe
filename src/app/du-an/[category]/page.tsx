@@ -50,7 +50,7 @@ export default function ProjectsPage({
       try {
         const { category: categoryx } = await params;
         const foundCategory = projectsData.categories.find(
-          (c) => c.id === categoryx
+          (c) => c.id === categoryx,
         );
 
         if (!foundCategory) {
@@ -76,7 +76,7 @@ export default function ProjectsPage({
   // Pagination logic
   const paginatedProjects = filteredProjects.slice(
     (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
+    currentPage * itemsPerPage,
   );
 
   const handlePageChange = (page: number) => {
@@ -126,7 +126,7 @@ export default function ProjectsPage({
     '@type': 'Organization',
     name: 'Đại Phong',
     url: 'https://onggiodaiphong.com',
-    logo: 'https://onggiodaiphong.com/logo.pngx',
+    logo: 'https://onggiodaiphong.com/logo.png',
     description: 'Công ty chuyên thi công hệ thống MEP (cơ điện) chuyên nghiệp',
     address: {
       '@type': 'PostalAddress',
@@ -205,7 +205,7 @@ export default function ProjectsPage({
               const projectImage =
                 project.images && project.images.length > 0 && project.images[0]
                   ? project.images[0]
-                  : '/images/projects/hero-section.pngx'; // Fallback image
+                  : '/images/projects/hero-section.png'; // Fallback image
 
               return (
                 <Link

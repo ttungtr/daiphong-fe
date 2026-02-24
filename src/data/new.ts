@@ -13,9 +13,9 @@ export const newsData: INew[] = [
     title:
       'ĐẠI PHONG CORP CHÍNH THỨC KHỞI CÔNG NHÀ MÁY SAMSUNG ELECTRONICS VIỆT NAM TẠI BẮC NINH',
     images: [
-      '/images/news/samsung-bac-ninh/1.pngx',
-      '/images/news/samsung-bac-ninh/2.pngx',
-      '/images/news/samsung-bac-ninh/3.pngx',
+      '/images/news/samsung-bac-ninh/1.png',
+      '/images/news/samsung-bac-ninh/2.png',
+      '/images/news/samsung-bac-ninh/3.png',
     ],
     createdAt: '15/03/2023',
     slug: 'samsung-electronics-vietnam-factory',
@@ -35,9 +35,9 @@ export const newsData: INew[] = [
     title:
       'KHỞI CÔNG TRUNG TÂM THƯƠNG MẠI AEON MALL BÌNH TÂN - DỰ ÁN THƯƠNG MẠI QUY MÔ LỚN',
     images: [
-      '/images/news/aeon-mall-binh-tan/1.pngx',
-      '/images/news/aeon-mall-binh-tan/2.pngx',
-      '/images/news/aeon-mall-binh-tan/3.pngx',
+      '/images/news/aeon-mall-binh-tan/1.png',
+      '/images/news/aeon-mall-binh-tan/2.png',
+      '/images/news/aeon-mall-binh-tan/3.png',
     ],
     createdAt: '10/01/2024',
     slug: 'aeon-mall-binh-tan-construction',

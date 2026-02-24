@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import ProductCard from '@/components/ProductCard';
 import {
   Product as ProductData,
@@ -12,6 +13,7 @@ import { Pagination, ProductTab, CustomSelect } from '@/components/common';
 type SortOrder = 'default' | 'priceAsc' | 'priceDesc';
 
 export default function ProductsPage() {
+  const { t } = useTranslation('common');
   const [keyword, setKeyword] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('Tất cả');
   const [sortOrder, setSortOrder] = useState<SortOrder>('default');
@@ -77,13 +79,13 @@ export default function ProductsPage() {
         <div className="mb-6 flex items-center justify-end">
           <div className="flex items-center gap-3">
             <label className="text-sm font-medium text-gray-700">
-              Sắp xếp theo:
+              {t('productsPage.sortLabel')}
             </label>
             <CustomSelect
               options={[
-                { value: 'default', label: 'Mặc định' },
-                { value: 'priceAsc', label: 'Giá tăng dần' },
-                { value: 'priceDesc', label: 'Giá giảm dần' },
+                { value: 'default', label: t('productsPage.sortDefault') },
+                { value: 'priceAsc', label: t('productsPage.sortPriceAsc') },
+                { value: 'priceDesc', label: t('productsPage.sortPriceDesc') },
               ]}
               value={sortOrder}
               onChange={(value) => setSortOrder(value as SortOrder)}

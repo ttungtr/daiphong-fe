@@ -9,6 +9,7 @@ import { projectsData } from '@/data/projects';
 import { servicesData } from '@/data/services';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Structured data for SEO
 const structuredData = {
@@ -40,7 +41,17 @@ const structuredData = {
 };
 
 export default function ProjectPage() {
+  const { t } = useTranslation('common');
   const [currentPage, setCurrentPage] = useState(1);
+
+  const breadcrumbs = [
+    { label: t('projectsPage.heroBreadcrumbHome'), href: '/', isActive: false },
+    {
+      label: t('projectsPage.heroBreadcrumbProjects'),
+      href: '/du-an',
+      isActive: true,
+    },
+  ];
   const itemsPerPage = 9; // Hiển thị 9 dự án mỗi trang (3x3 grid)
 
   const paginatedProjects = useMemo(() => {
@@ -68,7 +79,10 @@ export default function ProjectPage() {
       />
 
       <div className="w-full">
-        <HeroSection />
+        <HeroSection
+          breadcrumbs={breadcrumbs}
+          imageAlt={t('projectsPage.heroImageAlt')}
+        />
 
         <div className="max-w-7xl mx-auto space-y-4 py-10 px-4 sm:px-6 lg:px-8">
           <header className="w-full flex flex-col items-center justify-center">
@@ -76,14 +90,12 @@ export default function ProjectPage() {
               id="services-heading"
               className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center"
             >
-              DỰ ÁN
+              {t('projectsPage.heading')}
             </h1>
-            <LineTitle alt="Đường viền trang trí tiêu đề dự án" />
+            <LineTitle alt={t('projectsPage.lineTitleAlt')} />
 
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 text-center max-w-4xl">
-              Trong thời gian qua, Đại Phong tự hào được nhiều đối tác tin tưởng
-              và lựa chọn thông qua các dự án mà chúng tôi đã triển khai thành
-              công. Khách hàng của chúng tôi thuộc nhiều lĩnh vực khác nhau.
+              {t('projectsPage.description')}
             </p>
           </header>
 
@@ -100,7 +112,10 @@ export default function ProjectPage() {
                 <div className="aspect-w-16 aspect-h-10">
                   <ImageWithFallback
                     src={project.images[0]}
-                    alt={`Hình ảnh dự án ${project.title} tại ${project.location} - Đại Phong`}
+                    alt={t('projectsPage.projectImageAlt', {
+                      title: project.title,
+                      location: project.location,
+                    })}
                     width={300}
                     height={200}
                     fill

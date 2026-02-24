@@ -14,7 +14,7 @@ export async function generateMetadata({
 }: NewsDetailPageProps): Promise<Metadata> {
   const { slug } = await params;
   const news = newsData.find(
-    (item) => item.slug === slug && item.category === ENewCategory.NEWS
+    (item) => item.slug === slug && item.category === ENewCategory.NEWS,
   );
 
   if (!news) {
@@ -77,7 +77,7 @@ export async function generateStaticParams() {
 export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   const { slug } = await params;
   const news = newsData.find(
-    (item) => item.slug === slug && item.category === ENewCategory.NEWS
+    (item) => item.slug === slug && item.category === ENewCategory.NEWS,
   );
 
   if (!news) {
@@ -96,7 +96,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
       (item) =>
         item.category === ENewCategory.NEWS &&
         item.id !== news.id &&
-        item.tags.some((tag) => news.tags.includes(tag))
+        item.tags.some((tag) => news.tags.includes(tag)),
     )
     .slice(0, 3);
 
@@ -118,7 +118,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
       name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.onggiodaiphong.com/logo.pngx',
+        url: 'https://www.onggiodaiphong.com/logo.png',
       },
     },
     mainEntityOfPage: {
@@ -235,7 +235,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
                       </h3>
                       <time className="text-xs text-gray-500 mt-2 block">
                         {new Date(
-                          relatedItem.createdAt.split('/').reverse().join('-')
+                          relatedItem.createdAt.split('/').reverse().join('-'),
                         ).toLocaleDateString('vi-VN')}
                       </time>
                     </div>

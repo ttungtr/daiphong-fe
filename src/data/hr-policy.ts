@@ -14,6 +14,6 @@ export const heroSectionData: HeroSectionProps = {
       isActive: true,
     },
   ],
-  imageUrl: '/images/hr-policy/hero-section.pngx',
+  imageUrl: '/images/hr-policy/hero-section.png',
   imageAlt: 'Chính sách nhân sự - Đại Phong',
 };

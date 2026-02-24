@@ -1,3 +1,5 @@
+'use client';
+
 import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { heroSectionData } from '@/data/projects';
 import { BreadcrumbItem } from '@/data/services';
@@ -7,13 +9,21 @@ import { FunctionComponent } from 'react';
 
 interface HeroSectionProps {
   breadcrumbs?: BreadcrumbItem[];
+  imageAlt?: string;
 }
 
 export const HeroSection: FunctionComponent<HeroSectionProps> = ({
   breadcrumbs: breadcrumbsProps,
+  imageAlt: imageAltProp,
 }) => {
-  const { imageUrl, imageAlt } = heroSectionData;
-  const breadcrumbs = breadcrumbsProps || heroSectionData.breadcrumbs;
+  const { imageUrl } = heroSectionData;
+  const imageAlt = imageAltProp ?? heroSectionData.imageAlt;
+  const breadcrumbs =
+    breadcrumbsProps ||
+    heroSectionData.breadcrumbs.map((item) => ({
+      ...item,
+      isActive: item.isActive ?? false,
+    }));
 
   const breadcrumbStructuredData = {
     '@context': 'https://schema.org',

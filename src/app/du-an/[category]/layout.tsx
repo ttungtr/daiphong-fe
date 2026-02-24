@@ -17,7 +17,7 @@ export async function generateMetadata({
   }
 
   const projectCount = projectsData.projects.filter(
-    (project) => project.category === category.id
+    (project) => project.category === category.id,
   ).length;
 
   const title = `${category.name} - ${projectCount} Dự Án | Đại Phong`;
@@ -43,7 +43,7 @@ export async function generateMetadata({
       siteName: 'Đại Phong',
       images: [
         {
-          url: '/images/projects/hero-section.pngx',
+          url: '/images/projects/hero-section.png',
           width: 1200,
           height: 630,
           alt: `Công trình ${category.name} - Đại Phong`,
@@ -54,7 +54,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: ['/images/projects/hero-section.pngx'],
+      images: ['/images/projects/hero-section.png'],
     },
     alternates: {
       canonical: `/du-an/${categoryx}`,

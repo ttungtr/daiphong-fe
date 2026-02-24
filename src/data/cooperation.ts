@@ -5,6 +5,6 @@ export const heroSectionData: HeroSectionProps = {
     { label: 'Trang chủ', href: '/' },
     { label: 'Hợp tác', href: '/hop-tac', isActive: true },
   ],
-  imageUrl: '/images/partner/hero-section.pngx',
+  imageUrl: '/images/partner/hero-section.png',
   imageAlt: 'Hợp tác - Đại Phong',
 };

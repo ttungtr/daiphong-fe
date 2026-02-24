@@ -75,7 +75,7 @@ export const jobPositions: TJobPosition[] = [
     ],
     images: [
       {
-        url: '/images/job-positions/quan-ly-du-an-mep/quan-ly-du-an-mep.pngx',
+        url: '/images/job-positions/quan-ly-du-an-mep/quan-ly-du-an-mep.png',
         alt: 'Quản lý dự án MEP',
       },
     ],
@@ -151,7 +151,7 @@ export const jobPositions: TJobPosition[] = [
     ],
     images: [
       {
-        url: '/images/job-positions/ky-su-du-an/ky-su-du-an.pngx',
+        url: '/images/job-positions/ky-su-du-an/ky-su-du-an.png',
         alt: 'Kỹ sư dự án',
       },
     ],
@@ -226,7 +226,7 @@ export const jobPositions: TJobPosition[] = [
     ],
     images: [
       {
-        url: '/images/job-positions/giam-sat-cap-thoat-nuoc/giam-sat-cap-thoat-nuoc.pngx',
+        url: '/images/job-positions/giam-sat-cap-thoat-nuoc/giam-sat-cap-thoat-nuoc.png',
         alt: 'Giám sát cấp thoát nước',
       },
     ],
@@ -301,7 +301,7 @@ export const jobPositions: TJobPosition[] = [
     ],
     images: [
       {
-        url: '/images/job-positions/tho-han/tho-han.pngx',
+        url: '/images/job-positions/tho-han/tho-han.png',
         alt: 'Thợ hàn',
       },
     ],
@@ -373,7 +373,7 @@ export const jobPositions: TJobPosition[] = [
     ],
     images: [
       {
-        url: '/images/job-positions/tho-thi-cong-mep/tho-thi-cong-mep.pngx',
+        url: '/images/job-positions/tho-thi-cong-mep/tho-thi-cong-mep.png',
         alt: 'Thợ thi công MEP',
       },
     ],
@@ -444,7 +444,7 @@ export const jobPositions: TJobPosition[] = [
     ],
     images: [
       {
-        url: '/images/job-positions/tho-phu-thi-cong-mep/tho-phu-thi-cong-mep.pngx',
+        url: '/images/job-positions/tho-phu-thi-cong-mep/tho-phu-thi-cong-mep.png',
         alt: 'Thợ phụ thi công MEP',
       },
     ],

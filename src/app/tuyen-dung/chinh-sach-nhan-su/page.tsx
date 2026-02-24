@@ -140,14 +140,14 @@ export default function HRPolicyPage() {
         <main role="main" aria-labelledby="services-heading">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* <ImageWithFallback
-              src="/images/hr-policy/chinh-sach-nhan-su-1.pngx"
+              src="/images/hr-policy/chinh-sach-nhan-su-1.png"
               alt="Chính sách nhân sự - Quy định về chế độ đãi ngộ và quyền lợi nhân viên"
               width={300}
               height={300}
               className="w-full h-auto"
             />
             <ImageWithFallback
-              src="/images/hr-policy/chinh-sach-nhan-su-2.pngx"
+              src="/images/hr-policy/chinh-sach-nhan-su-2.png"
               alt="Chính sách nhân sự - Môi trường làm việc và văn hóa công ty"
               width={300}
               height={300}

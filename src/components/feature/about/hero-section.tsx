@@ -1,9 +1,12 @@
+'use client';
+
 import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { heroSectionData } from '@/data/about';
 import { BreadcrumbItem } from '@/data/services';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { FunctionComponent } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface HeroSectionProps {
   breadcrumbs?: BreadcrumbItem[];
@@ -12,8 +15,19 @@ interface HeroSectionProps {
 export const HeroSection: FunctionComponent<HeroSectionProps> = ({
   breadcrumbs: breadcrumbsProps,
 }) => {
-  const { imageUrl, imageAlt } = heroSectionData;
-  const breadcrumbs = breadcrumbsProps || heroSectionData.breadcrumbs;
+  const { t } = useTranslation('common');
+  const { imageUrl } = heroSectionData;
+  const imageAlt = t('about.hero.imageAlt');
+  const breadcrumbs: BreadcrumbItem[] =
+    breadcrumbsProps ||
+    heroSectionData.breadcrumbs.map((item, i) => ({
+      ...item,
+      isActive: item.isActive ?? false,
+      label:
+        i === 0
+          ? t('about.hero.breadcrumbHome')
+          : t('about.hero.breadcrumbAbout'),
+    }));
 
   const breadcrumbStructuredData = {
     '@context': 'https://schema.org',

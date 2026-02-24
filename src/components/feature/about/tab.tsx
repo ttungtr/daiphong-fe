@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { FunctionComponent } from 'react';
+import { useTranslation } from 'react-i18next';
 import { tabData } from '@/data/about';
 
 interface TabProps {
@@ -7,6 +10,7 @@ interface TabProps {
 }
 
 export const Tab: FunctionComponent<TabProps> = ({ currentPath }) => {
+  const { t } = useTranslation('common');
   return (
     <div className="w-full flex items-center justify-center py-8 bg-white">
       {tabData.map((item, index) => {
@@ -20,10 +24,10 @@ export const Tab: FunctionComponent<TabProps> = ({ currentPath }) => {
                 : 'bg-gray-400 hover:bg-gray-500'
             }`}
             href={item.href}
-            key={`${item.label}-${index}`}
+            key={`${item.href}-${index}`}
             scroll={false}
           >
-            {item.label}
+            {t('about.tab.overview')}
           </Link>
         );
       })}

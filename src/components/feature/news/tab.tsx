@@ -1,15 +1,24 @@
+'use client';
+
 import { newsTabData } from '@/data/new';
 import Link from 'next/link';
 import { FunctionComponent } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface TabProps {
   currentPath: string;
 }
 
-export const Tab: FunctionComponent<TabProps> = ({ currentPath }) => (
-  <div className='w-full py-10 space-y-4'>
+export const Tab: FunctionComponent<TabProps> = ({ currentPath }) => {
+  const { t } = useTranslation('common');
+  const tabLabels: Record<string, string> = {
+    '/tin-tuc': t('newsPage.tabNews'),
+    '/hoat-dong-cong-ty': t('newsPage.tabActivities'),
+  };
+  return (
+  <div className="w-full py-10 space-y-4">
     {/* <ImageWithFallback
-      src="/images/titlebg.pngx"
+      src="/images/titlebg.png"
       alt="Đường viền trang trí cho tiêu đề Liên hệ"
       width={300}
       height={100}
@@ -17,7 +26,7 @@ export const Tab: FunctionComponent<TabProps> = ({ currentPath }) => (
       priority
     /> */}
 
-    <div className='flex items-center justify-center gap-4'>
+    <div className="flex items-center justify-center gap-4">
       {newsTabData.map((item, index) => {
         const isActive = currentPath === item.href;
 
@@ -27,13 +36,14 @@ export const Tab: FunctionComponent<TabProps> = ({ currentPath }) => (
               isActive ? 'bg-primary-blue-1' : 'bg-gray-400'
             }`}
             href={item.href}
-            key={`${item.label}-${index}`}
+            key={`${item.href}-${index}`}
             scroll={false}
           >
-            {item.label}
+            {tabLabels[item.href] ?? item.label}
           </Link>
         );
       })}
     </div>
   </div>
-);
+  );
+};

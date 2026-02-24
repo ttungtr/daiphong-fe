@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
-import { NewsItem, Tab } from '@/components/feature/news';
-import { newsData } from '@/data/new';
 import { ENewCategory } from '@/enum/new';
+import { newsData } from '@/data/new';
+import { NewsPageContent } from './NewsPageContent';
 
 export const metadata: Metadata = {
   title:
@@ -81,37 +81,7 @@ export default function NewsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      <div className="w-full pb-10 px-4 sm:px-6 lg:px-8">
-        <main className="max-w-7xl mx-auto">
-          <Tab currentPath="/tin-tuc" />
-
-          <header className="mb-8">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Tin tức mới nhất
-            </h1>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-600">
-              Cập nhật những thông tin mới nhất về sản xuất ống gió, miệng gió,
-              phụ kiện HVAC tại Đại Phong, các dự án thông gió tiêu biểu và
-              thành tựu trong ngành HVAC Việt Nam.
-            </p>
-          </header>
-
-          {newsItems.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-              {newsItems.map((item) => (
-                <NewsItem key={item.id} news={item} />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12">
-              <p className="text-gray-500 text-base sm:text-lg">
-                Hiện tại chưa có tin tức nào.
-              </p>
-            </div>
-          )}
-        </main>
-      </div>
+      <NewsPageContent />
     </>
   );
 }

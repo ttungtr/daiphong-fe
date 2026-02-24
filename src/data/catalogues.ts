@@ -9,7 +9,7 @@ export const catalogues: CatalogueItem[] = [
   {
     id: 'c-001',
     name: 'Catalogue Ống gió & Phụ kiện',
-    thumbnail: '/images/fields/he-thong-dien-nhe.pngx',
+    thumbnail: '/images/fields/he-thong-dien-nhe.png',
     file: '/pdfs/Phi-Long-BCTC-2024.pdf',
   },
   {
@@ -21,7 +21,7 @@ export const catalogues: CatalogueItem[] = [
   {
     id: 'c-003',
     name: 'Catalogue Miệng gió',
-    thumbnail: '/images/fields/he-thong-cap-thoat-nuoc.pngx',
+    thumbnail: '/images/fields/he-thong-cap-thoat-nuoc.png',
     file: '/pdfs/Phi-Long-BCTC-2024.pdf',
   },
 ];

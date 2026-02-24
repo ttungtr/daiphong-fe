@@ -35,28 +35,28 @@ export const VisionMissionSection: FunctionComponent = () => {
   return (
     <>
       <script
-        type='application/ld+json'
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       <section
-        className='py-5 bg-white'
-        aria-labelledby='vision-mission-heading'
+        className="py-5 bg-white"
+        aria-labelledby="vision-mission-heading"
         itemScope
-        itemType='https://schema.org/Organization'
+        itemType="https://schema.org/Organization"
       >
-        <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-          <div className='max-w-7xl mx-auto space-y-10'>
-            <header className='w-full flex flex-col items-center justify-center'>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto space-y-10">
+            <header className="w-full flex flex-col items-center justify-center">
               <h2
-                id='vision-mission-heading'
-                className='text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase'
-                itemProp='name'
+                id="vision-mission-heading"
+                className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 text-center uppercase"
+                itemProp="name"
               >
                 Tầm nhìn - Sứ mệnh
               </h2>
               {/* <ImageWithFallback
-                src="/images/titlebg.pngx"
+                src="/images/titlebg.png"
                 alt="Đường viền trang trí tiêu đề tầm nhìn sứ mệnh Công Ty Cổ Phần Công Nghiệp Đại Phong"
                 width={300}
                 height={100}
@@ -66,66 +66,66 @@ export const VisionMissionSection: FunctionComponent = () => {
             </header>
 
             <div
-              className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
               itemScope
-              itemType='https://schema.org/ItemList'
-              aria-label='Tầm nhìn, sứ mệnh, giá trị cốt lõi và triết lý kinh doanh của Công Ty Cổ Phần Công Nghiệp Đại Phong'
+              itemType="https://schema.org/ItemList"
+              aria-label="Tầm nhìn, sứ mệnh, giá trị cốt lõi và triết lý kinh doanh của Công Ty Cổ Phần Công Nghiệp Đại Phong"
             >
               {visionMissionData.map((item, index) => (
                 <article
                   key={`${item.title}-${index}`}
-                  className='w-full border border-gray-200'
+                  className="w-full border border-gray-200"
                   itemScope
-                  itemType='https://schema.org/CreativeWork'
-                  itemProp='itemListElement'
+                  itemType="https://schema.org/CreativeWork"
+                  itemProp="itemListElement"
                 >
-                  <meta itemProp='position' content={String(index + 1)} />
+                  <meta itemProp="position" content={String(index + 1)} />
                   <ImageWithFallback
                     src={item.imageUrl}
                     alt={`${
                       item.imageAlt
                     } của Công Ty Cổ Phần Công Nghiệp Đại Phong - ${item.description.replace(
                       /\n/g,
-                      ', '
+                      ', ',
                     )}`}
                     width={300}
                     height={300}
-                    className='w-full h-auto aspect-video object-cover object-center'
-                    sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw'
+                    className="w-full h-auto aspect-video object-cover object-center"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
-                  <div className='p-4 space-y-4'>
+                  <div className="p-4 space-y-4">
                     <h3
-                      className='text-lg font-bold text-gray-900 mt-2 text-center uppercase'
-                      itemProp='name'
+                      className="text-lg font-bold text-gray-900 mt-2 text-center uppercase"
+                      itemProp="name"
                     >
                       {item.title}
                     </h3>
                     <p
-                      className='text-gray-600 text-center whitespace-pre-line'
-                      itemProp='description'
+                      className="text-gray-600 text-center whitespace-pre-line"
+                      itemProp="description"
                     >
                       {item.description}
                     </p>
                     {/* Hidden structured data for specific sections */}
                     {item.title === 'Tầm nhìn' && (
                       <meta
-                        itemProp='about'
-                        content='Phát triển vững chắc thành nhà thầu cơ điện hàng đầu Việt Nam và Đông Nam Á'
+                        itemProp="about"
+                        content="Phát triển vững chắc thành nhà thầu cơ điện hàng đầu Việt Nam và Đông Nam Á"
                       />
                     )}
                     {item.title === 'Sứ mệnh' && (
-                      <meta itemProp='mission' content={item.description} />
+                      <meta itemProp="mission" content={item.description} />
                     )}
                     {item.title === 'Giá trị cốt lõi' && (
                       <meta
-                        itemProp='values'
-                        content='An Toàn, Chất Lượng, Tiến Độ'
+                        itemProp="values"
+                        content="An Toàn, Chất Lượng, Tiến Độ"
                       />
                     )}
                     {item.title === 'Triết lý kinh doanh' && (
                       <meta
-                        itemProp='businessPhilosophy'
-                        content='Nâng cao Chất Lượng, Sản xuất bằng Tâm, Vươn xa bằng Tầm'
+                        itemProp="businessPhilosophy"
+                        content="Nâng cao Chất Lượng, Sản xuất bằng Tâm, Vươn xa bằng Tầm"
                       />
                     )}
                   </div>

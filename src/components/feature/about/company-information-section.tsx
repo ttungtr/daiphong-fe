@@ -1,45 +1,26 @@
+'use client';
+
 import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { FunctionComponent } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const CompanyInformationSection: FunctionComponent = () => {
-  const companyInformation = [
-    {
-      label: 'Tên công ty',
-      value: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
-    },
-    {
-      label: 'Địa chỉ',
-      value: 'Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TPHCM',
-    },
-    {
-      label: 'Liên hệ',
-      value: '(+84) 888 885 964',
-    },
-    {
-      label: 'Email',
-      value: 'daiphong@daiphong.com',
-    },
-    {
-      label: 'Website',
-      value: 'daiphong.vn',
-    },
-    {
-      label: 'Giám đốc',
-      value: 'Ông: Lê Thanh Tùng',
-    },
-    {
-      label: 'Mã số thuế',
-      value: 'xxxxxxxxxxxx',
-    },
-    {
-      label: 'Ngày thành lập',
-      value: '2003',
-    },
-    {
-      label: 'Ngành nghề chính',
-      value: 'Sản xuất và gia công các sản phẩm cơ điện (MEP)',
-    },
-  ];
+  const { t } = useTranslation('common');
+  const labelKeys = [
+    'companyName',
+    'address',
+    'contact',
+    'email',
+    'website',
+    'director',
+    'taxCode',
+    'foundedDate',
+    'mainBusiness',
+  ] as const;
+  const companyInformation = labelKeys.map((key) => ({
+    label: t(`about.companyInfo.labels.${key}`),
+    value: t(`about.companyInfo.values.${key}`),
+  }));
 
   return (
     <section
@@ -51,7 +32,7 @@ export const CompanyInformationSection: FunctionComponent = () => {
           <div className="w-full col-span-1">
             <ImageWithFallback
               src="/images/about/thong-tin-cong-ty.jpg"
-              alt="Cơ cấu tổ chức"
+              alt={t('about.companyInfo.imageAlt')}
               width={500}
               height={500}
               className="w-full h-auto"
@@ -60,7 +41,7 @@ export const CompanyInformationSection: FunctionComponent = () => {
 
           <div className="w-full col-span-1 content-center">
             <h2 className="uppercase text-lg md:text-xl lg:text-2xl font-bold text-primary-blue-1 mb-6">
-              Thông tin công ty
+              {t('about.companyInfo.heading')}
             </h2>
 
             <table className="w-full overflow-hidden ">

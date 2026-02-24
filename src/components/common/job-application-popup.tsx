@@ -151,8 +151,8 @@ export default function JobApplicationPopup({
             isOpen && !isClosing
               ? 'slideIn 0.5s ease-out forwards'
               : isClosing
-              ? 'slideOut 0.5s ease-out forwards'
-              : 'none',
+                ? 'slideOut 0.5s ease-out forwards'
+                : 'none',
         }}
       >
         {/* Header */}
@@ -266,7 +266,7 @@ export default function JobApplicationPopup({
                       type="file"
                       onChange={handleFileSelect}
                       className="hidden"
-                      accept=".pdf,.doc,.docx,.pngx,.jpeg,.pngx"
+                      accept=".pdf,.doc,.docx,.png,.jpeg,.png"
                     />
                     <button
                       type="button"

@@ -17,14 +17,14 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/x-icon',
       },
       {
-        src: '/images/logo-192.pngx',
+        src: '/images/logo-192.png',
         sizes: '192x192',
-        type: 'image/pngx',
+        type: 'image/png',
       },
       {
-        src: '/images/logo-512.pngx',
+        src: '/images/logo-512.png',
         sizes: '512x512',
-        type: 'image/pngx',
+        type: 'image/png',
       },
     ],
     categories: ['business', 'manufacturing', 'hvac', 'ventilation'],

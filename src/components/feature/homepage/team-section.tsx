@@ -16,7 +16,7 @@ const teamMembers: TeamMember[] = [
     id: 'tm-001',
     name: 'Lê Thanh Tùng',
     position: 'Tổng Giám đốc',
-    image: '/images/giam-doc.pngx',
+    image: '/images/giam-doc.png',
     imageAlt:
       'Lê Thanh Tùng - Tổng Giám đốc Công Ty Cổ Phần Công Nghiệp Đại Phong',
   },
@@ -24,7 +24,7 @@ const teamMembers: TeamMember[] = [
     id: 'tm-002',
     name: 'Nguyễn Văn A',
     position: 'Phó Giám đốc',
-    image: '/images/giam-doc.pngx',
+    image: '/images/giam-doc.png',
     imageAlt:
       'Nguyễn Văn A - Phó Giám đốc Công Ty Cổ Phần Công Nghiệp Đại Phong',
   },
@@ -32,7 +32,7 @@ const teamMembers: TeamMember[] = [
     id: 'tm-003',
     name: 'Nguyễn Thị B',
     position: 'Kế toán trưởng',
-    image: '/images/giam-doc.pngx',
+    image: '/images/giam-doc.png',
     imageAlt:
       'Nguyễn Thị B - Kế toán trưởng Công Ty Cổ Phần Công Nghiệp Đại Phong',
   },

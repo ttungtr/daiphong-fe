@@ -31,7 +31,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
     name: 'Đại Phong',
     alternateName: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
     url: 'https://www.onggiodaiphong.com',
-    logo: 'https://www.onggiodaiphong.com/images/logo.pngx',
+    logo: 'https://www.onggiodaiphong.com/images/logo.png',
     description:
       'Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy)',
     address: {

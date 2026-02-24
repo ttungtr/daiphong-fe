@@ -49,9 +49,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'trung-tam-thuong-mai-aeon-mall-binh-tan',
       category: 'thuong-mai',
       images: [
-        '/images/projects/aeon-mall-binh-tan/1.pngx',
-        '/images/projects/aeon-mall-binh-tan/2.pngx',
-        '/images/projects/aeon-mall-binh-tan/3.pngx',
+        '/images/projects/aeon-mall-binh-tan/1.png',
+        '/images/projects/aeon-mall-binh-tan/2.png',
+        '/images/projects/aeon-mall-binh-tan/3.png',
       ],
     },
     {
@@ -68,9 +68,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'nha-may-samsung-bac-ninh',
       category: 'cong-nghiep',
       images: [
-        '/images/projects/samsung-bac-ninh/1.pngx',
-        '/images/projects/samsung-bac-ninh/2.pngx',
-        '/images/projects/samsung-bac-ninh/3.pngx',
+        '/images/projects/samsung-bac-ninh/1.png',
+        '/images/projects/samsung-bac-ninh/2.png',
+        '/images/projects/samsung-bac-ninh/3.png',
       ],
     },
     {
@@ -87,8 +87,8 @@ export const projectsData: IProjectsPageData = {
       slug: 'khach-san-pullman-hanoi',
       category: 'khach-san',
       images: [
-        '/images/projects/pullman-hanoi/1.pngx',
-        '/images/projects/pullman-hanoi/2.pngx',
+        '/images/projects/pullman-hanoi/1.png',
+        '/images/projects/pullman-hanoi/2.png',
       ],
     },
     {
@@ -104,9 +104,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'chung-cu-vincom-grand-park',
       category: 'chung-cu',
       images: [
-        '/images/projects/vincom-grand-park/1.pngx',
-        '/images/projects/vincom-grand-park/2.pngx',
-        '/images/projects/vincom-grand-park/3.pngx',
+        '/images/projects/vincom-grand-park/1.png',
+        '/images/projects/vincom-grand-park/2.png',
+        '/images/projects/vincom-grand-park/3.png',
       ],
     },
     {
@@ -122,9 +122,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'nha-may-uniqlo-binh-duong',
       category: 'cong-nghiep',
       images: [
-        '/images/projects/uniqlo-binh-duong/1.pngx',
-        '/images/projects/uniqlo-binh-duong/2.pngx',
-        '/images/projects/uniqlo-binh-duong/3.pngx',
+        '/images/projects/uniqlo-binh-duong/1.png',
+        '/images/projects/uniqlo-binh-duong/2.png',
+        '/images/projects/uniqlo-binh-duong/3.png',
       ],
     },
     {
@@ -140,9 +140,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'vietcombank-tower-quan-1',
       category: 'ngan-hang',
       images: [
-        '/images/projects/vietcombank-tower/1.pngx',
-        '/images/projects/vietcombank-tower/2.pngx',
-        '/images/projects/vietcombank-tower/3.pngx',
+        '/images/projects/vietcombank-tower/1.png',
+        '/images/projects/vietcombank-tower/2.png',
+        '/images/projects/vietcombank-tower/3.png',
       ],
     },
     {
@@ -158,9 +158,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'sunrise-villa-phu-my-hung',
       category: 'biet-thu',
       images: [
-        '/images/projects/sunrise-villa/1.pngx',
-        '/images/projects/sunrise-villa/2.pngx',
-        '/images/projects/sunrise-villa/3.pngx',
+        '/images/projects/sunrise-villa/1.png',
+        '/images/projects/sunrise-villa/2.png',
+        '/images/projects/sunrise-villa/3.png',
       ],
     },
     {
@@ -176,9 +176,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'nha-may-nike-binh-duong',
       category: 'cong-nghiep',
       images: [
-        '/images/projects/nike-binh-duong/1.pngx',
-        '/images/projects/nike-binh-duong/2.pngx',
-        '/images/projects/nike-binh-duong/3.pngx',
+        '/images/projects/nike-binh-duong/1.png',
+        '/images/projects/nike-binh-duong/2.png',
+        '/images/projects/nike-binh-duong/3.png',
       ],
     },
     {
@@ -195,9 +195,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'saigon-trade-center',
       category: 'van-phong',
       images: [
-        '/images/projects/saigon-trade-center/1.pngx',
-        '/images/projects/saigon-trade-center/2.pngx',
-        '/images/projects/saigon-trade-center/3.pngx',
+        '/images/projects/saigon-trade-center/1.png',
+        '/images/projects/saigon-trade-center/2.png',
+        '/images/projects/saigon-trade-center/3.png',
       ],
     },
     {
@@ -213,9 +213,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'truong-bis-quan-2',
       category: 'giao-duc',
       images: [
-        '/images/projects/bis-school/1.pngx',
-        '/images/projects/bis-school/2.pngx',
-        '/images/projects/bis-school/3.pngx',
+        '/images/projects/bis-school/1.png',
+        '/images/projects/bis-school/2.png',
+        '/images/projects/bis-school/3.png',
       ],
     },
   ],
@@ -225,49 +225,49 @@ export const projectsData: IProjectsPageData = {
       id: 'cong-nghiep',
       name: 'Công trình Công nghiệp',
       count: 4,
-      image: '/images/projects/samsung-bac-ninh/1.pngx',
+      image: '/images/projects/samsung-bac-ninh/1.png',
       link: '/du-an/cong-nghiep',
     },
     {
       id: 'khach-san',
       name: 'Công trình Khách sạn',
       count: 1,
-      image: '/images/projects/pullman-hanoi/1.pngx',
+      image: '/images/projects/pullman-hanoi/1.png',
       link: '/du-an/khach-san',
     },
     {
       id: 'thuong-mai',
       name: 'Công trình Thương mại',
       count: 1,
-      image: '/images/projects/aeon-mall-binh-tan/1.pngx',
+      image: '/images/projects/aeon-mall-binh-tan/1.png',
       link: '/du-an/thuong-mai',
     },
     {
       id: 'giao-duc',
       name: 'Công trình Giáo dục',
       count: 1,
-      image: '/images/projects/bis-school/1.pngx',
+      image: '/images/projects/bis-school/1.png',
       link: '/du-an/giao-duc',
     },
     {
       id: 'van-phong',
       name: 'Công trình Văn phòng',
       count: 1,
-      image: '/images/projects/saigon-trade-center/1.pngx',
+      image: '/images/projects/saigon-trade-center/1.png',
       link: '/du-an/van-phong',
     },
     {
       id: 'ngan-hang',
       name: 'Công trình Ngân hàng',
       count: 1,
-      image: '/images/projects/vietcombank-tower/1.pngx',
+      image: '/images/projects/vietcombank-tower/1.png',
       link: '/du-an/ngan-hang',
     },
     {
       id: 'chung-cu',
       name: 'Công trình Chung cư',
       count: 1,
-      image: '/images/projects/vincom-grand-park/1.pngx',
+      image: '/images/projects/vincom-grand-park/1.png',
       link: '/du-an/chung-cu',
     },
   ],
@@ -286,9 +286,9 @@ export const projectsData: IProjectsPageData = {
     slug: 'nha-may-samsung-bac-ninh',
     category: 'cong-nghiep',
     images: [
-      '/images/projects/samsung-bac-ninh/1.pngx',
-      '/images/projects/samsung-bac-ninh/2.pngx',
-      '/images/projects/samsung-bac-ninh/3.pngx',
+      '/images/projects/samsung-bac-ninh/1.png',
+      '/images/projects/samsung-bac-ninh/2.png',
+      '/images/projects/samsung-bac-ninh/3.png',
     ],
   },
   subProjects: [
@@ -305,9 +305,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'chung-cu-vincom-grand-park',
       category: 'chung-cu',
       images: [
-        '/images/projects/vincom-grand-park/1.pngx',
-        '/images/projects/vincom-grand-park/2.pngx',
-        '/images/projects/vincom-grand-park/3.pngx',
+        '/images/projects/vincom-grand-park/1.png',
+        '/images/projects/vincom-grand-park/2.png',
+        '/images/projects/vincom-grand-park/3.png',
       ],
     },
     {
@@ -323,9 +323,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'nha-may-uniqlo-binh-duong',
       category: 'cong-nghiep',
       images: [
-        '/images/projects/uniqlo-binh-duong/1.pngx',
-        '/images/projects/uniqlo-binh-duong/2.pngx',
-        '/images/projects/uniqlo-binh-duong/3.pngx',
+        '/images/projects/uniqlo-binh-duong/1.png',
+        '/images/projects/uniqlo-binh-duong/2.png',
+        '/images/projects/uniqlo-binh-duong/3.png',
       ],
     },
     {
@@ -341,9 +341,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'sunrise-villa-phu-my-hung',
       category: 'biet-thu',
       images: [
-        '/images/projects/sunrise-villa/1.pngx',
-        '/images/projects/sunrise-villa/2.pngx',
-        '/images/projects/sunrise-villa/3.pngx',
+        '/images/projects/sunrise-villa/1.png',
+        '/images/projects/sunrise-villa/2.png',
+        '/images/projects/sunrise-villa/3.png',
       ],
     },
     {
@@ -359,9 +359,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'nha-may-nike-binh-duong',
       category: 'cong-nghiep',
       images: [
-        '/images/projects/nike-binh-duong/1.pngx',
-        '/images/projects/nike-binh-duong/2.pngx',
-        '/images/projects/nike-binh-duong/3.pngx',
+        '/images/projects/nike-binh-duong/1.png',
+        '/images/projects/nike-binh-duong/2.png',
+        '/images/projects/nike-binh-duong/3.png',
       ],
     },
   ],
@@ -372,6 +372,6 @@ export const heroSectionData: HeroSectionProps = {
     { label: 'Trang chủ', href: '/' },
     { label: 'Dự án', href: '/du-an', isActive: true },
   ],
-  imageUrl: '/images/projects/hero-section.pngx',
+  imageUrl: '/images/projects/hero-section.png',
   imageAlt: 'Dự án nổi bật - Đại Phong',
 };

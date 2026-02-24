@@ -15,7 +15,7 @@ export const heroSectionData: HeroSectionProps = {
     { label: 'Trang chủ', href: '/' },
     { label: 'Về chúng tôi', href: '/gioi-thieu', isActive: true },
   ],
-  imageUrl: '/images/about/hero-section.pngx',
+  imageUrl: '/images/about/hero-section.png',
   imageAlt: 'Về chúng tôi - Hình ảnh đại diện cho công ty',
 };
 
@@ -49,27 +49,27 @@ export const businessFields: IBusinessField[] = [
   },
   {
     title: 'Cửa gió các loại',
-    imageUrl: '/images/business-fields/dieu-hoa-khong-khi.pngx',
+    imageUrl: '/images/business-fields/dieu-hoa-khong-khi.png',
     imageAlt: 'Cửa gió thông gió',
   },
   {
     title: 'Phụ kiện ống gió',
-    imageUrl: '/images/business-fields/cap-thoat-nuoc.pngx',
+    imageUrl: '/images/business-fields/cap-thoat-nuoc.png',
     imageAlt: 'Phụ kiện ống gió',
   },
   {
     title: 'Van gió',
-    imageUrl: '/images/business-fields/he-thong-pccc.pngx',
+    imageUrl: '/images/business-fields/he-thong-pccc.png',
     imageAlt: 'Van gió thông gió',
   },
   {
     title: 'Sản xuất theo yêu cầu',
-    imageUrl: '/images/business-fields/bao-hanh-bao-tri-2.pngx',
+    imageUrl: '/images/business-fields/bao-hanh-bao-tri-2.png',
     imageAlt: 'Sản xuất ống gió theo yêu cầu',
   },
   {
     title: 'Dịch vụ tư vấn thiết kế',
-    imageUrl: '/images/business-fields/bao-hanh-bao-tri.pngx',
+    imageUrl: '/images/business-fields/bao-hanh-bao-tri.png',
     imageAlt: 'Tư vấn thiết kế hệ thống thông gió',
   },
 ];
@@ -86,28 +86,28 @@ export const visionMissionData: IVisionMission[] = [
     title: 'Tầm nhìn',
     description:
       'Trở thành nhà sản xuất và cung cấp ống thông gió hàng đầu tại Việt Nam, dẫn đầu về chất lượng sản phẩm và dịch vụ khách hàng trong ngành HVAC.',
-    imageUrl: '/images/vision-mission/tam-nhin.pngx',
+    imageUrl: '/images/vision-mission/tam-nhin.png',
     imageAlt: 'Tầm nhìn',
   },
   {
     title: 'Sứ mệnh',
     description:
       'Cung cấp các sản phẩm ống thông gió chất lượng cao, đáp ứng mọi nhu cầu của khách hàng từ dân dụng đến công nghiệp. Cam kết mang đến giải pháp thông gió tối ưu, tiết kiệm năng lượng và thân thiện với môi trường.',
-    imageUrl: '/images/vision-mission/su-menh.pngx',
+    imageUrl: '/images/vision-mission/su-menh.png',
     imageAlt: 'Sứ mệnh',
   },
   {
     title: 'Giá trị cốt lõi',
     description:
       'Chất lượng vượt trội - Dịch vụ hoàn hảo - Phát triển bền vững',
-    imageUrl: '/images/vision-mission/gia-tri-cot-loi.pngx',
+    imageUrl: '/images/vision-mission/gia-tri-cot-loi.png',
     imageAlt: 'Giá trị cốt lõi',
   },
   {
     title: 'Triết lý kinh doanh',
     description:
       'Sản phẩm chất lượng cao – Dịch vụ chuyên nghiệp – Đối tác tin cậy – Phát triển bền vững',
-    imageUrl: '/images/vision-mission/triet-ly-kinh-doanh.pngx',
+    imageUrl: '/images/vision-mission/triet-ly-kinh-doanh.png',
     imageAlt: 'Triết lý kinh doanh',
   },
 ];
@@ -125,28 +125,28 @@ export const productionCapacityData: IProductionCapacity[] = [
     title: 'Nhà xưởng hiện đại',
     description:
       'Diện tích 5,000m2 với hệ thống máy móc hiện đại, dây chuyền sản xuất tự động hóa cao, đảm bảo năng suất và chất lượng sản phẩm.',
-    imageUrl: '/images/about/nang-luc-nhan-su.pngx',
+    imageUrl: '/images/about/nang-luc-nhan-su.png',
     imageAlt: 'Nhà xưởng sản xuất ống gió hiện đại',
   },
   {
     title: 'Đội ngũ chuyên gia',
     description:
       'Hơn 50 kỹ sư và công nhân lành nghề với nhiều năm kinh nghiệm trong ngành sản xuất ống thông gió, được đào tạo chuyên sâu về công nghệ HVAC.',
-    imageUrl: '/images/about/co-cau-to-chuc.pngx',
+    imageUrl: '/images/about/co-cau-to-chuc.png',
     imageAlt: 'Đội ngũ nhân viên chuyên nghiệp',
   },
   {
     title: 'Kinh nghiệm 10+ năm',
     description:
       'Với hơn 10 năm kinh nghiệm trong ngành, chúng tôi đã cung cấp sản phẩm cho hàng trăm dự án lớn nhỏ trên toàn quốc.',
-    imageUrl: '/images/about/giay-phep.pngx',
+    imageUrl: '/images/about/giay-phep.png',
     imageAlt: 'Kinh nghiệm sản xuất lâu năm',
   },
   {
     title: 'Công nghệ tiên tiến',
     description:
       'Áp dụng công nghệ sản xuất tiên tiến từ các nước phát triển, đảm bảo sản phẩm đạt tiêu chuẩn quốc tế.',
-    imageUrl: '/images/about/thong-tin-cong-ty.pngx',
+    imageUrl: '/images/about/thong-tin-cong-ty.png',
     imageAlt: 'Công nghệ sản xuất hiện đại',
   },
 ];
@@ -212,28 +212,28 @@ export const certificationsData: ICertification[] = [
     name: 'ISO 9001:2015',
     issuer: 'Tổ chức Quốc tế về Tiêu chuẩn hóa',
     description: 'Chứng nhận hệ thống quản lý chất lượng quốc tế',
-    imageUrl: '/images/about/giay-phep.pngx',
+    imageUrl: '/images/about/giay-phep.png',
     imageAlt: 'Chứng nhận ISO 9001:2015',
   },
   {
     name: 'Chứng nhận CE',
     issuer: 'Liên minh Châu Âu',
     description: 'Chứng nhận sản phẩm đạt tiêu chuẩn Châu Âu',
-    imageUrl: '/images/about/giay-phep.pngx',
+    imageUrl: '/images/about/giay-phep.png',
     imageAlt: 'Chứng nhận CE',
   },
   {
     name: 'Giấy phép sản xuất',
     issuer: 'Bộ Công Thương',
     description: 'Giấy phép sản xuất ống thông gió hợp pháp',
-    imageUrl: '/images/about/giay-phep.pngx',
+    imageUrl: '/images/about/giay-phep.png',
     imageAlt: 'Giấy phép sản xuất',
   },
   {
     name: 'Chứng nhận ASTM',
     issuer: 'Hiệp hội Vật liệu và Thử nghiệm Hoa Kỳ',
     description: 'Chứng nhận vật liệu đạt tiêu chuẩn ASTM',
-    imageUrl: '/images/about/giay-phep.pngx',
+    imageUrl: '/images/about/giay-phep.png',
     imageAlt: 'Chứng nhận ASTM',
   },
 ];
@@ -258,7 +258,7 @@ export const machineryData: IMachinery[] = [
       'Tự động hóa hoàn toàn',
       'Tiết kiệm nguyên liệu',
     ],
-    imageUrl: '/images/about/giay-phep.pngx',
+    imageUrl: '/images/about/giay-phep.png',
     imageAlt: 'Máy cắt laser CNC',
   },
   {
@@ -271,7 +271,7 @@ export const machineryData: IMachinery[] = [
       'Chất lượng đồng đều',
       'Giảm thiểu lỗi sản xuất',
     ],
-    imageUrl: '/images/about/giay-phep.pngx',
+    imageUrl: '/images/about/giay-phep.png',
     imageAlt: 'Máy tạo hình ống gió',
   },
   {
@@ -284,7 +284,7 @@ export const machineryData: IMachinery[] = [
       'Chất lượng mối hàn tốt',
       'Tăng độ bền sản phẩm',
     ],
-    imageUrl: '/images/about/giay-phep.pngx',
+    imageUrl: '/images/about/giay-phep.png',
     imageAlt: 'Máy hàn TIG tự động',
   },
   {
@@ -297,7 +297,7 @@ export const machineryData: IMachinery[] = [
       'Hiệu suất cao',
       'Tiết kiệm thời gian',
     ],
-    imageUrl: '/images/about/giay-phep.pngx',
+    imageUrl: '/images/about/giay-phep.png',
     imageAlt: 'Máy gia công cửa gió',
   },
 ];

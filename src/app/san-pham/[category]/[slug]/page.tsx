@@ -9,12 +9,25 @@ import {
 } from '@/data/products';
 import ProductDetail from '@/components/products/ProductDetail';
 import ProductGrid from '@/components/products/ProductGrid';
+import { useTranslation } from 'react-i18next';
+
+const CATEGORY_TO_KEY: Record<string, string> = {
+  'Tất cả': 'productsAll',
+  'Ống gió': 'ducts',
+  'Cửa gió': 'airOutlets',
+  'Van gió': 'dampers',
+  'Phụ kiện ống gió': 'ductAccessories',
+  'Ống gió chống cháy EI': 'fireResistantDucts',
+  'Máng cáp điện': 'cableTrays',
+  'Gia công theo yêu cầu': 'customFabrication',
+};
 
 interface ProductDetailPageProps {
   params: Promise<{ category: string; slug: string }>;
 }
 
 export default function ProductDetailPage({ params }: ProductDetailPageProps) {
+  const { t } = useTranslation('common');
   const resolvedParams = React.use(params);
   const { category, slug } = resolvedParams;
 
@@ -26,12 +39,22 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
     decodedCategory as (typeof PRODUCT_CATEGORIES)[number]
   );
 
+  const displayCategory =
+    decodedCategory &&
+    t(`nav.${CATEGORY_TO_KEY[decodedCategory] ?? 'productsAll'}`);
+
   if (!isValidCategory) {
     return (
       <div className='min-h-[50vh] flex items-center justify-center text-slate-600'>
         <div className='text-center'>
-          <h1 className='text-2xl font-bold mb-4'>Danh mục không tồn tại</h1>
-          <p>Danh mục &quot;{decodedCategory}&quot; không được tìm thấy.</p>
+          <h1 className='text-2xl font-bold mb-4'>
+            {t('productsDetail.categoryNotFoundTitle')}
+          </h1>
+          <p>
+            {t('productsDetail.categoryNotFoundDescription', {
+              category: displayCategory ?? decodedCategory,
+            })}
+          </p>
         </div>
       </div>
     );
@@ -44,8 +67,12 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
     return (
       <div className='min-h-[50vh] flex items-center justify-center text-slate-600'>
         <div className='text-center'>
-          <h1 className='text-2xl font-bold mb-4'>Sản phẩm không tồn tại</h1>
-          <p>Sản phẩm &quot;{slug}&quot; không được tìm thấy.</p>
+          <h1 className='text-2xl font-bold mb-4'>
+            {t('productsDetail.productNotFoundTitle')}
+          </h1>
+          <p>
+            {t('productsDetail.productNotFoundDescription', { slug })}
+          </p>
         </div>
       </div>
     );
@@ -57,11 +84,13 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
       <div className='min-h-[50vh] flex items-center justify-center text-slate-600'>
         <div className='text-center'>
           <h1 className='text-2xl font-bold mb-4'>
-            Sản phẩm không thuộc danh mục
+            {t('productsDetail.wrongCategoryTitle')}
           </h1>
           <p>
-            Sản phẩm &quot;{product.name}&quot; không thuộc danh mục &quot;
-            {decodedCategory}&quot;.
+            {t('productsDetail.wrongCategoryDescription', {
+              productName: product.name,
+              category: displayCategory ?? decodedCategory,
+            })}
           </p>
         </div>
       </div>
@@ -70,6 +99,10 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
   // Get related products from the same category
   const relatedProducts = getRelatedProducts(product.category, product.id);
+
+  const relatedCategoryLabel =
+    product.category &&
+    t(`nav.${CATEGORY_TO_KEY[product.category] ?? 'productsAll'}`);
 
   return (
     <div className='min-h-screen bg-slate-50'>
@@ -81,10 +114,12 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
         {relatedProducts.length > 0 && (
           <div className='mt-12 space-y-4'>
             <h2 className='text-2xl font-bold text-slate-900'>
-              Sản phẩm liên quan
+              {t('productsDetail.relatedHeading')}
             </h2>
             <p className='text-slate-600'>
-              Các sản phẩm khác trong danh mục {product.category}
+              {t('productsDetail.relatedDescription', {
+                category: relatedCategoryLabel ?? product.category,
+              })}
             </p>
             <ProductGrid products={relatedProducts} />
           </div>

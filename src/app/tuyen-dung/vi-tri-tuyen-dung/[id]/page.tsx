@@ -75,7 +75,7 @@ export async function generateMetadata({
       images: [
         {
           url:
-            jobPosition.images[0]?.url || '/images/hr-policy/hero-section.pngx',
+            jobPosition.images[0]?.url || '/images/hr-policy/hero-section.png',
           width: 1200,
           height: 630,
           alt: jobPosition.title,
@@ -87,7 +87,7 @@ export async function generateMetadata({
       title,
       description,
       images: [
-        jobPosition.images[0]?.url || '/images/hr-policy/hero-section.pngx',
+        jobPosition.images[0]?.url || '/images/hr-policy/hero-section.png',
       ],
     },
     alternates: {
@@ -167,7 +167,7 @@ export default async function JobPositionDetailPage({
       '@type': 'Organization',
       name: 'Đại Phong',
       sameAs: 'https://onggiodaiphong.com',
-      logo: 'https://onggiodaiphong.com/logo.pngx',
+      logo: 'https://onggiodaiphong.com/logo.png',
     },
     jobLocation: {
       '@type': 'Place',
@@ -204,7 +204,7 @@ export default async function JobPositionDetailPage({
     '@type': 'Organization',
     name: 'Đại Phong',
     url: 'https://onggiodaiphong.com',
-    logo: 'https://onggiodaiphong.com/logo.pngx',
+    logo: 'https://onggiodaiphong.com/logo.png',
     description: 'Công ty chuyên thi công hệ thống MEP (cơ điện) chuyên nghiệp',
     address: {
       '@type': 'PostalAddress',
@@ -235,7 +235,7 @@ export default async function JobPositionDetailPage({
 
       <div className="w-full">
         <HeroSection
-          imageUrl="/images/hr-policy/hr-policy-banner.pngx"
+          imageUrl="/images/hr-policy/hr-policy-banner.png"
           imageAlt="Chính sách nhân sự - Đại Phong"
           breadcrumbs={[
             { label: 'Trang chủ', href: '/', isActive: false },

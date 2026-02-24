@@ -1,6 +1,18 @@
 'use client';
 
 import { FunctionComponent, useRef, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+const CATEGORY_TO_KEY: Record<string, string> = {
+  'Tất cả': 'productsAll',
+  'Ống gió': 'ducts',
+  'Cửa gió': 'airOutlets',
+  'Van gió': 'dampers',
+  'Phụ kiện ống gió': 'ductAccessories',
+  'Ống gió chống cháy EI': 'fireResistantDucts',
+  'Máng cáp điện': 'cableTrays',
+  'Gia công theo yêu cầu': 'customFabrication',
+};
 
 interface ProductTabProps {
   categories: string[];
@@ -19,6 +31,7 @@ export const ProductTab: FunctionComponent<ProductTabProps> = ({
   onKeywordChange,
   onSearch,
 }) => {
+  const { t } = useTranslation('common');
   const tabRefs = useRef<{ [key: string]: HTMLButtonElement | null }>({});
   const [underlineStyle, setUnderlineStyle] = useState({
     width: 0,
@@ -45,7 +58,7 @@ export const ProductTab: FunctionComponent<ProductTabProps> = ({
         <div className='flex gap-2'>
           <input
             type='text'
-            placeholder='Tìm kiếm sản phẩm...'
+            placeholder={t('productsPage.searchPlaceholder')}
             value={keyword}
             onChange={(e) => onKeywordChange(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && onSearch()}
@@ -55,7 +68,7 @@ export const ProductTab: FunctionComponent<ProductTabProps> = ({
             onClick={onSearch}
             className='bg-primary-blue-1 text-white px-6 py-2 rounded-lg hover:bg-primary-blue-1/90 transition-colors duration-200'
           >
-            Tìm kiếm
+            {t('productsPage.searchButton')}
           </button>
         </div>
       </div>
@@ -76,7 +89,7 @@ export const ProductTab: FunctionComponent<ProductTabProps> = ({
                   : 'text-black'
               }`}
             >
-              {category}
+              {t(`nav.${CATEGORY_TO_KEY[category] ?? 'productsAll'}`)}
             </button>
           ))}
           {/* Animated underline */}
