@@ -3,7 +3,10 @@
 import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ProductCard from '@/components/ProductCard';
-import { useLocalizedProducts, useLocalizedProductMaps } from '@/hooks/useLocalizedData';
+import {
+  useLocalizedProducts,
+  useLocalizedProductMaps,
+} from '@/hooks/useLocalizedData';
 import { Pagination, ProductTab, CustomSelect } from '@/components/common';
 
 type SortOrder = 'default' | 'priceAsc' | 'priceDesc';
@@ -14,7 +17,7 @@ export default function ProductsPage() {
   const { categories } = useLocalizedProductMaps();
   const [keyword, setKeyword] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>(
-    categories[0] ?? 'Tất cả'
+    categories[0] ?? 'Tất cả',
   );
   const [sortOrder, setSortOrder] = useState<SortOrder>('default');
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -45,11 +48,11 @@ export default function ProductsPage() {
         return [...results].sort(
           (a, b) =>
             (Number(a.price) ?? Number.MAX_SAFE_INTEGER) -
-            (Number(b.price) ?? Number.MAX_SAFE_INTEGER)
+            (Number(b.price) ?? Number.MAX_SAFE_INTEGER),
         );
       case 'priceDesc':
         return [...results].sort(
-          (a, b) => (Number(b.price) ?? -1) - (Number(a.price) ?? -1)
+          (a, b) => (Number(b.price) ?? -1) - (Number(a.price) ?? -1),
         );
       default:
         return results;
@@ -89,7 +92,7 @@ export default function ProductsPage() {
               ]}
               value={sortOrder}
               onChange={(value) => setSortOrder(value as SortOrder)}
-              className="w-36"
+              className="w-42"
             />
           </div>
         </div>

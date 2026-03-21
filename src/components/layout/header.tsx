@@ -9,7 +9,10 @@ import SearchBar from '../common/SearchBar';
 import { useRouter } from 'next/navigation';
 import { Phone, Search } from 'lucide-react';
 import type { Product } from '@/data/products';
-import { useLocalizedProducts, useLocalizedProductMaps } from '@/hooks/useLocalizedData';
+import {
+  useLocalizedProducts,
+  useLocalizedProductMaps,
+} from '@/hooks/useLocalizedData';
 import i18n from '@/i18n';
 import { useTranslation } from 'react-i18next';
 
@@ -23,9 +26,11 @@ export const Header: FunctionComponent = () => {
   const router = useRouter();
   const searchWrapperRef = useRef<HTMLDivElement | null>(null);
   const filteredResults = keyword
-    ? products.filter((p) =>
-        p.name.toLowerCase().includes(keyword.trim().toLowerCase()),
-      ).slice(0, 8)
+    ? products
+        .filter((p) =>
+          p.name.toLowerCase().includes(keyword.trim().toLowerCase()),
+        )
+        .slice(0, 8)
     : [];
 
   useEffect(() => {

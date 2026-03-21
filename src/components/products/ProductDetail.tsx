@@ -3,20 +3,25 @@
 import { useState } from 'react';
 import type { Product } from '@/data/products';
 import ImageWithFallback from '../common/ImageWithFallback';
+import { useTranslation } from 'react-i18next';
 
 export default function ProductDetail({ product }: { product: Product }) {
+  const { t, i18n } = useTranslation('common');
   const [activeTab, setActiveTab] = useState<'details' | 'specifications'>(
     'details'
   );
 
   const formattedPrice =
     typeof product.price === 'number'
-      ? new Intl.NumberFormat('vi-VN', {
-          style: 'currency',
-          currency: 'VND',
-          maximumFractionDigits: 0,
-        }).format(product.price)
-      : 'Liên hệ';
+      ? new Intl.NumberFormat(
+          i18n.language === 'en' ? 'en-US' : 'vi-VN',
+          {
+            style: 'currency',
+            currency: 'VND',
+            maximumFractionDigits: 0,
+          }
+        ).format(product.price)
+      : (product.price as string) || t('productsDetail.contact');
 
   return (
     <div>
@@ -32,7 +37,7 @@ export default function ProductDetail({ product }: { product: Product }) {
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl font-bold text-slate-900">{product.name}</h1>
           <div className="text-sm text-slate-500">
-            Mã sản phẩm: {product.code ?? 'N/A'}
+            {t('productsDetail.productCode')}: {product.code ?? 'N/A'}
           </div>
           <div className="text-xl font-semibold text-primary-blue-1">
             {formattedPrice}
@@ -49,7 +54,7 @@ export default function ProductDetail({ product }: { product: Product }) {
               aria-label="Zalo"
             >
               <button className="bg-primary-blue-1 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-primary-blue-1/90 transition-all shadow-sm">
-                Liên hệ ngay
+                {t('productsDetail.contactNow')}
               </button>
             </a>
           </div>
@@ -68,7 +73,7 @@ export default function ProductDetail({ product }: { product: Product }) {
                 : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
             }`}
           >
-            Thông tin chi tiết
+            {t('productsDetail.detailsTab')}
           </button>
           <button
             onClick={() => setActiveTab('specifications')}
@@ -78,7 +83,7 @@ export default function ProductDetail({ product }: { product: Product }) {
                 : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
             }`}
           >
-            Thông số kĩ thuật
+            {t('productsDetail.specificationsTab')}
           </button>
         </div>
 
@@ -96,7 +101,7 @@ export default function ProductDetail({ product }: { product: Product }) {
               dangerouslySetInnerHTML={{
                 __html:
                   product.specifications ||
-                  'Thông số kĩ thuật đang được cập nhật...',
+                  t('productsDetail.specificationsUpdating'),
               }}
             />
           )}

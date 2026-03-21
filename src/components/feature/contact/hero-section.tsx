@@ -51,7 +51,7 @@ export const HeroSection: FunctionComponent<HeroSectionProps> = ({
           alt={imageAlt}
           width={1000}
           height={300}
-          className="w-full h-52! object-center object-cover"
+          className="w-full object-center object-cover"
           priority
           quality={85}
         />

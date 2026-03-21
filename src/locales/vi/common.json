@@ -279,6 +279,12 @@
     "empty": "Không có sản phẩm nào trong danh mục này."
   },
   "productsDetail": {
+    "contact": "Liên hệ",
+    "productCode": "Mã sản phẩm",
+    "contactNow": "Liên hệ ngay",
+    "detailsTab": "Thông tin chi tiết",
+    "specificationsTab": "Thông số kĩ thuật",
+    "specificationsUpdating": "Thông số kĩ thuật đang được cập nhật...",
     "categoryNotFoundTitle": "Danh mục không tồn tại",
     "categoryNotFoundDescription": "Danh mục \"{{category}}\" không được tìm thấy.",
     "productNotFoundTitle": "Sản phẩm không tồn tại",
