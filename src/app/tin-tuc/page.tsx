@@ -56,12 +56,12 @@ export default function NewsPage() {
         name: item.title,
         url: `https://www.onggiodaiphong.com/${item.category}/${item.slug}`,
         datePublished: new Date(
-          item.createdAt.split('/').reverse().join('-')
+          item.createdAt.split('/').reverse().join('-'),
         ).toISOString(),
         image: `https://www.onggiodaiphong.com${item.images[0]}`,
         author: {
           '@type': 'Organization',
-          name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+          name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
         },
         publisher: {
           '@type': 'Organization',

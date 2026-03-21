@@ -1,5 +1,5 @@
 import { INew } from '@/types/news';
-import { TabItem } from './about';
+import { HeroSectionProps, TabItem } from './about';
 import { ENewCategory } from '@/enum/new';
 
 export const newsTabData: TabItem[] = [
@@ -7,6 +7,14 @@ export const newsTabData: TabItem[] = [
   { label: 'Hoạt động công ty', href: '/hoat-dong-cong-ty' },
 ];
 
+export const heroSectionData: HeroSectionProps = {
+  breadcrumbs: [
+    { label: 'Trang chủ', href: '/' },
+    { label: 'Tin tức', href: '/tin-tuc', isActive: true },
+  ],
+  imageUrl: '/images/news/hero-section.jpg',
+  imageAlt: 'Tin tức - Đại Phong',
+};
 export const newsData: INew[] = [
   {
     id: 'samsung-electronics-vietnam-factory',
@@ -22,7 +30,7 @@ export const newsData: INew[] = [
     category: ENewCategory.NEWS,
     tags: ['SAMSUNG', 'BẮC NINH', 'CÔNG NGHIỆP'],
     paragraphs: [
-      'Công Ty Cổ Phần Công Nghiệp Đại Phong vinh dự được lựa chọn làm nhà thầu chính thi công hệ thống cơ điện (MEP) cho dự án Nhà máy Samsung Electronics Việt Nam tại Khu công nghiệp Yên Phong, Bắc Ninh.',
+      'Công ty Cổ phần Công Nghiệp Đại Phong VN vinh dự được lựa chọn làm nhà thầu chính thi công hệ thống cơ điện (MEP) cho dự án Nhà máy Samsung Electronics Việt Nam tại Khu công nghiệp Yên Phong, Bắc Ninh.',
       'Đây là một trong những dự án công nghiệp lớn nhất của Samsung tại Việt Nam với quy mô 200,000 m2, gồm 4 tầng nhà xưởng sản xuất điện tử cao cấp. Việc được lựa chọn cho dự án này khẳng định năng lực và uy tín của Đại Phong trong lĩnh vực thi công MEP công nghiệp.',
       '🏭 Thông tin dự án:\n🔻 Quy mô: 200,000 m2, 4 tầng\n🔻 Giá trị hợp đồng: ~6.8 tỷ VNĐ\n🔻 Thời gian thi công: 03/2023 - 11/2023\n🔻 Hạng mục: Hệ thống ống gió, cửa gió, van gió và HVAC toàn nhà máy',
       'Với phương châm "Chất lượng quốc tế - Tiến độ cam kết - An toàn tuyệt đối", Đại Phong cam kết mang đến giải pháp MEP tối ưu cho nhà máy Samsung, đảm bảo tiêu chuẩn kỹ thuật cao nhất và thời gian hoàn thành đúng hẹn.',

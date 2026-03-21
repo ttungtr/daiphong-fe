@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Đại Phong',
-    alternateName: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+    alternateName: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     url: 'https://www.onggiodaiphong.com',
     logo: 'https://www.onggiodaiphong.com/images/logo.png',
     description:

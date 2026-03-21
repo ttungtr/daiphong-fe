@@ -15,7 +15,7 @@ export const heroSectionData: HeroSectionProps = {
     { label: 'Trang chủ', href: '/' },
     { label: 'Về chúng tôi', href: '/gioi-thieu', isActive: true },
   ],
-  imageUrl: '/images/about/hero-section.png',
+  imageUrl: '/images/about/hero-section.jpg',
   imageAlt: 'Về chúng tôi - Hình ảnh đại diện cho công ty',
 };
 

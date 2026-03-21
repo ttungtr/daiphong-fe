@@ -7,7 +7,7 @@ export default function FloatingContactButtons() {
     <div className="fixed right-4 bottom-[10%] transform z-50 flex flex-col gap-6">
       {/* Zalo Button */}
       <a
-        href="https://zalo.me/luis-truong"
+        href="https://zalo.me/84987555669"
         target="_blank"
         rel="noopener noreferrer"
         className="group relative"
@@ -66,7 +66,7 @@ export default function FloatingContactButtons() {
 
       {/* Email Button */}
       <a
-        href="mailto:contact@onggiodaiphong.com"
+        href="mailto:info@onggiodaiphong.com"
         className="group relative"
         aria-label="Gửi email"
       >
@@ -115,7 +115,7 @@ export default function FloatingContactButtons() {
 
       {/* Phone Button */}
       <a
-        href="tel:+84123456789"
+        href="tel:+84987555669"
         className="group relative"
         aria-label="Gọi điện thoại"
       >

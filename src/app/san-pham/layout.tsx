@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     'Danh sách sản phẩm ống gió, miệng gió, phụ kiện HVAC chất lượng cao từ Đại Phong. Ống gió tròn, ống gió vuông, ống gió spiral, van gió, damper, diffuser, grille. Sản xuất theo yêu cầu với độ chính xác cao.',
   keywords:
     'sản phẩm ống gió, ống gió tròn, ống gió vuông, ống gió spiral, miệng gió, van gió, damper, diffuser, grille, phụ kiện HVAC, ống gió mềm, ống gió cách nhiệt, sản phẩm thông gió',
-  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
+  authors: [{ name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN' }],
   robots: 'index, follow',
   openGraph: {
     title: 'Sản Phẩm Ống Gió, Miệng Gió, Phụ Kiện HVAC | Đại Phong',
@@ -44,4 +44,3 @@ export default function ProductLayout({
 }) {
   return <>{children}</>;
 }
-

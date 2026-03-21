@@ -5,7 +5,7 @@ import ImageWithFallback from '@/components/common/ImageWithFallback';
 import LineTitle from '@/components/common/line-title';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/projects';
-import { projectsData } from '@/data/projects';
+import { useProjectsData } from '@/hooks/useLocalizedData';
 import { servicesData } from '@/data/services';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
@@ -15,11 +15,11 @@ import { useTranslation } from 'react-i18next';
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+  name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
   alternateName: 'Đại Phong',
   url: 'https://www.onggiodaiphong.com',
   description:
-    'Công Ty Cổ Phần Công Nghiệp Đại Phong chuyên cung cấp dịch vụ hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy',
+    'Công ty Cổ phần Công Nghiệp Đại Phong VN chuyên cung cấp dịch vụ hệ thống điện, điện nhẹ,điều hòa thông gió, cấp thoát nước và phòng cháy chữa cháy',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'VN',
@@ -42,6 +42,7 @@ const structuredData = {
 
 export default function ProjectPage() {
   const { t } = useTranslation('common');
+  const projectsData = useProjectsData();
   const [currentPage, setCurrentPage] = useState(1);
 
   const breadcrumbs = [
@@ -57,12 +58,12 @@ export default function ProjectPage() {
   const paginatedProjects = useMemo(() => {
     // Sort projects by order first
     const sortedProjects = [...projectsData.projects].sort(
-      (a, b) => b.order - a.order
+      (a, b) => b.order - a.order,
     );
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     return sortedProjects.slice(startIndex, endIndex);
-  }, [currentPage]);
+  }, [currentPage, projectsData.projects]);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -103,7 +104,7 @@ export default function ProjectPage() {
             {paginatedProjects.map((project, index) => (
               <Link
                 key={project.id}
-                href={`/du-an/${project.category}/${project.slug}`}
+                href={`/du-an/${project.slug}`}
                 className="group block bg-white border border-gray-200 overflow-hidden hover:shadow-xl hover:border-primary-blue-1 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in"
                 style={{
                   animationDelay: `${index * 100}ms`,

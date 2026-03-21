@@ -3,12 +3,13 @@ import { servicesData } from '@/data/services';
 import { ServicesPageContent } from './ServicesPageContent';
 
 export const metadata: Metadata = {
-  title: 'Lĩnh Vực Hoạt Động | Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC | Đại Phong',
+  title:
+    'Lĩnh Vực Hoạt Động | Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC | Đại Phong',
   description:
     'Đại Phong chuyên sản xuất và gia công ống gió tròn, ống gió vuông, ống gió spiral, miệng gió, van gió, damper, diffuser, grille và các phụ kiện HVAC. Sản phẩm chất lượng cao, đạt chuẩn, độ chính xác cao cho hệ thống thông gió.',
   keywords:
     'ống gió tròn, ống gió vuông, ống gió spiral, miệng gió, van gió, damper, diffuser, grille, phụ kiện HVAC, ống gió mềm, ống gió cách nhiệt, sản xuất ống gió, gia công ống gió, Đại Phong',
-  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
+  authors: [{ name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN' }],
   robots: 'index, follow',
   openGraph: {
     title: 'Lĩnh Vực Hoạt Động | Sản Xuất Ống Gió & Phụ Kiện HVAC | Đại Phong',
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+  name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
   alternateName: 'Đại Phong',
   url: 'https://www.onggiodaiphong.com',
   logo: 'https://www.onggiodaiphong.com/images/logo/logo.png',

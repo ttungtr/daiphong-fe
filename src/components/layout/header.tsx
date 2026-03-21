@@ -8,19 +8,22 @@ import { SEONav } from './seo-nav';
 import SearchBar from '../common/SearchBar';
 import { useRouter } from 'next/navigation';
 import { Phone, Search } from 'lucide-react';
-import { CATEGORY_SLUG_MAP, PRODUCTS, Product } from '@/data/products';
+import type { Product } from '@/data/products';
+import { useLocalizedProducts, useLocalizedProductMaps } from '@/hooks/useLocalizedData';
 import i18n from '@/i18n';
 import { useTranslation } from 'react-i18next';
 
 export const Header: FunctionComponent = () => {
   const { t } = useTranslation('common');
+  const products = useLocalizedProducts();
+  const { categorySlugMap } = useLocalizedProductMaps();
   const [lang, setLang] = useState<'vi' | 'en'>('vi');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [keyword, setKeyword] = useState('');
   const router = useRouter();
   const searchWrapperRef = useRef<HTMLDivElement | null>(null);
   const filteredResults = keyword
-    ? PRODUCTS.filter((p) =>
+    ? products.filter((p) =>
         p.name.toLowerCase().includes(keyword.trim().toLowerCase()),
       ).slice(0, 8)
     : [];
@@ -75,7 +78,7 @@ export const Header: FunctionComponent = () => {
   };
 
   const goToProduct = (product: Product) => {
-    const categorySlug = CATEGORY_SLUG_MAP[product.category] ?? 'tat-ca';
+    const categorySlug = categorySlugMap[product.category] ?? 'tat-ca';
     router.push(`/san-pham/${categorySlug}/${product.slug}`);
     setIsSearchOpen(false);
   };

@@ -65,7 +65,7 @@ export const jobPositions: TJobPosition[] = [
           'Gửi hồ sơ/CV trực tiếp hoặc qua email:',
           'Địa chỉ: 3/49f, Bình Nhâm 07, Phường Lái Thiêu, TP. Thuận An, Bình Dương',
           'Zalo: 0982.400.400 (Mr. Trường)',
-          'Email: daiphong@daiphong.com',
+          'Email: info@onggiodaiphong.com ',
         ],
       },
       {
@@ -141,7 +141,7 @@ export const jobPositions: TJobPosition[] = [
           'Gửi hồ sơ/CV trực tiếp hoặc qua email:',
           'Địa chỉ: 3/49f, Bình Nhâm 07, Phường Lái Thiêu, TP. Thuận An, Bình Dương',
           'Zalo: 0982.400.400 (Mr. Trường)',
-          'Email: daiphong@daiphong.com',
+          'Email: info@onggiodaiphong.com ',
         ],
       },
       {
@@ -216,7 +216,7 @@ export const jobPositions: TJobPosition[] = [
           'Gửi hồ sơ/CV trực tiếp hoặc qua email:',
           'Địa chỉ: 3/49f, Bình Nhâm 07, Phường Lái Thiêu, TP. Thuận An, Bình Dương',
           'Zalo: 0982.400.400 (Mr. Trường)',
-          'Email: daiphong@daiphong.com',
+          'Email: info@onggiodaiphong.com ',
         ],
       },
       {
@@ -291,7 +291,7 @@ export const jobPositions: TJobPosition[] = [
           'Gửi hồ sơ/CV trực tiếp hoặc qua email:',
           'Địa chỉ: 3/49f, Bình Nhâm 07, Phường Lái Thiêu, TP. Thuận An, Bình Dương',
           'Zalo: 0982.400.400 (Mr. Trường)',
-          'Email: daiphong@daiphong.com',
+          'Email: info@onggiodaiphong.com ',
         ],
       },
       {
@@ -363,7 +363,7 @@ export const jobPositions: TJobPosition[] = [
           'Gửi hồ sơ/CV trực tiếp hoặc qua email:',
           'Địa chỉ: 3/49f, Bình Nhâm 07, Phường Lái Thiêu, TP. Thuận An, Bình Dương',
           'Zalo: 0982.400.400 (Mr. Trường)',
-          'Email: daiphong@daiphong.com',
+          'Email: info@onggiodaiphong.com ',
         ],
       },
       {
@@ -434,7 +434,7 @@ export const jobPositions: TJobPosition[] = [
           'Gửi hồ sơ/CV trực tiếp hoặc qua email:',
           'Địa chỉ: 3/49f, Bình Nhâm 07, Phường Lái Thiêu, TP. Thuận An, Bình Dương',
           'Zalo: 0982.400.400 (Mr. Trường)',
-          'Email: daiphong@daiphong.com',
+          'Email: info@onggiodaiphong.com ',
         ],
       },
       {

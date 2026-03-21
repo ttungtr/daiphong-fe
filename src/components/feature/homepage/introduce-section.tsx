@@ -13,11 +13,11 @@ export const IntroduceSection: FunctionComponent = () => {
         <Link
           className="p-3 md:p-5 block"
           href="/"
-          aria-label="Về trang chủ Công Ty Cổ Phần Công Nghiệp Đại Phong"
+          aria-label="Về trang chủ Công ty Cổ phần Công Nghiệp Đại Phong VN"
         >
           <ImageWithFallback
             src="/images/logo/horizontal-logo.png"
-            alt="Logo Công Ty Cổ Phần Công Nghiệp Đại Phong"
+            alt="Logo Công ty Cổ phần Công Nghiệp Đại Phong VN"
             width={160}
             height={50}
             className="w-64 max-w-64 h-auto"
@@ -34,8 +34,8 @@ export const IntroduceSection: FunctionComponent = () => {
             id="company-intro"
             className="text-center text-sm sm:text-base md:text-lg lg:text-xl font-extrabold text-navbar-bg leading-tight"
           >
-            Công Ty Cổ Phần Công Nghiệp Đại Phong HƠN 22 NĂM HÌNH THÀNH VÀ PHÁT
-            TRIỂN
+            Công ty Cổ phần Công Nghiệp Đại Phong VN HƠN 22 NĂM HÌNH THÀNH VÀ
+            PHÁT TRIỂN
           </h1>
 
           <h2 className="text-center text-sm sm:text-base md:text-lg lg:text-xl font-extrabold text-navbar-bg leading-tight">
@@ -43,7 +43,7 @@ export const IntroduceSection: FunctionComponent = () => {
           </h2>
 
           <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl font-extrabold text-navbar-bg leading-tight">
-            Công Ty Cổ Phần Công Nghiệp Đại Phong mong có nhiều cơ hội hơn để
+            Công ty Cổ phần Công Nghiệp Đại Phong VN mong có nhiều cơ hội hơn để
             phục vụ Quý khách hàng
           </p>
         </div>
@@ -89,7 +89,7 @@ export const IntroduceSection: FunctionComponent = () => {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+            name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
             description:
               'Công ty kỹ thuật cơ điện, cam kết về an toàn, chất lượng và tiến độ',
             foundingDate: '2002',

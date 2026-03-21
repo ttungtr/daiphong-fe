@@ -42,7 +42,7 @@ export const getProjectStructuredData = (project: IProject) => {
     '@context': 'https://schema.org',
     '@type': 'ConstructionProject',
     name: project.title,
-    description: project.workScope,
+    description: project.subtitle,
     location: {
       '@type': 'Place',
       address: project.location,
@@ -52,9 +52,7 @@ export const getProjectStructuredData = (project: IProject) => {
       name: 'Đại Phong',
       url: 'https://onggiodaiphong.com',
     },
-    budget: project.contractValue,
-    startDate: project.duration.split(' ~ ')[0],
-    endDate: project.duration.split(' ~ ')[1] || 'Đang thực hiện',
+    budget: project.productConsumptionCapacity,
   };
 };
 
@@ -79,7 +77,7 @@ export const getProjectsPageStructuredData = () => {
         itemOffered: {
           '@type': 'Service',
           name: project.title,
-          description: project.workScope,
+          description: project.subtitle,
         },
       })),
     },

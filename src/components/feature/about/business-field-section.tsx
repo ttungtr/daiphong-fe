@@ -7,7 +7,7 @@ export const BusinessFieldSection: FunctionComponent = () => {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+    name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     alternateName: '',
     description: 'Nhà thầu thi công hệ thống cơ điện (MEP) chuyên nghiệp',
     serviceType: servicesData.map((field) => field.title),
@@ -20,10 +20,10 @@ export const BusinessFieldSection: FunctionComponent = () => {
         itemOffered: {
           '@type': 'Service',
           name: field.title,
-          description: `Dịch vụ ${field.title.toLowerCase()} chuyên nghiệp của Công Ty Cổ Phần Công Nghiệp Đại Phong`,
+          description: `Dịch vụ ${field.title.toLowerCase()} chuyên nghiệp của Công ty Cổ phần Công Nghiệp Đại Phong VN`,
           provider: {
             '@type': 'Organization',
-            name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+            name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
           },
         },
       })),
@@ -68,7 +68,7 @@ export const BusinessFieldSection: FunctionComponent = () => {
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               itemScope
               itemType="https://schema.org/ItemList"
-              aria-label="Danh sách lĩnh vực hoạt động của Công Ty Cổ Phần Công Nghiệp Đại Phong"
+              aria-label="Danh sách lĩnh vực hoạt động của Công ty Cổ phần Công Nghiệp Đại Phong VN"
             >
               {servicesData.map((field, index) => (
                 <article
@@ -82,7 +82,7 @@ export const BusinessFieldSection: FunctionComponent = () => {
                   <div className="relative">
                     <ImageWithFallback
                       src={field.images[0].url}
-                      alt={`${field.images[0].alt} - Dịch vụ ${field.title} chuyên nghiệp của Công Ty Cổ Phần Công Nghiệp Đại Phong trong lĩnh vực MEP`}
+                      alt={`${field.images[0].alt} - Dịch vụ ${field.title} chuyên nghiệp của Công ty Cổ phần Công Nghiệp Đại Phong VN trong lĩnh vực MEP`}
                       width={300}
                       height={200}
                       className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -105,7 +105,7 @@ export const BusinessFieldSection: FunctionComponent = () => {
                     />
                     <meta
                       itemProp="provider"
-                      content="Công Ty Cổ Phần Công Nghiệp Đại Phong"
+                      content="Công ty Cổ phần Công Nghiệp Đại Phong VN"
                     />
                     <meta itemProp="areaServed" content="Vietnam" />
                   </div>

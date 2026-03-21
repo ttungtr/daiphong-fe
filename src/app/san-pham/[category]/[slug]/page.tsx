@@ -2,11 +2,10 @@
 
 import React from 'react';
 import {
-  getProductBySlug,
-  getRelatedProducts,
-  PRODUCT_CATEGORIES,
-  SLUG_CATEGORY_MAP,
-} from '@/data/products';
+  useProductBySlug,
+  useRelatedProducts,
+  useLocalizedProductMaps,
+} from '@/hooks/useLocalizedData';
 import ProductDetail from '@/components/products/ProductDetail';
 import ProductGrid from '@/components/products/ProductGrid';
 import { useTranslation } from 'react-i18next';
@@ -30,14 +29,15 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
   const { t } = useTranslation('common');
   const resolvedParams = React.use(params);
   const { category, slug } = resolvedParams;
+  const { categories, slugCategoryMap } = useLocalizedProductMaps();
+  const product = useProductBySlug(slug);
+  const relatedProducts = useRelatedProducts(product?.category ?? '', product?.id);
 
-  // Decode URL parameters
-  const decodedCategory = SLUG_CATEGORY_MAP[category];
+  // Decode URL parameters (slug -> category name)
+  const decodedCategory = slugCategoryMap[category];
 
-  // Check if category exists in PRODUCT_CATEGORIES
-  const isValidCategory = PRODUCT_CATEGORIES.includes(
-    decodedCategory as (typeof PRODUCT_CATEGORIES)[number]
-  );
+  // Check if category exists
+  const isValidCategory = decodedCategory && categories.includes(decodedCategory);
 
   const displayCategory =
     decodedCategory &&
@@ -60,9 +60,6 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
     );
   }
 
-  // Get product by slug
-  const product = getProductBySlug(slug);
-
   if (!product) {
     return (
       <div className='min-h-[50vh] flex items-center justify-center text-slate-600'>
@@ -79,7 +76,8 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
   }
 
   // Verify product belongs to the specified category
-  if (product.category !== decodedCategory && decodedCategory !== 'Tất cả') {
+  const allCategory = categories[0] ?? 'Tất cả';
+  if (product.category !== decodedCategory && decodedCategory !== allCategory) {
     return (
       <div className='min-h-[50vh] flex items-center justify-center text-slate-600'>
         <div className='text-center'>
@@ -96,9 +94,6 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
       </div>
     );
   }
-
-  // Get related products from the same category
-  const relatedProducts = getRelatedProducts(product.category, product.id);
 
   const relatedCategoryLabel =
     product.category &&

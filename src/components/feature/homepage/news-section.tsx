@@ -1,13 +1,14 @@
 'use client';
 import ImageWithFallback from '@/components/common/ImageWithFallback';
 import LineTitle from '@/components/common/line-title';
-import { projectsData } from '@/data/projects';
+import { useProjectsData } from '@/hooks/useLocalizedData';
 import { MoveRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const NewsSection: FunctionComponent = () => {
+  const projectsData = useProjectsData();
   // Side projects are orders 2, 3, 4, 5
   const sideProjects = projectsData.subProjects;
   const { t } = useTranslation('common');
@@ -31,7 +32,7 @@ export const NewsSection: FunctionComponent = () => {
             return (
               <Link
                 key={project.id}
-                href={`/du-an/${project.category}/${project.slug}`}
+                href={`/du-an/${project.slug}`}
                 className="group relative overflow-hidden rounded-lg"
                 style={{ aspectRatio: '2/3' }}
               >

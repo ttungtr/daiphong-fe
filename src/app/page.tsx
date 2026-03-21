@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'không khí sạch',
     'HVAC Vietnam',
   ],
-  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
+  authors: [{ name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN' }],
   creator: 'Đại Phong',
   publisher: 'Đại Phong',
   robots: {

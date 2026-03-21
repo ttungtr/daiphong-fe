@@ -4,7 +4,7 @@
   },
   "letter": {
     "heading": "OPEN LETTER",
-    "p1": "Daiphong Industrial Joint Stock Company respectfully sends greetings and best wishes for health and success to your organization.",
+    "p1": "Daiphong VN Industrial Joint Stock Company respectfully sends greetings and best wishes for health and success to your organization.",
     "p2": "With experience in manufacturing and processing MEP products, Daiphong is a trusted partner in supplying ducts, grilles, dampers, cable trays, ladders and accessories.",
     "p3": "Our products are widely applied in projects such as high-rise buildings, shopping centers, hospitals, schools, factories, workshops, industrial zones and many other civil and industrial projects nationwide.",
     "p4": "With flexible production capacity, standard equipment and a professional technical team, Daiphong is committed to meeting requirements for quality, schedule and cost, bringing sustainable value to every project.",
@@ -31,8 +31,8 @@
     "heading": "CONTACT FOR CONSULTATION",
     "intro": "Contact us for the most specific and detailed consultation. Enter your email here.",
     "address": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
-    "email": "daiphong@daiphong.com",
-    "phone": "(+84) 888 885 964",
+    "email": "info@onggiodaiphong.com ",
+    "phone": "(+84) 937 299 828",
     "namePlaceholder": "Your full name",
     "emailPlaceholder": "Your email address",
     "phonePlaceholder": "Your phone number",
@@ -58,9 +58,11 @@
     "heading": "HIGH QUALITY VENTILATION DUCT MANUFACTURER",
     "addressLabel": "Address:",
     "vplvLabel": "Regional Office:",
+    "addressValue": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
+    "vplvValue": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
     "phoneLabel": "Phone:",
     "emailLabel": "Email:",
-    "copyright": "© 2025 Daiphong. All rights reserved.",
+    "copyright": "© 2026 Daiphong. All rights reserved.",
     "contactHeading": "Contact us",
     "contactIntro": "Please leave your email address, we will update important news to you.",
     "emailPlaceholder": "Enter your email",
@@ -102,7 +104,7 @@
       "p4": "Daiphong continuously invests in modern machinery and equipment and applies advanced technology. We aim to automate and standardize the production process to ensure consistency and high quality in every product.",
       "viewProfile": "View Daiphong Profile",
       "viewProfileAria": "View company profile",
-      "ceoImageAlt": "Mr. Le Thanh Tung - Chairman and CEO of Daiphong Industrial Joint Stock Company"
+      "ceoImageAlt": "Mr. Le Thanh Tung - Chairman and CEO of Daiphong VN Industrial Joint Stock Company"
     },
     "visionMission": {
       "heading": "VISION - MISSION",
@@ -157,13 +159,13 @@
         "mainBusiness": "Main Business"
       },
       "values": {
-        "companyName": "Daiphong Industrial Joint Stock Company",
+        "companyName": "Daiphong VN Industrial Joint Stock Company",
         "address": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
-        "contact": "(+84) 888 885 964",
-        "email": "daiphong@daiphong.com",
-        "website": "daiphong.vn",
+        "contact": "(+84) 937 299 828",
+        "email": "info@onggiodaiphong.com ",
+        "website": "onggiodaiphong.com",
         "director": "Mr. Le Thanh Tung",
-        "taxCode": "xxxxxxxxxxxx",
+        "taxCode": "3703426904",
         "foundedDate": "2003",
         "mainBusiness": "Manufacturing and processing MEP products"
       },
@@ -195,7 +197,7 @@
     "emptyState": "No news available at the moment.",
     "tabNews": "News",
     "tabActivities": "Company activities",
-    "newsItemImageAlt": "{{title}} - Daiphong Industrial Joint Stock Company news"
+    "newsItemImageAlt": "{{title}} - Daiphong VN Industrial Joint Stock Company news"
   },
   "productsPage": {
     "sortLabel": "Sort by:",
@@ -234,8 +236,15 @@
   "projectsPage": {
     "heading": "PROJECTS",
     "lineTitleAlt": "Decorative underline for projects heading",
+    "lineTitleAltWithTitle": "Decorative underline for {{title}}",
     "description": "Over the years, Daiphong is proud to have been trusted and chosen by many partners through the projects we have successfully implemented. Our customers span various industries.",
-    "projectImageAlt": "Project image {{title}} at {{location}} - Daiphong",
+    "projectImageAlt": "Image {{index}} of project {{title}}",
+    "detailHeading": "Project details",
+    "location": "Location",
+    "owner": "Investor",
+    "category": "Category",
+    "productConsumptionCapacity": "Product consumption capacity",
+    "relatedHeading": "Related projects",
     "heroBreadcrumbHome": "Home",
     "heroBreadcrumbProjects": "Projects",
     "heroImageAlt": "Featured projects - Daiphong"
@@ -280,5 +289,3 @@
     "relatedDescription": "Other products in category {{category}}"
   }
 }
-
-

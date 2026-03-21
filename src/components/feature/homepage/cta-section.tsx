@@ -14,7 +14,7 @@ export const CTASection = () => (
           </p>
 
           <p className="text-center mt-2 md:mt-2 lg:mt-2 text-lg sm:text-lg md:text-lg font-semibold">
-            <strong>HOTLINE: 0888 885 964</strong>
+            <strong>HOTLINE: 0937 299 828</strong>
           </p>
         </div>
 

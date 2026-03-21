@@ -8,32 +8,30 @@ import ImageWithFallback from '@/components/common/ImageWithFallback';
 import LineTitle from '@/components/common/line-title';
 
 const partnerImages = [
-  'Van-Khanh-Group.jpgx',
-  'AEON.jpgx',
-  'TPBank.jpgx',
-  'BOE.jpgx',
-  'Cadivi.jpgx',
-  'Central.jpgx',
-  'CPC.jpgx',
-  'Daikin.jpgx',
-  'Daphaco.jpgx',
-  'Emart.jpgx',
-  'Hisense.jpgx',
-  'Hung-Thanh-Dat.jpgx',
-  'LPBank.jpgx',
-  'Newteccon.jpgx',
-  'PCCC-2-9.jpgx',
-  'PXP-electric.jpgx',
-  'Samphu.jpgx',
-  'searefico.jpgx',
-  'Tan-Anh.jpgx',
-  'Techcombank.jpgx',
-  'TLD.jpgx',
-
-  'Unicons.jpgx',
-
-  'vietsafe.jpgx',
-  'Zenco.jpgx',
+  'an-phu-thinh.jpg',
+  'central.jpg',
+  'conteccons.jpg',
+  'dong-hung-group.jpg',
+  'nang-luong-xanh.jpg',
+  'newtecons.jpg',
+  'ricons.jpg',
+  'searefico.jpg',
+  'SOL-E&C.jpg',
+  'tuan-anh-phat.jpg',
+  'unicons.jpg',
+  'vin-group.jpg',
+  'an-phu-thinh.jpg',
+  'central.jpg',
+  'conteccons.jpg',
+  'dong-hung-group.jpg',
+  'nang-luong-xanh.jpg',
+  'newtecons.jpg',
+  'ricons.jpg',
+  'searefico.jpg',
+  'SOL-E&C.jpg',
+  'tuan-anh-phat.jpg',
+  'unicons.jpg',
+  'vin-group.jpg',
 ];
 
 export const PartnerSection: FunctionComponent = () => {
@@ -90,26 +88,26 @@ export const PartnerSection: FunctionComponent = () => {
                   return (
                     <div
                       key={`partner-${index}`}
-                      className="flip-card flip-card-auto w-full h-16 sm:h-16 md:h-16 "
+                      className="flip-card flip-card-auto w-full h-16 sm:h-16 md:h-16"
                     >
                       <div className="flip-card-inner">
                         <div className="flip-card-front">
                           <ImageWithFallback
                             src={`/images/partner/${image}`}
-                            alt={`Partner ${image.replace('.png', '')}`}
-                            width={100}
-                            height={100}
-                            className="object-contain w-full h-full p-2"
+                            alt={`Partner ${image.replace('.jpg', '')}`}
+                            className="object-contain "
+                            fill
                           />
                         </div>
                         <div className="flip-card-back">
                           {nextImage && (
                             <ImageWithFallback
                               src={`/images/partner/${nextImage}`}
-                              alt={`Partner ${nextImage.replace('.png', '')}`}
+                              alt={`Partner ${nextImage.replace('.jpg', '')}`}
                               width={100}
                               height={100}
-                              className="object-contain w-full h-full p-2"
+                              className="object-contain "
+                              fill
                             />
                           )}
                         </div>

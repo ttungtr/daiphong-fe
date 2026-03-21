@@ -3,21 +3,20 @@
 import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ProductCard from '@/components/ProductCard';
-import {
-  Product as ProductData,
-  PRODUCT_CATEGORIES,
-  PRODUCTS,
-} from '@/data/products';
+import { useLocalizedProducts, useLocalizedProductMaps } from '@/hooks/useLocalizedData';
 import { Pagination, ProductTab, CustomSelect } from '@/components/common';
 
 type SortOrder = 'default' | 'priceAsc' | 'priceDesc';
 
 export default function ProductsPage() {
   const { t } = useTranslation('common');
+  const products = useLocalizedProducts();
+  const { categories } = useLocalizedProductMaps();
   const [keyword, setKeyword] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string>('Tất cả');
+  const [selectedCategory, setSelectedCategory] = useState<string>(
+    categories[0] ?? 'Tất cả'
+  );
   const [sortOrder, setSortOrder] = useState<SortOrder>('default');
-  const [productList] = useState<ProductData[]>(PRODUCTS);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 8;
 
@@ -26,9 +25,10 @@ export default function ProductsPage() {
   };
 
   const filteredProducts = useMemo(() => {
-    let results = productList;
+    let results = products;
+    const allCategory = categories[0] ?? 'Tất cả';
 
-    if (selectedCategory !== 'Tất cả') {
+    if (selectedCategory !== allCategory) {
       results = results.filter((p) => {
         if (selectedCategory === 'Sản phẩm mới nhất') return true; // In real case, would sort by createdAt
         return p.category === selectedCategory;
@@ -54,7 +54,7 @@ export default function ProductsPage() {
       default:
         return results;
     }
-  }, [productList, selectedCategory, keyword, sortOrder]);
+  }, [products, selectedCategory, keyword, sortOrder, categories]);
 
   const paginatedProducts = useMemo(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;
@@ -67,7 +67,7 @@ export default function ProductsPage() {
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         {/* Product Tab */}
         <ProductTab
-          categories={[...PRODUCT_CATEGORIES]}
+          categories={[...categories]}
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
           keyword={keyword}

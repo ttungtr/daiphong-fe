@@ -21,7 +21,7 @@ export const LicenseSection = () => {
           </header>
 
           <ImageWithFallback
-            src="/images/about/giay-phep.png"
+            src="/images/about/giay-phep.jpg"
             alt={t('about.license.imageAlt')}
             width={400}
             height={600}

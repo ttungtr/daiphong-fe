@@ -5,13 +5,21 @@ import { useTranslation } from 'react-i18next';
 
 const CATEGORY_TO_KEY: Record<string, string> = {
   'Tất cả': 'productsAll',
+  'All products': 'productsAll',
   'Ống gió': 'ducts',
+  'Ducts': 'ducts',
   'Cửa gió': 'airOutlets',
+  'Air outlets': 'airOutlets',
   'Van gió': 'dampers',
+  'Dampers': 'dampers',
   'Phụ kiện ống gió': 'ductAccessories',
+  'Duct accessories': 'ductAccessories',
   'Ống gió chống cháy EI': 'fireResistantDucts',
+  'Fire-resistant EI ducts': 'fireResistantDucts',
   'Máng cáp điện': 'cableTrays',
+  'Cable trays': 'cableTrays',
   'Gia công theo yêu cầu': 'customFabrication',
+  'Custom fabrication': 'customFabrication',
 };
 
 interface ProductTabProps {

@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     'HVAC Việt Nam',
     'nhà máy ống gió',
   ],
-  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
+  authors: [{ name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN' }],
   creator: 'Đại Phong',
   publisher: 'Đại Phong',
   robots: {

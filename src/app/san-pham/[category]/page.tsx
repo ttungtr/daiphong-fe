@@ -2,10 +2,9 @@
 
 import React from 'react';
 import {
-  PRODUCTS,
-  PRODUCT_CATEGORIES,
-  SLUG_CATEGORY_MAP,
-} from '@/data/products';
+  useLocalizedProducts,
+  useLocalizedProductMaps,
+} from '@/hooks/useLocalizedData';
 import ProductGrid from '@/components/products/ProductGrid';
 import { useTranslation } from 'react-i18next';
 
@@ -28,16 +27,16 @@ export default function ProductCategoryPage({
   params,
 }: ProductCategoryPageProps) {
   const { t } = useTranslation('common');
+  const products = useLocalizedProducts();
+  const { categories, slugCategoryMap } = useLocalizedProductMaps();
   const resolvedParams = React.use(params);
   const { category } = resolvedParams;
 
-  // Decode URL parameter
-  const decodedCategory = SLUG_CATEGORY_MAP[category];
+  // Decode URL parameter (slug -> category name)
+  const decodedCategory = slugCategoryMap[category];
 
-  // Check if category exists in PRODUCT_CATEGORIES
-  const isValidCategory = PRODUCT_CATEGORIES.includes(
-    decodedCategory as (typeof PRODUCT_CATEGORIES)[number],
-  );
+  // Check if category exists
+  const isValidCategory = decodedCategory && categories.includes(decodedCategory);
 
   const displayCategory =
     decodedCategory &&
@@ -61,10 +60,11 @@ export default function ProductCategoryPage({
   }
 
   // Filter products by category
+  const allCategory = categories[0] ?? 'Tất cả';
   const filteredProducts =
-    decodedCategory === 'Tất cả'
-      ? PRODUCTS
-      : PRODUCTS.filter((product) => product.category === decodedCategory);
+    decodedCategory === allCategory
+      ? products
+      : products.filter((product) => product.category === decodedCategory);
 
   return (
     <div className="min-h-screen bg-slate-50">

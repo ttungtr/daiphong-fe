@@ -1,7 +1,7 @@
 'use client';
 
 import { MingcuteRightFill } from '@/components/icons';
-import { PRODUCTS } from '@/data/products';
+import { useLocalizedProducts } from '@/hooks/useLocalizedData';
 import Link from 'next/link';
 import { FunctionComponent, useRef } from 'react';
 import type { Swiper as SwiperType } from 'swiper';
@@ -19,7 +19,8 @@ import { useTranslation } from 'react-i18next';
 
 export const ProductSection: FunctionComponent = () => {
   const swiperRef = useRef<SwiperType | null>(null);
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
+  const products = useLocalizedProducts();
 
   return (
     <div className="w-full py-4 md:py-4 lg:py-8 bg-white">
@@ -72,11 +73,11 @@ export const ProductSection: FunctionComponent = () => {
             }}
             className="w-full"
           >
-            {PRODUCTS.slice(0, 6).map((product) => (
+            {products.slice(0, 6).map((product) => (
               <SwiperSlide key={product.id}>
                 <Link
                   href={`/san-pham/${product.slug}`}
-                  className="group/card block bg-white border border-gray-200 overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300 h-full"
+                  className="flex-1 group/card block bg-white border border-gray-200 overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300 h-full"
                 >
                   <div className="overflow-hidden flex-shrink-0">
                     <ImageWithFallback
@@ -101,12 +102,13 @@ export const ProductSection: FunctionComponent = () => {
                     </p>
                     <div className="text-sm font-medium text-primary-blue-1">
                       {typeof product.price === 'number'
-                        ? new Intl.NumberFormat('vi-VN', {
+                        ? new Intl.NumberFormat(i18n.language === 'en' ? 'en-US' : 'vi-VN', {
                             style: 'currency',
                             currency: 'VND',
                             maximumFractionDigits: 0,
                           }).format(product.price)
-                        : 'Liên hệ'}
+                        : (product.price as string) ||
+                          (i18n.language === 'en' ? 'Contact' : 'Liên hệ')}
                     </div>
                   </div>
                 </Link>

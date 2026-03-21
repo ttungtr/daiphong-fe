@@ -28,16 +28,16 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${service.title} | Công Ty Cổ Phần Công Nghiệp Đại Phong`,
-    description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp từ Công Ty Cổ Phần Công Nghiệp Đại Phong. Giải pháp ${service.title.toLowerCase()} hiệu quả cho công trình.`,
+    title: `${service.title} | Công ty Cổ phần Công Nghiệp Đại Phong VN`,
+    description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp từ Công ty Cổ phần Công Nghiệp Đại Phong VN. Giải pháp ${service.title.toLowerCase()} hiệu quả cho công trình.`,
     keywords: `${service.title.toLowerCase()}, ${service.keywords?.join(
-      ', '
+      ', ',
     )}, cơ điện, xây dựng, Đại Phong`,
-    authors: [{ name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong' }],
+    authors: [{ name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN' }],
     robots: 'index, follow',
     openGraph: {
       title: `${service.title} | Đại Phong`,
-      description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp từ Công Ty Cổ Phần Công Nghiệp Đại Phong.`,
+      description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp từ Công ty Cổ phần Công Nghiệp Đại Phong VN.`,
       type: 'website',
       locale: 'vi_VN',
       url: `https://www.onggiodaiphong.com/linh-vuc-hoat-dong/${service.id}`,
@@ -54,7 +54,7 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: `${service.title} | Đại Phong`,
-      description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp từ Công Ty Cổ Phần Công Nghiệp Đại Phong.`,
+      description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp từ Công ty Cổ phần Công Nghiệp Đại Phong VN.`,
       images: [service.images[0].url],
     },
     alternates: {
@@ -85,7 +85,7 @@ export default async function ServiceDetailPage({
     image: service.images[0].url,
     provider: {
       '@type': 'Organization',
-      name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+      name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
       alternateName: 'Đại Phong',
       url: 'https://www.onggiodaiphong.com',
       address: {

@@ -7,7 +7,7 @@ export const VisionMissionSection: FunctionComponent = () => {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+    name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     alternateName: '',
     description: 'Nhà thầu thi công hệ thống cơ điện (MEP) hàng đầu Việt Nam',
     mission:
@@ -57,7 +57,7 @@ export const VisionMissionSection: FunctionComponent = () => {
               </h2>
               {/* <ImageWithFallback
                 src="/images/titlebg.png"
-                alt="Đường viền trang trí tiêu đề tầm nhìn sứ mệnh Công Ty Cổ Phần Công Nghiệp Đại Phong"
+                alt="Đường viền trang trí tiêu đề tầm nhìn sứ mệnh Công ty Cổ phần Công Nghiệp Đại Phong VN"
                 width={300}
                 height={100}
                 className="w-56 h-auto"
@@ -69,7 +69,7 @@ export const VisionMissionSection: FunctionComponent = () => {
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
               itemScope
               itemType="https://schema.org/ItemList"
-              aria-label="Tầm nhìn, sứ mệnh, giá trị cốt lõi và triết lý kinh doanh của Công Ty Cổ Phần Công Nghiệp Đại Phong"
+              aria-label="Tầm nhìn, sứ mệnh, giá trị cốt lõi và triết lý kinh doanh của Công ty Cổ phần Công Nghiệp Đại Phong VN"
             >
               {visionMissionData.map((item, index) => (
                 <article
@@ -84,7 +84,7 @@ export const VisionMissionSection: FunctionComponent = () => {
                     src={item.imageUrl}
                     alt={`${
                       item.imageAlt
-                    } của Công Ty Cổ Phần Công Nghiệp Đại Phong - ${item.description.replace(
+                    } của Công ty Cổ phần Công Nghiệp Đại Phong VN - ${item.description.replace(
                       /\n/g,
                       ', ',
                     )}`}

@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import ImageWithFallback from './common/ImageWithFallback';
-import { CATEGORY_SLUG_MAP } from '@/data/products';
+import { useLocalizedProductMaps } from '@/hooks/useLocalizedData';
+import { useTranslation } from 'react-i18next';
 
 export interface ProductCardProps {
   imageSrc: string;
@@ -19,18 +20,21 @@ export function ProductCard({
   slug,
   category,
 }: ProductCardProps) {
+  const { categorySlugMap } = useLocalizedProductMaps();
+  const { i18n } = useTranslation();
+  const categorySlug = categorySlugMap[category] ?? 'tat-ca';
   const formattedPrice =
     typeof price === 'number'
-      ? new Intl.NumberFormat('vi-VN', {
+      ? new Intl.NumberFormat(i18n.language === 'en' ? 'en-US' : 'vi-VN', {
           style: 'currency',
           currency: 'VND',
           maximumFractionDigits: 0,
         }).format(price)
-      : 'Liên hệ';
+      : (price as string) || (i18n.language === 'en' ? 'Contact' : 'Liên hệ');
 
   return (
     <Link
-      href={`/san-pham/${CATEGORY_SLUG_MAP[category]}/${slug}`}
+      href={`/san-pham/${categorySlug}/${slug}`}
       className="group border border-primary-blue-1 bg-white shadow-sm transition-shadow hover:shadow-md "
     >
       <div className="relative aspect-square w-full overflow-hidden bg-slate-50">

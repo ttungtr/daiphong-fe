@@ -18,7 +18,7 @@ const teamMembers: TeamMember[] = [
     position: 'Tổng Giám đốc',
     image: '/images/giam-doc.png',
     imageAlt:
-      'Lê Thanh Tùng - Tổng Giám đốc Công Ty Cổ Phần Công Nghiệp Đại Phong',
+      'Lê Thanh Tùng - Tổng Giám đốc Công ty Cổ phần Công Nghiệp Đại Phong VN',
   },
   {
     id: 'tm-002',
@@ -26,7 +26,7 @@ const teamMembers: TeamMember[] = [
     position: 'Phó Giám đốc',
     image: '/images/giam-doc.png',
     imageAlt:
-      'Nguyễn Văn A - Phó Giám đốc Công Ty Cổ Phần Công Nghiệp Đại Phong',
+      'Nguyễn Văn A - Phó Giám đốc Công ty Cổ phần Công Nghiệp Đại Phong VN',
   },
   {
     id: 'tm-003',
@@ -34,7 +34,7 @@ const teamMembers: TeamMember[] = [
     position: 'Kế toán trưởng',
     image: '/images/giam-doc.png',
     imageAlt:
-      'Nguyễn Thị B - Kế toán trưởng Công Ty Cổ Phần Công Nghiệp Đại Phong',
+      'Nguyễn Thị B - Kế toán trưởng Công ty Cổ phần Công Nghiệp Đại Phong VN',
   },
   // Các thành viên demo còn lại có thể được cấu hình sau khi có dữ liệu thật
   // hoặc được ẩn nếu không cần thiết cho bản production.

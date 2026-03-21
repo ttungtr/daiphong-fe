@@ -46,9 +46,9 @@ export default function About() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+    name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     alternateName: 'Đại Phong',
-    legalName: 'Công ty Cổ phần Công nghiệp Đại Phong',
+    legalName: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     description:
       'Đơn vị sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC chất lượng cao tại Việt Nam',
     url: 'https://www.onggiodaiphong.com',

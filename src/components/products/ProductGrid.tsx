@@ -1,16 +1,21 @@
 'use client';
 
-import { CATEGORY_SLUG_MAP, type Product } from '@/data/products';
+import type { Product } from '@/data/products';
+import { useLocalizedProductMaps } from '@/hooks/useLocalizedData';
+import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import ImageWithFallback from '../common/ImageWithFallback';
 
 export default function ProductGrid({ products }: { products: Product[] }) {
+  const { categorySlugMap } = useLocalizedProductMaps();
+  const { i18n } = useTranslation();
+
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {products.map((p) => (
         <Link
           key={p.id}
-          href={`/san-pham/${CATEGORY_SLUG_MAP[p.category]}/${p.slug}`}
+          href={`/san-pham/${categorySlugMap[p.category] ?? 'tat-ca'}/${p.slug}`}
           className="group border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
         >
           <div className="relative aspect-square w-full overflow-hidden bg-slate-50">
@@ -28,12 +33,16 @@ export default function ProductGrid({ products }: { products: Product[] }) {
             </h3>
             <div className="text-base font-semibold text-primary-blue-1">
               {typeof p.price === 'number'
-                ? new Intl.NumberFormat('vi-VN', {
-                    style: 'currency',
-                    currency: 'VND',
-                    maximumFractionDigits: 0,
-                  }).format(p.price)
-                : 'Liên hệ'}
+                ? new Intl.NumberFormat(
+                    i18n.language === 'en' ? 'en-US' : 'vi-VN',
+                    {
+                      style: 'currency',
+                      currency: 'VND',
+                      maximumFractionDigits: 0,
+                    }
+                  ).format(p.price)
+                : (p.price as string) ||
+                  (i18n.language === 'en' ? 'Contact' : 'Liên hệ')}
             </div>
           </div>
         </Link>

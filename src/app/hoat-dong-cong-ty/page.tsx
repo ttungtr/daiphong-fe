@@ -4,8 +4,7 @@ import { newsData } from '@/data/new';
 import { ENewCategory } from '@/enum/new';
 
 export const metadata: Metadata = {
-  title:
-    'Hoạt Động Công Ty Đại Phong | Sự Kiện & Thành Tựu Sản Xuất Ống Gió',
+  title: 'Hoạt Động Công Ty Đại Phong | Sự Kiện & Thành Tựu Sản Xuất Ống Gió',
   description:
     'Cập nhật các hoạt động nội bộ của Đại Phong - Nhà sản xuất ống gió, miệng gió, phụ kiện HVAC. Sự kiện công ty, thành tựu sản xuất và các chương trình phát triển trong ngành HVAC.',
   keywords:
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
 
 export default function CompanyActivityPage() {
   const companyActivities = newsData.filter(
-    (item) => item.category === ENewCategory.COMPANY_ACTIVITY
+    (item) => item.category === ENewCategory.COMPANY_ACTIVITY,
   );
 
   const jsonLd = {
@@ -56,12 +55,12 @@ export default function CompanyActivityPage() {
         name: item.title,
         url: `https://www.onggiodaiphong.com/${item.category}/${item.slug}`,
         datePublished: new Date(
-          item.createdAt.split('/').reverse().join('-')
+          item.createdAt.split('/').reverse().join('-'),
         ).toISOString(),
         image: `https://www.onggiodaiphong.com${item.images[0]}`,
         author: {
           '@type': 'Organization',
-          name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+          name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
         },
         publisher: {
           '@type': 'Organization',

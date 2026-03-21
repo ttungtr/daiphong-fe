@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     'Khám phá các dự án ống gió và hệ thống thông gió tiêu biểu của Đại Phong. Chúng tôi tự hào cung cấp ống gió, miệng gió, phụ kiện HVAC chất lượng cao cho các công trình lớn nhỏ trên toàn quốc.',
   keywords:
     'dự án ống gió, dự án HVAC, hệ thống thông gió, công trình ống gió, lắp đặt ống gió, dự án thông gió, ống gió công nghiệp, ống gió thương mại, Đại Phong',
-  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
+  authors: [{ name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN' }],
   robots: 'index, follow',
   openGraph: {
     title: 'Dự Án Ống Gió & Hệ Thống Thông Gió | Đại Phong',

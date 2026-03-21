@@ -32,47 +32,55 @@ export const Footer: FunctionComponent = () => {
 
             <div className="grid sm:grid-cols-2 gap-6 text-sm">
               <div>
-                <h4 className="font-semibold mb-1 text-white">{t('footer.addressLabel')}</h4>
+                <h4 className="font-semibold mb-1 text-white">
+                  {t('footer.addressLabel')}
+                </h4>
                 <a
                   href="https://goo.gl/maps/j15G3vj7UpgWByjF9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-white/70 transition-colors"
                 >
-                  Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TPHCM
+                  {t('footer.addressValue')}
                 </a>
               </div>
 
               <div>
-                <h4 className="font-semibold mb-1 text-white">{t('footer.vplvLabel')}</h4>
+                <h4 className="font-semibold mb-1 text-white">
+                  {t('footer.vplvLabel')}
+                </h4>
                 <a
                   href="https://goo.gl/maps/j15G3vj7UpgWByjF9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-white/70 transition-colors"
                 >
-                  Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TPHCM
+                  {t('footer.vplvValue')}
                 </a>
               </div>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6 text-sm">
               <div>
-                <h4 className="font-semibold mb-1 text-white">{t('footer.phoneLabel')}</h4>
+                <h4 className="font-semibold mb-1 text-white">
+                  {t('footer.phoneLabel')}
+                </h4>
                 <a
                   href="tel:+84982400400"
                   className="text-white hover:text-white/70 transition-colors"
                 >
-                  (+84) 888 885 964
+                  (+84) 937 299 828
                 </a>
               </div>
               <div>
-                <h4 className="font-semibold mb-1 text-white">{t('footer.emailLabel')}</h4>
+                <h4 className="font-semibold mb-1 text-white">
+                  {t('footer.emailLabel')}
+                </h4>
                 <a
-                  href="mailto:daiphong@daiphong.com"
+                  href="mailto:info@onggiodaiphong.com "
                   className="text-white hover:text-white/70 transition-colors"
                 >
-                  daiphong@daiphong.com
+                  info@onggiodaiphong.com
                 </a>
               </div>
             </div>
@@ -83,9 +91,7 @@ export const Footer: FunctionComponent = () => {
               <MailIcon className="w-7 h-7 text-white hover:text-white/70 transition" />
             </div>
 
-            <p className="text-xs text-white/70">
-              {t('footer.copyright')}
-            </p>
+            <p className="text-xs text-white/70">{t('footer.copyright')}</p>
           </div>
 
           {/* Right Section */}
@@ -117,7 +123,7 @@ export const Footer: FunctionComponent = () => {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+            name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
             alternateName: 'Đại Phong',
             taxID: '3702336422',
             address: {
@@ -128,7 +134,7 @@ export const Footer: FunctionComponent = () => {
               addressCountry: 'VN',
             },
             telephone: '+84982400400',
-            email: 'daiphong@daiphong.com',
+            email: 'info@onggiodaiphong.com ',
             url: 'https://onggiodaiphong.com',
             foundingDate: '2002',
             industry: ['Construction', 'Transportation'],

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Tìm hiểu về chính sách nhân sự, quy định lao động, chế độ đãi ngộ và môi trường làm việc chuyên nghiệp tại Đại Phong - Nhà sản xuất ống gió hàng đầu. Gia nhập đội ngũ với những chính sách minh bạch, công bằng và cơ hội phát triển trong ngành HVAC.',
   keywords:
     'chính sách nhân sự Đại Phong, tuyển dụng ống gió, tuyển dụng HVAC, quy định lao động, đãi ngộ nhân viên, môi trường làm việc, tuyển dụng sản xuất, công nhân ống gió, kỹ sư HVAC',
-  authors: [{ name: 'Công ty Cổ phần Công nghiệp Đại Phong' }],
+  authors: [{ name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN' }],
   creator: 'Đại Phong',
   publisher: 'Đại Phong',
   robots: {
@@ -67,7 +67,7 @@ const structuredData = {
   url: 'https://www.onggiodaiphong.com/tuyen-dung/chinh-sach-nhan-su',
   mainEntity: {
     '@type': 'Organization',
-    name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+    name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     alternateName: 'Đại Phong',
     url: 'https://www.onggiodaiphong.com',
     logo: 'https://www.onggiodaiphong.com/images/logo/logo.png',

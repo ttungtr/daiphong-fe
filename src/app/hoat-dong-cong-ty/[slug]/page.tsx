@@ -21,7 +21,7 @@ export async function generateMetadata({
   if (!activity) {
     return {
       title:
-        'Hoạt động công ty không tìm thấy - Công Ty Cổ Phần Công Nghiệp Đại Phong',
+        'Hoạt động công ty không tìm thấy - Công ty Cổ phần Công Nghiệp Đại Phong VN',
       description:
         'Hoạt động công ty bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.',
     };
@@ -32,20 +32,20 @@ export async function generateMetadata({
   );
 
   return {
-    title: `${activity.title} - Hoạt động công ty Công Ty Cổ Phần Công Nghiệp Đại Phong`,
+    title: `${activity.title} - Hoạt động công ty Công ty Cổ phần Công Nghiệp Đại Phong VN`,
     description:
       activity.paragraphs[0]?.substring(0, 160) + '...' ||
-      'Hoạt động công ty từ Công Ty Cổ Phần Công Nghiệp Đại Phong',
+      'Hoạt động công ty từ Công ty Cổ phần Công Nghiệp Đại Phong VN',
     keywords: [
       ...activity.tags,
-      'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+      'Công ty Cổ phần Công Nghiệp Đại Phong VN',
       'hoạt động công ty',
     ].join(', '),
     openGraph: {
       title: activity.title,
       description:
         activity.paragraphs[0]?.substring(0, 160) + '...' ||
-        'Hoạt động công ty từ Công Ty Cổ Phần Công Nghiệp Đại Phong',
+        'Hoạt động công ty từ Công ty Cổ phần Công Nghiệp Đại Phong VN',
       type: 'article',
       url: `https://www.onggiodaiphong.com/hoat-dong-cong-ty/${activity.slug}`,
       images: [
@@ -63,7 +63,7 @@ export async function generateMetadata({
       title: activity.title,
       description:
         activity.paragraphs[0]?.substring(0, 160) + '...' ||
-        'Hoạt động công ty từ Công Ty Cổ Phần Công Nghiệp Đại Phong',
+        'Hoạt động công ty từ Công ty Cổ phần Công Nghiệp Đại Phong VN',
     },
     alternates: {
       canonical: `https://www.onggiodaiphong.com/hoat-dong-cong-ty/${activity.slug}`,
@@ -120,12 +120,12 @@ export default async function CompanyActivityDetailPage({
     dateModified: formattedDate.toISOString(),
     author: {
       '@type': 'Organization',
-      name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+      name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
       url: 'https://www.onggiodaiphong.com',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+      name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.onggiodaiphong.com/logo.png',

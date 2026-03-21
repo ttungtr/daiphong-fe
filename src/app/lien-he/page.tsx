@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import { ContactPageContent } from './ContactPageContent';
 
 export const metadata: Metadata = {
-  title: 'Liên Hệ Đại Phong | Tư Vấn Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC',
+  title:
+    'Liên Hệ Đại Phong | Tư Vấn Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC',
   description:
     'Liên hệ với Đại Phong để được tư vấn miễn phí về sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC. Hotline: 0888885964. Email: ongiodaiphong@gmail.com. Địa chỉ: Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Dĩ An, TP.HCM',
   keywords: [
@@ -66,7 +67,7 @@ export default function ContactPage() {
     url: 'https://www.onggiodaiphong.com/lien-he',
     mainEntity: {
       '@type': 'Organization',
-      name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+      name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
       url: 'https://www.onggiodaiphong.com',
       logo: 'https://www.onggiodaiphong.com/images/logo/logo.png',
       contactPoint: {
@@ -82,7 +83,7 @@ export default function ContactPage() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Công ty Cổ phần Công nghiệp Đại Phong',
+    name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     alternateName: 'Đại Phong',
     url: 'https://www.onggiodaiphong.com',
     logo: 'https://www.onggiodaiphong.com/images/logo/logo.png',

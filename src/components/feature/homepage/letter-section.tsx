@@ -61,49 +61,23 @@ export const LetterSection: FunctionComponent = () => {
                     {t('letter.directorName')}
                   </p>
                 </div>
-
-                {/* Button for desktop */}
-                {/* <div className='hidden lg:block'>
-                  <Link
-                    href='/gioi-thieu'
-                    className='inline-block bg-primary-blue-1 hover:opacity-70 text-white duration-300 w-32 sm:w-40 text-center py-2 sm:py-3 rounded-md text-sm font-semibold transition-opacity'
-                    aria-label='Xem tất cả thông tin về công ty'
-                  >
-                    Xem tất cả
-                  </Link>
-                </div> */}
               </div>
 
               <div className="lg:col-span-5 w-full h-full flex justify-center items-center lg:justify-end order-2 lg:order-2">
                 <ImageWithFallback
                   src="/images/thu-ngo.jpg"
-                  alt="Lê Thanh Tùng - Giám đốc Công ty Công Ty Cổ Phần Công Nghiệp Đại Phong"
+                  alt="Lê Thanh Tùng - Giám đốc Công ty Công ty Cổ phần Công Nghiệp Đại Phong VN"
                   className="object-cover w-full max-w-[300px] sm:max-w-[360px] lg:max-w-[380px] h-auto mx-auto "
                   width={350}
                   height={400}
                   priority
                 />
               </div>
-
-              {/* Button for mobile - appears after image */}
-              {/* <div className='lg:hidden order-3 flex justify-center'>
-                <Link
-                  href='/gioi-thieu'
-                  className='inline-block bg-primary-blue-1 hover:opacity-70 text-white duration-300 w-32 sm:w-40 text-center py-2 sm:py-3 rounded-md text-sm font-semibold transition-opacity'
-                  aria-label='Xem tất cả thông tin về công ty'
-                >
-                  Xem tất cả
-                </Link>
-              </div> */}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      {/* <AnimatedStatsSection /> */}
-
-      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -114,7 +88,7 @@ export const LetterSection: FunctionComponent = () => {
             jobTitle: 'Giám đốc Công ty',
             worksFor: {
               '@type': 'Organization',
-              name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+              name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
               alternateName: '',
               foundingDate: '2003',
               numberOfEmployees: '1200',

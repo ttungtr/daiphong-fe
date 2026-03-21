@@ -11,7 +11,7 @@ export const LetterSection: FunctionComponent = () => {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Công Ty Cổ Phần Công Nghiệp Đại Phong',
+    name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     alternateName: '',
     foundingDate: '2003',
     description: 'Nhà thầu thi công hệ thống cơ điện (MEP) uy tín.',
@@ -93,8 +93,8 @@ export const LetterSection: FunctionComponent = () => {
 
               <div className="lg:col-span-5 w-full flex justify-center lg:justify-end order-2 lg:order-2">
                 <ImageWithFallback
-                  src="/images/about/gioi-thieu-cong-ty.jpg"
-                  alt={t('about.letter.ceoImageAlt')}
+                  src="/images/about/tong-quan-cong-ty.jpg"
+                  alt="Giới thiệu công ty"
                   className="object-cover w-full max-w-[300] sm:max-w-[350px] lg:max-w-[380] h-auto mx-auto "
                   width={350}
                   height={400}

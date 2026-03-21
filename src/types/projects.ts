@@ -4,22 +4,11 @@ export interface IProject {
   title: string;
   subtitle: string;
   location: string;
-  scale: string;
-  contractValue: string;
-  duration: string;
-  workScope: string;
-  images: string[];
+  owner: string;
+  productConsumptionCapacity: string;
   slug: string;
-  category:
-    | "khach-san"
-    | "biet-thu"
-    | "thuong-mai"
-    | "giao-duc"
-    | "van-phong"
-    | "ngan-hang"
-    | "khu-dan-cu"
-    | "cong-nghiep"
-    | "chung-cu";
+  category: string;
+  images: string[];
 }
 
 export interface IProjectsPageData {
@@ -35,13 +24,5 @@ export interface IProjectsPageData {
     description: string;
   };
   projects: IProject[];
-  categories: {
-    id: string;
-    name: string;
-    count: number;
-    image: string;
-    link: string;
-  }[];
-  mainProject: IProject;
   subProjects: IProject[];
 }

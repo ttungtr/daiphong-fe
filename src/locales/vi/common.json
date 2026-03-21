@@ -4,7 +4,7 @@
   },
   "letter": {
     "heading": "THƯ NGỎ",
-    "p1": "Công ty Cổ phần Công Nghiệp Đại Phong trân trọng gửi lời chào và lời chúc sức khỏe, thành công đến Quý Đơn vị!",
+    "p1": "Công ty Cổ phần Công Nghiệp Đại Phong VN trân trọng gửi lời chào và lời chúc sức khỏe, thành công đến Quý Đơn vị!",
     "p2": "Với kinh nghiệm trong lĩnh vực sản xuất và gia công các sản phẩm cơ điện (MEP), Đại Phong hiện là đối tác uy tín trong cung cấp: Ống gió, miệng gió, van gió, thang – máng cáp và phụ kiện,..",
     "p3": "Sản phẩm của chúng tôi được ứng dụng rộng rãi tại các công trình như: Tòa nhà cao tầng, trung tâm thương mại, bệnh viện, trường học, nhà máy, nhà xưởng, khu công nghiệp và các dự án dân dụng và công nghiệp trên toàn quốc,..",
     "p4": "Với năng lực sản xuất linh hoạt, thiết bị tiêu chuẩn, và đội ngũ kỹ thuật chuyên môn, Đại Phong cam kết đáp ứng yêu cầu về chất lượng – tiến độ – giá thành, mang đến giá trị bền vững cho mọi dự án.",
@@ -31,8 +31,8 @@
     "heading": "LIÊN HỆ TƯ VẤN",
     "intro": "Liên hệ với chúng tôi để được tư vấn cụ thể và chi tiết nhất. Nhập email tại đây",
     "address": "Lô 3.2, Đường số 2, Khu công nghiệp Tân Đông Hiệp A, Phường Dĩ An, TPHCM",
-    "email": "daiphong@daiphong.com",
-    "phone": "(+84) 888 885 964",
+    "email": "info@onggiodaiphong.com ",
+    "phone": "(+84) 937 299 828",
     "namePlaceholder": "Họ tên của bạn",
     "emailPlaceholder": "Địa chỉ email của bạn",
     "phonePlaceholder": "Số điện thoại của bạn",
@@ -60,7 +60,7 @@
     "vplvLabel": "VPLV:",
     "phoneLabel": "Điện thoại:",
     "emailLabel": "Email:",
-    "copyright": "© 2025 Đại Phong. All rights reserved.",
+    "copyright": "© 2026 Đại Phong. All rights reserved.",
     "contactHeading": "Liên hệ với chúng tôi",
     "contactIntro": "Xin vui lòng để lại địa chỉ email, chúng tôi sẽ cập nhật tin tức quan trọng tới quý khách.",
     "emailPlaceholder": "Nhập email của bạn",
@@ -102,7 +102,7 @@
       "p4": "Đại Phong không ngừng đầu tư vào máy móc thiết bị hiện đại và ứng dụng công nghệ tiên tiến. Chúng tôi hướng tới việc tự động hóa và tiêu chuẩn hóa quy trình sản xuất để đảm bảo tính nhất quán và chất lượng cao trong mọi sản phẩm.",
       "viewProfile": "Xem Đại Phong Profile",
       "viewProfileAria": "Xem profile công ty",
-      "ceoImageAlt": "Ông Lê Thanh Tùng - Chủ tịch HĐQT kiêm Tổng Giám đốc Công Ty Cổ Phần Công Nghiệp Đại Phong"
+      "ceoImageAlt": "Ông Lê Thanh Tùng - Chủ tịch HĐQT kiêm Tổng Giám đốc Công ty Cổ phần Công Nghiệp Đại Phong VN"
     },
     "visionMission": {
       "heading": "TẦM NHÌN - SỨ MỆNH",
@@ -157,13 +157,13 @@
         "mainBusiness": "Ngành nghề chính"
       },
       "values": {
-        "companyName": "Công Ty Cổ Phần Công Nghiệp Đại Phong",
+        "companyName": "Công ty Cổ phần Công Nghiệp Đại Phong VN",
         "address": "Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TPHCM",
-        "contact": "(+84) 888 885 964",
-        "email": "daiphong@daiphong.com",
-        "website": "daiphong.vn",
+        "contact": "(+84) 937 299 828",
+        "email": "info@onggiodaiphong.com ",
+        "website": "onggiodaiphong.com",
         "director": "Ông: Lê Thanh Tùng",
-        "taxCode": "xxxxxxxxxxxx",
+        "taxCode": "3703426904",
         "foundedDate": "2003",
         "mainBusiness": "Sản xuất và gia công các sản phẩm cơ điện (MEP)"
       },
@@ -175,8 +175,8 @@
       "imageAlt": "Giấy phép sản xuất ống thông gió chất lượng cao"
     },
     "partner": {
-      "heading": "Dự án tiêu biểu",
-      "lineTitleAlt": "Đường viền trang trí tiêu đề dự án tiêu biểu",
+      "heading": "Đối tác",
+      "lineTitleAlt": "Đường viền trang trí tiêu đề đối tác",
       "networkTitle": "MẠNG LƯỚI ĐỐI TÁC CHIẾN LƯỢC CỦA ĐẠI PHONG",
       "p1": "Đại Phong tự hào là thành viên của một mạng lưới đối tác chiến lược rộng lớn, bao gồm các tập đoàn, doanh nghiệp hàng đầu trong nhiều lĩnh vực. Sự hợp tác bền vững với hơn 50 đối tác uy tín đã giúp chúng tôi mở rộng phạm vi hoạt động và nâng cao năng lực cung cấp dịch vụ.",
       "p2": "Chúng tôi đặc biệt chú trọng đến việc xây dựng mối quan hệ đối tác lâu dài, dựa trên những nguyên tắc cốt lõi:",
@@ -190,12 +190,14 @@
     }
   },
   "newsPage": {
+    "heroBreadcrumbHome": "Trang chủ",
+    "heroBreadcrumbNews": "Tin tức",
     "heading": "Tin tức mới nhất",
     "description": "Cập nhật những thông tin mới nhất về sản xuất ống gió, miệng gió, phụ kiện HVAC tại Đại Phong, các dự án thông gió tiêu biểu và thành tựu trong ngành HVAC Việt Nam.",
     "emptyState": "Hiện tại chưa có tin tức nào.",
     "tabNews": "Tin tức",
     "tabActivities": "Hoạt động công ty",
-    "newsItemImageAlt": "{{title}} - Tin tức Công Ty Cổ Phần Công Nghiệp Đại Phong"
+    "newsItemImageAlt": "{{title}} - Tin tức Công ty Cổ phần Công Nghiệp Đại Phong VN"
   },
   "productsPage": {
     "sortLabel": "Sắp xếp theo:",
@@ -234,8 +236,15 @@
   "projectsPage": {
     "heading": "DỰ ÁN",
     "lineTitleAlt": "Đường viền trang trí tiêu đề dự án",
+    "lineTitleAltWithTitle": "Đường viền trang trí cho tiêu đề {{title}}",
     "description": "Trong thời gian qua, Đại Phong tự hào được nhiều đối tác tin tưởng và lựa chọn thông qua các dự án mà chúng tôi đã triển khai thành công. Khách hàng của chúng tôi thuộc nhiều lĩnh vực khác nhau.",
-    "projectImageAlt": "Hình ảnh dự án {{title}} tại {{location}} - Đại Phong",
+    "projectImageAlt": "Hình ảnh {{index}} của dự án {{title}}",
+    "detailHeading": "Thông tin chi tiết dự án",
+    "location": "Địa điểm",
+    "owner": "Chủ đầu tư",
+    "category": "Hạng mục",
+    "productConsumptionCapacity": "Khả năng tiêu thụ sản phẩm",
+    "relatedHeading": "Công trình liên quan",
     "heroBreadcrumbHome": "Trang chủ",
     "heroBreadcrumbProjects": "Dự án",
     "heroImageAlt": "Dự án nổi bật - Đại Phong"
@@ -280,5 +289,3 @@
     "relatedDescription": "Các sản phẩm khác trong danh mục {{category}}"
   }
 }
-
-
