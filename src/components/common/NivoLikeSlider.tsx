@@ -75,7 +75,7 @@ export default function NivoLikeSlider({
     }, autoPlayInterval);
 
     return () => clearInterval(interval);
-  }, [images.length, autoPlayInterval, isTransitioning]);
+  }, [images.length, images[currentIndex], autoPlayInterval, isTransitioning]);
 
   const handleImageChange = useCallback(() => {
     if (images.length <= 1) return;
@@ -86,7 +86,7 @@ export default function NivoLikeSlider({
     setTimeout(() => {
       setIsTransitioning(false);
     }, 800); // Match with animation duration
-  }, [images.length]);
+  }, [images.length, images[currentIndex]]);
 
   // Handle index change
   useEffect(() => {
@@ -160,12 +160,12 @@ export default function NivoLikeSlider({
   const goToNext = useCallback(() => {
     if (images.length <= 1 || isTransitioning) return;
     setCurrentIndex((prev) => (prev + 1) % images.length);
-  }, [images.length, isTransitioning]);
+  }, [images.length, isTransitioning, images[currentIndex]]);
 
   const goToPrevious = useCallback(() => {
     if (images.length <= 1 || isTransitioning) return;
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  }, [images.length, isTransitioning]);
+  }, [images.length, isTransitioning, images[currentIndex]]);
 
   if (images.length === 0) {
     return (
