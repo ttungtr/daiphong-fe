@@ -17,7 +17,10 @@ import {
 } from '@/data/products.en';
 import { projectsData as projectsDataVi } from '@/data/projects';
 import { projectsData as projectsDataEn } from '@/data/projects.en';
+import { newsData as newsDataVi } from '@/data/news';
+import { newsData as newsDataEn } from '@/data/news.en';
 import type { IProjectsPageData } from '@/types';
+import type { INew } from '@/types/news';
 
 /**
  * Merge base product with English translation when available.
@@ -104,5 +107,17 @@ export function useProjectsData(): IProjectsPageData {
 
   return useMemo(() => {
     return lang === 'en' ? projectsDataEn : projectsDataVi;
+  }, [lang]);
+}
+
+/**
+ * Returns news data based on current language.
+ */
+export function useLocalizedNewsData(): INew[] {
+  const { i18n } = useTranslation();
+  const lang = i18n.language === 'en' ? 'en' : 'vi';
+
+  return useMemo(() => {
+    return lang === 'en' ? newsDataEn : newsDataVi;
   }, [lang]);
 }

@@ -71,16 +71,16 @@ export const navigationItems: NavItem[] = [
   {
     titleKey: 'nav.news',
     href: '/tin-tuc',
-    dropdown: [
-      {
-        titleKey: 'nav.newsMain',
-        href: '/tin-tuc',
-      },
-      {
-        titleKey: 'nav.companyActivities',
-        href: '/hoat-dong-cong-ty',
-      },
-    ],
+    // dropdown: [
+    //   {
+    //     titleKey: 'nav.newsMain',
+    //     href: '/tin-tuc',
+    //   },
+    //   {
+    //     titleKey: 'nav.companyActivities',
+    //     href: '/hoat-dong-cong-ty',
+    //   },
+    // ],
   },
 
   {

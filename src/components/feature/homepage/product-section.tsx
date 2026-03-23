@@ -71,13 +71,13 @@ export const ProductSection: FunctionComponent = () => {
                 spaceBetween: 20,
               },
             }}
-            className="w-full"
+            className="w-full products-swiper-equal-height"
           >
             {products.slice(0, 6).map((product) => (
-              <SwiperSlide key={product.id}>
+              <SwiperSlide key={product.id} className="!h-auto">
                 <Link
                   href={`/san-pham/${product.slug}`}
-                  className="flex-1 group/card block bg-white border border-gray-200 overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300 h-full"
+                  className="group/card flex flex-col h-full bg-white border border-gray-200 overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300"
                 >
                   <div className="overflow-hidden flex-shrink-0">
                     <ImageWithFallback
@@ -90,23 +90,26 @@ export const ProductSection: FunctionComponent = () => {
                     />
                   </div>
 
-                  <div className="p-4">
+                  <div className="p-4 flex-1 flex flex-col min-h-0">
                     <h4
-                      className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 group-hover/card:text-primary-blue-1 transition-colors duration-300 mb-2"
+                      className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 group-hover/card:text-primary-blue-1 transition-colors duration-300 mb-2 line-clamp-2"
                       itemProp="name"
                     >
                       {product.name}
                     </h4>
-                    <p className="text-gray-600 text-xs sm:text-sm md:text-base line-clamp-3 mb-2">
+                    <p className="text-gray-600 text-xs sm:text-sm md:text-base line-clamp-3 mb-2 flex-1 min-h-0">
                       {product.description}
                     </p>
-                    <div className="text-sm font-medium text-primary-blue-1">
+                    <div className="text-sm font-medium text-primary-blue-1 flex-shrink-0">
                       {typeof product.price === 'number'
-                        ? new Intl.NumberFormat(i18n.language === 'en' ? 'en-US' : 'vi-VN', {
-                            style: 'currency',
-                            currency: 'VND',
-                            maximumFractionDigits: 0,
-                          }).format(product.price)
+                        ? new Intl.NumberFormat(
+                            i18n.language === 'en' ? 'en-US' : 'vi-VN',
+                            {
+                              style: 'currency',
+                              currency: 'VND',
+                              maximumFractionDigits: 0,
+                            },
+                          ).format(product.price)
                         : (product.price as string) ||
                           (i18n.language === 'en' ? 'Contact' : 'Liên hệ')}
                     </div>

@@ -192,6 +192,11 @@
     }
   },
   "newsPage": {
+    "heroBreadcrumbHome": "Home",
+    "heroBreadcrumbNews": "News",
+    "backToNews": "Back to news",
+    "heroImageAlt": "News - Daiphong",
+    "lineTitleAlt": "Decorative underline for news heading",
     "heading": "Latest news",
     "description": "Get the latest updates on duct manufacturing, grilles, HVAC accessories at Daiphong, featured ventilation projects and achievements in Vietnam's HVAC industry.",
     "emptyState": "No news available at the moment.",

@@ -194,6 +194,9 @@
   "newsPage": {
     "heroBreadcrumbHome": "Trang chủ",
     "heroBreadcrumbNews": "Tin tức",
+    "backToNews": "Quay lại trang tin tức",
+    "heroImageAlt": "Tin tức - Đại Phong",
+    "lineTitleAlt": "Đường viền trang trí tiêu đề tin tức",
     "heading": "Tin tức mới nhất",
     "description": "Cập nhật những thông tin mới nhất về sản xuất ống gió, miệng gió, phụ kiện HVAC tại Đại Phong, các dự án thông gió tiêu biểu và thành tựu trong ngành HVAC Việt Nam.",
     "emptyState": "Hiện tại chưa có tin tức nào.",

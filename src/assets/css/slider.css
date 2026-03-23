@@ -1,3 +1,15 @@
+/* Equal height product cards in Swiper */
+.products-swiper-equal-height .swiper-wrapper {
+  align-items: stretch;
+}
+.products-swiper-equal-height .swiper-slide {
+  height: auto;
+  display: flex;
+}
+.products-swiper-equal-height .swiper-slide > a {
+  width: 100%;
+}
+
 .hexagon-btn {
   clip-path: polygon(
     50% 0%,
