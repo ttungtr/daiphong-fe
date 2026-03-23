@@ -1,7 +1,7 @@
 'use client';
 
 import ImageWithFallback from '@/components/common/ImageWithFallback';
-import { heroSectionData } from '@/data/new';
+import { heroSectionData } from '@/data/news';
 import { BreadcrumbItem } from '@/data/services';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';

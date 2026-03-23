@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { servicesData } from '@/data/services';
 import { projectsData } from '@/data/projects';
-import { newsData } from '@/data/new';
+import { newsData } from '@/data/news';
 import { jobPositions } from '@/data/job-positions';
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -1,6 +1,6 @@
 'use client';
 
-import { newsTabData } from '@/data/new';
+import { newsTabData } from '@/data/news';
 import Link from 'next/link';
 import { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -16,8 +16,8 @@ export const Tab: FunctionComponent<TabProps> = ({ currentPath }) => {
     '/hoat-dong-cong-ty': t('newsPage.tabActivities'),
   };
   return (
-  <div className="w-full py-10 space-y-4">
-    {/* <ImageWithFallback
+    <div className="w-full py-10 space-y-4">
+      {/* <ImageWithFallback
       src="/images/titlebg.png"
       alt="Đường viền trang trí cho tiêu đề Liên hệ"
       width={300}
@@ -26,24 +26,24 @@ export const Tab: FunctionComponent<TabProps> = ({ currentPath }) => {
       priority
     /> */}
 
-    <div className="flex items-center justify-center gap-4">
-      {newsTabData.map((item, index) => {
-        const isActive = currentPath === item.href;
+      <div className="flex items-center justify-center gap-4">
+        {newsTabData.map((item, index) => {
+          const isActive = currentPath === item.href;
 
-        return (
-          <Link
-            className={`px-4 py-1 text-white uppercase font-semibold text-sm duration-300 hover:bg-primary-blue-1 ${
-              isActive ? 'bg-primary-blue-1' : 'bg-gray-400'
-            }`}
-            href={item.href}
-            key={`${item.href}-${index}`}
-            scroll={false}
-          >
-            {tabLabels[item.href] ?? item.label}
-          </Link>
-        );
-      })}
+          return (
+            <Link
+              className={`px-4 py-1 text-white uppercase font-semibold text-sm duration-300 hover:bg-primary-blue-1 ${
+                isActive ? 'bg-primary-blue-1' : 'bg-gray-400'
+              }`}
+              href={item.href}
+              key={`${item.href}-${index}`}
+              scroll={false}
+            >
+              {tabLabels[item.href] ?? item.label}
+            </Link>
+          );
+        })}
+      </div>
     </div>
-  </div>
   );
 };

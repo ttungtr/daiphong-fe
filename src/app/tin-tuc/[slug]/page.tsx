@@ -1,5 +1,5 @@
 import ImageWithFallback from '@/components/common/ImageWithFallback';
-import { newsData } from '@/data/new';
+import { newsData } from '@/data/news';
 import { ENewCategory } from '@/enum/new';
 import { Metadata } from 'next';
 import Link from 'next/link';

@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { ENewCategory } from '@/enum/new';
-import { newsData } from '@/data/new';
+import { newsData } from '@/data/news';
 import { NewsPageContent } from './NewsPageContent';
 
 export const metadata: Metadata = {

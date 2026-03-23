@@ -120,7 +120,6 @@ export default function ProjectDetailContent({
                   key={index}
                   className="relative aspect-[4/3] overflow-hidden shadow-sm"
                 >
-                  {console.log(image)}
                   <ImageWithFallback
                     src={image}
                     alt={t('projectsPage.projectImageAlt', {

@@ -1,7 +1,7 @@
 'use client';
 
 import { HeroSection, NewsItem, Tab } from '@/components/feature/news';
-import { newsData } from '@/data/new';
+import { newsData } from '@/data/news';
 import { ENewCategory } from '@/enum/new';
 import { useTranslation } from 'react-i18next';
 
