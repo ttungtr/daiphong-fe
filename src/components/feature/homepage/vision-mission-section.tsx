@@ -13,9 +13,7 @@ export const VisionMissionSection: FunctionComponent = () => {
       titleKey: 'about.visionMission.vision.title' as const,
       icon: TrendingUp,
       background: '/images/about/tam-nhin.jpg',
-      features: [
-        t('about.visionMission.vision.description'),
-      ],
+      features: [t('about.visionMission.vision.description')],
     },
     {
       number: '2',
@@ -121,7 +119,7 @@ export const VisionMissionSection: FunctionComponent = () => {
                   })}
                   width={800}
                   height={600}
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover ${index === 2 ? 'absolute bottom-0' : ''}`}
                   priority={index === 0}
                 />
               </div>

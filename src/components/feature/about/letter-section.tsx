@@ -80,7 +80,7 @@ export const LetterSection: FunctionComponent = () => {
                 {/* Button for desktop */}
                 <div className="hidden lg:block">
                   <a
-                    href="https://drive.google.com/file/d/1ubVYqq0He4bBzW-HWB47p9L8nf9kMonk/view"
+                    href="https://drive.google.com/file/d/19n9bDqfTh313Vx35-xXJurzoxQEA3Fps/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-primary-blue-1 hover:opacity-70 text-white duration-300 w-32 sm:w-40 text-center py-2 sm:py-3 rounded-md text-sm font-semibold transition-opacity cursor-pointer"
@@ -106,7 +106,7 @@ export const LetterSection: FunctionComponent = () => {
               {/* Button for mobile - appears after image */}
               <div className="lg:hidden order-3 flex justify-center">
                 <a
-                  href="https://drive.google.com/file/d/1ubVYqq0He4bBzW-HWB47p9L8nf9kMonk/view"
+                  href="https://drive.google.com/file/d/19n9bDqfTh313Vx35-xXJurzoxQEA3Fps/view"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-primary-blue-1 hover:opacity-70 text-white duration-300 w-32 sm:w-40 text-center py-2 sm:py-3 rounded-md text-sm font-semibold transition-opacity cursor-pointer"

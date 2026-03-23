@@ -20,7 +20,7 @@ export const CTASection = () => (
 
         <div className="lg:col-span-1 flex flex-col gap-3 md:gap-4 lg:gap-4 items-center justify-center text-white">
           <a
-            href="https://drive.google.com/file/d/1ubVYqq0He4bBzW-HWB47p9L8nf9kMonk/view"
+            href="https://drive.google.com/file/d/19n9bDqfTh313Vx35-xXJurzoxQEA3Fps/view"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 rounded-md uppercase border-white w-full max-w-sm text-sm sm:text-base md:text-lg lg:text-lg py-2 md:py-3 lg:py-2 text-center duration-300 hover:bg-primary-blue-1 hover:border-primary-blue-1 cursor-pointer"

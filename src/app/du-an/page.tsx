@@ -119,8 +119,7 @@ export default function ProjectPage() {
                     })}
                     width={300}
                     height={200}
-                    fill
-                    className="w-full !h-[180px] object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-[180px]! object-cover object-top group-hover:scale-105 transition-transform duration-300"
                     priority={index < 6}
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />

@@ -12,7 +12,9 @@ interface ProjectDetailContentProps {
   slug: string;
 }
 
-export default function ProjectDetailContent({ slug }: ProjectDetailContentProps) {
+export default function ProjectDetailContent({
+  slug,
+}: ProjectDetailContentProps) {
   const { t } = useTranslation('common');
   const projectsData = useProjectsData();
   const project = projectsData.projects.find((p) => p.slug === slug);
@@ -28,7 +30,11 @@ export default function ProjectDetailContent({ slug }: ProjectDetailContentProps
       <div className="w-full">
         <HeroSection
           breadcrumbs={[
-            { label: t('projectsPage.heroBreadcrumbHome'), href: '/', isActive: false },
+            {
+              label: t('projectsPage.heroBreadcrumbHome'),
+              href: '/',
+              isActive: false,
+            },
             {
               label: t('projectsPage.heroBreadcrumbProjects'),
               href: '/du-an',
@@ -114,6 +120,7 @@ export default function ProjectDetailContent({ slug }: ProjectDetailContentProps
                   key={index}
                   className="relative aspect-[4/3] overflow-hidden shadow-sm"
                 >
+                  {console.log(image)}
                   <ImageWithFallback
                     src={image}
                     alt={t('projectsPage.projectImageAlt', {

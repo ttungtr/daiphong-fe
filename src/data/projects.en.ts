@@ -46,9 +46,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'masteri-center-point',
       category: 'Ventilation ducts, EI smoke exhaust ducts',
       images: [
-        '/images/projects/masteri-center-point/1.png',
-        '/images/projects/masteri-center-point/2.png',
-        '/images/projects/masteri-center-point/3.png',
+        '/images/projects/masteri-center-point/1.jpg',
+        '/images/projects/masteri-center-point/2.jpg',
+        '/images/projects/masteri-center-point/3.jpg',
       ],
     },
     {
@@ -63,9 +63,10 @@ export const projectsData: IProjectsPageData = {
       slug: 'chung-cu-akari-city-nam-long',
       category: 'Ventilation ducts, EI smoke exhaust ducts, Air grilles',
       images: [
-        '/images/projects/masteri-center-point/1.png',
-        '/images/projects/masteri-center-point/2.png',
-        '/images/projects/masteri-center-point/3.png',
+        '/images/projects/chung-cu-akari-city-nam-long/1.jpg',
+        '/images/projects/chung-cu-akari-city-nam-long/2.jpg',
+        '/images/projects/chung-cu-akari-city-nam-long/3.jpg',
+        '/images/projects/chung-cu-akari-city-nam-long/3.jpg',
       ],
     },
     {
@@ -79,9 +80,10 @@ export const projectsData: IProjectsPageData = {
       slug: 'cong-ty-tnhh-mtv-dong-hai',
       category: 'Ventilation ducts, Air grilles',
       images: [
-        '/images/projects/masteri-center-point/1.png',
-        '/images/projects/masteri-center-point/2.png',
-        '/images/projects/masteri-center-point/3.png',
+        '/images/projects/cong-ty-tnhh-mtv-dong-hai/1.jpg',
+        '/images/projects/cong-ty-tnhh-mtv-dong-hai/2.jpg',
+        '/images/projects/cong-ty-tnhh-mtv-dong-hai/3.jpg',
+        '/images/projects/cong-ty-tnhh-mtv-dong-hai/4.jpg',
       ],
     },
     {
@@ -95,9 +97,10 @@ export const projectsData: IProjectsPageData = {
       slug: 'hyatt-regency-ho-tram-resort-&-spa',
       category: 'Ventilation ducts, EI smoke exhaust ducts',
       images: [
-        '/images/projects/masteri-center-point/1.png',
-        '/images/projects/masteri-center-point/2.png',
-        '/images/projects/masteri-center-point/3.png',
+        '/images/projects/hyatt-regency-ho-tram-resort-&-spa/1.jpg',
+        '/images/projects/hyatt-regency-ho-tram-resort-&-spa/2.jpg',
+        '/images/projects/hyatt-regency-ho-tram-resort-&-spa/3.jpg',
+        '/images/projects/hyatt-regency-ho-tram-resort-&-spa/4.jpg',
       ],
     },
     {
@@ -111,9 +114,10 @@ export const projectsData: IProjectsPageData = {
       slug: 'masteri-centre-point-b6',
       category: 'HVAC & Ventilation System - Tower C',
       images: [
-        '/images/projects/masteri-center-point/1.png',
-        '/images/projects/masteri-center-point/2.png',
-        '/images/projects/masteri-center-point/3.png',
+        '/images/projects/masteri-centre-point-b6/1.jpg',
+        '/images/projects/masteri-centre-point-b6/2.jpg',
+        '/images/projects/masteri-centre-point-b6/3.jpg',
+        '/images/projects/masteri-centre-point-b6/4.jpg',
       ],
     },
     {
@@ -127,9 +131,10 @@ export const projectsData: IProjectsPageData = {
       slug: 'vinhomes-grand-park-pk3',
       category: 'HVAC installation for S12.02',
       images: [
-        '/images/projects/masteri-center-point/1.png',
-        '/images/projects/masteri-center-point/2.png',
-        '/images/projects/masteri-center-point/3.png',
+        '/images/projects/vinhomes-grand-park-pk3/1.jpg',
+        '/images/projects/vinhomes-grand-park-pk3/2.jpg',
+        '/images/projects/vinhomes-grand-park-pk3/3.jpg',
+        '/images/projects/vinhomes-grand-park-pk3/4.jpg',
       ],
     },
   ],
@@ -146,9 +151,9 @@ export const projectsData: IProjectsPageData = {
       slug: 'masteri-center-point',
       category: 'Ventilation ducts, EI smoke exhaust ducts',
       images: [
-        '/images/projects/masteri-center-point/1.png',
-        '/images/projects/masteri-center-point/2.png',
-        '/images/projects/masteri-center-point/3.png',
+        '/images/projects/masteri-center-point/1.jpg',
+        '/images/projects/masteri-center-point/2.jpg',
+        '/images/projects/masteri-center-point/3.jpg',
       ],
     },
     {
@@ -163,9 +168,10 @@ export const projectsData: IProjectsPageData = {
       slug: 'chung-cu-akari-city-nam-long',
       category: 'Ventilation ducts, EI smoke exhaust ducts, Air grilles',
       images: [
-        '/images/projects/masteri-center-point/1.png',
-        '/images/projects/masteri-center-point/2.png',
-        '/images/projects/masteri-center-point/3.png',
+        '/images/projects/chung-cu-akari-city-nam-long/1.jpg',
+        '/images/projects/chung-cu-akari-city-nam-long/2.jpg',
+        '/images/projects/chung-cu-akari-city-nam-long/3.jpg',
+        '/images/projects/chung-cu-akari-city-nam-long/4.jpg',
       ],
     },
     {
@@ -179,9 +185,10 @@ export const projectsData: IProjectsPageData = {
       slug: 'cong-ty-tnhh-mtv-dong-hai',
       category: 'Ventilation ducts, Air grilles',
       images: [
-        '/images/projects/masteri-center-point/1.png',
-        '/images/projects/masteri-center-point/2.png',
-        '/images/projects/masteri-center-point/3.png',
+        '/images/projects/cong-ty-tnhh-mtv-dong-hai/1.jpg',
+        '/images/projects/cong-ty-tnhh-mtv-dong-hai/2.jpg',
+        '/images/projects/cong-ty-tnhh-mtv-dong-hai/3.jpg',
+        '/images/projects/cong-ty-tnhh-mtv-dong-hai/4.jpg',
       ],
     },
   ],
