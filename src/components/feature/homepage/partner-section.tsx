@@ -10,8 +10,8 @@ import LineTitle from '@/components/common/line-title';
 const partnerImages = [
   'an-phu-thinh.jpg',
   'an-phu-thinh.jpg',
-  'central.jpg',
-  'central.jpg',
+  'Central.jpg',
+  'Central.jpg',
   'conteccons.jpg',
   'conteccons.jpg',
   'dong-hung-group.jpg',
@@ -28,8 +28,8 @@ const partnerImages = [
   'SOL-E&C.jpg',
   'tuan-anh-phat.jpg',
   'tuan-anh-phat.jpg',
-  'unicons.jpg',
-  'unicons.jpg',
+  'Unicons.jpg',
+  'Unicons.jpg',
   'vin-group.jpg',
   'vin-group.jpg',
 ];

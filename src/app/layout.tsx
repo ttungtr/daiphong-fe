@@ -1,6 +1,5 @@
 import '@/app/globals.css';
 import { Footer, Header } from '@/components/layout';
-import { GoogleAnalytics, OnlineTrackingProvider } from '@/components/common';
 import I18nProvider from '@/components/common/I18nProvider';
 import FloatingContactButtons from '@/components/common/FloatingContactButtons';
 import type { Metadata } from 'next';
@@ -95,15 +94,12 @@ export default function RootLayout({
         className={`${nunito.variable} font-sans antialiased bg-white`}
         suppressHydrationWarning={true}
       >
-        <GoogleAnalytics />
-        <OnlineTrackingProvider>
-          <I18nProvider>
-            <Header />
-            <main className="bg-white min-h-screen">{children}</main>
-            <Footer />
-            <FloatingContactButtons />
-          </I18nProvider>
-        </OnlineTrackingProvider>
+        <I18nProvider>
+          <Header />
+          <main className="bg-white min-h-screen">{children}</main>
+          <Footer />
+          <FloatingContactButtons />
+        </I18nProvider>
       </body>
     </html>
   );
