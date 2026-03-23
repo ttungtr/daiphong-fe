@@ -21,9 +21,9 @@ export default function ProjectDetailContent({
 
   if (!project) return null;
 
-  const relatedProjects = projectsData.projects
-    .filter((p) => p.category === project.category && p.id !== project.id)
-    .slice(0, 3);
+  const random = Math.floor(Math.random() * projectsData.projects.length);
+
+  const relatedProjects = projectsData.projects.slice(random, random + 3);
 
   return (
     <>
@@ -159,7 +159,7 @@ export default function ProjectDetailContent({
                         alt={`${relatedProject.title} - ${relatedProject.location}`}
                         width={300}
                         height={200}
-                        fill
+                        // fill
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
