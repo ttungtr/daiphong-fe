@@ -8,11 +8,14 @@ export const Footer: FunctionComponent = () => {
   const { t } = useTranslation('common');
   return (
     <footer
-      className="py-12 md:py-16 bg-hero-gradient relative overflow-hidden bg-primary-blue-1 px-4"
+      className="py-12 md:py-16 bg-cover bg-top bg-no-repeat relative  px-4"
+      style={{ backgroundImage: "url('/images/footer-bg.jpg')" }}
       role="contentinfo"
       itemScope
       itemType="https://schema.org/Organization"
     >
+      <div className="absolute inset-0  bg-primary-blue-1/90 "></div>
+
       <div className="container mx-auto relative z-10">
         <div className="mx-auto grid lg:grid-cols-2 gap-12">
           {/* Left Section */}
