@@ -65,7 +65,7 @@ export const projectsData: IProjectsPageData = {
         '/images/projects/chung-cu-akari-city-nam-long/1.jpg',
         '/images/projects/chung-cu-akari-city-nam-long/2.jpg',
         '/images/projects/chung-cu-akari-city-nam-long/3.jpg',
-        '/images/projects/chung-cu-akari-city-nam-long/3.jpg',
+        '/images/projects/chung-cu-akari-city-nam-long/4.jpg',
       ],
     },
     {
