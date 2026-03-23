@@ -34,7 +34,7 @@ export const NewsSection: FunctionComponent = () => {
                 key={project.id}
                 href={`/du-an/${project.slug}`}
                 className="group relative overflow-hidden rounded-lg"
-                style={{ aspectRatio: '2/3' }}
+                // style={{ aspectRatio: '2/3' }}
               >
                 <ImageWithFallback
                   width={300}

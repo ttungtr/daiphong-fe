@@ -16,15 +16,25 @@ import {
 import i18n from '@/i18n';
 import { useTranslation } from 'react-i18next';
 
+const LANG_STORAGE_KEY = 'app_lang';
+
 export const Header: FunctionComponent = () => {
   const { t } = useTranslation('common');
   const products = useLocalizedProducts();
   const { categorySlugMap } = useLocalizedProductMaps();
-  const [lang, setLang] = useState<'vi' | 'en'>('vi');
+  const [mounted, setMounted] = useState(false);
+
+  // ✅ Lazy initializer: đọc localStorage TRƯỚC khi render lần đầu
+  const [lang, setLang] = useState<'vi' | 'en'>(() => {
+    if (typeof window === 'undefined') return 'vi';
+    return (localStorage.getItem(LANG_STORAGE_KEY) as 'vi' | 'en') ?? 'vi';
+  });
+
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [keyword, setKeyword] = useState('');
   const router = useRouter();
   const searchWrapperRef = useRef<HTMLDivElement | null>(null);
+
   const filteredResults = keyword
     ? products
         .filter((p) =>
@@ -47,15 +57,19 @@ export const Header: FunctionComponent = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isSearchOpen]);
 
-  // Sync header language state with i18next and <html lang="">
   useEffect(() => {
-    i18n.changeLanguage(lang).catch(() => {
-      // ignore changeLanguage errors in UI
-    });
+    setMounted(true);
+  }, []);
+
+  // ✅ 1 effect duy nhất: chỉ chạy khi lang thay đổi (không chạy để "khởi tạo")
+  useEffect(() => {
+    if (!mounted) return; // ⛔ Không sync trước khi hydrate
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
+    i18n.changeLanguage(lang).catch(() => {});
     if (typeof document !== 'undefined') {
       document.documentElement.lang = lang;
     }
-  }, [lang]);
+  }, [lang, mounted]);
 
   const handleSearchSubmit = () => {
     setIsSearchOpen(false);
@@ -87,6 +101,7 @@ export const Header: FunctionComponent = () => {
     router.push(`/san-pham/${categorySlug}/${product.slug}`);
     setIsSearchOpen(false);
   };
+
   return (
     <>
       <SEONav />
@@ -187,11 +202,12 @@ export const Header: FunctionComponent = () => {
                     type="button"
                     onClick={() => setLang('vi')}
                     className={`h-10 px-3 text-sm transition-colors ${
-                      lang === 'vi'
+                      // ✅ Trước khi mount, không highlight cờ nào (tránh flash)
+                      mounted && lang === 'vi'
                         ? 'bg-white text-slate-800'
                         : 'bg-transparent text-white/90 hover:bg-white/10'
                     }`}
-                    aria-pressed={lang === 'vi'}
+                    aria-pressed={mounted && lang === 'vi'}
                     aria-label={t('header.switchToVietnamese')}
                   >
                     <ImageWithFallback
@@ -205,16 +221,16 @@ export const Header: FunctionComponent = () => {
                     type="button"
                     onClick={() => setLang('en')}
                     className={`h-10 px-3 text-sm transition-colors ${
-                      lang === 'en'
+                      mounted && lang === 'en'
                         ? 'bg-white text-slate-800'
                         : 'bg-transparent text-white/90 hover:bg-white/10'
                     }`}
-                    aria-pressed={lang === 'en'}
+                    aria-pressed={mounted && lang === 'en'}
                     aria-label={t('header.switchToEnglish')}
                   >
                     <ImageWithFallback
                       src="/images/flag-us.png"
-                      alt="Flag of Vietnam"
+                      alt="Flag of US"
                       width={20}
                       height={20}
                     />
