@@ -14,7 +14,7 @@ export const LetterSection: FunctionComponent = () => {
     name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     alternateName: '',
     foundingDate: '2003',
-    description: 'Nhà thầu thi công hệ thống cơ điện (MEP) uy tín.',
+    description: 'Nhà thầu thi công hệ thống DHKK HVAC uy tín.',
     ceo: {
       '@type': 'Person',
       name: 'Lê Thanh Tùng',
@@ -22,7 +22,7 @@ export const LetterSection: FunctionComponent = () => {
     },
     areaServed: 'Vietnam',
     serviceType: [
-      'Thi công hệ thống cơ điện (MEP)',
+      'Thi công hệ thống DHKK HVAC',
       'Lắp đặt thang máy SANKA',
       'Hệ thống điện năng lượng mặt trời',
       'Thiết kế hệ thống PCCC',

@@ -9,14 +9,14 @@ export const VisionMissionSection: FunctionComponent = () => {
     '@type': 'Organization',
     name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     alternateName: '',
-    description: 'Nhà thầu thi công hệ thống cơ điện (MEP) hàng đầu Việt Nam',
+    description: 'Nhà thầu thi công hệ thống DHKK HVAC hàng đầu Việt Nam',
     mission:
       'Đáp ứng mọi nhu cầu và đem lại giá trị, chất lượng cho công trình. Mang đến cho khách hàng sự tin tưởng, an tâm và hài lòng.',
     values: 'Nâng Tầm Chất Lượng, Bền Vững Tương Lai',
     foundingDate: '2003',
     areaServed: 'Vietnam',
     knowsAbout: [
-      'Hệ thống cơ điện (MEP)',
+      'Hệ thống DHKK HVAC',
       'Thi công xây dựng',
       'Hệ thống điện',
       'Hệ thống PCCC',
@@ -27,7 +27,7 @@ export const VisionMissionSection: FunctionComponent = () => {
         '@type': 'EducationalOccupationalCredential',
         name: 'Giấy phép đăng ký kinh doanh',
         description:
-          'Được cấp phép hoạt động trong lĩnh vực xây dựng và cơ điện',
+          'Được cấp phép hoạt động trong lĩnh vực xây dựng và hệ thống DHKK HVAC',
       },
     ],
   };
@@ -110,7 +110,7 @@ export const VisionMissionSection: FunctionComponent = () => {
                     {item.title === 'Tầm nhìn' && (
                       <meta
                         itemProp="about"
-                        content="Phát triển vững chắc thành nhà thầu cơ điện hàng đầu Việt Nam và Đông Nam Á"
+                        content="Phát triển vững chắc thành nhà thầu hệ thống DHKK HVAC hàng đầu Việt Nam và Đông Nam Á"
                       />
                     )}
                     {item.title === 'Sứ mệnh' && (

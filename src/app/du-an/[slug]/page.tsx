@@ -30,9 +30,8 @@ export async function generateMetadata({
     keywords: [
       project.title,
       'Đại Phong',
-      'thi công MEP',
       'hệ thống điều hòa',
-      'cơ điện',
+      'hệ thống DHKK HVAC',
       project.location,
       project.owner,
     ],

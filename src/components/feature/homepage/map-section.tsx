@@ -19,7 +19,7 @@ export const MapSection: React.FunctionComponent = () => {
         <div className="w-full grid grid-cols-1 lg:grid-cols-2">
           <div className="lg:col-span-2 order-1 lg:order-2">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3917.7669137651!2d106.78270217504384!3d10.90531078925143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDU0JzE5LjEiTiAxMDbCsDQ3JzA3LjAiRQ!5e0!3m2!1svi!2s!4v1760275195470!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2456.8504173061056!2d106.78480150910403!3d10.904128289966598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d9c7cd0f86b9%3A0x4fd446149c29ea02!2zQ8OUTkcgVFkgQ-G7lCBQSOG6pk4gQ8OUTkcgTkdISeG7hlAgxJDhuqBJIFBIT05HIFZO!5e0!3m2!1sen!2s!4v1775803840707!5m2!1sen!2s"
               width="100%"
               height="450"
               style={{ border: '0' }}

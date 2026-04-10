@@ -238,7 +238,7 @@ export const Header: FunctionComponent = () => {
                 </div>
 
                 <a
-                  href="tel:+84982400400"
+                  href="tel:+84792359369"
                   className="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-primary-blue-1 font-medium shadow-sm hover:bg-white/70 transition-colors"
                 >
                   <Phone />

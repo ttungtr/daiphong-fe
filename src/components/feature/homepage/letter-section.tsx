@@ -94,7 +94,7 @@ export const LetterSection: FunctionComponent = () => {
               numberOfEmployees: '1200',
               industry: [
                 'Construction',
-                'MEP Systems',
+                'DHKK HVAC Systems',
                 'Solar Energy',
                 'Fire Protection',
               ],

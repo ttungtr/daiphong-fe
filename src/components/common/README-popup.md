@@ -17,13 +17,13 @@ Component popup ứng tuyển được thiết kế theo style tương tự như
 Component chính của popup ứng tuyển.
 
 ```tsx
-import { JobApplicationPopup } from "@/components/common";
+import { JobApplicationPopup } from '@/components/common';
 
 // Sử dụng cơ bản
 <JobApplicationPopup
   isOpen={isOpen}
   onClose={handleClose}
-  jobTitle="Kỹ sư MEP"
+  jobTitle="Kỹ sư DHKK HVAC"
 />;
 ```
 
@@ -41,11 +41,11 @@ Button có sẵn popup để mở form ứng tuyển.
 import { ApplyJobButton } from "@/components/common";
 
 // Sử dụng cơ bản
-<ApplyJobButton jobTitle="Kỹ sư MEP">Ứng tuyển ngay</ApplyJobButton>
+<ApplyJobButton jobTitle="Kỹ sư DHKK HVAC">Ứng tuyển ngay</ApplyJobButton>
 
 // Với custom style
 <ApplyJobButton
-  jobTitle="Kỹ sư MEP"
+  jobTitle="Kỹ sư DHKK HVAC"
   className="bg-blue-600 hover:bg-blue-700"
 >
   Nộp đơn ứng tuyển
@@ -65,7 +65,7 @@ import { ApplyJobButton } from "@/components/common";
 Hook để quản lý trạng thái popup.
 
 ```tsx
-import { usePopup } from "@/hooks/use-popup";
+import { usePopup } from '@/hooks/use-popup';
 
 const { isOpen, open, close, toggle } = usePopup();
 ```
@@ -115,15 +115,15 @@ const { isOpen, open, close, toggle } = usePopup();
 ### Tích Hợp Vào Trang Tuyển Dụng
 
 ```tsx
-import { ApplyJobButton } from "@/components/common";
+import { ApplyJobButton } from '@/components/common';
 
 export default function JobPositionPage() {
   return (
     <div>
-      <h1>Kỹ sư MEP</h1>
+      <h1>Kỹ sư DHKK HVAC</h1>
       <p>Mô tả công việc...</p>
 
-      <ApplyJobButton jobTitle="Kỹ sư MEP">Ứng tuyển ngay</ApplyJobButton>
+      <ApplyJobButton jobTitle="Kỹ sư DHKK HVAC">Ứng tuyển ngay</ApplyJobButton>
     </div>
   );
 }

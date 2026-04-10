@@ -91,7 +91,7 @@ export const IntroduceSection: FunctionComponent = () => {
             '@type': 'Organization',
             name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
             description:
-              'Công ty kỹ thuật cơ điện, cam kết về an toàn, chất lượng và tiến độ',
+              'Công ty kỹ thuật hệ thống DHKK HVAC, cam kết về an toàn, chất lượng và tiến độ',
             foundingDate: '2002',
             logo: '/images/logo/horizontal-logo.png',
             slogan: 'NÂNG TẦM CHẤT LƯỢNG, BỀN VỮNG TƯƠNG LAI',

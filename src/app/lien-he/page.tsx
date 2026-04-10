@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title:
     'Liên Hệ Đại Phong | Tư Vấn Sản Xuất Ống Gió, Miệng Gió, Phụ Kiện HVAC',
   description:
-    'Liên hệ với Đại Phong để được tư vấn miễn phí về sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC. Hotline: 0888885964. Email: ongiodaiphong@gmail.com. Địa chỉ: Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Dĩ An, TP.HCM',
+    'Liên hệ với Đại Phong để được tư vấn miễn phí về sản xuất và gia công ống gió, miệng gió, phụ kiện HVAC. Hotline: 0888885964. Email: ongiodaiphong@gmail.com. Địa chỉ: Lô 2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TP. Hồ Chí Minh, Dĩ An, TP.HCM',
   keywords: [
     'liên hệ Đại Phong',
     'tư vấn ống gió',
@@ -97,7 +97,8 @@ export default function ContactPage() {
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An',
+      streetAddress:
+        'Lô 2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TP. Hồ Chí Minh',
       addressLocality: 'Thành phố Hồ Chí Minh',
       addressCountry: 'VN',
       postalCode: '700000',

@@ -69,12 +69,13 @@ export const Footer: FunctionComponent = () => {
                   {t('footer.phoneLabel')}
                 </h4>
                 <a
-                  href="tel:+84982400400"
+                  href="tel:+84792359369"
                   className="text-white hover:text-white/70 transition-colors"
                 >
-                  (+84) 937 299 828
+                  (+84) 937 299 828 - (+84) 792 359 369
                 </a>
               </div>
+
               <div>
                 <h4 className="font-semibold mb-1 text-white">
                   {t('footer.emailLabel')}
@@ -132,11 +133,11 @@ export const Footer: FunctionComponent = () => {
             address: {
               '@type': 'PostalAddress',
               streetAddress:
-                'Lô 3.2, Đường số 2, Khu công nghiệp Tân Đông Hiệp A, Phường Dĩ An, TPHCM',
+                'Lô 2, Đường số 2, Khu công nghiệp Tân Đông Hiệp A, Phường Dĩ An, TP. Hồ Chí Minh',
               addressLocality: 'Thành phố Hồ Chí Minh',
               addressCountry: 'VN',
             },
-            telephone: '+84982400400',
+            telephone: '+84792359369',
             email: 'info@onggiodaiphong.com ',
             url: 'https://onggiodaiphong.com',
             foundingDate: '2002',
@@ -144,7 +145,7 @@ export const Footer: FunctionComponent = () => {
             areaServed: 'Vietnam',
             contactPoint: {
               '@type': 'ContactPoint',
-              telephone: '+84982400400',
+              telephone: '+84792359369',
               contactType: 'customer service',
               availableLanguage: 'Vietnamese',
             },

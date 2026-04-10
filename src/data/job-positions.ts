@@ -3,7 +3,7 @@ import { TJobPosition } from '@/types';
 export const jobPositions: TJobPosition[] = [
   {
     id: 'tuyen-dung-quan-ly-du-an-mep',
-    title: 'Tuyển dụng - Quản lý dự án MEP (QLDA)',
+    title: 'Tuyển dụng - Quản lý dự án DHKK HVAC (QLDA)',
     quantity: '02 người',
     salary: '15 – 22 triệu/tháng',
     sections: [
@@ -20,7 +20,7 @@ export const jobPositions: TJobPosition[] = [
         subTitle:
           'Chịu sự phân công nhiệm vụ trực tiếp của Cấp Quản lý và chịu trách nhiệm trước những công việc được giao, cụ thể như sau:',
         items: [
-          'Quản lý tổng thể dự án MEP (Điện – Nước – Điều hòa thông gió – PCCC) từ giai đoạn chuẩn bị đến khi bàn giao.',
+          'Quản lý tổng thể dự án DHKK HVAC (Điện – Nước – Điều hòa thông gió – PCCC) từ giai đoạn chuẩn bị đến khi bàn giao.',
           'Lập kế hoạch tiến độ, tổ chức thi công, điều phối nhân sự – vật tư tại công trình.',
           'Làm việc với chủ đầu tư, tư vấn giám sát, nhà thầu phụ để giải quyết các vấn đề kỹ thuật, tiến độ, phát sinh.',
           'Kiểm soát chất lượng, an toàn lao động và tiến độ công việc tại công trường.',
@@ -31,7 +31,7 @@ export const jobPositions: TJobPosition[] = [
         title: '🎓 Yêu cầu ứng viên',
         items: [
           'Tốt nghiệp Đại học/Cao đẳng chuyên ngành: Kỹ thuật điện, cơ điện, nhiệt – lạnh, cấp thoát nước hoặc ngành liên quan.',
-          'Tối thiểu 3 – 5 năm làm việc trong lĩnh vực thi công MEP.',
+          'Tối thiểu 3 – 5 năm làm việc trong lĩnh vực thi công DHKK HVAC.',
           'Từng giữ vai trò Chỉ huy trưởng, Giám sát trưởng hoặc Quản lý dự án tại các công trình công nghiệp hoặc dân dụng quy mô vừa trở lên.',
           'Thành thạo AutoCAD, MS Project, Excel, đọc hiểu bản vẽ kỹ thuật.',
           'Có kỹ năng lập kế hoạch, giao tiếp và quản lý đội nhóm tốt.',
@@ -76,7 +76,7 @@ export const jobPositions: TJobPosition[] = [
     images: [
       {
         url: '/images/job-positions/quan-ly-du-an-mep/quan-ly-du-an-mep.png',
-        alt: 'Quản lý dự án MEP',
+        alt: 'Quản lý dự án DHKK HVAC',
       },
     ],
   },
@@ -99,7 +99,7 @@ export const jobPositions: TJobPosition[] = [
         subTitle:
           'Chịu sự phân công nhiệm vụ trực tiếp của Cấp Quản lý và chịu trách nhiệm trước những công việc được giao, cụ thể như sau:',
         items: [
-          'Triển khai thi công hệ thống MEP (Cơ điện) theo bản vẽ thiết kế.',
+          'Triển khai thi công hệ thống DHKK HVAC (Cơ điện) theo bản vẽ thiết kế.',
           'Giám sát tiến độ, chất lượng và an toàn lao động tại công trường.',
           'Thực hiện đo bóc khối lượng, lập bản vẽ thi công và đề xuất vật tư.',
           'Hỗ trợ quản lý dự án, lập hồ sơ nghiệm thu và quyết toán.',
@@ -109,7 +109,7 @@ export const jobPositions: TJobPosition[] = [
         title: '🎓 Yêu cầu ứng viên',
         items: [
           'Tốt nghiệp Đại học/Cao đẳng chuyên ngành: Cơ điện, Lạnh, Cấp thoát nước, PCCC và các ngành liên quan.',
-          'Tối thiểu 1-2 năm kinh nghiệm trong lĩnh vực thi công hệ thống MEP.',
+          'Tối thiểu 1-2 năm kinh nghiệm trong lĩnh vực thi công hệ thống DHKK HVAC.',
           'Thành thạo AutoCAD và MS Office.',
           'Có tính cần cù, trách nhiệm và kỹ năng làm việc nhóm tốt.',
         ],
@@ -308,7 +308,7 @@ export const jobPositions: TJobPosition[] = [
   },
   {
     id: 'tho-thi-cong-mep',
-    title: 'Tuyển dụng - Thợ thi công MEP',
+    title: 'Tuyển dụng - Thợ thi công DHKK HVAC',
     quantity: '30 người',
     salary: 'Thỏa thuận',
     sections: [
@@ -323,7 +323,7 @@ export const jobPositions: TJobPosition[] = [
       {
         title: '✅ Mô tả công việc',
         items: [
-          'Thi công lắp đặt các hệ thống cơ điện MEP tại công trình: Điện âm tường, điện nổi, máng cáp, hệ thống ống nước, ống điều hòa – thông gió, PCCC...',
+          'Thi công lắp đặt các hệ thống cơ điện DHKK HVAC tại công trình: Điện âm tường, điện nổi, máng cáp, hệ thống ống nước, ống điều hòa – thông gió, PCCC...',
           'Đọc hiểu và triển khai thi công theo bản vẽ thiết kế.',
           'Tuân thủ đúng quy trình kỹ thuật và các biện pháp an toàn lao động.',
           'Phối hợp với tổ đội thi công khác để đảm bảo tiến độ.',
@@ -332,7 +332,7 @@ export const jobPositions: TJobPosition[] = [
       {
         title: '📆 Yêu cầu',
         items: [
-          'Tối thiểu 1 năm kinh nghiệm thi công hệ thống MEP.',
+          'Tối thiểu 1 năm kinh nghiệm thi công hệ thống DHKK HVAC.',
           'Biết sử dụng các dụng cụ cơ bản phục vụ thi công.',
           'Ưu tiên ứng viên đã làm trong các công trình nhà xưởng, cao tầng, dân dụng.',
           'Có ý thức kỷ luật, chăm chỉ, chịu khó, có kỹ năng phối hợp làm việc nhóm tốt.',
@@ -374,13 +374,13 @@ export const jobPositions: TJobPosition[] = [
     images: [
       {
         url: '/images/job-positions/tho-thi-cong-mep/tho-thi-cong-mep.png',
-        alt: 'Thợ thi công MEP',
+        alt: 'Thợ thi công DHKK HVAC',
       },
     ],
   },
   {
     id: 'tho-phu-thi-cong-mep',
-    title: 'Tuyển dụng - Thợ phụ thi công MEP',
+    title: 'Tuyển dụng - Thợ phụ thi công DHKK HVAC',
     quantity: '50 người',
     salary: 'Thỏa thuận',
     sections: [
@@ -395,7 +395,7 @@ export const jobPositions: TJobPosition[] = [
       {
         title: '✅ Mô tả công việc',
         items: [
-          'Hỗ trợ thợ chính trong quá trình thi công hệ thống MEP: lắp đặt các hệ thống cơ điện MEP, khiêng vật tư, cắt ống, luồn dây, vệ sinh khu vực thi công...',
+          'Hỗ trợ thợ chính trong quá trình thi công hệ thống DHKK HVAC: lắp đặt các hệ thống cơ điện DHKK HVAC, khiêng vật tư, cắt ống, luồn dây, vệ sinh khu vực thi công...',
           'Làm theo sự phân công của đội trưởng hoặc tổ trưởng tại công trình.',
           'Được đào tạo kỹ năng và nâng cao tay nghề khi làm việc lâu dài.',
         ],
@@ -445,7 +445,7 @@ export const jobPositions: TJobPosition[] = [
     images: [
       {
         url: '/images/job-positions/tho-phu-thi-cong-mep/tho-phu-thi-cong-mep.png',
-        alt: 'Thợ phụ thi công MEP',
+        alt: 'Thợ phụ thi công DHKK HVAC',
       },
     ],
   },

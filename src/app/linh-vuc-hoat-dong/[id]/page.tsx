@@ -32,7 +32,7 @@ export async function generateMetadata({
     description: `Dịch vụ ${service.title.toLowerCase()} chuyên nghiệp từ Công ty Cổ phần Công Nghiệp Đại Phong VN. Giải pháp ${service.title.toLowerCase()} hiệu quả cho công trình.`,
     keywords: `${service.title.toLowerCase()}, ${service.keywords?.join(
       ', ',
-    )}, cơ điện, xây dựng, Đại Phong`,
+    )}, hệ thống DHKK HVAC, xây dựng, Đại Phong`,
     authors: [{ name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN' }],
     robots: 'index, follow',
     openGraph: {

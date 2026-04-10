@@ -26,7 +26,7 @@ const structuredData = {
   },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Dịch vụ cơ điện',
+    name: 'Dịch vụ hệ thống DHKK HVAC',
     itemListElement: servicesData.map((service) => ({
       '@type': 'Offer',
       itemOffered: {

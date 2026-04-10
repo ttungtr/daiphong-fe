@@ -54,7 +54,8 @@ const structuredData = {
   email: 'ongiodaiphong@gmail.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Lô 3.2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An',
+    streetAddress:
+      'Lô 2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TP. Hồ Chí Minh',
     addressLocality: 'Thành phố Hồ Chí Minh',
     addressCountry: 'VN',
   },

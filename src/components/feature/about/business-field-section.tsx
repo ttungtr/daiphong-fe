@@ -9,7 +9,7 @@ export const BusinessFieldSection: FunctionComponent = () => {
     '@type': 'Organization',
     name: 'Công ty Cổ phần Công Nghiệp Đại Phong VN',
     alternateName: '',
-    description: 'Nhà thầu thi công hệ thống cơ điện (MEP) chuyên nghiệp',
+    description: 'Nhà thầu thi công hệ thống DHKK HVAC chuyên nghiệp',
     serviceType: servicesData.map((field) => field.title),
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -82,7 +82,7 @@ export const BusinessFieldSection: FunctionComponent = () => {
                   <div className="relative">
                     <ImageWithFallback
                       src={field.images[0].url}
-                      alt={`${field.images[0].alt} - Dịch vụ ${field.title} chuyên nghiệp của Công ty Cổ phần Công Nghiệp Đại Phong VN trong lĩnh vực MEP`}
+                      alt={`${field.images[0].alt} - Dịch vụ ${field.title} chuyên nghiệp của Công ty Cổ phần Công Nghiệp Đại Phong VN trong lĩnh vực hệ thống DHKK HVAC`}
                       width={300}
                       height={200}
                       className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"

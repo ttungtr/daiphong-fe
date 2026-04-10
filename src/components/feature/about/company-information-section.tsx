@@ -14,7 +14,6 @@ export const CompanyInformationSection: FunctionComponent = () => {
     'website',
     'director',
     'taxCode',
-    'foundedDate',
     'mainBusiness',
   ] as const;
   const companyInformation = labelKeys.map((key) => ({

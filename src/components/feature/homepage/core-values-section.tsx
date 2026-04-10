@@ -8,7 +8,7 @@ export const CoreValuesSection: FunctionComponent = () => {
       icon: TrendingUp,
       background: '/images/phat-trien-ben-vung.png',
       description:
-        'Đại Phong cam kết không ngừng nâng cao chất lượng dịch vụ và giải pháp thi công cơ điện, hướng đến sự tối ưu trong hiệu quả – an toàn – bền vững. Mục tiêu trở thành một trong những nhà thầu cơ điện uy tín hàng đầu tại Việt Nam, đóng góp tích cực vào sự phát triển của ngành xây dựng hiện đại.',
+        'Đại Phong cam kết không ngừng nâng cao chất lượng dịch vụ và giải pháp thi công hệ thống DHKK HVAC, hướng đến sự tối ưu trong hiệu quả – an toàn – bền vững. Mục tiêu trở thành một trong những nhà thầu hệ thống DHKK HVAC uy tín hàng đầu tại Việt Nam, đóng góp tích cực vào sự phát triển của ngành xây dựng hiện đại.',
     },
     {
       title: 'Mở rộng thị trường',
@@ -16,7 +16,7 @@ export const CoreValuesSection: FunctionComponent = () => {
       background: '/images/mo-rong-thi-truong.png',
 
       description:
-        'Tăng cường triển khai các dự án cơ điện cả nước. Đại Phong định hướng phát triển quy mô và năng lực thi công để đáp ứng các dự án công nghiệp, dịch vụ, nghỉ dưỡng và hạ tầng quy mô lớn.',
+        'Tăng cường triển khai các dự án hệ thống DHKK HVAC cả nước. Đại Phong định hướng phát triển quy mô và năng lực thi công để đáp ứng các dự án công nghiệp, dịch vụ, nghỉ dưỡng và hạ tầng quy mô lớn.',
     },
     {
       title: 'Xây dựng đội ngũ chuyên gia',
@@ -24,7 +24,7 @@ export const CoreValuesSection: FunctionComponent = () => {
       background: '/images/xay-dung-doi-ngu.png',
 
       description:
-        'Đại Phong chú trọng đầu tư đào tạo đội ngũ kỹ sư cơ điện chất lượng cao, đồng thời xây dựng môi trường làm việc chuyên nghiệp, năng động. Chúng tôi tạo điều kiện để nhân sự phát huy tối đa năng lực, qua đó nâng cao sức cạnh tranh và hướng đến phát triển bền vững.',
+        'Đại Phong chú trọng đầu tư đào tạo đội ngũ kỹ sư hệ thống DHKK HVAC chất lượng cao, đồng thời xây dựng môi trường làm việc chuyên nghiệp, năng động. Chúng tôi tạo điều kiện để nhân sự phát huy tối đa năng lực, qua đó nâng cao sức cạnh tranh và hướng đến phát triển bền vững.',
     },
   ];
 

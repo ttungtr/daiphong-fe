@@ -33,7 +33,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
     url: 'https://www.onggiodaiphong.com',
     logo: 'https://www.onggiodaiphong.com/images/logo.png',
     description:
-      'Đơn vị hàng đầu trong thi công hệ thống MEP (điện, nước, điều hòa, phòng cháy chữa cháy)',
+      'Đơn vị hàng đầu trong thi công hệ thống DHKK HVAC (điện, nước, điều hòa, phòng cháy chữa cháy)',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'VN',
@@ -54,7 +54,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
 
   // Alt text descriptions for slides
   const slideAltTexts = [
-    'Đại Phong - Thi công hệ thống MEP chuyên nghiệp, dự án tiêu biểu',
+    'Đại Phong - Thi công hệ thống DHKK HVAC chuyên nghiệp, dự án tiêu biểu',
     'Đại Phong - Hệ thống điện, nước, điều hòa thông gió chất lượng cao',
     'Đại Phong - Phòng cháy chữa cháy và hệ thống điện nhẹ',
     'Đại Phong - Đội ngũ kỹ sư giàu kinh nghiệm, công nghệ hiện đại',
@@ -101,7 +101,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ slides }) => {
                 src={slide.image}
                 alt={
                   slideAltTexts[index] ||
-                  `Đại Phong - Slide ${slide.id} - Thi công hệ thống MEP`
+                  `Đại Phong - Slide ${slide.id} - Thi công hệ thống DHKK HVAC`
                 }
                 className="w-full"
                 width={1366}

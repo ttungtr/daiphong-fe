@@ -5,7 +5,7 @@
   "letter": {
     "heading": "OPEN LETTER",
     "p1": "Daiphong VN Industrial Joint Stock Company respectfully sends greetings and best wishes for health and success to your organization.",
-    "p2": "With experience in manufacturing and processing MEP products, Daiphong is a trusted partner in supplying ducts, grilles, dampers, cable trays, ladders and accessories.",
+    "p2": "With experience in manufacturing and processing DHKK HVAC products, Daiphong is a trusted partner in supplying ducts, grilles, dampers, cable trays, ladders and accessories.",
     "p3": "Our products are widely applied in projects such as high-rise buildings, shopping centers, hospitals, schools, factories, workshops, industrial zones and many other civil and industrial projects nationwide.",
     "p4": "With flexible production capacity, standard equipment and a professional technical team, Daiphong is committed to meeting requirements for quality, schedule and cost, bringing sustainable value to every project.",
     "p5": "We look forward to becoming a reliable partner and accompanying our customers in current and future projects.",
@@ -18,7 +18,7 @@
   },
   "productsSection": {
     "heading": "Featured products",
-    "subtitle": "We provide a wide range of high-quality MEP products, from air ducts and dampers to silencers and ventilation systems.",
+    "subtitle": "We provide a wide range of high-quality DHKK HVAC products, from air ducts and dampers to silencers and ventilation systems.",
     "viewAll": "View more"
   },
   "newsSection": {
@@ -30,9 +30,9 @@
   "contactSection": {
     "heading": "CONTACT FOR CONSULTATION",
     "intro": "Contact us for the most specific and detailed consultation. Enter your email here.",
-    "address": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
+    "address": "Lot 2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
     "email": "info@onggiodaiphong.com ",
-    "phone": "(+84) 937 299 828",
+    "phone": "(+84) 792 359 369",
     "namePlaceholder": "Your full name",
     "emailPlaceholder": "Your email address",
     "phonePlaceholder": "Your phone number",
@@ -58,8 +58,8 @@
     "heading": "HIGH QUALITY VENTILATION DUCT MANUFACTURER",
     "addressLabel": "Address:",
     "vplvLabel": "Regional Office:",
-    "addressValue": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
-    "vplvValue": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
+    "addressValue": "Lot 2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
+    "vplvValue": "Lot 2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
     "phoneLabel": "Phone:",
     "emailLabel": "Email:",
     "copyright": "© 2026 Daiphong. All rights reserved.",
@@ -98,7 +98,7 @@
     "letter": {
       "heading": "COMPANY INTRODUCTION",
       "lineTitleAlt": "Decorative underline for company introduction heading",
-      "p1": "Daiphong is a pioneering unit in the field of manufacturing and processing professional MEP products. We specialize in providing comprehensive solutions for ducts, grilles, dampers, cable trays and related accessories for HVAC systems.",
+      "p1": "Daiphong is a pioneering unit in the field of manufacturing and processing professional DHKK HVAC products. We specialize in providing comprehensive solutions for ducts, grilles, dampers, cable trays and related accessories for HVAC systems.",
       "p2": "With modern production capacity and a professional technical team, we are committed to delivering products that meet the highest technical standards. All Daiphong products undergo strict quality inspection, ensuring durability, accuracy and optimal performance.",
       "p3": "We are proud to be a trusted partner for many major projects nationwide, from high-rise buildings, shopping centers, hospitals, schools to factories, workshops and industrial parks. Each project is an opportunity for us to demonstrate our capabilities and quality commitment.",
       "p4": "Daiphong continuously invests in modern machinery and equipment and applies advanced technology. We aim to automate and standardize the production process to ensure consistency and high quality in every product.",
@@ -110,13 +110,13 @@
       "heading": "VISION - MISSION",
       "vision": {
         "title": "VISION",
-        "description": "Daiphong aims to become Vietnam's leading quality and trusted manufacturer and processor of ducts, grilles and HVAC accessories, providing safe, efficient and sustainable ventilation solutions for all MEP projects."
+        "description": "Daiphong aims to become Vietnam's leading quality and trusted manufacturer and processor of ducts, grilles and HVAC accessories, providing safe, efficient and sustainable ventilation solutions for all DHKK HVAC projects."
       },
       "mission": {
         "title": "MISSION",
         "features": [
           "Daiphong carries the mission of creating a healthy living and working environment by providing high-quality ventilation solutions through ducts, grilles and HVAC accessories that meet technical standards – aesthetics – outstanding durability.",
-          "We continuously innovate technology, improve production capacity and perfect our services, to deliver accurate, safe, efficient and on-schedule products to contractors and investors in every MEP project."
+          "We continuously innovate technology, improve production capacity and perfect our services, to deliver accurate, safe, efficient and on-schedule products to contractors and investors in every DHKK HVAC project."
         ]
       },
       "coreValues": {
@@ -155,19 +155,17 @@
         "website": "Website",
         "director": "Director",
         "taxCode": "Tax Code",
-        "foundedDate": "Founded Date",
         "mainBusiness": "Main Business"
       },
       "values": {
         "companyName": "Daiphong VN Industrial Joint Stock Company",
-        "address": "Lot 3.2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
-        "contact": "(+84) 937 299 828",
+        "address": "Lot 2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City",
+        "contact": "(+84) 792 359 369",
         "email": "info@onggiodaiphong.com ",
         "website": "onggiodaiphong.com",
         "director": "Mr. Le Thanh Tung",
         "taxCode": "3703426904",
-        "foundedDate": "2003",
-        "mainBusiness": "Manufacturing and processing MEP products"
+        "mainBusiness": "Manufacturing and processing DHKK HVAC systems"
       },
       "imageAlt": "Organizational structure"
     },
@@ -188,7 +186,7 @@
         "Customized solutions to meet needs"
       ],
       "p3": "Through our diverse partner network, from banks, real estate corporations to technology and manufacturing companies, we can provide comprehensive integrated solutions for projects of all sizes.",
-      "p4": "Daiphong is committed to maintaining and developing partnerships with all current partners, while always welcoming new partners to create sustainable value and contribute positively to the development of Vietnam's MEP industry."
+      "p4": "Daiphong is committed to maintaining and developing partnerships with all current partners, while always welcoming new partners to create sustainable value and contribute positively to the development of Vietnam's DHKK HVAC industry."
     }
   },
   "newsPage": {

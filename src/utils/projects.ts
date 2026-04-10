@@ -20,19 +20,19 @@ export const getProjectsByCategory = (category: string): IProject[] => {
 
   const mappedCategory = categoryMap[category] || category;
   return projectsData.projects.filter(
-    (project) => project.category === mappedCategory
+    (project) => project.category === mappedCategory,
   );
 };
 
 export const getRelatedProjects = (
   currentProject: IProject,
-  limit: number = 3
+  limit: number = 3,
 ): IProject[] => {
   return projectsData.projects
     .filter(
       (project) =>
         project.id !== currentProject.id &&
-        project.category === currentProject.category
+        project.category === currentProject.category,
     )
     .slice(0, limit);
 };
@@ -62,7 +62,7 @@ export const getProjectsPageStructuredData = () => {
     '@type': 'Organization',
     name: 'Đại Phong',
     description:
-      'Công ty chuyên thi công hệ thống MEP (điện, nước, điều hòa) với hơn 100 dự án thành công',
+      'Công ty chuyên thi công hệ thống DHKK HVAC (điện, nước, điều hòa) với hơn 100 dự án thành công',
     url: 'https://onggiodaiphong.com',
     sameAs: [
       'https://facebook.com/people/Phi-Long-Corp/61577256883038/',
