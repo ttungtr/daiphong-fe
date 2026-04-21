@@ -156,6 +156,26 @@ export const projectsData: IProjectsPageData = {
         '/images/projects/kho-3-dong-hung/7.jpg',
       ],
     },
+    {
+      id: 'trung-tam-nghien-cuu-dhqg',
+      order: 8,
+      title: 'Trung tâm nghiên cứu ĐHQG TP HCM',
+      subtitle: 'Thi công hệ thống thông gió',
+      location:
+        'Khu đất NC2.2, Khu Viện Nghiên cứu 2, Phường Đông Hòa, TP. Dĩ An, tỉnh Bình Dương.',
+      owner: 'Đại học Quốc gia TPHCM',
+      productConsumptionCapacity: '7.000.000.000 VNĐ',
+      slug: 'trung-tam-nghien-cuu-dhqg',
+      category: 'Ống thông gió',
+      images: [
+        '/images/projects/trung-tam-nghien-cuu-dhqg/1.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/2.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/3.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/4.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/5.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/6.jpg',
+      ],
+    },
   ],
 
   subProjects: [

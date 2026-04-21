@@ -158,6 +158,26 @@ export const projectsData: IProjectsPageData = {
         '/images/projects/kho-3-dong-hung/7.jpg',
       ],
     },
+    {
+      id: 'trung-tam-nghien-cuu-dhqg',
+      order: 8,
+      title: 'Research Center of Vietnam National University, Ho Chi Minh City',
+      subtitle: 'Ventilation system installation',
+      location:
+        'NC2.2, Research Institute 2, Dong Hoa Ward, Di An District, Binh Duong',
+      owner: 'Vietnam National University, Ho Chi Minh City',
+      productConsumptionCapacity: '7.000.000.000 VNĐ',
+      slug: 'trung-tam-nghien-cuu-dhqg',
+      category: 'Ventilation ducts',
+      images: [
+        '/images/projects/trung-tam-nghien-cuu-dhqg/1.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/2.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/3.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/4.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/5.jpg',
+        '/images/projects/trung-tam-nghien-cuu-dhqg/6.jpg',
+      ],
+    },
   ],
 
   subProjects: [
