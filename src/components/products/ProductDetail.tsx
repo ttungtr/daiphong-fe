@@ -8,19 +8,16 @@ import { useTranslation } from 'react-i18next';
 export default function ProductDetail({ product }: { product: Product }) {
   const { t, i18n } = useTranslation('common');
   const [activeTab, setActiveTab] = useState<'details' | 'specifications'>(
-    'details'
+    'details',
   );
 
   const formattedPrice =
     typeof product.price === 'number'
-      ? new Intl.NumberFormat(
-          i18n.language === 'en' ? 'en-US' : 'vi-VN',
-          {
-            style: 'currency',
-            currency: 'VND',
-            maximumFractionDigits: 0,
-          }
-        ).format(product.price)
+      ? new Intl.NumberFormat(i18n.language === 'en' ? 'en-US' : 'vi-VN', {
+          style: 'currency',
+          currency: 'VND',
+          maximumFractionDigits: 0,
+        }).format(product.price)
       : (product.price as string) || t('productsDetail.contact');
 
   return (
@@ -48,7 +45,7 @@ export default function ProductDetail({ product }: { product: Product }) {
 
           <div className="pt-2">
             <a
-              href="https://zalo.me/luis-truong"
+              href="https://zalo.me/84989353055"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Zalo"

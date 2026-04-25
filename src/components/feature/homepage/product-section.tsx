@@ -16,6 +16,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import LineTitle from '@/components/common/line-title';
 import { useTranslation } from 'react-i18next';
+import { CATEGORY_SLUG_MAP } from '@/data/products';
 
 export const ProductSection: FunctionComponent = () => {
   const swiperRef = useRef<SwiperType | null>(null);
@@ -76,7 +77,7 @@ export const ProductSection: FunctionComponent = () => {
             {products.slice(0, 6).map((product) => (
               <SwiperSlide key={product.id} className="!h-auto">
                 <Link
-                  href={`/san-pham/${product.slug}`}
+                  href={`/san-pham/${CATEGORY_SLUG_MAP[product.category] ?? 'tat-ca'}/${product.slug}`}
                   className="group/card flex flex-col h-full bg-white border border-gray-200 overflow-hidden hover:shadow-lg hover:border-primary-blue-1 transition-all duration-300"
                 >
                   <div className="overflow-hidden flex-shrink-0">
