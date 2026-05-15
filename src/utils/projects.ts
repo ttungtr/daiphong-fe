@@ -1,6 +1,13 @@
 import { projectsData } from '@/data/projects';
 import { IProject } from '@/types';
 
+export const isPdfUrl = (url: string): boolean =>
+  url.toLowerCase().endsWith('.pdf');
+
+/** First raster image for cards/OG; falls back to first entry if only PDFs exist. */
+export const getProjectThumbnail = (images: string[]): string =>
+  images.find((image) => !isPdfUrl(image)) ?? images[0];
+
 export const getProjectBySlug = (slug: string): IProject | undefined => {
   return projectsData.projects.find((project) => project.slug === slug);
 };

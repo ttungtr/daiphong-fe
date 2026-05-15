@@ -178,6 +178,24 @@ export const projectsData: IProjectsPageData = {
         '/images/projects/trung-tam-nghien-cuu-dhqg/6.jpg',
       ],
     },
+    {
+      id: 'kho-lanh-dong-hung',
+      order: 9,
+      title: 'Dong Hung Cold Warehouse',
+      subtitle: 'Ventilation system installation',
+      location:
+        'Lot 2, Street No. 2, Tan Dong Hiep A Industrial Park, Di An Ward, Ho Chi Minh City',
+      owner: 'Dong Hung Industrial Joint Stock Company',
+      productConsumptionCapacity: '-',
+      slug: 'kho-lanh-dong-hung',
+      category: 'Ventilation ducts',
+      images: [
+        '/images/projects/kho-lanh-dong-hung/1.png',
+        '/images/projects/kho-lanh-dong-hung/2.png',
+        '/images/projects/kho-lanh-dong-hung/3.png',
+        '/images/projects/kho-lanh-dong-hung/kho-lanh-dong-hung.pdf',
+      ],
+    },
   ],
 
   subProjects: [

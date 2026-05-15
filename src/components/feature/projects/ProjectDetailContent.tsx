@@ -4,6 +4,7 @@ import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/projects';
 import { useProjectsData } from '@/hooks/useLocalizedData';
+import { getProjectThumbnail, isPdfUrl } from '@/utils/projects';
 import LineTitle from '@/components/common/line-title';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
@@ -118,19 +119,34 @@ export default function ProjectDetailContent({
               {project.images.map((image, index) => (
                 <div
                   key={index}
-                  className="relative aspect-[4/3] overflow-hidden shadow-sm"
+                  className={
+                    isPdfUrl(image)
+                      ? 'relative md:col-span-2 min-h-[min(80vh,720px)] overflow-hidden shadow-sm bg-gray-100'
+                      : 'relative aspect-[4/3] overflow-hidden shadow-sm'
+                  }
                 >
-                  <ImageWithFallback
-                    src={image}
-                    alt={t('projectsPage.projectImageAlt', {
-                      index: index + 1,
-                      title: project.title,
-                    })}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    priority={index < 2}
-                  />
+                  {isPdfUrl(image) ? (
+                    <iframe
+                      src={image}
+                      title={t('projectsPage.projectImageAlt', {
+                        index: index + 1,
+                        title: project.title,
+                      })}
+                      className="absolute inset-0 w-full h-full border-0"
+                    />
+                  ) : (
+                    <ImageWithFallback
+                      src={image}
+                      alt={t('projectsPage.projectImageAlt', {
+                        index: index + 1,
+                        title: project.title,
+                      })}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      priority={index < 2}
+                    />
+                  )}
                 </div>
               ))}
             </div>
@@ -155,7 +171,7 @@ export default function ProjectDetailContent({
                   >
                     <div className="aspect-video">
                       <ImageWithFallback
-                        src={relatedProject.images[0]}
+                        src={getProjectThumbnail(relatedProject.images)}
                         alt={`${relatedProject.title} - ${relatedProject.location}`}
                         width={300}
                         height={200}

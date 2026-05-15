@@ -176,6 +176,24 @@ export const projectsData: IProjectsPageData = {
         '/images/projects/trung-tam-nghien-cuu-dhqg/6.jpg',
       ],
     },
+    {
+      id: 'kho-lanh-dong-hung',
+      order: 9,
+      title: 'Kho lạnh Đông Hưng',
+      subtitle: 'Thi công hệ thống thông gió',
+      location:
+        'Lô 2, Đường 2, Khu công nghiệp Tân Đông Hiệp A, Phường Dĩ An, TP. Hồ Chí Minh',
+      owner: 'Công ty CP Công nghiệp Đông Hưng',
+      productConsumptionCapacity: '-',
+      slug: 'kho-lanh-dong-hung',
+      category: 'Ống thông gió',
+      images: [
+        '/images/projects/kho-lanh-dong-hung/1.png',
+        '/images/projects/kho-lanh-dong-hung/2.png',
+        '/images/projects/kho-lanh-dong-hung/3.png',
+        '/images/projects/kho-lanh-dong-hung/kho-lanh-dong-hung.pdf',
+      ],
+    },
   ],
 
   subProjects: [

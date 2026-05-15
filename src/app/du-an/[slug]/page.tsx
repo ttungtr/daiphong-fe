@@ -1,4 +1,5 @@
 import { projectsData } from '@/data/projects';
+import { getProjectThumbnail } from '@/utils/projects';
 import ProjectDetailContent from '@/components/feature/projects/ProjectDetailContent';
 import { Metadata } from 'next';
 import NotFound from './not-found';
@@ -43,7 +44,7 @@ export async function generateMetadata({
       siteName: 'Đại Phong',
       images: [
         {
-          url: `/images/projects/${project.images[0]}`,
+          url: getProjectThumbnail(project.images),
           width: 1200,
           height: 630,
           alt: `${project.title} - ${project.location}`,
@@ -54,7 +55,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [`/images/projects/${project.images[0]}`],
+      images: [getProjectThumbnail(project.images)],
     },
     alternates: {
       canonical: `https://onggiodaiphong.com/du-an/${slug}`,

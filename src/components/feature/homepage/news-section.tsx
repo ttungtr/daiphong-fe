@@ -2,6 +2,7 @@
 import ImageWithFallback from '@/components/common/ImageWithFallback';
 import LineTitle from '@/components/common/line-title';
 import { useProjectsData } from '@/hooks/useLocalizedData';
+import { getProjectThumbnail } from '@/utils/projects';
 import { MoveRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import { FunctionComponent } from 'react';
@@ -39,7 +40,7 @@ export const NewsSection: FunctionComponent = () => {
                 <ImageWithFallback
                   width={300}
                   height={200}
-                  src={project.images[0]}
+                  src={getProjectThumbnail(project.images)}
                   alt={`Công trình ${project.title}`}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />

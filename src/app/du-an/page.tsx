@@ -2,6 +2,7 @@
 
 import { Pagination } from '@/components/common';
 import ImageWithFallback from '@/components/common/ImageWithFallback';
+import { getProjectThumbnail } from '@/utils/projects';
 import LineTitle from '@/components/common/line-title';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/projects';
@@ -112,7 +113,7 @@ export default function ProjectPage() {
               >
                 <div className="aspect-w-16 aspect-h-10">
                   <ImageWithFallback
-                    src={project.images[0]}
+                    src={getProjectThumbnail(project.images)}
                     alt={t('projectsPage.projectImageAlt', {
                       title: project.title,
                       location: project.location,
