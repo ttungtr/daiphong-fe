@@ -3,6 +3,7 @@
 import ImageWithFallback from '@/components/common/ImageWithFallback';
 import { MapSection } from '@/components/feature/homepage';
 import { HeroSection } from '@/components/feature/projects';
+import ProjectPdfPreview from '@/components/feature/projects/ProjectPdfPreview';
 import { useProjectsData } from '@/hooks/useLocalizedData';
 import { getProjectThumbnail, isPdfUrl } from '@/utils/projects';
 import LineTitle from '@/components/common/line-title';
@@ -25,6 +26,8 @@ export default function ProjectDetailContent({
   const random = Math.floor(Math.random() * projectsData.projects.length);
 
   const relatedProjects = projectsData.projects.slice(random, random + 3);
+  const pdfFile = project.images.find(isPdfUrl);
+  const galleryImages = project.images.filter((image) => !isPdfUrl(image));
 
   return (
     <>
@@ -113,28 +116,26 @@ export default function ProjectDetailContent({
             </div>
           </section>
 
-          {/* Project Images Gallery */}
-          <section aria-labelledby="project-gallery" className="mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {project.images.map((image, index) => (
-                <div
-                  key={index}
-                  className={
-                    isPdfUrl(image)
-                      ? 'relative md:col-span-2 min-h-[min(80vh,720px)] overflow-hidden shadow-sm bg-gray-100'
-                      : 'relative aspect-[4/3] overflow-hidden shadow-sm'
-                  }
-                >
-                  {isPdfUrl(image) ? (
-                    <iframe
-                      src={image}
-                      title={t('projectsPage.projectImageAlt', {
-                        index: index + 1,
-                        title: project.title,
-                      })}
-                      className="absolute inset-0 w-full h-full border-0"
-                    />
-                  ) : (
+          {pdfFile && (
+            <section aria-labelledby="project-pdf" className="mb-8">
+              <ProjectPdfPreview
+                src={pdfFile}
+                title={t('projectsPage.projectImageAlt', {
+                  index: 1,
+                  title: project.title,
+                })}
+              />
+            </section>
+          )}
+
+          {galleryImages.length > 0 && (
+            <section aria-labelledby="project-gallery" className="mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {galleryImages.map((image, index) => (
+                  <div
+                    key={image}
+                    className="relative aspect-[4/3] overflow-hidden shadow-sm"
+                  >
                     <ImageWithFallback
                       src={image}
                       alt={t('projectsPage.projectImageAlt', {
@@ -146,11 +147,11 @@ export default function ProjectDetailContent({
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       priority={index < 2}
                     />
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Related Projects */}
           {relatedProjects.length > 0 && (
