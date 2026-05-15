@@ -6,20 +6,24 @@ const nextConfig: NextConfig = {
     "/**": ["./public/pdfs/**/*"],
   },
 
-  // Ensure static files are served correctly
   async headers() {
     return [
       {
         source: "/pdfs/:path*",
         headers: [
-          {
-            key: "Content-Type",
-            value: "application/pdf",
-          },
+          { key: "Content-Type", value: "application/pdf" },
+          { key: "Content-Disposition", value: "inline" },
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
           },
+        ],
+      },
+      {
+        source: "/images/:path*.pdf",
+        headers: [
+          { key: "Content-Type", value: "application/pdf" },
+          { key: "Content-Disposition", value: "inline" },
         ],
       },
     ];

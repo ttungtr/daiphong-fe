@@ -191,7 +191,7 @@ export const projectsData: IProjectsPageData = {
         '/images/projects/kho-lanh-dong-hung/1.png',
         '/images/projects/kho-lanh-dong-hung/2.png',
         '/images/projects/kho-lanh-dong-hung/3.png',
-        '/images/projects/kho-lanh-dong-hung/kho-lanh-dong-hung.pdf',
+        '/pdfs/kho-lanh-dong-hung.pdf',
       ],
     },
   ],
