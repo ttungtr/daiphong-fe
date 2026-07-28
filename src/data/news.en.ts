@@ -199,7 +199,7 @@ export const newsData: INew[] = [
           <li><strong>DAI PHONG VN INDUSTRIAL JOINT STOCK COMPANY</strong></li>
           <li><strong>Specializing in:</strong> Fabrication and manufacturing of ventilation ducts, air ducts, cable trays, cable ladders, electrical cabinets, and distribution panels</li>
           <li><strong>Address:</strong> Lot 2, Street No. 2, Tan Dong Hiep A Industrial Zone, Di An Ward, Ho Chi Minh City</li>
-          <li><strong>Phone:</strong> (+84) 792 359 369</li>
+          <li><strong>Phone:</strong> (+84) 937 299 828</li>
           <li><strong>Website:</strong> onggiodaiphong.com</li>
         </ul>
       </div>`,
@@ -312,7 +312,7 @@ export const newsData: INew[] = [
           <li><strong>DAI PHONG VN INDUSTRIAL JOINT STOCK COMPANY</strong></li>
           <li><strong>Specializing in:</strong> Fabrication and manufacturing of ventilation ducts, air ducts, cable trays, cable ladders, electrical cabinets, and distribution panels</li>
           <li><strong>Address:</strong> Lot 2, Street No. 2, Tan Dong Hiep A Industrial Zone, Di An Ward, Ho Chi Minh City</li>
-          <li><strong>Phone:</strong> (+84) 792 359 369</li>
+          <li><strong>Phone:</strong> (+84) 937 299 828</li>
           <li><strong>Website:</strong> onggiodaiphong.com</li>
         </ul>
       </div>`,

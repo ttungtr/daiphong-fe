@@ -39,7 +39,7 @@ export const Footer: FunctionComponent = () => {
                   {t('footer.addressLabel')}
                 </h4>
                 <a
-                  href="https://goo.gl/maps/j15G3vj7UpgWByjF9"
+                  href="https://maps.app.goo.gl/Ja3QP9V2gtW3wAEX9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-white/70 transition-colors"
@@ -53,7 +53,7 @@ export const Footer: FunctionComponent = () => {
                   {t('footer.vplvLabel')}
                 </h4>
                 <a
-                  href="https://goo.gl/maps/j15G3vj7UpgWByjF9"
+                  href="https://maps.app.goo.gl/Ja3QP9V2gtW3wAEX9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-white/70 transition-colors"
@@ -69,10 +69,10 @@ export const Footer: FunctionComponent = () => {
                   {t('footer.phoneLabel')}
                 </h4>
                 <a
-                  href="tel:+84792359369"
+                  href="tel:+84937299828"
                   className="text-white hover:text-white/70 transition-colors"
                 >
-                  (+84) 937 299 828 - (+84) 792 359 369
+                  (+84) 937 299 828
                 </a>
               </div>
 
@@ -137,7 +137,7 @@ export const Footer: FunctionComponent = () => {
               addressLocality: 'Thành phố Hồ Chí Minh',
               addressCountry: 'VN',
             },
-            telephone: '+84792359369',
+            telephone: '+84937299828',
             email: 'info@onggiodaiphong.com ',
             url: 'https://onggiodaiphong.com',
             foundingDate: '2002',
@@ -145,7 +145,7 @@ export const Footer: FunctionComponent = () => {
             areaServed: 'Vietnam',
             contactPoint: {
               '@type': 'ContactPoint',
-              telephone: '+84792359369',
+              telephone: '+84937299828',
               contactType: 'customer service',
               availableLanguage: 'Vietnamese',
             },

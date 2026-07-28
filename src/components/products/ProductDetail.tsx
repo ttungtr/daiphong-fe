@@ -14,10 +14,10 @@ export default function ProductDetail({ product }: { product: Product }) {
   const formattedPrice =
     typeof product.price === 'number'
       ? new Intl.NumberFormat(i18n.language === 'en' ? 'en-US' : 'vi-VN', {
-          style: 'currency',
-          currency: 'VND',
-          maximumFractionDigits: 0,
-        }).format(product.price)
+        style: 'currency',
+        currency: 'VND',
+        maximumFractionDigits: 0,
+      }).format(product.price)
       : (product.price as string) || t('productsDetail.contact');
 
   return (
@@ -45,7 +45,7 @@ export default function ProductDetail({ product }: { product: Product }) {
 
           <div className="pt-2">
             <a
-              href="https://zalo.me/84989353055"
+              href="https://zalo.me/84937299828"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Zalo"
@@ -64,21 +64,19 @@ export default function ProductDetail({ product }: { product: Product }) {
         <div className="flex space-x-1 mb-6">
           <button
             onClick={() => setActiveTab('details')}
-            className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
-              activeTab === 'details'
+            className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${activeTab === 'details'
                 ? 'bg-primary-blue-1 text-white'
                 : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-            }`}
+              }`}
           >
             {t('productsDetail.detailsTab')}
           </button>
           <button
             onClick={() => setActiveTab('specifications')}
-            className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
-              activeTab === 'specifications'
+            className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${activeTab === 'specifications'
                 ? 'bg-primary-blue-1 text-white'
                 : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-            }`}
+              }`}
           >
             {t('productsDetail.specificationsTab')}
           </button>

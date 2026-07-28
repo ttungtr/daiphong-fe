@@ -198,7 +198,7 @@ export const newsData: INew[] = [
           <li><strong>CÔNG TY CỔ PHẦN CÔNG NGHIỆP ĐẠI PHONG VN</strong></li>
           <li><strong>Chuyên:</strong> Gia công, sản xuất ống thống thông gió, ống gió, máng điện, thang cáp, tủ điện, tủ bảng điện</li>
           <li><strong>Địa chỉ:</strong> Lô 2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TP. Hồ Chí Minh</li>
-          <li><strong>Điện thoại:</strong> (+84) 792 359 369</li>
+          <li><strong>Điện thoại:</strong> (+84) 937 299 828</li>
           <li><strong>Website:</strong> onggiodaiphong.com</li>
         </ul>
       </div>`,
@@ -310,7 +310,7 @@ export const newsData: INew[] = [
           <li><strong>CÔNG TY CỔ PHẦN CÔNG NGHIỆP ĐẠI PHONG VN</strong></li>
           <li><strong>Chuyên:</strong> Gia công, sản xuất ống thống thông gió, ống gió, máng điện, thang cáp, tủ điện, tủ bảng điện</li>
           <li><strong>Địa chỉ:</strong> Lô 2, Đường số 2, KCN Tân Đông Hiệp A, Phường Dĩ An, TP. Hồ Chí Minh</li>
-          <li><strong>Điện thoại:</strong> (+84) 792 359 369</li>
+          <li><strong>Điện thoại:</strong> (+84) 937 299 828</li>
           <li><strong>Website:</strong> onggiodaiphong.com</li>
         </ul>
       </div>`,

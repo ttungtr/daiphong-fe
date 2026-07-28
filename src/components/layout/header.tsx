@@ -37,10 +37,10 @@ export const Header: FunctionComponent = () => {
 
   const filteredResults = keyword
     ? products
-        .filter((p) =>
-          p.name.toLowerCase().includes(keyword.trim().toLowerCase()),
-        )
-        .slice(0, 8)
+      .filter((p) =>
+        p.name.toLowerCase().includes(keyword.trim().toLowerCase()),
+      )
+      .slice(0, 8)
     : [];
 
   useEffect(() => {
@@ -65,7 +65,7 @@ export const Header: FunctionComponent = () => {
   useEffect(() => {
     if (!mounted) return; // ⛔ Không sync trước khi hydrate
     localStorage.setItem(LANG_STORAGE_KEY, lang);
-    i18n.changeLanguage(lang).catch(() => {});
+    i18n.changeLanguage(lang).catch(() => { });
     if (typeof document !== 'undefined') {
       document.documentElement.lang = lang;
     }
@@ -206,7 +206,7 @@ export const Header: FunctionComponent = () => {
                       mounted && lang === 'vi'
                         ? 'bg-white text-slate-800'
                         : 'bg-transparent text-white/90 hover:bg-white/10'
-                    }`}
+                      }`}
                     aria-pressed={mounted && lang === 'vi'}
                     aria-label={t('header.switchToVietnamese')}
                   >
@@ -220,11 +220,10 @@ export const Header: FunctionComponent = () => {
                   <button
                     type="button"
                     onClick={() => setLang('en')}
-                    className={`h-10 px-3 text-sm transition-colors ${
-                      mounted && lang === 'en'
+                    className={`h-10 px-3 text-sm transition-colors ${mounted && lang === 'en'
                         ? 'bg-white text-slate-800'
                         : 'bg-transparent text-white/90 hover:bg-white/10'
-                    }`}
+                      }`}
                     aria-pressed={mounted && lang === 'en'}
                     aria-label={t('header.switchToEnglish')}
                   >
@@ -238,7 +237,7 @@ export const Header: FunctionComponent = () => {
                 </div>
 
                 <a
-                  href="tel:+84792359369"
+                  href="tel:+84937299828"
                   className="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-primary-blue-1 font-medium shadow-sm hover:bg-white/70 transition-colors"
                 >
                   <Phone />
